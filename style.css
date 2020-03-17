@@ -7,9 +7,9 @@
   max-width: 760px;
 }
 
-@media ( orientation : landscape ) {
+@media ( orientation : landscape ) and ( max-width : 760) {
 
-  .container-layout {
+  .container-orientation {
     background-color: blue;
     border: 1px solid red;
   }
