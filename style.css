@@ -1,11 +1,11 @@
-html,
-body,
-div,
-p,
-form,
-input,
-main,
-label,
+html ,
+body ,
+div ,
+p ,
+form ,
+input ,
+main ,
+label ,
 section {
   border: 0;
   font-family: sans-serif;
@@ -13,21 +13,18 @@ section {
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: gray;
-}
 
 .container-layout {
   background-color: blue;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width :760px ) {
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width :1170px ) {
   .container-layout {
     background-color: red;
   }
