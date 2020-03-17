@@ -15,20 +15,23 @@ header {
   grid-row: 1/2;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width: 760px ) {
+
   .container-layout {
-    background-color: yellow;
+    background-color : yellow;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width: 1170px ) {
+
   .container-layout {
-    background-color: red;
+    background-color : red;
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and ( orientation: landscape ) {
+  
   .container-orientation {
-    border: 1px solid red;
+    border : 1px solid red;
   }
 }
