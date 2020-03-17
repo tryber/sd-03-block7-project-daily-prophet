@@ -1,6 +1,6 @@
 @media ( max-width : 760px ) {
 
-  body , section , div , p , h1 , span {
+  body , div , h1 , p , section , span {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@
   header {
     width: 100%;
   }
-  
+
   .box-title {
     background: url('title.png') no-repeat;
     background-size: 600px;
