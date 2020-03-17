@@ -162,13 +162,13 @@ footer {
 @keyframes aumentar {
 
   from {
-    transform: scale(1);
     font-weight: 300;
+    transform: scale(1);
   }
 
   to {
+    font-size: 3rem;
     transform: scale(1.5);
-    font-weight: 2000;
   }
 }
 
