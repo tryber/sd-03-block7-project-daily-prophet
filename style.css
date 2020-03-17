@@ -6,6 +6,10 @@ html , body , div , p , form , input , main , label , section {
   padding: 0;
 }
 
+body {
+  background-color: darkslategray;
+}
+
 .container-layout {
   background-color: green;
 }
