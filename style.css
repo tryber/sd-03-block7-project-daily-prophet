@@ -23,12 +23,13 @@ body {
 
 @media screen and ( min-width : 1170px ) {
 
-  .container-layout {
-    background-color: red;
+    .container-layout {
+        background-color: red;
   }
 }
 
-@media screen and (orientation : landscape) {
+@media screen and ( orientation : landscape ) {
+
     .container-orientation {
         border: 1px solid red;
     }
