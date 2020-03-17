@@ -1,6 +1,6 @@
 body {
-  background-color: lightgoldenrodyellow;
-  color: #333;
+  background-color: rgb(255, 247, 199);
+  color: #1c1915;
   font-family: Times New Roman, Times, serif;
   margin: 5px;
   padding: 0;
@@ -38,8 +38,6 @@ div , section , nav , aside , footer {
 }
 
 .shocking-news {
-  margin: auto;
-  margin-top: 10px;
   text-align: center;
 }
 
@@ -61,7 +59,7 @@ div , section , nav , aside , footer {
 }
 
 .you-know-who {
-  background-color: #333;
+  background-color: #1c1915;
   color: ivory;
   font-size: 40px;
   letter-spacing: 3px;
@@ -72,6 +70,8 @@ div , section , nav , aside , footer {
   font-size: 3em;
   text-align: center;
   width: 100%;
+  position: relative;
+  bottom: 30px;
 }
 
 .headline {
@@ -100,6 +100,7 @@ main {
   margin: auto;
   margin-top: 20px;
   width: 95%;
+  padding: 5px;
 }
 
 @keyframes shocking {
