@@ -12,6 +12,7 @@ article:active {
 }
 
 @keyframes flying {
+  
   from {
     left: 4%;
     top: 100px;
