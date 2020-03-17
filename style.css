@@ -15,9 +15,10 @@ body {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
 }
 
 .scale {
@@ -25,14 +26,14 @@ body {
   animation-direction: alternate;
   display: flex;
   justify-content: center;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
 }
 
 .skeww {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
-  transition: 0.5s;
+  transition: 0.5s ease-out;
   width: 83%;
 }
 
