@@ -1,5 +1,5 @@
 article {
-transition: 4s ease-out;
+  transition: 4s ease-out;
 }
 
 article:hover {
