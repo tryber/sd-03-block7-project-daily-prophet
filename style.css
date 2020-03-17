@@ -3,6 +3,14 @@
   src: url('/fonts/gotic\ ween.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: goticween;
+  src: url('/fonts/gotic\ ween.ttf') format('embedded-opentype'),
+    url('/fonts/gotic\ ween.ttf.woff') format('woff'),
+    url('/fonts/gotic\ ween.ttf.ttf')  format('truetype'),
+    url('/fonts/gotic\ ween.ttf.svg#svgFontName') format('svg');
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
