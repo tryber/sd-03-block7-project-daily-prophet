@@ -1,8 +1,8 @@
 body {
   align-items: center;
   display: flex;
-  font-family: Artifika, serif;
   flex-direction: column;
+  font-family: Artifika, serif;
   text-align: justify;
   width: 100%;
 }
@@ -37,6 +37,7 @@ body {
 }
 
 @keyframes go {
+
   0% {
     transform: translateX(0);
   }
@@ -63,6 +64,7 @@ body {
 }
 
 @media only screen and ( orientation : landscape ) {
+  
   .container-orientation {
     border: 1px solid red;
   }
