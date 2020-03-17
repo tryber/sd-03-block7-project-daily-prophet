@@ -2,13 +2,17 @@
 
   .container-layout {
     background-color: yellow;
+    width : 100px;
+    height : 100px;
   }
 }
 
 @media only screen and ( min-width : 1170px ) {
 
   .container-layout {
-    background-color : yellow;
+    background-color : red;
+    width : 100px;
+    height : 100px;
   }
 }
 
