@@ -1,0 +1,85 @@
+@media (max-width: 760px) {
+
+  body, section, div, p, h1, span {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .container-layout {
+    padding: 15px 80px;
+    width: 760px;
+  }
+
+  header {
+    width: 100%;
+  }
+  
+  #box-title {
+    background: url("title.png") no-repeat;
+    background-size: 600px;
+    height: 150px;
+    margin: 0 auto;
+    width: 600px;
+  }
+
+  #box-word-exclusive {
+    background-color: rgb(28, 25, 21);
+    padding: 5px 30px;
+  }
+
+  #box-word-exclusive p {
+    color: white;
+    font-size: 35px;
+  }
+
+  #box-text {
+    border: 1px solid rgb(28, 25, 21);
+    margin-top: 10px;
+  }
+
+  #box-text h1 {
+    margin: 10px;
+  }
+
+  #box-text p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 5px 10px;
+  }
+
+  #box-text span {
+    background-color: rgb(28, 25, 21);
+    color: white;
+    padding: 1px 7px 1px 67% ;
+  }
+
+  #main-notices {
+    border: 1px solid rgb(28, 25, 21);
+    margin-top: 10px;
+  }
+
+  #notice-primary h1 {
+    font-size: 80px;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+
+  #notice-primary p {
+    margin: 10px;
+  }
+
+  #notice-primary span {
+    float: left; 
+    font-size: 3.0em;
+    margin-right: 10px;
+    margin-top: -6px;
+    text-shadow: 3px 0 rgb(117, 117, 29);
+    width: fit-content;
+  }
+
+  #notice-primary img {
+    margin: 10px;
+    width: 580px;
+  }
+}
