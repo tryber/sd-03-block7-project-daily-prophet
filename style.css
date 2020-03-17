@@ -48,7 +48,7 @@
   }
 }
 
-@keyframes flyin {
+@keyframes flying {
 
   0% {
     transform: translate(0, -120%) rotate(45deg);
@@ -73,8 +73,11 @@
 
 @keyframes article-grow {
 
+  50% {
+    transform: translate(-40%, -80%) rotate(33deg);
+  }
 }
 
 .article-animation {
-
+  background-color : red;
 }
