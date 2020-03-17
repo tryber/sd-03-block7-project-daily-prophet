@@ -3,7 +3,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s;
+  animation: article-grow 4s steps(4, end);
   animation-play-state: paused;
 }
 
@@ -17,6 +17,7 @@ body {
 }
 
 .fly {
+  animation: steps(3, end);
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 2s;
@@ -26,14 +27,14 @@ body {
 }
 
 .scale {
-  animation: scalee 0.3s infinite;
+  animation: scalee 0.3s steps(3, end) infinite;
   animation-direction: alternate;
   display: flex;
   justify-content: center;
 }
 
 .skeww {
-  animation: skewww 0.3s infinite;
+  animation: skewww 0.3s steps(3, end) infinite;
   animation-direction: alternate;
   transform: skew(0deg);
   width: 83%;
