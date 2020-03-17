@@ -31,7 +31,7 @@
 }
 
 .transform {
-  animation: transFormation 3s infinite;
+  animation: transFormation 3s steps(5, start) infinite;
   transition-delay: 1s;
 }
 
