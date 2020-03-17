@@ -19,6 +19,15 @@
   }
 }
 
+body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container-layout {
+  background-color: wheat;
+}
+
 .fly {
   animation: flying 2s linear 3s 3 alternate forwards;
   position: relative;
@@ -66,7 +75,7 @@
 }
 
 .translate {
-  animation: skew 2s linear infinite alternate;
+  animation: translate 2s linear infinite alternate;
 }
 
 @keyframes translate {
@@ -79,4 +88,3 @@
     transform: scale(1.5);
   }
 }
-
