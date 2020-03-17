@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.container-layout {
+  background-color: white;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  text-align: center;
+  width: 1000px;
+}
+
+.logo {
+  padding-top: 0;
+  width: 400px;
+}
+
+.hr-double-top {
+  border-top: black double 2px;
+  margin-bottom: -0.5%;
+}
+
+.hr-double-bottom {
+  border-bottom: double black 2px;
+  margin-top: -0.5%;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout { background-color: yellow; }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout { background-color: red; }
+}
