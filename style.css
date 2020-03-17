@@ -24,8 +24,8 @@ body {
   animation: scalee 0.3s infinite;
   animation-direction: alternate;
   display: flex;
-  transition: 0.5s;
   justify-content: center;
+  transition: 0.5s;
 }
 
 .skeww {
