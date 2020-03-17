@@ -1,12 +1,12 @@
 window.onload = function () {
-  article = document.getElementsByClassName('article-animation')[0];
-  console.log(article);
+  article1 = document.querySelectorAll('article-animation')[0];
+  console.log(article1);
 
-  article.addEventListener('click', function () {
-    article.style.animationName = 'article-grow';
+  article1.addEventListener('click', function () {
+    article1.style.animationName = 'article-grow';
   });
 
-  // articleDOM.addEventListener('mouseout', function () {
-  //   articleDOM.style.animationName = '';
-  // });
+  article1.addEventListener('mouseout', function () {
+    article1.style.animationName = '';
+  });
 }
