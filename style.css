@@ -24,6 +24,7 @@
 }
 
 .fly {
+  animation: flying 4s steps(200) 3 alternate forwards;
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
@@ -51,6 +52,7 @@
 @keyframes flying {
 
   0% {
+    transform: scale(1, 1) translate(0, 0);
     transform: translate(0, -120%) rotate(45deg);
   }
 
