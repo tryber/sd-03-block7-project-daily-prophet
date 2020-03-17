@@ -4,6 +4,7 @@ body {
 
 .container-layout {
   background-color: #fff8ee;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -18,9 +19,9 @@ body {
 }
 
 .skeww{
-  transform: skew(0deg);
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
+  transform: skew(0deg);
 }
 
 @keyframes skewww {
@@ -28,6 +29,7 @@ body {
   0% {
     transform: skewY(3deg);
   }
+
   100% {
     transform: skewY(-3deg);
   }
