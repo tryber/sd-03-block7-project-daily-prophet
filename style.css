@@ -17,12 +17,14 @@ body {
   animation-duration: 2s;
   animation-iteration-count: 3;
   animation-name: flyin;
+  transition-duration: 0.5s
 }
 
 .scale {
   animation: scalee 0.3s infinite;
   animation-direction: alternate;
   display: flex;
+  transition-duration: 0.5s;
   justify-content: center;
 }
 
@@ -30,6 +32,7 @@ body {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
+  transition-duration: 0.5s;
   width: 83%;
 }
 
@@ -38,6 +41,7 @@ body {
   0% {
     transform: scale(0.5);
   }
+
   100% {
     transform: scale(1);
   }
