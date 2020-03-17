@@ -21,10 +21,11 @@
 
 .catImage {
   max-width: 200px;
+  margin-left: 100%;
 }
 
 .fly {
-  animation: flying 3s alternate 3 forwards;
+  animation: flying 3s alternate 3 forwards 3s;
   overflow-x: hidden;
 }
 
