@@ -1,16 +1,18 @@
-@media (max-width: 760px) {
+@media ( max-width : 760px ) {
+
   .container-layout {
     background: yellow;
   }
 }
 
-@media (min-width: 1170px) {
+@media ( min-width : 1170px ) {
+
   .container-layout {
     background: red;
   }
 }
 
-@media (orientation: landscape) {
+@media ( orientation : landscape ) {
   .container-orientation {
     border: 1px solid red;
   }
@@ -22,9 +24,11 @@
 }
 
 @keyframes flying {
+
   from {
     left: 10px;
   }
+
   to {
     left: 1000px;
   }
