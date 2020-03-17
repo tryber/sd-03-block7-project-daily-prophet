@@ -153,6 +153,25 @@ footer {
   width: 80%;
 }
 
+.changeW:active {
+  animation: aumentar 4s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes aumentar {
+
+  from {
+    transform: scale(1);
+    font-weight: 300;
+  }
+
+  to {
+    transform: scale(1.5);
+    font-weight: 2000;
+  }
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -179,25 +198,23 @@ footer {
 
 @keyframes flying {
 
-  0% {
-    margin-left: 100%;
-    transform: scale(0.1);
+  from {
+    margin-left: 0;
   }
 
-  5% {
-    transform: translate(20px, 20px);
-  }
-
-  50% {
-    margin-left: -100%;
-    transform: skew(10deg, 30deg);
+  to {
+    margin-left: 40%;
   }
 }
 
 .fly {
   animation-delay: 3s;
+  animation-direction: alternate;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
   animation-name: flying;
+  animation-timing-function: ease-in;
 }
 
 .article-animation {
