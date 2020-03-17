@@ -56,8 +56,7 @@
 }
 
 .eternal-skewing {
-  animation: steps(4, end);
-  animation: skewing 5s linear infinite;
+  animation: skewing 5s linear infinite steps(4, end);
   transition: 2s;
   width: fit-content;
 }
@@ -78,8 +77,7 @@
 }
 
 .eternal-scaling {
-  animation: steps(4, end);
-  animation: scaling 2s linear infinite alternate;
+  animation: scaling 2s linear infinite alternate steps(4, end);
   background-color: #e0e0e0;
   transition: 2s;
 }
@@ -96,8 +94,7 @@
 }
 
 .eternal-translation {
-  animation: steps(4, end);
-  animation: translating 2s linear infinite alternate;
+  animation: translating 2s linear infinite alternate steps(4, end);
   background-color: #e0e0e0;
   transition: 2s;
 }
