@@ -19,25 +19,24 @@
   }
 }
 
+.catImage {
+  max-width: 200px;
+}
+
+.fly {
+  animation: flying 3s alternate 3;
+  overflow: hidden;
+}
+
 @keyframes flying {
 
   from {
     margin-left: 100%;
+    width: 300%;
   }
 
   to {
     margin-left: 0;
+    width: 100%;
   }
-}
-
-.fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-iteration-count: 3;
-  animation-name: flying;
-
-}
-
-.catImage {
-  max-width: 200px;
 }
