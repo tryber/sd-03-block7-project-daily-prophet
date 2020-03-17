@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: white;
 }
 
 .container-layout {
@@ -12,10 +12,10 @@ body {
 }
 
 .fly {
-  animation-name: flying;
   animation-delay: 3s;
-  animation-iteration-count: 3;
   animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
 }
 
 hr {
@@ -44,7 +44,7 @@ hr {
   align-self: flex-start;
   display: flex;
   font-size: 30px;
-  margin: 10px 10px;
+  margin: 10px;
 }
 
 .paragrafo2 {
@@ -54,7 +54,7 @@ hr {
 }
 
 .secao1 {
-  color: white; 
+  color: white;
 }
 
 .sub-hr {
@@ -75,13 +75,12 @@ hr {
 }
 
 @media screen and ( max-width: 760px ) {
-  
   footer {
     background-color: yellow;
-  }
-  .img1 {
-    display: flex;
+   }
+   .img1 {
     align-self: flex-start;
+    display: flex;
     height: 200px;
     width: 200px;
   }
