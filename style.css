@@ -11,7 +11,7 @@ html , body , div , p , form , input , main , label , section {
 }
 
 @media screen and ( max-width : 760px ) {
-
+  
   .container-layout {
     background-color: yellow;
   }
