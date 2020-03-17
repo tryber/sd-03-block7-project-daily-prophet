@@ -6,13 +6,12 @@
 article:active {
   font-weight: 900;
   transform: scale(1.5);
-  transition: transform 4s linear, font-wegiht 4s linear;
+  transition: transform 4s steps(1000), font-weight 4s steps(1000);
   max-width: 100%;
   word-wrap: break-word;
 }
 
 @keyframes flying {
-  
   from {
     left: 4%;
     top: 100px;
