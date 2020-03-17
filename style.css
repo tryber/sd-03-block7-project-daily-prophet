@@ -1,16 +1,15 @@
 .article-animation {
-
+    display: flex;
 }
 
 .container-layout {
-
+    display: flex;
 }
 
 .container-orientation {
-    
+    display: flex;
 }
 
 .fly {
-
+    display: flex;
 }
-
