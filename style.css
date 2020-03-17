@@ -3,37 +3,45 @@ body {
   color: #1c1915;
   display: block;
   font-family: 'vollkorn', serif;
-  font-size:  1rem;
+  font-size: 1rem;
   line-height: 18.4px;
   margin: 0;
   width: 100%;
 }
 
+.container-diario {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 5px;
+  }
+
 .hr-top {
-  border-top: 3px solid black;
   border-bottom: 1px solid black;
+  border-top: 3px solid black;
   height: 2px;
-  margin-top: 20px auto;
+  margin-top: 20px;
 }
 
 .hr-bottom {
-  border-top: 1px solid black;
   border-bottom: 3px solid black;
+  border-top: 1px solid black;
   height: 2px;
-  margin: 10px auto;
+  margin: 10px;
 }
 
-.img-logo{
+.img-logo {
   display: block;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
   margin-top: 0;
 }
+
 .cabecalho-titulo2 {
   display: block;
   font-family: 'Kreon', serif;
   font-size: 24px;
-  margin: 0.375em 0.5em 0em 0.5em;
+  margin: 6px 8px 0 8px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -79,14 +87,14 @@ body {
   .container-orientation {
     border: 1px solid red;
   }
-  
+
   .container-diario {
     background-color: white;
     border-radius: 10px;
     margin: 20px;
     padding: 5px;
   }
-  
+
   .cabecalho-titulo {
     display: none;
   }
