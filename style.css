@@ -1,12 +1,35 @@
-@media screen and ( max-width : 760px ) {
+html {
+  background-color: white;
+}
+body {
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+}
 
-  .article-animation {
-    animation-duration: 4s;
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    background-color: green;
   }
 }
 
 .container-layout {
-  background-color: yellow;
   width: 90%;
 }
 
@@ -41,7 +64,7 @@
 
   100% {
     margin-left: 100%;
-    transform: scale(1, 1) translate(0, 0);
+    transform: skew(15deg, 180deg);
   }
 }
 
