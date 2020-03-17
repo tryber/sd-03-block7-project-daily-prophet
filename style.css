@@ -1,43 +1,42 @@
 @media (max-width: 760px) {
     .container-layout{
-        background-color:rgb(255, 255, 0);   
-        border-radius: 10px; 
+        background-color:rgb(255, 255, 0);
+        border-radius: 10px;
         padding: 2%;
       }
       header{
         text-align: center;
       }
-     .section-one div p {
-       text-justify:auto;
-       padding: 1%;
-       text-align: center;
-       margin-top: 5px;  
-       color: black; 
+      .section-one div p {
+        color: black;
+        text-align: center;
+        text-justify:auto;
+        margin-top: 5px;
+        padding: 1%;
     }
-
-
-
 }
 
 @media (min-width : 761px) and (max-width : 1169px){
     .container-layout{
-        width: 75%;
+        background-color:rgb(4, 27, 12);
+        border-radius: 10px;
         margin: 0 auto;
-        background-color:rgb(4, 27, 12);   
-        border-radius: 10px; 
         padding: 2%;
-      }
-    
+        width: 75%;
+    }
+
       header{
+        color:rgb(255, 248, 248);
         text-align: center;
-        color:rgb(255, 248, 248)
-    }  
+    } 
+
     .section-one div p {
-        text-justify:auto;
-        padding: 1%;
+        color: rgb(255, 248, 248);
         text-align: center;
-        margin-top: 5px;  
-        color: rgb(255, 248, 248); 
+        text-justify:auto;
+        padding: 1%;     
+        margin-top: 5px;
+         
      }
 
 
@@ -48,26 +47,26 @@
    }
 
  .container-layout{
-  width: 75%;
-  margin: 0 auto;
-  background-color: rgb(255, 0, 0);   
-  border-radius: 10px; 
-  padding: 2%;
+   background-color: rgb(255, 0, 0);   
+   border-radius: 10px;
+   margin: 0 auto;
+   padding: 2%;
+   width: 75%;
 }
 
 header{
- text-align: center;
- border-top: 5px double black;
- border-bottom: 5px double black;
+  border-bottom: 5px double black;
+  border-top: 5px double black;    
+  text-align: center;
 }
 
 .text-header{
   font-family: DauphinPlain;
-  margin-top: -10px;
-  margin-bottom: -38px;
-  font-weight: 900;
+  font-weigh;t: 900;
   font-size: 100px;
   font-stretch: expanded;
+  margin-top: -10px;
+  margin-bottom: -38px;  
 }
 
 .tex-subheader{
