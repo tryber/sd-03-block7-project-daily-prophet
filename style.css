@@ -1,23 +1,23 @@
 article , aside , body , div , footer {
-  border-radius: 5px;
   border: 0;
-  font-family: 'Lusitana', serif;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
   margin: 0;
   padding: 0;
 }
 
 form , html , input , label {
-  border-radius: 5px;
   border: 0;
-  font-family: 'Lusitana', serif;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
   margin: 0;
   padding: 0;
 }
 
 main , nav , p , section {
-  border-radius: 5px;
   border: 0;
-  font-family: 'Lusitana', serif;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
   margin: 0;
   padding: 0;
 }
