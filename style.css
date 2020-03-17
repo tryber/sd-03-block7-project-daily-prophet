@@ -42,14 +42,9 @@ header {
 
 .artigo p {
   font-size: 1.3em;
-  margin: 0 auto -10px;
-  text-align: center;
-}
-
-.artigo p {
   font-style: italic;
   font-weight: 700;
-  margin: 0;
+  margin: 0 auto -10px;
   text-align: center;
 }
 
@@ -96,6 +91,8 @@ header {
 
 .corpo-do-jornal {
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
   height: 20%;
   margin-top: 5px;
   width: 100%;
@@ -103,5 +100,6 @@ header {
 
 .artigo-principal {
   height: 50%;
+  margin-top: 5px;
   width: 50%;
 }
