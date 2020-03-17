@@ -101,6 +101,11 @@ html , body {
   justify-content: center;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
 @keyframes flying {
 
   from {
@@ -109,5 +114,14 @@ html , body {
 
   to {
     margin-left: 90%;
+  }
+}
+
+@keyframes article-grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.5);
   }
 }
