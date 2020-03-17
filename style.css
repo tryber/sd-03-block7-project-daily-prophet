@@ -133,3 +133,24 @@ header {
 .artigo-lateral-esquerdo {
   width: 25%;
 }
+
+
+.container-layout {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 760px) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
