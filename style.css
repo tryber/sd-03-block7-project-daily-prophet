@@ -1,0 +1,41 @@
+@font-face {
+    font-family: goticween;
+    src: url("/fonts/gotic\ ween.ttf")
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+header {
+    font-family: goticween;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+}
+
+header>h1 {
+    background-color: blueviolet;
+    font-size: 40px;
+    word-spacing: 20px;
+    width: 650px;
+    align-self: center;
+    border-bottom: black solid 1px;
+}
+
+header>nav {
+    border-top: solid black 1px;
+    border-bottom: black solid 1px;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
