@@ -6,6 +6,26 @@ p {
   text-align: center;
 }
 
+.fly {
+  animation: flying 2s linear 3s 3 alternate;
+  margin-left: -200px;
+  width: 200px;
+}
+
+@keyframes flying {
+
+  from {
+    display: none;
+    margin-left: -200px;
+    margin-top: 200px;
+  }
+
+  to {
+    margin-left: 1800px;
+    margin-top: 400px;
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -27,4 +47,34 @@ p {
   .container-orientation {
     border: 1px red solid;
   }
+}
+
+.hat {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.hat:hover {
+  transform: scale(2, 2);
+}
+
+.owl {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.owl:hover {
+  transform: skew(30deg, 30deg);
+}
+
+.plataform {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.plataform:hover {
+  transform: translate(500px, 600px);
 }
