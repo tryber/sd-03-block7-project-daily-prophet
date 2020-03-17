@@ -1,7 +1,15 @@
 @font-face {
-  font-family: 'prophet';
-  src: url('Mugglenews.ttf?#iefix') format('ttf');
+    font-family: 'Mugglenews';
+    src: url('Mugglenews.eot');
+    src: url('Mugglenews.eot?#iefix') format('embedded-opentype'),
+        url('Mugglenews.woff2') format('woff2'),
+        url('Mugglenews.woff') format('woff'),
+        url('Mugglenews.ttf') format('truetype'),
+        url('Mugglenews.svg#Mugglenews') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 @media ( max-width : 760px ) {
 
@@ -35,7 +43,7 @@
   }
 
   .text-header {
-    font-family: 'prophet', Fallback, sans-serif;;
+    font-family: Mugglenews, Fallback, sans-serif;;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
@@ -78,7 +86,7 @@
   }
 
   .text-header {
-    font-family: prophet;
+    font-family: Mugglenews;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
