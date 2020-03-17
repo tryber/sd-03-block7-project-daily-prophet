@@ -16,6 +16,6 @@ body{
 }
 @media screen and (min-width: 1170px){
   .container-layout{
-    background-color:rgb(255, 0, 0);
+    background-color: rgb(255, 0, 0);
   }
 }
