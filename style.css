@@ -1,5 +1,5 @@
-html, body {
-  font-family: 'Amatic SC', cursive;
+html , body {
+  font-family: "Amatic SC", cursive;
   margin: 0;
 }
 
@@ -29,11 +29,11 @@ html, body {
   justify-content: center;
 }
 
-.header h1 {
+.header .main-title {
   font-size: 80px;
 }
 
-.header h1:hover {
+.header .main-title:hover {
   transform: skew(30deg, 20deg);
 }
 
