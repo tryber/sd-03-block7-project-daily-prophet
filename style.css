@@ -45,7 +45,7 @@ body {
   }
 
   100% {
-    font-weight: bolder;
+    font-weight: italic small-caps 600 16px/3 cursive;
     transform: scale(1.5);
   }
 }
