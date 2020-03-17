@@ -1,7 +1,3 @@
-.article-animation {
-  animation: article-grow 4s ease-in;
-}
-
 .content {
   min-height: 100%;
 }
