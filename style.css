@@ -1,17 +1,17 @@
-@media(max-width:760px){
+@media(max-width:760px) {
     .container-layout {
         background-color: rgb(255, 255, 0);
         width: 100%;
     }
 }
 
-@media(min-width:1170px){
+@media(min-width:1170px) {
     .container-layout {
         background-color: rgb(255, 0, 0);
     }
 }
 
-@media(max-width: 800px)and(orientation:landscape){
+@media(max-width: 800px)and(orientation:landscape) {
     .container-orientation {
         border: solid 1px rgb(255, 0, 0);
     }
