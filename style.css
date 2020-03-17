@@ -1,6 +1,10 @@
 @font-face {
   font-family: goticween;
   src: url('/fonts/gotic\ ween.ttf');
+  src: url('/fonts/gotic\ ween.ttf') format('embedded-opentype'), /* IE6-IE8 */
+    url('/fonts/gotic\ ween.ttf') format('woff'), /* Modern Browsers */
+    url('/fonts/gotic\ ween.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('/fonts/gotic\ ween.ttf') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
