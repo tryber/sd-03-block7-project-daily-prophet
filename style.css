@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 4px solid black;
-} */
+}
 
 @media ( max-width : 760px ) {
 
@@ -27,10 +27,6 @@ body {
   margin: 0 auto;
   width: 80%;
 }
-
-/* .container-layout {
-  background-color: wheat;
-} */
 
 .potter-icon {
   width: 100px;
