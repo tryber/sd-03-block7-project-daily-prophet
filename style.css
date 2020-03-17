@@ -1,8 +1,9 @@
-body{
+body {
   margin: 1px;
   padding: 1px;
 }
-@media ( max-width : 760px ) {
+
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -10,7 +11,7 @@ body{
   }
 }
 
-@media ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
@@ -18,10 +19,10 @@ body{
   }
 }
 
-@media ( max-width : 600px ) and ( orientation : landscape ) {
+@media screen and ( orientation : landscape ) {
 
   .container-orientation {
-    border: solid 1px blue;
+    border: solid 1px red;
     width: 100%;
   }
 }
