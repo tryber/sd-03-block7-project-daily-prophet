@@ -3,17 +3,34 @@ body {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 60px auto;
+
 }
 
 .title-img {
+  animation-duration: 1s;
+  animation-name: skewing;
   height: auto;
+  left:50%;
+  top:50%;
+  transform: scale(0.5);
+  transform: translate(-50%,-50%);
   width: 100%;
 }
 
 header {
   grid-column: 1/-1;
   grid-row: 1/2;
+  position: relative;
 }
+
+@keyframes skewing {
+
+  from{transform: skew(50deg)}
+  to{transform: skew(0deg)}
+
+}
+
+
 
 @media screen and ( max-width : 760px ) {
 
