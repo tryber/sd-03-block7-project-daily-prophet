@@ -17,15 +17,15 @@ body {
   animation-duration: 2s;
   animation-iteration-count: 3;
   animation-name: flyin;
-  transition-duration: 0.5s
+  transition-duration: 0.5s;
 }
 
 .scale {
   animation: scalee 0.3s infinite;
   animation-direction: alternate;
   display: flex;
-  transition-duration: 0.5s;
   justify-content: center;
+  transition-duration: 0.5s;
 }
 
 .skeww {
