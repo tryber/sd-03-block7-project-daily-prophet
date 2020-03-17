@@ -29,6 +29,10 @@
   overflow-x: hidden;
 }
 
+.transform {
+  animation: transFormation 3s infinite;
+}
+
 @keyframes flying {
 
   from {
@@ -37,5 +41,16 @@
 
   to {
     margin-left: 0;
+  }
+}
+
+@keyframes transFormation {
+
+  from {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+  }
+
+  to {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
   }
 }
