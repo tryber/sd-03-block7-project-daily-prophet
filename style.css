@@ -3,39 +3,150 @@
     src: url("/fonts/gotic\ ween.ttf")
 }
 
+@font-face {
+    font-family: vollkorn;
+    src: url("./fonts/Vollkorn-Black.ttf")
+}
+
+@media (max-width:760px) {
+    .container-layout {
+        background-color: rgb(255, 255, 0);
+    }
+}
+
+@media (min-width:1170px) {
+    .container-layout {
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .container-orientation {
+        border: 1px solid red;
+    }
+}
+
 body {
     display: flex;
+    flex-direction: column;
     margin: 0;
+    font-family: goticween;
+    background-image: url(./imgs/oldpaper.jpg);
+    background-size: cover;
 }
 
 header {
-    font-family: goticween;
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    font-family: goticween;
+    height: 30vh;
+    font-weight: 900;
     justify-content: center;
     width: 100vw;
-    height: 25vh;
 }
 
 header>h1 {
-    background-color: blueviolet;
-    font-size: 40px;
-    word-spacing: 20px;
-    width: 650px;
     align-self: center;
-    border-bottom: black solid 1px;
+    font-size: 40px;
+    width: 650px;
+    word-spacing: 20px;
+    margin-top: 4%;
 }
 
 header>nav {
-    border-top: solid black 1px;
     border-bottom: black solid 1px;
+    border-top: solid black 1px;
 }
 
 header>nav>ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
+    height: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+}
+
+aside {
+    background-size: cover;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 530px;
+    width: 30%;
+}
+
+h2,
+p {
+    font-family: goticween;
+    word-spacing: 5px;
+}
+
+aside>h2 {
+    align-self: center;
+    border-bottom: solid black 1px;
+}
+
+aside>div {
+    background-image: url(./imgs/dragon2.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
+.fly {
+    animation: flying 3s alternate 3 forwards 3s;
+}
+
+@keyframes flying {
+    from {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    to {
+        margin-left: 400px;
+        margin-top: -550px;
+        transform: scale(1.5)
+    }
+}
+
+article {
+    letter-spacing: 3px;
+    width: 50%;
+    height: 500px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article>h2 {
+    width: 500px;
+    height: auto;
+}
+
+.mapa {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
 }
