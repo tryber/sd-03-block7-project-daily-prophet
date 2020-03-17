@@ -22,6 +22,7 @@ hr {
   background-color: black;
   height: 5px;
 }
+
 .img1 {
   align-self: flex-end;
   height: 100%;
@@ -74,11 +75,13 @@ hr {
   }
 }
 
-@media screen and ( max-width: 760px ) {
+@media screen and ( max-width: 760px) {
+  
   footer {
     background-color: yellow;
-   }
-   .img1 {
+    }
+    
+    .img1 {
     align-self: flex-start;
     display: flex;
     height: 200px;
@@ -87,10 +90,12 @@ hr {
 }
 
 @keyframes flying {
+  
   from {
     background-color: sandybrown;
     opacity: 0;
   }
+
   to {
     background-color: black;
     height: 25%;
