@@ -1,1 +1,1 @@
-const ab = document.getElementById('total');
+const ab = '';
