@@ -1,0 +1,87 @@
+body {
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+  margin: 5px;
+  padding: 0;
+}
+
+#section-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.shocking-news {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.shocking-news h1 {
+  margin: 2px;
+}
+
+.shocking {
+  animation-direction: alternate;
+  animation-duration: 125ms;
+  animation-iteration-count: infinite;
+  animation-name: shocking;
+  background-color: gray;
+  color: ivory;
+  letter-spacing: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.you-know-who {
+  background-color: #333;
+  color: ivory;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding: 2px;
+}
+
+#header {
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+}
+
+#header h1 {
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.div-divisorTop {
+  border: 1px solid #333;
+  color: #333;
+  margin: auto;
+  margin-bottom: 0;
+  width: 70%;
+}
+
+.div-divisorBot {
+  border: 1px solid #333;
+  color: #333;
+  margin: auto;
+  width: 95%;
+}
+
+main {
+  border: solid 1px #333;
+  height: 80%;
+  margin: auto;
+  margin-top: 20px;
+  width: 95%;
+}
+
+@keyframes shocking {
+  from {
+    background-color: rgba(128, 128, 128, 0.781);
+    color: ivory;
+  }
+  to {
+    background-color: #333;
+    color: rgba(223, 196, 48, 0.815);
+  }
+}
