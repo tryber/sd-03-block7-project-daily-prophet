@@ -24,9 +24,9 @@ body {
   width: 80%;
 }
 
-.container-layout {
+/* .container-layout {
   background-color: wheat;
-}
+} */
 
 .fly {
   animation: flying 2s linear 3s 3 alternate forwards;
