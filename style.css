@@ -27,14 +27,11 @@
 .fly {
   animation: flying 3s alternate 3 forwards 3s;
   overflow-x: hidden;
-  transition-delay: 1s;
-  transition-duration: 1s;
+  transition: 2s 1s;
 }
 
 .transform {
   animation: transFormation 3s steps(50, start) infinite;
-  transition-delay: 1s;
-  transition-duration: 1s;
 }
 
 .article-animation {
