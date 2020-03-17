@@ -21,7 +21,7 @@
 
 @keyframes flying {
 
-  0%,
+  0% , 
   100% {
     opacity : 1;
   }
