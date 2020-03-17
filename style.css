@@ -18,7 +18,7 @@ body {
   animation-iteration-count: 3;
 }
 
-.skeww{
+.skeww {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
