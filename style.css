@@ -1,24 +1,27 @@
 @media only screen and (max-width: 760px) {
   .container-layout {
     background-color: rgb(255, 255, 0);
-	}
+  }
 }
+
 @media only screen and (min-width: 1170px) {
-	.container-layout {
+  .container-layout {
     background-color: rgb(255, 255, 0);
-	}
+  }
 }
+
 @media (orientation: landscape) {
   .container-orientation{
     border: 1px solid red;
   }
 }
+
 @keyframes flying {
-	0%,
-	100% {
-		opacity: 1
-	}
-	50% {
-		opacity: 0
-	}
+  0%,
+  100% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0
+  }
 }
