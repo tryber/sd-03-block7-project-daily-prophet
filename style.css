@@ -48,13 +48,13 @@
   @keyframes article-grow {
 
     0% {
-      transform: scale(1, 1);
       font-weight: 0;
+      transform: scale(1, 1);
     }
 
     100% {
-      transform: scale(1.5, 1.5);
       font-weight: 800;
+      transform: scale(1.5, 1.5);
     }
   }
 }
@@ -110,13 +110,13 @@
   @keyframes article-grow {
 
     0% {
-      transform: scale(1, 1);
       font-weight: 0;
+      transform: scale(1, 1);
     }
 
     100% {
-      transform: scale(1.5, 1.5);
       font-weight: 800;
+      transform: scale(1.5, 1.5);
     }
   }
 }
@@ -171,13 +171,13 @@
   @keyframes article-grow {
 
     0% {
-      transform: scale(1, 1);
       font-weight: 0;
+      transform: scale(1, 1);
     }
 
     100% {
-      transform: scale(1.5, 1.5);
       font-weight: 800;
+      transform: scale(1.5, 1.5);
     }
   }
 }
