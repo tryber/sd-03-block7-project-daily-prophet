@@ -12,10 +12,6 @@ body {
   background-color: rgb(255, 249, 212);
 }
 
-header {
-  
-} 
-
 img:first-child {
   width: 15%;
 } 
@@ -24,7 +20,10 @@ img:nth-child(2) {
   width: 75%;
 }
 
-figcaption {
-  font-size: xx-large;
+.top-header h3 {
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
   text-align: center;
 }
