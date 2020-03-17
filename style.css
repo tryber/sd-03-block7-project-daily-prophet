@@ -13,7 +13,42 @@
 }
 
 .fly {
+  animation: flying 3s infinite alternate ease-in-out, scale 2s infinite, skew 2s infinite;
   display: flex;
+  z-index: 10;
+}
+
+@keyframes flying {
+
+  0% {
+    object-position: 0px;
+  }
+
+  100% {
+    object-position: 1000px;
+  }
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes skew {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(90deg);
+  }
 }
 
 @media only screen and ( orientation : landscape ) {
