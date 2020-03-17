@@ -3,12 +3,31 @@
   position: absolute;
 }
 
-article:active {
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header li {
+  list-style: none;
+}
+
+.logo-container {
+  height: 10vh;
+  width: 100%;
+}
+
+.article-animation:active {
   font-weight: 900;
   max-width: 100%;
   transform: scale(1.5);
   transition: font-weight 4s steps(1000), transform 4s steps(1000);
   word-wrap: break-word;
+}
+
+.container-layout {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @keyframes flying {
