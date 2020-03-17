@@ -19,10 +19,28 @@ body {
   animation-name: flyin;
 }
 
+.scale {
+  animation: scalee 0.3s infinite;
+  animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+}
+
 .skeww {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
+  width: 83%;
+}
+
+@keyframes scalee {
+
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes skewww {
