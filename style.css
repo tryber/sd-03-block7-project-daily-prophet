@@ -1,0 +1,30 @@
+@media (max-width: 760px) {
+  .container-layout {
+    background: rgb(255, 255, 0);
+  }
+}
+
+@media (min-width: 1170px) {
+  .container-layout {
+    background: rgb(255, 0, 0);
+  }
+}
+
+@media (orientation: landscape) {
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.potter-icon {
+  position: relative;
+  animation: flying 2s linear 3s 3 alternate forwards;
+}
+
+@keyframes flying {
+  from {
+    left: 10px;
+  } to {
+    left: 1000px;
+  }
+}
