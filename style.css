@@ -1,3 +1,8 @@
+@font-face {
+    font-family: prophet;
+    src: url(Mugglenews.ttf);
+  }
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -27,6 +32,15 @@
     margin: 0 auto;
     padding: 2%;
     width: 75%;
+  }
+
+  .text-header {
+    font-family: prophet;
+    font-size: 100px;
+    font-stretch: expanded;
+    font-weight: 900;
+    margin-bottom: -38px;
+    margin-top: -10px;
   }
 
   header {
@@ -64,7 +78,7 @@
   }
 
   .text-header {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: prophet;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
