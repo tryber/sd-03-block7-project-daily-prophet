@@ -53,7 +53,7 @@ body {
 }
 
 .skew {
-  animation: skew 2s linear 1s infinite alternate;
+  animation: skew 2s linear 2 alternate;
 }
 
 @keyframes skew {
@@ -68,7 +68,7 @@ body {
 }
 
 .translate {
-  animation: translate 2s linear 1s infinite alternate;
+  animation: translate 2s linear 2 alternate;
 }
 
 @keyframes translate {
@@ -83,7 +83,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s linear 1s infinite alternate;
+  animation: article-grow 4s linear 2 alternate;
 }
 
 @keyframes article-grow {
