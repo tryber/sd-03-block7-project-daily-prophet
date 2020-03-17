@@ -1,34 +1,41 @@
 @media (max-width: 760px) {
+
   .conteiner-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
   }
 }
 
 @media (min-width: 1170px) {
+
   .conteiner-layout {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
   }
 }
 
 @media (orientation: landscape) {
+
   .container-orientation {
     border: 1px solid red;
   }
 }
 
 @keyframes flying {
+
   0% {
     top: 0;
     left: 0;
   }
+
   25% {
     top: 75px;
     transform: skew(30deg, 45deg)
   }
+
   75% {
     top: 250px;
     transform: scale(2)
   }
+
   100% {
     bottom: 350px;
     transform: translateY(50% 105px 5rem);
