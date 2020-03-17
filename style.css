@@ -1,4 +1,14 @@
-* {
+body,
+header,
+section,
+nav,
+img,
+h1,
+p,
+article,
+div,
+aside,
+footer {
   margin: 0;
   padding: 0;
 }
@@ -14,19 +24,21 @@ body {
   border-radius: 15px;
   width: 80%;
 }
+
 header {
-  width: 95%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: 95%;
 }
+
 .header-container {
-  width: 100%;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
   display: flex;
   justify-content: space-around;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
   margin-top: 40px;
+  width: 100%;
 }
 
 .logo {
@@ -34,26 +46,27 @@ header {
 }
 
 .logo-letters {
-  margin-top: -32px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: -32px;
 }
 
 .tag {
-  text-transform: uppercase;
   font-size: 18px;
   margin-top: 8px;
+  text-transform: uppercase;
 }
+
 .container-layout {
   border: 3px solid black;
-  padding: 20px;
-  width: 90.7%;
-  margin: 0 auto;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  width: 90.7%;
 }
 
 .content {
@@ -61,7 +74,7 @@ header {
   justify-content: center;
 }
 
-.img-center img{
+.img-center img {
   filter: grayscale(100%);
   height: 400px;
   margin: 5px;
@@ -80,24 +93,20 @@ header {
   text-align: left;
 }
 
-#scape {
-  font-family: 'Bebas Neue', cursive;
-  font-weight: 900;
+.scape {
+  font-family: "Bebas Neue", cursive;
   font-size: 130px;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
 }
 
-#p-scape {
+.p-scape {
   text-align: center;
 }
 
-/* #from {
-  color: rgb(255, 247, 238);
-  background-color: black;
-} */
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
   }
 }
