@@ -1,0 +1,28 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+.container-layout {
+  background-color: #ede8dc;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+@media screen and (max-width: 760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+    /* width: 100%; */
+
+  }
+
+  #img-header {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
+}
