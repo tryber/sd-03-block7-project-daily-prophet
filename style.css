@@ -1,13 +1,13 @@
-body,
-header,
-section,
-nav,
-img,
-h1,
-p,
-article,
-div,
-aside,
+body , 
+header , 
+section , 
+nav , 
+img , 
+h1 , 
+p , 
+article , 
+div , 
+aside , 
 footer {
   margin: 0;
   padding: 0;
@@ -88,13 +88,12 @@ header {
 }
 
 .left {
-  margin-right: 20px;
   margin-left: 5px;
+  margin-right: 20px;
   text-align: left;
 }
 
 .scape {
-  font-family: "Bebas Neue", cursive;
   font-size: 130px;
   font-weight: 900;
   text-align: center;
@@ -106,7 +105,9 @@ header {
 }
 
 @media screen and ( max-width : 760px ) {
+  
   .container-layout {
     background-color: yellow;
   }
+
 }
