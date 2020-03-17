@@ -1,13 +1,13 @@
 @font-face {
   font-family: Mugglenews;
+  font-style: normal;
+  font-weight: 700;
   src: url('Mugglenews.eot');
-    src: url('Mugglenews.eot?#iefix') format('embedded-opentype'),
+  src: url('Mugglenews.eot?#iefix') format('embedded-opentype'),
     url('Mugglenews.woff2') format('woff2'),
     url('Mugglenews.woff') format('woff'),
     url('Mugglenews.ttf') format('truetype'),
     url('Mugglenews.svg#Mugglenews') format('svg');
-  font-style: normal;
-  font-weight: 700;
 }
 
 
