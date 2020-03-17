@@ -6,24 +6,24 @@ body {
 }
 
 .the {
-  position: relative;
   bottom: 5px;
   font-size: 0.7em;
   margin-left: 5px;
   margin-right: 5px;
+  position: relative;
 }
 
 .the-line {
   display: flex;
-  margin: auto;
   height: 50px;
-  width: 80%;
+  margin: auto;
   margin-bottom: 5px;
+  width: 80%;
 }
 
-.p-strong{
-    color: gold; 
-    font-size: 1.2em;
+.p-strong {
+  color: gold;
+  font-size: 1.2em;
 }
 
 .section-header {
