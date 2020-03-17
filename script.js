@@ -1,1 +1,3 @@
-let ab = 10;
+const ab = document.getElementById('total');
+
+ab.addEventListener('click', ultimoFilme);
