@@ -1,10 +1,9 @@
 html {
   background-color: white;
 }
+
 body {
   height: 100%;
-  top: 0px;
-  bottom: 0px;
 }
 
 @media only screen and ( max-width : 760px ) {
@@ -24,8 +23,8 @@ body {
 @media only screen and ( orientation : landscape ) {
 
   .container-orientation {
-    border: 1px solid red;
     background-color: green;
+    border: 1px solid red;
   }
 }
 
