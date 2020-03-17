@@ -1,37 +1,60 @@
 body {
-    font-family: 'Artifika', serif;
-    text-align: justify;
+  font-family: Artifika, serif;
+  text-align: justify;
+}
+
+.skew {
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-name: skew;
 }
 
 .fly {
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-iteration-count: 3;
-    animation-direction: alternate-reverse;
-    animation-name: go;
-    left: 0;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
+  animation-name: go;
+  left: 0;
 }
 
-@keyframes go{
-    0% {transform: translateX(0)}
-    100% { transform: translateX(700px)}
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+
+  100% {
+    transform: skewX(-20deg);
+  }
 }
 
-@media only screen and ( max-width : 1170px ) {
+@keyframes go {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(700px)
+  }
+}
+
+@media only screen and (max-width : 1170px) {
 
   .container-layout {
     background-color: red;
   }
 }
 
-@media only screen and ( max-width : 760px ) {
+@media only screen and (max-width : 760px) {
 
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and ( orientation : landscape ) {
   .container-orientation {
     border: 1px solid red;
   }
