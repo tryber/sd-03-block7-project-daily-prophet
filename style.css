@@ -1,12 +1,11 @@
-
-@media only screen and ( max-width : 1170px ) {
-    .container-layout {
+@media only screen and (max-width : 1170px) {
+  .container-layout {
     background-color: red;
   }
 }
 
-@media only screen and ( max-width : 760px ) {
-    .container-layout {
+@media only screen and (max-width : 760px) {
+  .container-layout {
     background-color: yellow;
   }
 }
