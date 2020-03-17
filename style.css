@@ -27,12 +27,14 @@
 .fly {
   animation: flying 3s alternate 3 forwards 3s;
   overflow-x: hidden;
+  transition-delay: 1s;
   transition-duration: 1s;
 }
 
 .transform {
-  animation: transFormation 3s steps(5, start) infinite;
+  animation: transFormation 3s steps(50, start) infinite;
   transition-delay: 1s;
+  transition-duration: 1s;
 }
 
 .article-animation {
@@ -66,11 +68,11 @@
 
   from {
     font-weight: 400;
-    max-width: 100%;
+    font-size: 16;
   }
 
   to {
     font-weight: 700;
-    max-width: 150%;
+    font-size: 26;
   }
 }
