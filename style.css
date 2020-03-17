@@ -9,8 +9,8 @@
 @media ( min-width : 1170px ) {
 
   .container-layout {
-    width: 100%;
     background-color: red;
+    width: 100%;
   }
 }
 
@@ -22,16 +22,18 @@
   }
 }
 
-.coruja{
-  width: 100px;
+.coruja {
   animation-name: coruja;
   animation-iteration-count: infinite;
+  width: 100px;
 }
 @keyframes coruja {
-  from{
+
+  from {
     margin: 450px;
   }
-  to{
+
+  to {
     margin-left: 300px;
   }
 }
