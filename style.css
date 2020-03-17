@@ -32,7 +32,7 @@
 }
 
 .sk {
-  animation: skewww 0.3s infinite;
+  animation: skew 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
 }
