@@ -1,14 +1,16 @@
-@media (max-width: 760px) {
+@media ( max-width : 760px ) {
+
   .container-layout {
     background-color: yellow;
     border-radius: 10px;
     padding: 2%;
   }
+
   header {
     text-align: center;
   }
 
-  section-one div p {
+  .section-one div p {
     color: black;
     margin-top: 5px;
     padding: 1%;
@@ -17,7 +19,8 @@
   }
 }
 
-@media (min-width: 761px) and (max-width: 1169px) {
+@media ( min-width : 761px ) and ( max-width : 1169px ) {
+
   .container-layout {
     background-color: rgb(4, 27, 12);
     border-radius: 10px;
@@ -40,7 +43,8 @@
   }
 }
 
-@media (min-width: 1170px) {
+@media ( min-width : 1170px ) {
+
   body {
     background-color: black;
   }
@@ -60,7 +64,7 @@
   }
 
   .text-header {
-    font-family: DauphinPlain;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
