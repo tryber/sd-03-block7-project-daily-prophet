@@ -14,7 +14,7 @@
 
 .fly {
   animation: flying 3s infinite alternate ease-in-out,
-   scale 2s infinite, skew 2s infinite;
+    scale 2s infinite, skew 2s infinite;
   display: flex;
   z-index: 10;
 }
