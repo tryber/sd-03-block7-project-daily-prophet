@@ -1,0 +1,14 @@
+@media screen and (max-width: 760px) {
+  .container-layout {
+    background-color: yellow;
+  }
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media screen and (min-widht: 1170px) {
+  .container-layout {
+    background-color: red;
+  }
+}
