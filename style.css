@@ -14,9 +14,9 @@ body {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
+  animation-duration: 2s;
   animation-iteration-count: 3;
   animation-name: flyin;
-  animation-duration: 2s;
 }
 
 .skeww {
