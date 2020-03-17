@@ -7,6 +7,13 @@ html , body {
 
   .container-layout {
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-article {
+    border: 3px solid black;
+    margin: 0;
   }
 }
 
@@ -15,6 +22,11 @@ html , body {
   .container-layout {
     background-color: red;
   }
+
+  .main-article {
+    border: 3px solid black;
+    margin: 50px;
+  }
 }
 
 @media ( orientation : landscape ) {
@@ -22,6 +34,36 @@ html , body {
   .container-orientation {
     border: 1px solid red;
   }
+}
+
+.paragraph {
+  font-size: 25px;
+}
+
+.container-layout {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle:hover {
+  transform: scale(2.5);
+  transition-duration: 3s;
+}
+
+.subtitle-aside {
+  font-size: 40px;
+  text-align: center;
+}
+  
+.subtitle-aside:hover {
+  transform: translate(50px, 100px);
+  transition-duration: 10s;
 }
 
 .header {
@@ -35,6 +77,8 @@ html , body {
 
 .header .main-title:hover {
   transform: skew(30deg, 20deg);
+  transition: ease-in-out;
+  transition-duration: 3s;
 }
 
 .fly {
@@ -46,6 +90,7 @@ html , body {
   animation-name: flying;
   animation-timing-function: ease-in;
   height: 100px;
+  position: absolute;
   width: 100px;
 }
 
