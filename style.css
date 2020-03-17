@@ -1,9 +1,9 @@
 body {
+  background-color: lightgoldenrodyellow;
   color: #333;
   font-family: Times New Roman, Times, serif;
   margin: 5px;
   padding: 0;
-  background-color: lightgoldenrodyellow;
 }
 
 div , section , nav , aside , footer {
@@ -103,6 +103,7 @@ main {
 }
 
 @keyframes shocking {
+    
   from {
     background-color: rgba(128, 128, 128, 0.781);
     color: ivory;
