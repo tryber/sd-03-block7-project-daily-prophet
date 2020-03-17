@@ -44,6 +44,10 @@ body {
     transform: scale(1);
   }
 
+  50%{
+    font-weight: 500;
+  }
+
   100% {
     font-weight: 600;
     transform: scale(1.5);
