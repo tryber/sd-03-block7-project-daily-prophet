@@ -18,10 +18,40 @@ header {
   justify-content: center;
 }
 
-.artigo {
-  background-color: black;
+.exclusivo {
+  font-family: 'Times New Roman', sans-serif;
+  font-size: 1.7em;
+  background-color: rgb(28, 25, 21);
   color: white;
   width: 30%;
+}
+
+.artigos-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.artigo {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 69%;
+}
+
+.artigo h2 {
+  font-size: 1.3em;
+  margin: 0 auto -10px;
+  text-align: center;
+}
+
+.artigo p {
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
 }
 
 .divisoria-bold {
@@ -35,4 +65,31 @@ header {
   background-color: rgb(28, 25, 21);
   height: 1px;
   width: 100%;
+}
+
+.barra {
+  background-color: rgb(28, 25, 21);
+  height: 25%;
+}
+
+.barra h3 {
+  color: white;
+  margin: 0;
+  text-align: end;
+}
+
+.vassoura { 
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: left-to-right; 
+}
+
+@keyframes left-to-right {
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 95%;
+  }
 }
