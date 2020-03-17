@@ -1,7 +1,7 @@
 @font-face {
-    font-family: prophet;
-    src: url(Mugglenews.ttf);
-  }
+  font-family: prophet;
+  src: url('Mugglenews.ttf');
+}
 
 @media ( max-width : 760px ) {
 
