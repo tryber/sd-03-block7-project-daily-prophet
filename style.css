@@ -5,6 +5,15 @@ body {
   padding: 0;
 }
 
+div,
+section,
+nav,
+aside,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
 .the {
   bottom: 5px;
   font-size: 0.7em;
@@ -101,6 +110,7 @@ main {
     background-color: rgba(128, 128, 128, 0.781);
     color: ivory;
   }
+
   to {
     background-color: #333;
     color: rgba(223, 196, 48, 0.815);
