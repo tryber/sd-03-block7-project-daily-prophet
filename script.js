@@ -1,5 +1,4 @@
-document.getElementById('total').addEventListener('click', ola);
-
-function ola(){
-  console.log('olá');
-}
+document.getElementById('total').addEventListener('click', function ola() {
+    console.log('olá');
+  }
+  );
