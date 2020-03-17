@@ -1,5 +1,5 @@
 window.onload = function () {
-  article1 = document.querySelectorAll('.article-animation')[0];
+  let article1 = document.querySelectorAll('.article-animation')[0];
   console.log(article1);
 
   article1.addEventListener('click', function () {
