@@ -1,0 +1,22 @@
+.container-layout {
+  background-color: yellow;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  max-width: 760px;
+}
+
+@media (orientation: landscape) {
+  .container-layout {
+    background-color: blue;
+    border: 1px solid red;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container-layout {
+    background-color: red;
+    border: 1px solid black;
+  }
+}
