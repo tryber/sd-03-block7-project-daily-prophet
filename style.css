@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: vollkorn;
-  src: url("./fonts/Vollkorn-Black.ttf");
+  src: url('./fonts/Vollkorn-Black.ttf');
 }
 
 @media ( max-width : 760px ) {
@@ -30,18 +30,17 @@
 }
 
 body {
-  background-image: url(./imgs/oldpaper.jpg);
+  background-image: url('./imgs/oldpaper.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
-  font-family: goticween;
+  font-family: goticween, sans-serif;
   margin: 0;
 }
 
 header {
   display: flex;
   flex-direction: column;
-  font-family: goticween;
   font-weight: 900;
   height: 30vh;
   justify-content: center;
@@ -67,7 +66,6 @@ header > nav > ul {
   flex-direction: row;
   font-size: 20px;
   height: 30px;
-  
   justify-content: space-around;
   list-style-type: none;
   overflow: hidden;
@@ -98,7 +96,6 @@ aside {
 }
 
 h2 , p {
-  font-family: goticween;
   word-spacing: 5px;
 }
 
@@ -108,7 +105,7 @@ h2 , p {
 }
 
 aside > div {
-  background-image: url(./imgs/dragon2.gif);
+  background-image: url('./imgs/dragon2.gif');
   background-repeat: no-repeat;
   background-size: contain;
   height: 200px;
