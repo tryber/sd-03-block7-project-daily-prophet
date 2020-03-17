@@ -1,3 +1,31 @@
-h1 {
+body {
   background-color: black;
+}
+
+.capa-principal {
+  background-color: rgb(255, 248, 238);
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  width: 90%;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2%;
+}
+
+.divisoria-bold{
+  background-color: rgb(28, 25, 21);
+  height: 2px;
+  margin: 4px 0;
+  width: 100%;
+}
+
+.divisoria {
+  background-color: rgb(28, 25, 21);
+  height: 1px;
+  width: 100%;
 }
