@@ -39,7 +39,7 @@ html , body {
 
 }
 
-@media only screen and ( max-width : 760px ) and ( orientation: landscape){
+@media only screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
