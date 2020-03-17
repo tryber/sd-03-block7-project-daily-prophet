@@ -1,0 +1,17 @@
+@media (max-width: 760px) {
+  .container-layout {
+      background-color: rgb(255,255,0);
+  }
+}
+
+@media (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255,0,0);
+  }
+}
+
+@media (max-width: 760px) and (orientation: landscape){
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
