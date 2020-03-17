@@ -2,6 +2,8 @@
 
   .container-layout {
     background-color: yellow;
+    transition-duration: 2s;
+    transition-property: all;
   }
 }
 
@@ -9,6 +11,8 @@
 
   .container-layout {
     background-color: red;
+    transition-duration: 2s;
+    transition-property: all;
   }
 }
 
@@ -25,7 +29,7 @@
 }
 
 .fly {
-  animation: flying 3s alternate 3 forwards 3s;
+  animation: flying 3s alternate 3 forwards 3s steps(300, start);
   overflow-x: hidden;
   transition: 2s 1s;
 }
@@ -66,10 +70,12 @@
   from {
     font-size: 16;
     font-weight: 400;
+    transform: scale(1, 1);
   }
 
   to {
-    font-size: 26;
+    font-size: 56;
     font-weight: 700;
+    transform: scale(1, 2);
   }
 }
