@@ -13,10 +13,20 @@
 }
 
 html , body {
+  background-color: lightgrey;
   height: 100%;
+  max-width: 760px;
 }
 
 .main {
   overflow: auto;
   padding-bottom: 100px;
+}
+
+.prophet {
+  color:#ffed91;
+}
+
+.sheet {
+  border: 1px solid black;
 }
