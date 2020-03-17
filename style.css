@@ -2,8 +2,8 @@
   font-family: goticween;
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/agoticween.ttf');
-  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
+  src: url('./fonts/agoticween.ttf'),
+    url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
     url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg'),
     url('./fonts/gotic_weengoticween.ttf') format('truetype'),
     url('./fonts/gotic_weengoticween.woff') format('woff'),
