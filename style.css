@@ -1,7 +1,58 @@
+body {
+  background-color: black;
+  color: #1c1915;
+  display: block;
+  font-family: 'vollkorn', serif;
+  font-size:  1rem;
+  line-height: 18.4px;
+  margin: 0;
+  width: 100%;
+}
+
+.hr-top {
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+  height: 2px;
+  margin-top: 20px auto;
+}
+
+.hr-bottom {
+  border-top: 1px solid black;
+  border-bottom: 3px solid black;
+  height: 2px;
+  margin: 10px auto;
+}
+
+.img-logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 0;
+}
+.cabecalho-titulo2 {
+  display: block;
+  font-family: 'Kreon', serif;
+  font-size: 24px;
+  margin: 0.375em 0.5em 0em 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
+  }
+
+  .container-diario {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+  }
+
+  .cabecalho-titulo {
+    display: none;
   }
 }
 
@@ -10,11 +61,33 @@
   .container-layout {
     background-color: red;
   }
+
+  .container-diario {
+    background-color: white;
+    border-radius: 15px;
+    margin: 50px;
+    padding: 10px;
+  }
+
+  .cabecalho-titulo {
+    display: none;
+  }
 }
 
 @media ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
+  }
+  
+  .container-diario {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  .cabecalho-titulo {
+    display: none;
   }
 }
