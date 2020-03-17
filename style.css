@@ -1,0 +1,136 @@
+body {
+  background-color: wheat;
+  flex-wrap: column wrap;
+}
+
+header {
+  border: 2px solid black;
+  display: flex;
+  height: 150px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+header img {
+  animation: flying 5s ease-out 3s 3 alternate forwards;
+  height: 10em;
+}
+
+.logoCabecalho {
+  width: 10%;
+}
+
+.textoCabecalho {
+  width: 80%;
+}
+
+h1 {
+  font-size: 58pt;
+  font-family: 'Chomsky';
+  margin-bottom: 0;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 25pt;
+  margin: 0;
+}
+
+.tituloPrinc {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 105pt;
+}
+
+.especial {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: space-around;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.imgEspecial:hover {
+  transition: transform 2s ease-in;
+  transform-origin: top right;
+  transform: scale(7,7);
+}
+
+.principal {
+  border: 1px solid black;
+  display: flex;
+}
+
+.versalete {
+  font-size: 72pt;
+}
+
+.blocoEsq {
+  padding: 10px;
+  width: 70%;
+}
+
+.reportagem {
+  column-count: 2;
+}
+
+.reportagem img {
+  transition: transform 2s linear;
+  width: 100%;
+}
+
+.reportagem img:hover {
+  transform: skew(-5deg, -5deg);
+}
+
+.texto {
+  font-size: 16pt;
+}
+
+.blocoDir {
+  padding: 20px;
+  width: 30%;
+}
+
+.blocoDir img {
+  width: 100%;
+}
+
+.blocoDir img:hover {
+  transition: transform 2s ease-in-out;
+  transform: translateY(700px);
+}
+
+.noticia3 {
+  border: 1px solid black;
+  column-count: 4;
+  margin-top: 5px;
+}
+
+@keyframes flying {
+  0% {margin-left: 0%;}
+  100% {margin-left: 1000px;}
+}
+
+@media screen and (max-width:760px)
+{
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and (min-width:1170px)
+{
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and (orientation:landscape)
+{
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
