@@ -1,4 +1,4 @@
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
 
   .article-animation {
     animation-duration: 4s;
@@ -29,6 +29,7 @@
   }
 
   @keyframes flying {
+
     0% {
       margin-left: -100px;
       transform: scale(1, 1) translate(0, 0);
@@ -59,7 +60,7 @@
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
 
   .article-animation {
     animation-duration: 4s;
@@ -121,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 760px) and (orientation: landscape) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .article-animation {
     animation-duration: 4s;
@@ -152,6 +153,7 @@
   }
 
   @keyframes flying {
+
     0% {
       margin-left: -100px;
       transform: scale(1, 1) translate(0, 0);
