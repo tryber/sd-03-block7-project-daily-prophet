@@ -1,6 +1,4 @@
 body {
-  display: flex;
-  justify-content: center;
   margin: auto;
   position: relative;
   width: 1000px;
@@ -8,5 +6,52 @@ body {
 
 .cabecalho {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+.container-layout{
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .container-layout {
+    background-color:rgb(255, 255, 0);
+  }
+}
+  
+@media (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
+}
+  
+@media (orientation: landscape) {
+  .container-orientation {
+    background-color: rgb(206, 195, 131);
+  }
+}
+
+.navegacao {
+  align-items: center;
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  justify-content: space-around;
+}
+
+.artigoOne {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 15px 15px 15px 15px;
+  width: 600px;
+}
+
+.asideDumble {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 400px;
 }
