@@ -3,11 +3,11 @@
   font-style: normal;
   font-weight: 400;
   src: url('./fonts/goticween.ttf');
-  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/gotic_weengoticween.woff2') format('woff2'),
-    url('./fonts/gotic_weengoticween.woff') format('woff'),
+  src: url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg')
     url('./fonts/gotic_weengoticween.ttf') format('truetype'),
-    url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg');
+    url('./fonts/gotic_weengoticween.woff') format('woff'),
+    url('./fonts/gotic_weengoticween.woff2') format('woff2')
+    url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype');
 }
 
 
