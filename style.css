@@ -40,7 +40,7 @@ header {
   width: 69%;
 }
 
-.artigo h2 {
+.artigo p {
   font-size: 1.3em;
   margin: 0 auto -10px;
   text-align: center;
@@ -71,7 +71,7 @@ header {
   height: 25%;
 }
 
-.barra h3 {
+.barra p {
   color: white;
   margin: 0;
   text-align: end;
@@ -93,9 +93,11 @@ header {
     margin-left: 95%;
   }
 }
+
 .corpo-do-jornal {
   border: 1px solid black;
-  height: 20px;
+  height: 20%;
+  margin-top: 5px;
   width: 100%;
 }
 
