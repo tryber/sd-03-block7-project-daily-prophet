@@ -73,12 +73,7 @@ html , body {
 
 .header .main-title {
   font-size: 80px;
-}
-
-.header .main-title:hover {
-  transform: skew(30deg, 20deg);
-  transition: ease-in-out;
-  transition-duration: 3s;
+  text-align: center;
 }
 
 .fly {
@@ -92,6 +87,11 @@ html , body {
   height: 100px;
   position: absolute;
   width: 100px;
+}
+
+.transfo {
+  animation-duration: 4s;
+  animation-name: transfor;
 }
 
 .footer {
@@ -114,6 +114,17 @@ html , body {
 
   to {
     margin-left: 90%;
+  }
+}
+
+@keyframes transfor {
+
+  from {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+  }
+
+  to {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
   }
 }
 
