@@ -42,11 +42,11 @@ body {
 
   0% {
     transform: scale(1);
-  } 
+  }
 
   100% {
-    transform: scale(1.5);
     font-weight: bolder;
+    transform: scale(1.5);
   }
 }
 
