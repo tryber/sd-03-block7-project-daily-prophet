@@ -18,18 +18,23 @@ body {
 }
 
 @keyframes flyin {
-  0%{
+  
+  0% {
     transform: translate(0, -120%) rotate(45deg);
   }
+
   20% {
     transform: translate(40%, -100%) rotate(-45deg);
   }
+
   50% {
     transform: translate(-40%, -80%) rotate(33deg);
   }
+
   80% {
     transform: translate(20%, -40%) rotate(-17deg);
   }
+
   100% {
     transform: translate(0, 0) rotate(0);
   }
