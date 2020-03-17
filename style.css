@@ -1,9 +1,15 @@
 .fly {
-  animation-name: flying;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate; 
+  animation: flying 3s ease alternate;
   position: absolute;
+}
+
+article:active {
+  transform: scale(1.5);
+  font-weight: 700;
+  max-width: 100%;
+  transition-property: weight, transform;
+  transition: 4s linear;
+  word-wrap: wrap; /*ver se pe necessario*/
 }
 
 @keyframes flying {
