@@ -27,14 +27,17 @@
 .fly {
   animation: flying 3s alternate 3 forwards 3s;
   overflow-x: hidden;
+  transition-duration: 1s;
 }
 
 .transform {
   animation: transFormation 3s infinite;
+  transition-delay: 1s;
 }
 
 .article-animation {
-  animation: article-grow 2s alternate 0 2 reverse forwards;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
 }
 
 @keyframes flying {
@@ -62,10 +65,12 @@
 @keyframes article-grow {
 
   from {
-    font-size: 16;
+    max-width: 100%;
+    font-weight: 400;
   }
 
   to {
-    font-size: 26;
+    max-width: 150%;
+    font-weight: 700;
   }
 }

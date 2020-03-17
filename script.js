@@ -1,8 +1,4 @@
-function justSomething() {
-  const a = 10;
-  const b = 20;
-  const c = a + b;
-  return c;
+function articleClick(a) {
+  let elemA = document.getElementById(a);
+  elemA.classList.toggle("article-animation");
 }
-
-justSomething();
