@@ -33,6 +33,10 @@
   animation: transFormation 3s infinite;
 }
 
+.article-animation {
+  animation: article-grow 2s alternate 0 2 reverse forwards;
+}
+
 @keyframes flying {
 
   from {
@@ -52,5 +56,16 @@
 
   to {
     transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 16;
+  }
+
+  to {
+    font-size: 26;
   }
 }
