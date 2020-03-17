@@ -51,19 +51,19 @@ body {
 @keyframes skew {
 
   from {
-    transform: skew(-15deg, -15deg);
+    transform: skew(-15deg, -15deg) scale(0.7);
   }
 
   to {
-    transform: skew(15deg, 15deg);
+    transform: skew(15deg, 15deg) scale(1.5);
   }
 }
 
-.scale {
+/* .scale {
   animation: scale 2s linear infinite alternate;
-}
+} */
 
-@keyframes scale {
+/* @keyframes scale {
 
   from {
     transform: scale(0.7);
@@ -72,7 +72,7 @@ body {
   to {
     transform: scale(1.5);
   }
-}
+} */
 
 .translate {
   animation: translate 2s linear infinite alternate;
@@ -81,10 +81,11 @@ body {
 @keyframes translate {
 
   from {
-    transform: scale(0.7);
+    transform: translateX(0);
   }
 
   to {
-    transform: scale(1.5);
+    transform: translateX(180px);
   }
 }
+
