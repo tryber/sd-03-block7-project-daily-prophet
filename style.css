@@ -1,11 +1,32 @@
 body {
   color: #333;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Times New Roman, Times, serif;
   margin: 5px;
   padding: 0;
 }
 
-#section-header {
+.the {
+  position: relative;
+  bottom: 5px;
+  font-size: 0.7em;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.the-line {
+  display: flex;
+  margin: auto;
+  height: 50px;
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.p-strong{
+    color: gold; 
+    font-size: 1.2em;
+}
+
+.section-header {
   display: flex;
   flex-direction: row;
 }
@@ -16,7 +37,7 @@ body {
   text-align: center;
 }
 
-.shocking-news h1 {
+.news-h1 {
   margin: 2px;
 }
 
@@ -41,13 +62,13 @@ body {
   padding: 2px;
 }
 
-#header {
+.header {
   font-size: 3em;
   text-align: center;
   width: 100%;
 }
 
-#header h1 {
+.headline {
   letter-spacing: 5px;
   margin: 0;
 }
