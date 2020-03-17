@@ -93,3 +93,13 @@ header {
     margin-left: 95%;
   }
 }
+.corpo-do-jornal {
+  border: 1px solid black;
+  height: 20px;
+  width: 100%;
+}
+
+.artigo-principal {
+  height: 50%;
+  width: 50%;
+}
