@@ -97,9 +97,8 @@ header {
 .corpo-do-jornal {
   border: 1px solid black;
   display: flex;
-  flex-flow: row wrap;
   height: 20%;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 5px;
   width: 100%;
 }
@@ -111,10 +110,26 @@ header {
 }
 
 .artigo-principal p {
-  font-family: Vollkorn, serif;
   text-align: justify;
 }
 
 .titulo-principal {
+  border: 1px solid black;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.letra-grande {
+  float: left;
   font-size: 50px;
+  margin: 0 5px;
+}
+
+.artigo-lateral-direito {
+  line-height: 30px;
+  width: 25%;
+}
+
+.artigo-lateral-esquerdo {
+  width: 25%;
 }
