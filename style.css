@@ -7,6 +7,10 @@
   max-width: 760px;
 }
 
+.container-orientation {
+  padding: 0;
+}
+
 @media ( orientation : landscape ) and ( max-width : 760 ) {
 
   .container-orientation {
