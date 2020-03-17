@@ -24,6 +24,10 @@
   position: relative;
 }
 
+.skew {
+  animation: cr 2s linear infinite alternate;
+}
+
 @keyframes flying {
 
   from {
@@ -32,5 +36,21 @@
 
   to {
     left: 1000px;
+  }
+}
+
+@keyframes cr {
+
+  from {
+    transform: skew(0);
+    scale: 1;
+    translate: rotate(0deg);
+
+  }
+
+  to {
+    transform: skew(15deg, 15deg);
+    scale: 1.5;
+    translate: rotate(50deg);
   }
 }
