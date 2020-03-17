@@ -56,7 +56,9 @@
 }
 
 .eternal-skewing {
+  animation: steps(4, end);
   animation: skewing 5s linear infinite;
+  transition: 2s;
   width: fit-content;
 }
 
@@ -76,8 +78,10 @@
 }
 
 .eternal-scaling {
+  animation: steps(4, end);
   animation: scaling 2s linear infinite alternate;
   background-color: #e0e0e0;
+  transition: 2s;
 }
 
 @keyframes translating {
@@ -92,8 +96,10 @@
 }
 
 .eternal-translation {
+  animation: steps(4, end);
   animation: translating 2s linear infinite alternate;
   background-color: #e0e0e0;
+  transition: 2s;
 }
 
 .container {
@@ -103,6 +109,7 @@
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
 }
 
 @keyframes article-grow {
