@@ -3,8 +3,8 @@ transition: 4s ease-out;
 }
 
 article:hover {
+  font-weight: 700;
   transform: scale(1.5);
-  font-weight: bold;
 }
 
 .article-animation {
@@ -22,7 +22,7 @@ article:hover {
 }
 
 .fly {
-  animation: flying 1s ease-in-out 3s 3 alternate forwards, 
+  animation: flying 1s ease-in-out 3s 3 alternate forwards,
     scale 2s infinite, skew 0.5s infinite alternate;
   display: flex;
   z-index: 10;
@@ -42,11 +42,11 @@ article:hover {
 @keyframes flying {
 
   0% {
-   object-position: 0;
+    object-position: 0;
   }
 
   100% {
-    transform: translateX(1000px)
+    transform: translateX(1000px);
   }
 }
 
