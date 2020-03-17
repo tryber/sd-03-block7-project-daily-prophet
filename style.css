@@ -31,15 +31,12 @@ body {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
-  -webkit-transition: 2s ease-out;
-  -moz-transition: 2s ease-out;
-  -o-transition: 2s ease-out;
   transition: 0.5s ease-out;
   width: 83%;
 }
 
 @keyframes scalee {
-  
+
   0% {
     transform: scale(0.5);
   }
@@ -83,14 +80,14 @@ body {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width : 760px) {
 
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width : 1170px) {
 
   .container-layout {
     background-color: red;
