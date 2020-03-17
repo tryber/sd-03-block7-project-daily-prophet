@@ -97,6 +97,7 @@ header {
 .corpo-do-jornal {
   border: 1px solid black;
   display: flex;
+  flex-flow: row wrap;
   height: 20%;
   justify-content: center;
   margin-top: 5px;
@@ -107,4 +108,13 @@ header {
   height: 50%;
   margin-top: 5px;
   width: 50%;
+}
+
+.artigo-principal p {
+  font-family: 'Vollkorn', serif;
+  text-align: justify;
+}
+
+.titulo-principal {
+  font-size: 50px;
 }
