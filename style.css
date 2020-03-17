@@ -89,11 +89,13 @@ body {
 @keyframes article-grow {
 
   from {
+    width: 100%;
     font-size: 100%;
     font-weight: 400;
   }
 
   to {
+    width: 150%;
     font-size: 150%;
     font-weight: 800;
   }
