@@ -40,7 +40,7 @@ header {
   width: 69%;
 }
 
-.artigo h1 {
+.artigo h2 {
   font-size: 1.3em;
   margin: 0 auto -10px;
   text-align: center;
@@ -71,7 +71,7 @@ header {
   height: 25%;
 }
 
-.barra h1 {
+.barra h3 {
   color: white;
   margin: 0;
   text-align: end;
