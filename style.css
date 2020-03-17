@@ -19,10 +19,10 @@ header {
 }
 
 .exclusivo {
-  font-family: 'Times New Roman', sans-serif;
-  font-size: 1.7em;
   background-color: rgb(28, 25, 21);
   color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7em;
   width: 30%;
 }
 
@@ -41,7 +41,7 @@ header {
   width: 69%;
 }
 
-.artigo h2 {
+.artigo h1 {
   font-size: 1.3em;
   margin: 0 auto -10px;
   text-align: center;
@@ -72,19 +72,20 @@ header {
   height: 25%;
 }
 
-.barra h3 {
+.barra h1 {
   color: white;
   margin: 0;
   text-align: end;
 }
 
-.vassoura { 
+.vassoura {
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-name: left-to-right; 
+  animation-name: left-to-right;
 }
 
 @keyframes left-to-right {
+  
   from {
     margin-left: 0;
   }
