@@ -1,3 +1,7 @@
+.article-animation {
+  animation: article-grow 4s ease-in;
+}
+
 .content {
   min-height: 100%;
 }
@@ -30,8 +34,8 @@ h4 {
   margin-top: 5px;
 }
 
-.left-content:hover {
-  animation: entorta 2s steps(4, end);
+.left-content {
+  animation: entorta 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
 }
 
@@ -44,8 +48,8 @@ h4 {
   color: #ffed91;
 }
 
-.right-content:hover {
-  animation: aumenta 2s steps(4, end);
+.right-content {
+  animation: aumenta 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
 }
 
@@ -54,8 +58,8 @@ h4 {
   max-width: 760px;
 }
 
-.side-bar:hover {
-  animation: translada 2s steps(4, end);
+.side-bar {
+  animation: translada 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
 }
 
@@ -79,7 +83,7 @@ h4 {
 
 }
 
-@media only screen and ( min-width : 800px) {
+@media only screen and ( min-width : 800px ) {
 
   article {
     float: left;
@@ -105,6 +109,14 @@ h4 {
 
   .sheet {
     min-width: 1170px;
+  }
+
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5);
   }
 
 }
