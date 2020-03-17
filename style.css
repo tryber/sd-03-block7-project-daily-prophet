@@ -49,18 +49,23 @@ h4 {
   transition: transform 2s ease-out;
 }
 
+.sheet {
+  border: 1px solid black;
+  max-width: 760px;
+}
+
 .side-bar:hover {
   animation: translada 2s steps(4, end);
   transition: transform 2s ease-out;
 }
 
-.sheet {
-  border: 1px solid black;
-}
-
 @media only screen and ( max-width : 760px ) {
 
   .container-layout {
+    background-color: yellow;
+  }
+
+  html , body {
     background-color: yellow;
   }
 
@@ -78,6 +83,14 @@ h4 {
 
   .container-layout {
     background-color: red;
+  }
+
+  html , body {
+    background-color: red;
+  }
+
+  .sheet {
+    min-width: 1170px;
   }
 
 }
