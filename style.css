@@ -1,3 +1,12 @@
+article {
+transition: 4s ease-out;
+}
+
+article:hover {
+  transform: scale(1.5);
+  font-weight: bold;
+}
+
 .article-animation {
   display: flex;
 }
@@ -13,20 +22,31 @@
 }
 
 .fly {
-  animation: flying 3s infinite alternate ease-in-out,
-    scale 2s infinite, skew 2s infinite;
+  animation: flying 1s ease-in-out 3s 3 alternate forwards, 
+    scale 2s infinite, skew 0.5s infinite alternate;
   display: flex;
   z-index: 10;
+}
+
+@keyframes expander {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes flying {
 
   0% {
-    object-position: 0;
+   object-position: 0;
   }
 
   100% {
-    object-position: 1000px;
+    transform: translateX(1000px)
   }
 }
 
@@ -48,7 +68,7 @@
   }
 
   100% {
-    transform: skew(90deg);
+    transform: skew(15deg);
   }
 }
 
