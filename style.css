@@ -1,8 +1,7 @@
-html , body , div , footer , article , nav , aside , p , form , input , main , label , section {
+article , aside , body , div , footer , form , html , input , label , main , nav , p , section {
   border-radius: 5px;
   border: 0;
-  font-family: 'Lusitana', serif;
-  font-family: sans-serif;
+  font-family: 'Lusitana', 'serif';
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -68,7 +67,7 @@ header {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   width: 97%;
 }
 
@@ -104,7 +103,7 @@ header {
   display: flex;
   height: 300px;
   justify-content: flex-start;
-  margin: 10px 0 10px 0px;
+  margin: 10px 0px 10px 0px;
   padding: 15px;
   width: 70%;
 }
@@ -139,7 +138,8 @@ footer {
   width: 80%;
 }
 
-@media (max-width: 760px) {
+@media ( max-width : 760px ) {
+
   .container-layout {
     background-color: yellow;
     flex-direction: column;
@@ -151,26 +151,26 @@ footer {
   }
 }
 
-@media (min-width: 1170px) {
+@media ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
 @keyframes flying {
+
   0% {
     margin-left: 100%;
     transform: scale(0.1);
   }
 
   5% {
-    transform: skew(-10deg, -30deg);
     transform: translate(20px, 20px);
   }
 
   50% {
     margin-left: -100%;
-    transform: scale(0.5);
     transform: skew(10deg, 30deg);
   }
 }
@@ -186,6 +186,7 @@ footer {
 }
 
 @keyframes article-grow {
+
   0% {
     color: red;
   }
