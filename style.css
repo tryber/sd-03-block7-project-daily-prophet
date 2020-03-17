@@ -48,7 +48,7 @@ body {
   }
 
   to {
-    left: 1000px;
+    left: 100px;
   }
 }
 
@@ -79,5 +79,22 @@ body {
 
   to {
     transform: translateX(180px);
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s linear infinite alternate;
+}
+
+@keyframes article-grow{
+
+  from {
+    font-size: 100%;
+    font-weight: normal;
+  }
+
+  to {
+    font-size: 150%;
+    font-weight: bold;
   }
 }
