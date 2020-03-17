@@ -13,7 +13,8 @@
 }
 
 .fly {
-  animation: flying 3s infinite alternate ease-in-out, scale 2s infinite, skew 2s infinite;
+  animation: flying 3s infinite alternate ease-in-out,
+   scale 2s infinite, skew 2s infinite;
   display: flex;
   z-index: 10;
 }
@@ -21,7 +22,7 @@
 @keyframes flying {
 
   0% {
-    object-position: 0px;
+    object-position: 0;
   }
 
   100% {
