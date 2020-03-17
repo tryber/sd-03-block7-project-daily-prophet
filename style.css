@@ -65,12 +65,12 @@
 @keyframes article-grow {
 
   from {
-    max-width: 100%;
     font-weight: 400;
+    max-width: 100%;
   }
 
   to {
-    max-width: 150%;
     font-weight: 700;
+    max-width: 150%;
   }
 }

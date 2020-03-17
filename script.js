@@ -1,4 +1,7 @@
 function articleClick(a) {
-  let elemA = document.getElementById(a);
-  elemA.classList.toggle("article-animation");
+  const elemA = document.getElementById(a);
+  elemA.classList.toggle('article-animation');
+  return 0;
 }
+
+articleClick(0);
