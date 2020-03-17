@@ -1,4 +1,4 @@
-html, body {
+html , body {
   margin: 0;
   padding: 0;
 }
@@ -7,7 +7,7 @@ html, body {
   background-color: rgb(255, 249, 212);
   display: flex;
   margin: auto;
-  padding: 10px;
+  padding: 50px;
   width: 80%;
 }
 
@@ -15,11 +15,11 @@ img:first-child {
   width: 15%;
 }
 
-img:nth-child(2) {
+img:nth-child( 2 ) {
   width: 75%;
 }
 
-.top-header h3 {
+.top-header:last-child  {
   font-size: 1.5vw;
   letter-spacing: 2px;
   text-align: center;
