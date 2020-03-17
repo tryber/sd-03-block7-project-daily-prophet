@@ -2,6 +2,14 @@
   min-height: 100%;
 }
 
+.fly {
+  animation: flying 4s ease-in 3s 3 alternate;
+  animation-fill-mode: backwards;
+  margin-left: -50px;
+  overflow: hidden;
+  position: fixed;
+}
+
 .footer {
   background-color: black;
   clear: both;
@@ -86,6 +94,20 @@ h4 {
 
   to {
     transform: skew(60deg);
+  }
+
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: -50px;
+    margin-top: 0;
+  }
+
+  100% {
+    margin-left: 90%;
+    margin-top: 90%;
   }
 
 }
