@@ -116,6 +116,7 @@ h4 {
 @keyframes article-grow {
 
   to {
+    font-weight: 900;
     transform: scale(1.5);
   }
 
