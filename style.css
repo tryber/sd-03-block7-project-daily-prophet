@@ -22,6 +22,11 @@ h4 {
   margin-top: 5px;
 }
 
+.left-content:hover {
+  animation: entorta 2s steps(4, end);
+  transition: transform 2s ease-out;
+}
+
 .main {
   overflow: auto;
   padding-bottom: 10px;
@@ -29,6 +34,16 @@ h4 {
 
 .prophet {
   color: #ffed91;
+}
+
+.right-content:hover {
+  animation: aumenta 2s steps(4, end);
+  transition: transform 2s ease-out;
+}
+
+.side-bar:hover {
+  animation: translada 2s steps(4, end);
+  transition: transform 2s ease-out;
 }
 
 .sheet {
@@ -55,25 +70,6 @@ h4 {
 
   .container-layout {
     background-color: red;
-  }
-
-}
-
-@media only screen and ( min-width : 761px ) {
-
-  .left-content:hover {
-    animation: entorta 2s steps(4, end);
-    transition: transform 2s ease-out;
-  }
-
-  .right-content:hover {
-    animation: aumenta 2s steps(4, end);
-    transition: transform 2s ease-out;
-  }
-
-  .side-bar:hover {
-    animation: translada 2s steps(4, end);
-    transition: transform 2s ease-out;
   }
 
 }
