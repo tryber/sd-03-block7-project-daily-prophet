@@ -1,6 +1,6 @@
 @font-face {
   font-family: prophet;
-  src: url('Mugglenews.ttf');
+  src: url('Mugglenews.ttf?#iefix');
 }
 
 @media ( max-width : 760px ) {
