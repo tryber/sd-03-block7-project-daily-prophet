@@ -1,4 +1,4 @@
-div.container-layout {
+.container-layout {
   background-color: yellow;
   border: 1px solid black;
   display: flex;
@@ -9,7 +9,7 @@ div.container-layout {
 
 @media ( orientation : landscape ) {
 
-  div.container-layout.container-orientation {
+  .container-orientation {
     background-color: blue;
     border: 1px solid red;
   }
@@ -17,7 +17,7 @@ div.container-layout {
 
 @media ( min-width : 1170px ) {
 
-  div.container-layout {
+  .container-layout {
     background-color: red;
     border: 1px solid black;
   }
