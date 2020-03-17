@@ -1,3 +1,7 @@
+body{
+  margin: 1px;
+  padding: 1px;
+}
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -14,27 +18,10 @@
   }
 }
 
-@media ( max-width : 800px ) and ( orientation : landscape ) {
+@media ( max-width : 600px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: solid 1px blue;
     width: 100%;
-  }
-}
-
-.coruja {
-  animation-iteration-count: infinite;
-  animation-name: coruja;
-  width: 100px;
-}
-
-@keyframes coruja {
-
-  from {
-    margin: 450px;
-  }
-
-  to {
-    margin-left: 300px;
   }
 }
