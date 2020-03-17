@@ -4,7 +4,7 @@
 
 .fly {
   animation: flying 4s ease-in 3s 3 alternate;
-  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
   margin-left: -50px;
   overflow: hidden;
   position: fixed;
