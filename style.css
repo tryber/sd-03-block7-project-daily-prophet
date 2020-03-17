@@ -19,7 +19,7 @@
   }
 }
 
-.potter-icon {
+.fly {
   animation: flying 2s linear 3s 3 alternate forwards;
   position: relative;
 }
