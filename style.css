@@ -1,96 +1,115 @@
-@media screen and (max-width: 760px){
+@media screen and ( max-width : 760px ) {
+  
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: yellow;
   }
 }
 
-@media screen and (min-width: 1170px){
+@media screen and ( min-width : 1170px ) {
+  
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and (orientation: landscape) {
-  .container-orientation { 
-    border: red, solid, 1px;
+@media screen and ( orientation : landscape ) {
+  
+  .container-orientation {
+    border-color: red;
+    border-style: solid; 
+    border: 1px;
   }
 }
 
 .fly {
-  animation-name: flying;
-  animation-direction: alternate;
-  animation-play-state: running;
-  animation-duration: 5s;
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  animation-fill-mode: forwards;
   animation: steps(4, start);
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-play-state: running;
 }
 
 
 @keyframes flying {
+  
   from {
-    margin-left: 0px;
+    margin-left: 0;
   }
+  
   to {
     margin-left: 90%;
   }
 }
 
 @keyframes skewing {
+  
   0% {
     transform: skew(0deg);
   }
+  
   100% {
     transform: skew(180deg);
   }
 }
+
 .eternal-skewing {
-  width: fit-content;
   animation: skewing 5s linear infinite;
+  width: fit-content;
 }
 
 @keyframes scaling {
+  
   0% {
-    transform: scale(0.5, 2.0);
+    transform: scale(0.5, 2);
   }
+  
   50% {
     transform: scale(1.5, 0.5);
   }
+  
   100% {
-    transform: scale(1.0, 1.0);
+    transform: scale(1, 1);
   }
 }
+
 .eternal-scaling {
-  background-color: #e0e0e0;
   animation: scaling 2s linear infinite alternate;
+  background-color: #e0e0e0;
 }
 
 @keyframes translating {
+  
   0% {
     transform: translate(20px, 5px);
   }
+  
   100% {
     transform: translate(-20px, -5px);
   }
 }
+
 .eternal-translation {
-  background-color: #e0e0e0;
   animation: translating 2s linear infinite alternate;
+  background-color: #e0e0e0;
 }
 
-.article-animation{
-  animation-name: article-grow;
+.article-animation {
   animation-duration: 4s;
+  animation-name: article-grow;
 }
 
 @keyframes article-grow {
+  
   0% {
+    font-weight: 400;
     transform: scale(1);
-    font-weight: normal;
   }
+  
   100% {
+    font-weight: 800;
     transform: scale(1.5);
-    font-weight: bolder;
   }
 }
