@@ -16,23 +16,23 @@ body {
   animation-direction: alternate;
   animation-duration: 2s;
   animation-iteration-count: 3;
-  animation-name: flyin;
-  transition-duration: 0.5s;
+  animation-name: flying;
+  transition: 0.5s;
 }
 
 .scale {
   animation: scalee 0.3s infinite;
   animation-direction: alternate;
   display: flex;
+  transition: 0.5s;
   justify-content: center;
-  transition-duration: 0.5s;
 }
 
 .skeww {
   animation: skewww 0.3s infinite;
   animation-direction: alternate;
   transform: skew(0deg);
-  transition-duration: 0.5s;
+  transition: 0.5s;
   width: 83%;
 }
 
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@keyframes flyin {
+@keyframes flying {
 
   0% {
     transform: translate(0, -120%) rotate(45deg);
