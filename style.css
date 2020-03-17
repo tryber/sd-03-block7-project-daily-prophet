@@ -129,9 +129,11 @@ html , body {
 }
 
 @keyframes article-grow {
+
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1.5);
   }
