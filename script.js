@@ -3,5 +3,3 @@ function articleClick(a) {
   elemA.classList.toggle('article-animation');
   return 0;
 }
-
-articleClick(0);
