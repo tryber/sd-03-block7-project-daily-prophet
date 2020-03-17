@@ -78,14 +78,14 @@ header {
   text-align: end;
 }
 
-.vassoura {
+.fly {
   animation-duration: 3s;
   animation-iteration-count: infinite;
-  animation-name: left-to-right;
+  animation-name: flying;
 }
 
-@keyframes left-to-right {
-  
+@keyframes flying {
+
   from {
     margin-left: 0;
   }
