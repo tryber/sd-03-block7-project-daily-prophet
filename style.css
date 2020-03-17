@@ -1,9 +1,14 @@
 @font-face {
   font-family: goticween;
-  src: url('/fonts/gotic\ ween.ttf') format('truetype'),url('/fonts/gotic\ ween.ttf') format('embedded-opentype'),
-    url('/fonts/gotic\ ween.ttf.woff') format('woff'),
-    url('/fonts/gotic\ ween.ttf.ttf')  format('truetype'),
-    url('/fonts/gotic\ ween.ttf.svg#svgFontName') format('svg');
+  src: url('./fonts/goticween.ttf');
+  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/gotic_weengoticween.woff2') format('woff2'),
+    url('./fonts/gotic_weengoticween.woff') format('woff'),
+    url('./fonts/gotic_weengoticween.ttf') format('truetype'),
+    url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 
