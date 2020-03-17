@@ -5,3 +5,8 @@ body {
   position: relative;
   width: 1000px;
 }
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
