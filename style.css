@@ -1,5 +1,8 @@
 @media screen and ( max-width : 760px ) {
+  .article-animation {
+    animation-duration: 4s;
 
+  }
   .container-layout {
     background-color: yellow;
     width: 80%;
@@ -16,13 +19,13 @@
     animation-direction: alternate;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
-    width: 17%;
     height: 17%;
     margin-left: -100px;
     transition: flying 4s;
+    width: 17%;
   }
 
-  /* @keyframes flying {
+  @keyframes flying {
     0% {
       margin-left: -100px;
       transform: scale(1.0, 1.0) translate(0px, 0px);
@@ -35,7 +38,16 @@
       margin-left: 100%;
       transform: scale(1.0, 1.0) translate(0px, 0px);;
     }
-  } */
+  }
+
+  @keyframes article-grow {
+    0% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(1.5, 1.5);
+    }
+  }
 
 
 }
