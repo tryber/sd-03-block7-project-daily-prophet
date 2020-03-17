@@ -67,12 +67,12 @@
 @keyframes article-grow {
 
   from {
-    font-weight: 400;
     font-size: 16;
+    font-weight: 400;
   }
 
   to {
-    font-weight: 700;
     font-size: 26;
+    font-weight: 700;
   }
 }
