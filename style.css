@@ -1,47 +1,42 @@
-@media (max-width: 760px) {
-
+@media screen and (max-width: 760px) {
   .conteiner-layout {
     background-color: yellow;
   }
 }
 
-@media (min-width: 1170px) {
-
+@media screen and (min-width: 1170px) {
   .conteiner-layout {
     background-color: red;
   }
 }
 
-@media (orientation: landscape) {
-
+@media screen and (orientation: landscape) {
   .container-orientation {
     border: 1px solid red;
   }
 }
 
 @keyframes flying {
-
-  0% {
-    top: 0;
-    left: 0;
+  from {
+    margin-right: 100%;
   }
 
-  25% {
-    top: 75px;
-    transform: skew(30deg, 45deg)
-  }
-
-  75% {
-    top: 250px;
-    transform: scale(2)
-  }
-
-  100% {
-    bottom: 350px;
-    transform: translateY(50% 105px 5rem);
+  to {
+    margin-right: 0;
   }
 }
 
+@keyframes transformutate {
+  from {
+    transform: skew(0deg) scale(1, 2) translateY(10px, 35px);
+  }
+
+  to {
+    transform: skew(45deg) scale(1, 2) translateY(10px, 35px);
+  }
+}
+
+@keyframes article-grow
 .fly {
   animation-delay: 3s;
   animation-name: flying;
