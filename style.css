@@ -22,10 +22,6 @@ h4 {
   margin-top: 5px;
 }
 
-.left-content:hover {
-  animation: entorta 2s ease-in;
-}
-
 .main {
   overflow: auto;
   padding-bottom: 10px;
@@ -63,6 +59,35 @@ h4 {
 
 }
 
+@media only screen and ( min-width : 761px ) {
+
+  .left-content:hover {
+    animation: entorta 2s ease-in;
+  }
+
+  .right-content:hover {
+    animation: aumenta 2s ease-in;
+  }
+
+  .side-bar:hover {
+    animation: translada 2s;
+    transition: ease-in;
+  }
+
+}
+
+@keyframes aumenta {
+
+  0% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+}
+
 @keyframes entorta {
 
   0% {
@@ -71,6 +96,18 @@ h4 {
 
   100% {
     transform: skew(-30deg);
+  }
+
+}
+
+@keyframes translada {
+
+  0% {
+    transform: translate(10px, 10px);
+  }
+
+  50% {
+    transform: translate(25px, 25px);
   }
 
 }
