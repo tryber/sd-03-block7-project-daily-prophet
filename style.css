@@ -1,11 +1,12 @@
-@media screen and ( max-width: 760px) {
+@media screen and ( max-width : 760px ) {
+
   .article-animation {
     animation-duration: 4s;
   }
 }
 
-container-layout {
-  background-color: rgb(255, 255, 0);
+.container-layout {
+  background-color: yellow;
   width: 90%;
 }
 
@@ -30,7 +31,7 @@ container-layout {
 
   0% {
     margin-left: -100px;
-    transform: scale(1.0, 1.0) translate(0, 0);
+    transform: scale(1, 1) translate(0, 0);
   }
 
   50% {
@@ -40,14 +41,14 @@ container-layout {
 
   100% {
     margin-left: 100%;
-    transform: scale(1.0, 1.0) translate(0, 0);
+    transform: scale(1, 1) translate(0, 0);
   }
 }
 
 @keyframes article-grow {
 
   0% {
-    transform: scale(1.0, 1.0);
+    transform: scale(1, 1);
   }
 
   100% {
@@ -56,15 +57,18 @@ container-layout {
 }
 
 @keyframes pulse {
+
   0% , 100% {
     background-color: red;
   }
+
   50% {
     background-color: orange;
   }
 }
 
 @keyframes nudge {
+
   0% , 100% {
     transform: translate(0, 0);
   }
