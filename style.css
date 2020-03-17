@@ -16,18 +16,19 @@
   }
 
   .fly {
-    animation-direction: alternate;
+    animation: flying 4s steps(200) 3 alternate forwards;
+    /* animation-direction: alternate;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: 3;
-    animation-name: flying;
+    animation-name: flying; */
     height: 17%;
     margin-left: -100px;
     transition: flying 4s;
     width: 17%;
   }
 
-  @keyframes flying {
+  /* @keyframes flying {
 
     0% {
       margin-left: -100px;
@@ -43,7 +44,7 @@
       margin-left: 100%;
       transform: scale(1.0, 1.0) translate(0, 0);
     }
-  }
+  } */
 
   @keyframes article-grow {
 
