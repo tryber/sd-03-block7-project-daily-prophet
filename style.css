@@ -35,7 +35,7 @@
   }
 
   .text-header {
-    font-family: prophet;
+    font-family: 'prophet', Fallback, sans-serif;;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
