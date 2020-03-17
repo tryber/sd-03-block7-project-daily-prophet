@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.artigo-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container-layout {
+  border: 1px solid red;
+}
+
+hr {
+  background-color:black;
+  height: 5px;
+}
+.img1 {
+  align-self: flex-end;
+  padding: 10px;
+  margin-right: 10px 10px;
+  height: 100%;
+  width: 400px;
+}
+
+.paragrafo1 {
+  align-self: flex-start;
+  display: flex;
+  font-size: 30px;
+  margin: 10px 10px;
+}
+
+.paragrafo2 {
+  font-size: 50px;
+  padding: 13px;
+  text-align: center;
+  
+}
+
+.secao1 {
+  background-color: black;
+  color:white;
+  height: 100px;
+
+}
+.sub-hr {
+  background: grey;
+  height: 1px;
+}
+
+.titulo-principal {
+  align-self: center;
+  margin: 10px;
+  width:98%;
+}
+@media screen and (min-width: 1170px) {
+  .figuras-principais {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  footer {
+    background-color: rgb(255, 255, 0);
+  }
+  .img1 {
+    display: flex;
+    align-self: flex-start;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+
+
