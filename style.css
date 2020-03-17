@@ -18,9 +18,17 @@ html , body {
   max-width: 760px;
 }
 
+h4 {
+  margin-top: 5px;
+}
+
+.left-content:hover {
+  animation: entorta 2s ease-in;
+}
+
 .main {
   overflow: auto;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .prophet {
@@ -51,6 +59,17 @@ html , body {
 
   .container-layout {
     background-color: red;
+  }
+
+}
+
+@keyframes entorta {
+
+  0% {
+    transform: skew(30deg);
+  }
+  100% {
+    transform: skew(-30deg);
   }
 
 }
