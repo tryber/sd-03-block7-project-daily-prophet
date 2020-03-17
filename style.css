@@ -11,3 +11,29 @@
     background-color: red;
   }
 }
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: 3;
+  animation-name: flying;
+
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
