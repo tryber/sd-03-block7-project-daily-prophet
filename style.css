@@ -106,6 +106,7 @@ body {
   animation-delay: 2s;
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
 }
 
 .transfo {
@@ -139,6 +140,7 @@ body {
   }
 
   to {
+    transition: steps(4,end);
     transform: skew(180deg) scale(1, 1) translate(0, 0);
   }
 }
