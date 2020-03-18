@@ -220,11 +220,11 @@ footer {
 @media ( orientation : landscape ) {
 
   .container-orientation {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid red;
   }
 }
 
-@media ( min-width : 1170px ) and ( orientation : landscape ) {
+@media ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
