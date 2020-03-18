@@ -1,5 +1,5 @@
-let artigo = document.querySelector('#title-scape');
+const artigo = document.querySelector('#title-scape');
 
 artigo.addEventListener('click', () => {
-  artigo.classList.toggle("article-animation");
-})
+  artigo.classList.toggle('article-animation');
+});
