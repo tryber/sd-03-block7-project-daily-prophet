@@ -129,12 +129,12 @@ header {
   }
 
   .container {
-    border-radius: 0px;
+    border-radius: 0;
     width: 100%;
   }
 
   .container-layout {
-    /* background-color: yellow; */
+    background-color: yellow;
     padding: 0;
     width: 100%;
   }
@@ -180,14 +180,14 @@ header {
     width: 95%;
   }
 
-  .left{
+  .left {
     margin: 15px;
     text-align: center;
   }
 
 }
 
-@media only screen and ( orientation : landscape) {
+@media only screen and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
