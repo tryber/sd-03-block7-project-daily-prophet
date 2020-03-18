@@ -217,17 +217,10 @@ footer {
   }
 }
 
-@media ( min-width : 1170px ) {
+@media ( min-width : 1170px ) and ( orientation: landscape ) ) {
 
   .container-layout {
     background-color: red;
-  }
-}
-
-@media ( orientation : landscape ) {
-
-  .p-footer {
-    border: 1px solid blue;
   }
 }
 
