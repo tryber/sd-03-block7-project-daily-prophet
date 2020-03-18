@@ -5,7 +5,7 @@ article {
 }
 
 header {
-  border-bottom: double;
+  border: double;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 40px;
@@ -34,12 +34,11 @@ header .meta-data-container {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(1000) infinite backwards paused;
+  animation: article-grow 4s steps(1000, end) infinite backwards paused;
 }
 
 .article-animation:active {
-  animation: article-grow 4s steps(1000) both running;
-  word-wrap: break-word;
+  animation: article-grow 4s steps(1000, end) backwards running;
 }
 
 @keyframes flying {
@@ -73,6 +72,17 @@ header .meta-data-container {
     font-weight: 900;
     transform: scale(1.5);
   }
+}
+
+footer {
+  border: double;
+  width: 100%;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 @media only screen and ( max-width : 760px ) {
