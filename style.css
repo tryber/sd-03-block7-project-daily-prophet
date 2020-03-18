@@ -26,6 +26,7 @@
 section {
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .catImage {
@@ -35,7 +36,6 @@ section {
 
 .fly {
   animation: flying 3s alternate 3 forwards 3s steps(300, start);
-  max-width: 200px;
   overflow: hidden;
   transition: 2s 1s;
   word-wrap: normal;
@@ -46,7 +46,8 @@ section {
 }
 
 .article-animation {
-  animation: article-grow 4s forwards steps(200, start) paused;
+  animation: article-grow 4s forwards steps(300, start) paused;
+  transition: 2s 4s;
 }
 
 @keyframes flying {
@@ -56,7 +57,7 @@ section {
   }
 
   to {
-    margin-left: 0;
+    margin-left: -100%;
   }
 }
 
@@ -73,17 +74,16 @@ section {
 
 @keyframes article-grow {
 
-  from {
+  0% {
     font-size: 16;
     font-weight: 400;
-    max-width: initial;
     transform: scale(1, 1);
   }
 
-  to {
+  100% {
     font-size: 56;
     font-weight: 700;
-    max-width: initial;
+    max-width: 200px;
     transform: scale(1.5, 1.5);
   }
 }
