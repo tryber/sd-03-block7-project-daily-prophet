@@ -20,6 +20,10 @@
     color: red;
     text-align: center;
   }
+
+  .container-orientation {
+      border: 1px solid rgb(255, 0, 0);
+  }
 }
 
 @media ( max-width : 760px ) {
