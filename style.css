@@ -11,17 +11,16 @@
 }
 
 @media ( orientation : landscape ) {
-    body {
-        background-color : thistle;
-    }
-
-    header {
-     color: red;
-     text-align: center;
     
+  body {
+    background-color : thistle;
   }
+
+  header {
+    color: red;
+    text-align: center;    
   }
-  
+}  
 
 @media ( max-width : 760px ) {
 
