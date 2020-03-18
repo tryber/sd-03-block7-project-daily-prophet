@@ -104,7 +104,7 @@ header {
 @keyframes flying {
 
   from {
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   to {
@@ -116,7 +116,7 @@ header {
 @keyframes anim {
 
   0% {
-    margin-left: 0%;
+    margin-left: 0;
     transform: translate(50px, 100px);
   }
 
