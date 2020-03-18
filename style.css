@@ -1,15 +1,15 @@
-.container-layout{
+.container-layout {
   background-color: green;
 }
 
-@media (max-width: 760px){
-  .container-layout{
+@media ( max-width : 760px ) {
+  .container-layout {
     background-color: yellow;
   }
 }
 
-@media (min-width: 1170px){
-  .container-layout{
+@media ( min-width : 1170px ) {
+  .container-layout {
     background-color: red;
   }
 }
