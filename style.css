@@ -6,19 +6,15 @@ body {
   padding: 0;
 }
 
-div,
-section,
-nav,
-aside,
-footer {
+div, section, nav, aside, footer {
   margin: 0;
   padding: 0;
 }
 
 .strong-div-vold {
-  line-height: 10px;
+  font-family: Times New Roman, Times, serif;
   font-size: 6em;
-  font-family: "Times New Roman", Times, serif;
+  line-height: 10px;
 }
 
 .the {
@@ -113,8 +109,8 @@ footer {
 }
 
 .div-vold {
-  text-align: left;
   margin-left: 10px;
+  text-align: left;
 }
 
 .aside-text-vold {
@@ -140,17 +136,40 @@ footer {
 }
 
 main section {
-  border: solid 1px #333;
   display: flex;
   flex-direction: row;
-  height: 80%;
+  height: 500px;
   margin: auto;
+  margin-bottom: 15px;
   margin-top: 20px;
   padding: 5px;
   width: 95%;
 }
 
+main {
+  border: 1px solid #1c1915;
+}
+
+.dementor {
+  position: relative;
+  right: 1000px;
+  bottom: 80px;
+  animation-name: dementor;
+  animation-duration: 7s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  transition: 1s;
+}
+
+ @keyframes dementor {
+
+  0% { opacity: 0.3; transform: scale(6); transform: skew(15deg, 50deg);}
+  50% { opacity: 0.65; transform: scale(3); right: -500px; transform: rotateY(180deg)}
+  100% { opacity: 1; transform: scale(.6); right: -100px; transform: skew(1 2);}
+ }
+
 @keyframes shocking {
+
   from {
     background-color: rgba(128, 128, 128, 0.781);
     color: ivory;
