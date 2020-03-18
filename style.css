@@ -65,8 +65,8 @@ header {
 @keyframes flying {
 
   from {
-    transform: translate(50px, 0);
     animation: steps(4, end);
+    transform: translate(50px, 0);
   }
 
   to {
