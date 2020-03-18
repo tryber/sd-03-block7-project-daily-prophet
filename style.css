@@ -1,0 +1,137 @@
+body {
+  overflow: hidden;
+}
+
+.foot {
+  background-image: url('img/right-foot-footstep-shoe-512.png');
+  background-size: 100% 100%;
+  height: 24px;
+  opacity: 0.5;
+  position: absolute;
+  width: 45px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+.logo {
+  width: 15%;
+}
+
+.title {
+  width: 85%;
+}
+
+img {
+  object-fit: contain;
+}
+
+article {
+  font-family: Nanum Myeongjo, serif;
+  font-size: 1.2em;
+}
+
+article > p {
+  display: flex;
+  object-fit: cover;
+  transition: all 2s;
+  width: 30%;
+}
+
+.styledBordHoriz {
+  background-image: url('img/img-lg-horiz-border.png');
+  height: 10px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.container-layout {
+  background: url('img/img-lg-vert-border.png') repeat-y top left repeat-y right 100px;
+  background-size: 0.75em;
+  margin: 0.5em auto;
+  padding: 0 2px;
+  width: 99%;
+}
+
+.marquee {
+  align-content: flex-end;
+  animation: scrollRight 10s linear infinite alternate;
+  display: flex;
+  line-height: 50px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.pointer {
+  animation: fly 1.2s 1s linear forwards;
+  height: 100px;
+}
+
+@keyframes scrollRight {
+
+  from {
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translateY(100%) rotate(-90deg);
+  }
+
+  to {
+    transform: translateY(-100%) rotate(-90deg);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    font-size: 1.12em;
+    line-height: 1.6;
+  }
+
+  p {
+    margin-left: 14px;
+  }
+}
+
+@media screen and ( max-width : 1200px ) and ( orientation : landspace ) {
+
+  img {
+    border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@keyframes fly {
+
+  /*   from {}
+ */
+
+  25% {
+    transform: scale(0) rotate(-360deg) skew(60deg, 60deg);
+  }
+
+  50% {
+    transform: scale(0) translate(120%);
+  }
+
+  75% {
+    transform: scale(0) translate(120%) skew(60deg, 60deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg) skew(0deg, 0deg) translate(120%);
+  }
+}
+
+p:hover {
+  transform: scale(1.5);
+  font-weight: 800;
+}
