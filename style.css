@@ -1,6 +1,6 @@
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
 }
 
 .content {
@@ -72,6 +72,10 @@ h4 {
 
   html , body {
     background-color: yellow;
+  }
+
+  img {
+    display: none;
   }
 
 }
