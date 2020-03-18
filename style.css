@@ -102,10 +102,15 @@ header {
   transition: 1s;
 }
 
+.animation {
+  transition: left .5s ease-in;
+}
+
 @keyframes flying {
 
   from {
     margin-left: 0;
+    transition: left .5s ease-in;
   }
 
   to {
