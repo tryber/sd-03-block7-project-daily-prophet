@@ -1,8 +1,11 @@
-
 article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.box-title {
+  background: url('title.png') no-repeat;
 }
 
 @media ( max-width : 760px ) {
@@ -18,7 +21,6 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
   .box-title {
-    background: url('title.png') no-repeat;
     background-size: 600px;
     height: 150px;
     margin: 0 auto;
@@ -170,7 +172,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 }
 
-@media (min-width: 1170px) {
+@media ( min-width : 1170px ) {
   
   .container-layout {
     background-color: red;
@@ -179,7 +181,6 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
  .box-title {
-    background: url('title.png') no-repeat;
     background-size: 1000px;
     height: 200px;
     margin: 0 auto;
@@ -244,7 +245,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
     width: 720px;
   }
 
-  .box-text-flex p{
+  .box-text-flex p {
     text-align: justify;
     width: 355px;
   }
@@ -257,8 +258,8 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 
   .main-notices {
     border: 1px solid black;
-    width: 1000px;
     margin: 10px auto;
+    width: 1000px;
   }
 
   .notices-group-0 {
@@ -276,8 +277,8 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
   .notice-primary p {
-    text-align: justify;
     margin: 10px;
+    text-align: justify;
   }
 
   .notice-primary span , .notice-secondary span {
@@ -307,7 +308,26 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
   .notice-secondary p {
-    text-align: justify;
     margin: 10px;
+    text-align: justify;
+  }
+
+  .notice-group-1 {
+    display: flex;
+  }
+
+  .notice-third {
+    width: 520px;
+  }
+
+  .notice-third-h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .notice-third img {
+    margin: 10px;
+    width: 500px;
   }
 }
