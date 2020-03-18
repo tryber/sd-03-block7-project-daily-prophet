@@ -1,5 +1,6 @@
 .article-animation {
   animation-name: article-grow;
+  animation-duration: 4s;
 }
 
 .content {
