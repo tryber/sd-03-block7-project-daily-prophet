@@ -31,10 +31,20 @@ header {
 }
 
 .article-animation {
+  animation-duration: 4s;
   animation-name: article-grow;
+  transition: all 4s linear;
 }
 
 @keyframes article-grow {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes skewing {
