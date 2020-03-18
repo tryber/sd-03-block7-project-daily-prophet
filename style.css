@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
 
@@ -28,25 +29,40 @@ body {
   }
 }
 
-.container-layout {
-  width: 90%;
-}
-
 .container-article {
   display: flex;
   flex-direction: row;
 }
 
+.article-animation {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
 .fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  height: 17%;
-  margin-left: -100px;
+  /* height: 10%; */
+  margin-left: 100px;
   transition: flying 4s;
-  width: 17%;
+  width: 100%;
 }
 
 @keyframes flying {
@@ -67,7 +83,7 @@ body {
   }
 }
 
-@keyframes article-grow {
+/* @keyframes article-grow {
 
   0% {
     transform: scale(1, 1);
@@ -76,30 +92,22 @@ body {
   100% {
     transform: scale(1.5, 1.5);
   }
+} */
+
+.pulse {
+  animation: transfor 4s;
+  animation-delay: 2s;
+  transition-duration: 1s;
 }
 
 @keyframes pulse {
 
   0% , 100% {
     background-color: red;
+    transition: steps(4, end);
   }
 
   50% {
     background-color: orange;
-  }
-}
-
-@keyframes nudge {
-
-  0% , 100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(150px, 0);
-  }
-
-  80% {
-    transform: translate(-150px, 0);
   }
 }
