@@ -16,12 +16,15 @@ p {
 
 img {
   margin: 30px;
-  transform: translateX(100px);
+  transform: translate(100px, 10px);
   transition-duration: 2s;
   transition-property: transform;
 }
 
 .article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
   background-color: royalblue;
   height: 500px;
   margin: 50px;
@@ -92,8 +95,7 @@ img {
 }
 
 .article-animation:active {
-  animation-duration: 4s;
-  animation-name: article-grow;
+  animation-play-state: running;
 }
 
 .article-animation:active p {
