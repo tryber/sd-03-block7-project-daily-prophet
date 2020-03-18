@@ -53,12 +53,11 @@ section {
 
   from {
     margin-left: 200%;
-    transition: 2s 4s;
   }
 
   to {
     margin-left: -100%;
-    transition: 2s 4s;
+    transition: steps(300, end);
   }
 }
 
