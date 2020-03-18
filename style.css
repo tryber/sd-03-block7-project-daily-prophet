@@ -132,6 +132,6 @@ article > p {
 }
 
 p:hover {
-  transform: scale(1.5);
   font-weight: 800;
+  transform: scale(1.5);
 }
