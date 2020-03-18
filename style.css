@@ -17,8 +17,12 @@
 
   .container-orientation {
     background-color: burlywood;
-    border: 1px solid red;
+    border: 5px solid blue;
   }
+}
+
+* {
+  cursor: url(http://cur.cursors-4u.net/others/oth-3/oth246.cur), auto !important;
 }
 
 .container-orientation {
@@ -34,6 +38,7 @@
 }
 
 @keyframes flying {
+
   o% {}
   50% {}
   100% {}
@@ -45,6 +50,7 @@
 }
 
 @keyframes article-grow {
+
   0% {
     transform: scale(100%);
   }
@@ -52,3 +58,4 @@
     transform: scale(120%);
   }
 }
+
