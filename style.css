@@ -1,0 +1,143 @@
+/* @media screen and (max-width: 760px) {
+  .container-layout {
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container-layout {
+    background-color: rgb(255, 0, 0);
+  }
+}
+@media screen and (){
+  .container-orientation{
+    border: 1px solid red;
+  }
+} */
+
+body {
+  background-color: #fffafa;
+  border: 100px solid;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  background-color: #fffafa;
+  display: flex;
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border: 1px solid;
+}
+
+header {
+  margin-top: 20px;
+}
+
+.hr1 {
+  border-bottom: 1px solid #1c1915;
+  border-top: 0.1875em solid #1c1915;
+  width: 90%;
+  margin: auto;
+}
+
+.hr2 {
+  border-bottom: 0.1875em solid #1c1915;
+  border-top: 1px solid #1c1915;
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo {
+  margin-left: 15px;
+}
+
+.subtitle {
+  display: flex;
+  width: 35%;
+  margin: auto;
+}
+
+.exclusivo {
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+}
+
+.gif {
+  height: 189px;
+  width: 50%;
+}
+
+.section1 {
+  align-items: center;
+  background-color: #fffafa;
+  border: 1px solid;
+  display: flex;
+  height: 190px;
+  margin: auto;
+  width: 90%;
+}
+
+.psection1 {
+  width: 30%;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.link {
+  display: contents;
+}
+
+.fly {
+  height: 80px;
+  animation: flying 4s;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flying {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 90%;
+  }
+}
+
+.noticias h3 {
+  margin-left: 30px;
+}
+
+.gifheppy {
+  width: 400px;
+  display: flex;
+}
+
+.asidedireita {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 30%;
+}
+
+.asidedireita h2 {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
