@@ -10,15 +10,16 @@
     url('Mugglenews.svg#Mugglenews') format('svg');
 }
 
-@media (orientation: landscape) {
-   body{
-       background-color: thistle;
-   }
-   header {
-    text-align: center;
-    color: red;
-  }
+@media ( orientation : landscape ) {
+    body {
+        background-color : thistle;
+    }
 
+    header {
+     color: red;
+     text-align: center;
+    
+  }
   }
   
 
