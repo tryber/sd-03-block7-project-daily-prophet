@@ -1,13 +1,6 @@
 @font-face {
   font-family: goticween;
-  font-style: normal;
-  font-weight: 400;
-  src: url('gotic_weengoticween.eot');
-  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
-    url('./fonts/gotic_weengoticween.woff2') format('woff2'),
-    url('./fonts/gotic_weengoticween.woff') format('woff'),
-    url('./fonts/gotic_weengoticween.ttf') format('truetype'),
-    url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg');
+  src: url('./fonts/agoticween.ttf');
 }
 
 @media ( max-width : 760px ) {
@@ -159,6 +152,6 @@ article {
   width: 300px;
 }
 
-.pArtigo {
+.pArtigo{
   width: 500px;
 }
