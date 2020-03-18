@@ -1,10 +1,10 @@
-
 article {
   border: 3px solid black;
+  margin-bottom: 40px;
 }
 
 header {
-  border-bottom: double ;
+  border-bottom: double;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 40px;
@@ -35,8 +35,8 @@ header .meta-data-container {
 .article-animation:active {
   animation-name: article-grow;
   animation-duration: 4s;
-  animation-timing-function: steps(1000);
   animation-fill-mode: forwards;
+  animation-timing-function: steps(1000);
   word-wrap: break-word;
 }
 
@@ -77,10 +77,6 @@ header .meta-data-container {
 
   body , h1 , h2 , h3 {
     margin: 0;
-  }
-
-  article {
-    margin-bottom: 40px;
   }
 
   .container-layout {
