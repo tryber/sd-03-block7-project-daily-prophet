@@ -109,7 +109,7 @@ h2 {
 }
 
 @keyframes flying {
-  
+
   0% { margin-left: 0; }
 
   100% { margin-left: 700%; }
