@@ -51,10 +51,10 @@ h1 {
 }
 
 header > nav {
-  margin: 0;
-  padding: 0;
   border-bottom: black solid 1px;
   border-top: solid black 1px;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
@@ -140,10 +140,10 @@ article {
 }
 
 .tituloD {
+  border-bottom: 2px solid black;
   font-size: 20px;
   height: auto;
   width: 450px;
-  border-bottom: 2px solid black;
 }
 
 .mapa {
@@ -152,6 +152,6 @@ article {
   width: 300px;
 }
 
-.pArtigo{
+.pArtigo {
   width: 500px;
 }
