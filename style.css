@@ -23,6 +23,11 @@
   }
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
+
 .catImage {
   margin-left: 100%;
   max-width: 200px;
@@ -30,8 +35,10 @@
 
 .fly {
   animation: flying 3s alternate 3 forwards 3s steps(300, start);
-  overflow-x: hidden;
+  max-width: 200px;
+  overflow: hidden;
   transition: 2s 1s;
+  word-wrap: normal;
 }
 
 .transform {
@@ -39,14 +46,13 @@
 }
 
 .article-animation {
-  animation-fill-mode: forwards;
-  animation-name: article-grow;
+  animation: article-grow 4s forwards steps(200, start) paused;
 }
 
 @keyframes flying {
 
   from {
-    margin-left: 100%;
+    margin-left: 200%;
   }
 
   to {
@@ -70,12 +76,14 @@
   from {
     font-size: 16;
     font-weight: 400;
+    max-width: initial;
     transform: scale(1, 1);
   }
 
   to {
     font-size: 56;
     font-weight: 700;
-    transform: scale(1, 2);
+    max-width: initial;
+    transform: scale(1.5, 1.5);
   }
 }
