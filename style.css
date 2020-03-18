@@ -1,0 +1,147 @@
+h1,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: #fff8ee;
+  color: #1c1915;
+  display: flex;
+  flex-direction: column;
+  font-family: Vollkorn, serif;
+  font-size: 1rem;
+  padding: 0 0.5em;
+}
+
+.header,
+.aside,
+.article,
+.section,
+.footer {
+  width: 100%;
+}
+
+.hr1 {
+  border-bottom: 1px solid #1c1915;
+  border-top: 0.1875em solid #1c1915;
+  height: 0.125em;
+  margin: 0.5em auto;
+}
+
+.hr2 {
+  border-bottom: 0.1875em solid #1c1915;
+  border-top: 1px solid #1c1915;
+  height: 0.125em;
+  margin: 0.5em auto;
+}
+
+figure {
+  margin: 0;
+}
+
+figure figcaption {
+  text-align: center;
+}
+
+.title-img,
+.n3VNCb {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.exclusive {
+  background-color: #1c1915;
+  color: #fff8ee;
+  width: 100%;
+}
+
+.sec-content {
+  border: 1px solid #1c1915;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0.5em 0 0 0;
+  padding: 0.375em 0.25em 0 0.25em;
+}
+
+.link {
+  background-color: #1c1915;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.link a {
+  color: #fff8ee;
+  padding: 0;
+  text-decoration: none;
+}
+
+.news {
+  border: 1px solid #1c1915;
+  box-sizing: border-box;
+  display: flex;
+  margin: 0.5em 0 0 0;
+  padding: 0.375em 0.25em 0 0.25em;
+}
+
+.article {
+  margin-right: 5px;
+  width: 75%;
+}
+
+.aside {
+  width: 24%;
+}
+
+.aside-title {
+  background-color: #1c1915;
+  color: #fff8ee;
+  text-align: center;
+}
+
+.fjalla {
+  font-family: Fjalla One, sans-serif;
+}
+
+.fjalla span {
+    font-family: Kreon, serif;
+}
+
+article .fjalla {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    margin: 10px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .sec-content,
+  .news {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article,
+  .aside {
+    width: 100%;
+  }
+
+  .fjalla span {
+    font-family: Fjalla One, sans-serif;
+}
+}
+
+@media screen and (min-width: 1170px) {
+}
