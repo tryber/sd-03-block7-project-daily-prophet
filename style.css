@@ -140,8 +140,8 @@ body {
   }
 
   to {
-    transition: steps(4,end);
     transform: skew(180deg) scale(1, 1) translate(0, 0);
+    transition: steps(4, end);
   }
 }
 
