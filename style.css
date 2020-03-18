@@ -35,23 +35,22 @@ main {
 }
 
 .fly {
-  animation-name: flying;
-  animation-duration: 3s;
-  animation-direction: alternate;
   animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation-fill-mode: forwards
-  ;
+  animation-name: flying;
   margin-left: -1350px;
 }
 
 @keyframes flying {
+
   0% {
-  
     margin-left: -1350px;
   }
+
   100% {
-  
     margin-left: 960px;
   }
 }
