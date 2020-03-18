@@ -14,7 +14,7 @@ p {
   animation-name: skew;
 }
 
-#img {
+.img {
   margin: 30px;
   transform: translate(100px, 10px);
   transition-duration: 2s;
