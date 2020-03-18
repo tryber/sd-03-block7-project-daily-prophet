@@ -59,7 +59,9 @@
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: red;
     width: 80%;
   }
