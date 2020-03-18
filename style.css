@@ -1,0 +1,111 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.article-animation{
+  width: 500px;
+  height: 500px;
+  background-color: royalblue;
+  margin: 50px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+}
+.container-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.container-layout aside{
+  align-self: flex-start;
+}
+
+@media (max-width: 760px){
+  .container-layout{
+    background-color: rgb(255, 255, 0);
+  }
+}
+
+@media (min-width: 1170px){
+  .container-layout{
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (orientation: landscape){
+  .container-orientation {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+  }
+}
+
+@keyframes article-grow{
+  from {
+    transform: scale(1, 1)
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+} 
+
+@keyframes embold {
+  25% {
+    font-weight: 500;
+  }
+
+  50% {
+    font-weight: 600;
+  }
+
+  75% {
+    font-weight: 700;
+  }
+
+  100% {
+    font-weight: 800;
+  }
+}
+.article-animation:active {
+  animation-name: article-grow;
+  animation-duration: 4s;
+}
+
+article.article-animation:active p {
+  animation-name: embold;
+  animation-duration: 4s;
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+
+  50% {
+    transform: skew(45deg);
+  }
+
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+p {
+  animation-name: skew;
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+img {
+  margin: 30px;
+  transform: translate(100px, 0px);
+  transition-property: transform;
+  transition-duration: 2s;
+}
