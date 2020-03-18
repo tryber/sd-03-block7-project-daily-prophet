@@ -1,6 +1,6 @@
 body {
   background-color: wheat;
-  flex-wrap: column wrap;
+  flex-flow: column wrap;
 }
 
 header {
@@ -26,9 +26,8 @@ header img {
 }
 
 h1 {
+  font-family: Chomsky, Times New Roman, Times, serif;
   font-size: 58pt;
-  font-family: 'Chomsky';
-  margin-bottom: 0;
   margin: 5px;
 }
 
@@ -38,7 +37,7 @@ h2 {
 }
 
 .tituloPrinc {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, sans-serif;
   font-size: 105pt;
 }
 
@@ -53,9 +52,9 @@ h2 {
 }
 
 .imgEspecial:hover {
-  transition: transform 2s ease-in;
+  transform: scale(7, 7);
   transform-origin: top right;
-  transform: scale(7,7);
+  transition: transform 2s ease-in;
 }
 
 .principal {
@@ -81,6 +80,10 @@ h2 {
   width: 100%;
 }
 
+.blocoDir img {
+  width: 100%;
+}
+
 .reportagem img:hover {
   transform: skew(-5deg, -5deg);
 }
@@ -94,13 +97,9 @@ h2 {
   width: 30%;
 }
 
-.blocoDir img {
-  width: 100%;
-}
-
 .blocoDir img:hover {
-  transition: transform 2s ease-in-out;
   transform: translateY(700px);
+  transition: transform 2s ease-in-out;
 }
 
 .noticia3 {
@@ -110,26 +109,23 @@ h2 {
 }
 
 @keyframes flying {
-  0% {margin-left: 0%;}
-  100% {margin-left: 1000px;}
+  0% { margin-left: 0; }
+  100% { margin-left: 700%; }
 }
 
-@media screen and (max-width:760px)
-{
+@media screen and ( max-width : 760px ) {
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and (min-width:1170px)
-{
+@media screen and ( min-width : 1170px ) {
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and (orientation:landscape)
-{
+@media screen and ( orientation : landscape ) {
   .container-orientation {
     border: 1px solid red;
   }
