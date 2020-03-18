@@ -61,7 +61,7 @@ body {
   animation-name: flying;
   margin-left: 100px;
   transition: flying 4s;
-  width: 100%;
+  width: 80px;
 }
 
 @keyframes flying {
