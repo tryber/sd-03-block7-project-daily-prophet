@@ -18,27 +18,27 @@ body {
 @media ( max-width : 760px ) {
 
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(255,255,0);
   }
 }
 
 @media ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255,0,0);
   }
 }
 
 @media ( orientation : landscape ) {
 
   .container-orientation {
-    background-color: rgb(206, 195, 131);
+    background-color: rgb(206,195,131);
   }
 }
 
 .navegacao {
   align-items: center;
-  background-color: rgb(172, 172, 172);
+  background-color: rgb(172,172,172);
   display: flex;
   justify-content: space-around;
 }
@@ -53,7 +53,7 @@ body {
 
 .asideDumble {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: wrap;
   justify-content: center;
   margin-right: 15px;
   margin-top: 15px;
@@ -61,15 +61,36 @@ body {
 }
 
 .escudo:hover {
-  width: fit-content;
   animation: deform 3s linear;
+  width: fit-content;
 }
 
 @keyframes deform {
+
   0% {
     transform: skew(0deg);
   }
+
+  50% {
+    transform: skew(90deg);
+  }
+
   100% {
-    transform: skew(180deg);
+    transform: skew(0deg);
+  }
+}
+
+.escala:hover {
+    animation: crescer 7s;
+}
+  
+@keyframes crescer {
+  
+  0% {
+    transform: scale(0.5, 2.0);
+  }
+
+  100% {
+    transform: scale(1.0, 1.0);
   }
 }
