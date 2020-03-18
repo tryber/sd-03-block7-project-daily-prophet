@@ -18,27 +18,27 @@ body {
 @media ( max-width : 760px ) {
 
   .container-layout {
-    background-color: rgb(255,255,0);
+    background-color: yellow;
   }
 }
 
 @media ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: rgb(255,0,0);
+    background-color: red;
   }
 }
 
 @media ( orientation : landscape ) {
 
   .container-orientation {
-    background-color: rgb(206,195,131);
+    background-color: rgb(206, 195, 131);
   }
 }
 
 .navegacao {
   align-items: center;
-  background-color: rgb(172,172,172);
+  background-color: rgb(172, 172, 172);
   display: flex;
   justify-content: space-around;
 }
@@ -46,8 +46,8 @@ body {
 .artigoOne {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin: 15px 15px 15px 15px;
+  /* flex-flow: wrap; */
+  margin: 15px;
   width: 600px;
 }
 
@@ -81,16 +81,16 @@ body {
 }
 
 .escala:hover {
-    animation: crescer 7s;
+  animation: crescer 4s;
 }
-  
+
 @keyframes crescer {
-  
+
   0% {
-    transform: scale(0.5, 2.0);
+    transform: scale(1, 1);
   }
 
   100% {
-    transform: scale(1.0, 1.0);
+    transform: scale(2, 2);
   }
 }
