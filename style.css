@@ -1,14 +1,24 @@
 body {
-  background-color: rgb(255, 247, 199);
+  background-color: rgb(255, 252, 238);
   color: #1c1915;
-  font-family: Times New Roman, Times, serif;
+  font-family: Vollkorn, Times New Roman, Times, serif;
   margin: 5px;
   padding: 0;
 }
 
-div , section , nav , aside , footer {
+div,
+section,
+nav,
+aside,
+footer {
   margin: 0;
   padding: 0;
+}
+
+.strong-div-vold {
+  line-height: 10px;
+  font-size: 6em;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .the {
@@ -42,7 +52,8 @@ div , section , nav , aside , footer {
 }
 
 .news-h1 {
-  margin: 2px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .shocking {
@@ -63,15 +74,22 @@ div , section , nav , aside , footer {
   color: ivory;
   font-size: 40px;
   letter-spacing: 3px;
-  padding: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header {
+  bottom: 30px;
   font-size: 3em;
+  position: relative;
   text-align: center;
   width: 100%;
-  position: relative;
-  bottom: 30px;
+}
+
+.div-beware {
+  background-color: #1c1915;
+  font-size: 15px;
+  padding: 0;
 }
 
 .headline {
@@ -94,17 +112,45 @@ div , section , nav , aside , footer {
   width: 95%;
 }
 
-main {
-  border: solid 1px #333;
-  height: 80%;
-  margin: auto;
-  margin-top: 20px;
-  width: 95%;
+.div-vold {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.aside-text-vold {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 10px;
   padding: 5px;
 }
 
-@keyframes shocking {
+.article-text-vold-top {
+  margin-right: 10px;
+  position: relative;
+  text-align: justify;
+  top: 20px;
+}
 
+.article-text-vold-bott {
+  margin-right: 10px;
+  position: relative;
+  text-align: justify;
+  top: 35px;
+}
+
+main section {
+  border: solid 1px #333;
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+  width: 95%;
+}
+
+@keyframes shocking {
   from {
     background-color: rgba(128, 128, 128, 0.781);
     color: ivory;
