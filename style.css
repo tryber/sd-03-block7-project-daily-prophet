@@ -1,13 +1,14 @@
 @media ( max-width : 760px ) {
 
-  body , div , h1 , p , section , span {
+  article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
   .container-layout {
-    padding: 15px 80px;
+    background-color: rgb(255, 255, 0);
+    padding: 15px 80px 0 80px;
     width: 760px;
   }
 
@@ -21,6 +22,28 @@
     height: 150px;
     margin: 0 auto;
     width: 600px;
+  }
+
+  nav {
+   
+    background-color: rgb(28, 36, 63);
+    margin-bottom: 15px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  a {
+    color: white;
+    font-size: 21px;
+    text-decoration: none;
   }
 
   .box-word-exclusive {
@@ -48,7 +71,7 @@
     text-align: justify;
   }
 
-  .box-text span {
+  .box-text span, .notice-third span {
     background-color: rgb(28, 25, 21);
     color: white;
     padding: 1px 7px 1px 67%;
@@ -65,11 +88,11 @@
     text-transform: uppercase;
   }
 
-  .notice-primary p {
+  .notice-primary p, .notice-secondary p {
     margin: 10px;
   }
 
-  .notice-primary span {
+  .notice-primary span, .notice-secondary span {
     float: left;
     font-size: 3em;
     margin-right: 10px;
@@ -78,8 +101,72 @@
     width: fit-content;
   }
 
-  .notice-primary img {
+  .notice-primary img, .notice-third img {
     margin: 10px;
     width: 580px;
   }
+
+  .notice-secondary-h1 {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .line {
+    border: 0.5px solid black;
+    margin: 10px auto;
+    width: 570px;
+  }
+
+  .notice-third h1 {
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .notice-fourth {
+    display: flex;
+  }
+
+  .notice-fourth-0, .notice-fourth-1 {
+    width: 300px;
+  }
+
+  .notice-fourth-0-h1 {
+    font-size: 3.5em;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .notice-fourth-0 img {
+    border-radius: 50%;
+    margin: 10px;
+    width: 280px;
+  }
+
+  .notice-fourth-1-h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+  .notice-fourth-1-h4 {
+    margin-top: 10px;
+  }
+
+  .notice-fourth-1 p {
+    margin-top: 10px;
+    text-align: justify;
+    width: 280px;
+  }
+
+  footer {
+    background-color: rgb(28, 36, 63);
+    color: yellow;
+    margin-bottom: 0;
+    padding: 30px;
+    width: 600px;
+  }
+  
 }
