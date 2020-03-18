@@ -93,10 +93,44 @@ header {
   text-align: center;
 }
 
+.fly {
+  animation: flying 2s ease-in-out 3s;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(50px, 100px); 
+  }
+  
+  50% {
+    transform: skew(20deg);
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: translate(50px, 100px);
+  }
+
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) and (orientation: landscape) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .container-orientation {
+    border: 1px solid red;
   }
 
 }
