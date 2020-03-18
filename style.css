@@ -1,15 +1,8 @@
-.fly {
-  animation: flying 3s ease alternate;
-  position: absolute;
-}
-
 header {
   display: flex;
   flex-wrap: wrap;
-}
-
-header li {
-  list-style: none;
+  margin: 40px;
+  width: 100%;
 }
 
 .logo-container {
@@ -17,17 +10,27 @@ header li {
   width: 100%;
 }
 
-.article-animation:active {
-  font-weight: 900;
-  max-width: 100%;
-  transform: scale(1.5);
-  transition: font-weight 4s steps(1000), transform 4s steps(1000);
-  word-wrap: break-word;
+header .meta-data-container {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px 0;
+  width: 100%;
 }
 
 .container-layout {
   display: flex;
   flex-wrap: wrap;
+}
+
+.fly {
+  animation: flying 3s ease alternate;
+  position: absolute;
+}
+
+.article-animation:active {
+  animation: article-grow 4s steps(1000) forwards;
+  word-wrap: break-word;
 }
 
 @keyframes flying {
@@ -38,12 +41,34 @@ header li {
   }
 
   to {
-    left: 70%;
-    top: 500px;
+    left: 75%;
+    top: 190px;
+  }
+}
+
+@keyframes article-grow {
+  
+  from {
+    transform: scale(1.0);
+    font-weight: 0;
+    background-color: #fff;
+  }
+
+  to {
+    transform: scale(1.5);
+    font-weight: 900;
   }
 }
 
 @media only screen and ( max-width : 760px ) {
+
+  body, h1, h2, h3 {
+    margin: 0;
+  }
+
+  article {
+    margin-bottom: 40px;
+  }
 
   .container-layout {
     background-color: yellow;
