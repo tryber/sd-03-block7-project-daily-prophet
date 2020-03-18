@@ -10,8 +10,8 @@ nav {
 
 p {
   animation-name: skew;
-  animation-delay: 2s;
   animation-duration: 3s;
+  animation-delay: 2s;
 }
 
 img {
@@ -92,13 +92,11 @@ img {
 }
 
 .article-animation:active {
-
   animation-duration: 4s;
   animation-name: article-grow;
 }
 
 .article-animation:active p {
-
   animation-duration: 4s;
   animation-name: embold;
 }
