@@ -85,7 +85,7 @@ header {
 
 .scape {
   font-size: 130px;
-  font-weight: 900;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
 }
@@ -95,7 +95,7 @@ header {
 }
 
 @media screen and ( max-width : 760px ) {
-  
+
   .container-layout {
     background-color: yellow;
   }
