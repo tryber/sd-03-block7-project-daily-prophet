@@ -1,6 +1,6 @@
 .container-layout {
-  background-size: cover;
   background-color: yellow;
+  background-size: cover;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -16,12 +16,20 @@
 }
 
 .imgtopo {
-  max-width: 100%
+  max-width: 100%;
 }
 
 @keyframes flying {
-  0% {left: 0px; width: 100px;}
-  100% {left: 760px; width: 300px;}
+
+  0% {
+    left: 0;
+    width: 100px;
+  }
+
+  100% {
+    left: 760px;
+    width: 300px;
+  }
 }
 
 @media ( orientation : landscape ) {
