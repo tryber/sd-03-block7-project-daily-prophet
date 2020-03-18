@@ -24,8 +24,8 @@ header {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate, normal;
-  animation-name: flying;
   animation-duration: 4s;
+  animation-name: flying;
   transform: translate(-50px, 0);
 }
 
