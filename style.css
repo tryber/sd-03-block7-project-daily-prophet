@@ -3,11 +3,6 @@
   font-style: normal;
   font-weight: 400;
   src: url('./fonts/agoticween.ttf');
-  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype');
-  src: url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg');
-  src: url('./fonts/gotic_weengoticween.ttf') format('truetype');
-  src: url('./fonts/gotic_weengoticween.woff') format('woff');
-  src: url('./fonts/gotic_weengoticween.woff2') format('woff2');
 }
 
 @media ( max-width : 760px ) {
