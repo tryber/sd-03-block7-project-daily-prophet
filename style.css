@@ -314,9 +314,11 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 
   .notice-group-1 {
     display: flex;
+    justify-content: space-between;
   }
 
   .notice-third {
+    margin: 10px;
     width: 520px;
   }
 
@@ -327,7 +329,67 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
   .notice-third img {
-    margin: 10px;
     width: 500px;
+  }
+
+  .notice-third span {
+    background-color: rgb(28, 25, 21);
+    color: white;
+    padding: 1px 10px 1px 299.87px;
+  }
+
+  .notice-fourth {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 450px;
+  }
+
+  .notice-fourth-0 {
+    width: 210px;
+  }
+
+  .notice-fourth-0-h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .notice-fourth-0 img {
+    border-radius: 50%;
+  }
+
+  .notice-fourth-1 {
+    width: 210px;
+  }
+
+  .notice-fourth-1-h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .notice-fourth-1-h4 {
+    margin-bottom: 5px;
+  }
+
+  .notice-fourth-1 p {
+    text-align: justify;
+    margin-right: 10px;
+  }
+  
+  footer {
+    background-color: rgb(28, 36, 63);
+    color: white;
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+@media (orientation : landscape) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
