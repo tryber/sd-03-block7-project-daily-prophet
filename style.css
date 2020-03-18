@@ -1,17 +1,18 @@
-header {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 40px;
-  width: 100%;
-}
 
 article {
   border: 3px solid black;
 }
 
+header {
+  border-bottom: double ;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 40px;
+}
+
 .logo-container {
   height: 10vh;
-  width: 100%;
+  width: 90vw;
 }
 
 header .meta-data-container {
@@ -28,30 +29,33 @@ header .meta-data-container {
 }
 
 .fly {
-  animation: flying 3s ease alternate forwards;
+  animation: flying 3s ease 3s 3 alternate forwards;
 }
 
 .article-animation:active {
-  animation: article-grow 4s steps(1000) forwards;
+  animation-name: article-grow;
+  animation-duration: 4s;
+  animation-timing-function: steps(1000);
+  animation-fill-mode: forwards;
   word-wrap: break-word;
 }
 
 @keyframes flying {
 
   from {
-    transform: translate(0, 0);
+    transform: translate(0, 0) skew(10deg);
   }
 
   25% {
-    transform: translate(100%, 200%);
+    transform: translate(100%, 200%) skew(100deg);
   }
 
   50% {
-    transform: translate(5%, 1500%);
+    transform: translate(5%, 1500%) skew(10deg);
   }
 
   to {
-    transform: translate(0, 0);
+    transform: translate(0, 0) skew(0deg);
   }
 }
 
@@ -81,6 +85,10 @@ header .meta-data-container {
 
   .container-layout {
     background-color: yellow;
+  }
+
+  article {
+    background-color: rgb(250, 250, 93);
   }
 }
 
