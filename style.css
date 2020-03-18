@@ -217,6 +217,13 @@ footer {
   }
 }
 
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid rgb(255, 0, 0);
+  }
+}
+
 @media ( min-width : 1170px ) and ( orientation : landscape ) {
 
   .container-layout {
