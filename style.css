@@ -35,29 +35,30 @@ section {
 }
 
 .fly {
-  animation: flying 3s alternate 3 forwards 3s steps(300, start);
+  animation: flying 3s alternate 3 forwards 3s steps(300, end);
   overflow: hidden;
   transition: 2s 1s;
   word-wrap: normal;
 }
 
 .transform {
-  animation: transFormation 3s steps(50, start) infinite;
+  animation: transFormation 3s steps(50, end) infinite;
 }
 
 .article-animation {
-  animation: article-grow 4s forwards steps(300, start) paused;
-  transition: 2s 4s;
+  animation: article-grow 4s forwards steps(300, end) paused;
 }
 
 @keyframes flying {
 
   from {
     margin-left: 200%;
+    transition: 2s 4s;
   }
 
   to {
     margin-left: -100%;
+    transition: 2s 4s;
   }
 }
 
