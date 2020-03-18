@@ -11,7 +11,7 @@ body {
   height: auto;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(10px, 0) scale(0.5);
   width: 100%;
 }
 
@@ -19,6 +19,14 @@ header {
   grid-column: 1/-1;
   grid-row: 1/2;
   position: relative;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: normal reverse normal;
+  animation-name: flying;
+  animation-duration: 4s;
+  transform: translate(-50px, 0);
 }
 
 @keyframes skewing {
@@ -29,6 +37,17 @@ header {
 
   to {
     transform: skew(0deg);
+  }
+}
+
+@keyframes flying {
+
+  from {
+    transform: translate(50px, 0);
+  }
+
+  to {
+    transform: translate(-50px, 0);
   }
 }
 
