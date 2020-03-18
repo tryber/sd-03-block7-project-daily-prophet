@@ -227,7 +227,7 @@ footer {
 @media ( orientation : landscape ) {
 
   .p-footer {
-    color: blue;
+    border: 1px solid blue;
   }
 }
 
