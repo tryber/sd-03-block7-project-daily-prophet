@@ -1,6 +1,7 @@
 article {
   border: 3px solid black;
-  margin-bottom: 40px;
+  margin: 0px auto 40px;
+  width: 66%;
 }
 
 header {
@@ -32,11 +33,12 @@ header .meta-data-container {
   animation: flying 3s ease 3s 3 alternate forwards;
 }
 
+.article-animation {
+  animation: article-grow 4s steps(1000) infinite backwards paused;
+}
+
 .article-animation:active {
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-name: article-grow;
-  animation-timing-function: steps(1000);
+  animation: article-grow 4s steps(1000) both running;
   word-wrap: break-word;
 }
 
