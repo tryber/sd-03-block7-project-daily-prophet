@@ -8,7 +8,49 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   background: url('title.png') no-repeat;
 }
 
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-name: flying;
+  margin-left: 50px;
+  position: absolute;
+  transform: scale(1,1);
+  transform: skew(0deg);
+  transition: transform 2s;
+  width: 200px;
+}
+
+.fly {
+  transform: skew(180deg) scale(2,2) translateY(50px);
+  
+}
+
+@keyframes flying {
+  from {
+    margin-left: 50px;
+  }
+
+  to {
+    margin-left: 650px;
+  }
+}
+
 @media ( max-width : 760px ) {
+
+  @keyframes flying {
+    from {
+      margin-left: 50px;
+      width: 200px;
+    }
+  
+    to {
+      margin-left: 350px;
+      width: 250px;
+    }
+  }
 
   .container-layout {
     background-color: yellow;
