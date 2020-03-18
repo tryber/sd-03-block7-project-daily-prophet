@@ -6,20 +6,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap"
+      href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Slabo+27px&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="container-layout container-orientation">
-    <main class="newspaper">
+  <body>
+    <main class="newspaper container-orientation">
       <header>
-        <img src="img/header.png" alt="header" class="header-img" />
-        <nav>
-          <a href="">Valdemort</a>
-        </nav>
-        <div id="wrapper">
-          <img src="img/nimbus.png" alt="nimbus" class="nimbus fly">
+        <img src="img/nimbus.png" alt="nimbus" class="nimbus fly" />
+        <div class="title">
+          <div class="first-border">
+            <div class="line"></div>
+            <h2 class="the">THE</h2>
+            <div class="line"></div>
+          </div>
+          <div class="center-flex">
+            <img
+              src="img/DailyProphetInsignia.png"
+              alt="logo"
+              class="insignia"
+            />
+            <div class="flex-column">
+              <div class="center-flex">
+                <h1 class="name">DAILY <span class="container-layout">P</span>ROPHET</h1>
+              </div>
+              <div class="center-flex">
+                <h2 class="bottom-header">
+                  * THE WIZARD WORLD'S BEGUILING BROADSHEET OF CHOISE *
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="center-flex">
+            <div class="bottom-line"></div>
+          </div>
         </div>
+        <nav>
+          <a href="">Quadribol</a>
+          <a href="">Mágia</a>
+          <a href="">Últimas notícias</a>
+        </nav>
       </header>
       <section class="news-grid">
         <section>
@@ -42,26 +68,28 @@
           </article>
           <article>
             <h2>Lorem, ipsum dolor.</h2>
-
-              <span>I</span>
-              <span>psum dolor sit amet consectetur adipisicing elit.
-                Non repellendus amet ullam dolor saepe itaque, doloribus nulla
-                cupiditate ut enim modi adipisci, culpa quos temporibus.
-                Repudiandae, laboriosam corporis. Iste magni sequi illum nemo
-                doloremque quis laborum rem consequuntur corporis. Nisi corporis
-                ducimus sint enim aliquam, a rerum in molestias ipsa et nam iure
-                necessitatibus magni suscipit! Error optio quod quo possimus? Fuga
-                cupiditate magnam exercitationem rem quaerat suscipit quasi
-                quisquam ullam id minus praesentium assumenda laudantium
-                perferendis tempora velit ex doloribus dolore sunt a error, fugit
-                aperiam dignissimos quo? </span>
-                <span>Dolorem, facilis. Ullam, voluptatem dolor
-                  magni architecto dignissimos enim et modi laboriosam officiis
-                  praesentium ut rerum, temporibus iure consequuntur accusantium.
-                  Qui rerum dolore illum cupiditate non dicta iusto animi fugiat
-                  incidunt distinctio deserunt id eligendi, voluptate dignissimos
-                  facilis deleniti sapiente natus soluta eaque quae error totam.
-                  Illo numquam adipisci nemo unde!</span>
+            <span>I</span>
+            <span
+              >psum dolor sit amet consectetur adipisicing elit. Non repellendus
+              amet ullam dolor saepe itaque, doloribus nulla cupiditate ut enim
+              modi adipisci, culpa quos temporibus. Repudiandae, laboriosam
+              corporis. Iste magni sequi illum nemo doloremque quis laborum rem
+              consequuntur corporis. Nisi corporis ducimus sint enim aliquam, a
+              rerum in molestias ipsa et nam iure necessitatibus magni suscipit!
+              Error optio quod quo possimus? Fuga cupiditate magnam
+              exercitationem rem quaerat suscipit quasi quisquam ullam id minus
+              praesentium assumenda laudantium perferendis tempora velit ex
+              doloribus dolore sunt a error, fugit aperiam dignissimos quo?
+            </span>
+            <span
+              >Dolorem, facilis. Ullam, voluptatem dolor magni architecto
+              dignissimos enim et modi laboriosam officiis praesentium ut rerum,
+              temporibus iure consequuntur accusantium. Qui rerum dolore illum
+              cupiditate non dicta iusto animi fugiat incidunt distinctio
+              deserunt id eligendi, voluptate dignissimos facilis deleniti
+              sapiente natus soluta eaque quae error totam. Illo numquam
+              adipisci nemo unde!</span
+            >
           </article>
         </section>
         <section>
@@ -103,7 +131,7 @@
             </p>
           </article>
         </section>
-        <aside>
+        <aside class="aside-col">
           <article>
             <h2>Lorem, ipsum dolor.</h2>
             <p>
@@ -133,7 +161,9 @@
           </article>
         </aside>
       </section>
-      <footer></footer>
+      <footer>
+        <p>Desenvolvido por <a href="https://github.com/henriquerezende">Henrique Rezende</a></p>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>

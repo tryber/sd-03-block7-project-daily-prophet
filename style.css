@@ -1,8 +1,54 @@
 /* * {
   border: 4px solid black;
 } */
+@media ( max-width: 1644px ) {
+
+  .name {
+    font-size: 60px !important;
+  }
+
+  .insignia {
+    display: none;
+  }
+
+  .news-grid {
+    grid-template-columns: 50% 50% !important;
+  }
+
+  .aside-col {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media ( max-width : 935px ) {
+
+  .name {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .bottom-header {
+    font-size: 14px;
+  }
+
+  .news-grid {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .aside-col {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
 
 @media ( max-width : 760px ) {
+
+  .name {
+    font-size: 60px;
+  }
 
   .container-layout {
     background: yellow;
@@ -23,11 +69,12 @@
   }
 }
 
-/* span {
-  font-size: 150px;
-} */
+.container-layout {
+  border-radius: 5em;
+}
 
 body {
+  background-color: darkgrey;
   font-family: 'Slabo 27px', serif;
   margin: 0 auto;
   width: 80%;
@@ -37,13 +84,107 @@ article {
   margin: 20px;
 }
 
+article:hover {
+  animation: article-grow 4s linear 2 alternate;
+  background-color: slategray;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 100%;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  to {
+    font-size: 150%;
+    font-weight: 800;
+    width: 150%;
+  }
+}
+
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+  font-weight: 800;
+}
+
+h1{
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+}
+
+.flex-column {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.first-border {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.the {
+  font: times new roman;
+  font-size: 400%;
+  margin: 0 20px;
+}
+
+.line {
+  border-bottom: 2px solid black;
+  border-top: 5px solid black;
+  height: 1px;
+  width: 45%;
+}
+
+.insignia {
+  width: 13%;
+}
+
+.bottom-line {
+  border-bottom: 2px solid black;
+  border-top: 5px solid black;
+  height: 1px;
+  margin-top: 30px;
+  width: 100%;
+}
+
 .newspaper {
   background-image: url('img/paperboard-texture_95678-72.jpg');
   background-repeat: repeat;
+  box-shadow: 10px 10px black;
   display: flex;
   flex-direction: column;
   height: 100%;
+  margin: 2em 0;
   padding: 2em;
+}
+
+.name {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 100px;
 }
 
 .header-img {
@@ -67,11 +208,11 @@ article {
 @keyframes flying {
 
   from {
-    transform: translateX(-300%) rotate(30deg);
+    transform: translateY(0) translateX(-300%) rotate(30deg);
   }
 
   to {
-    transform: translateX(700%) rotate(30deg);
+    transform: translateY(100%) translateX(700%) rotate(30deg);
   }
 }
 
@@ -87,40 +228,6 @@ article {
 
   to {
     transform: skew(15deg, 15deg) scale(1.5);
-  }
-}
-
-/* .translate {
-  animation: translate 2s linear 2 alternate;
-}
-
-@keyframes translate {
-
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(180px);
-  }
-} */
-
-.article-animation {
-  animation: article-grow 4s linear 2 alternate;
-}
-
-@keyframes article-grow {
-
-  from {
-    font-size: 100%;
-    font-weight: 400;
-    width: 100%;
-  }
-
-  to {
-    font-size: 150%;
-    font-weight: 800;
-    width: 150%;
   }
 }
 
