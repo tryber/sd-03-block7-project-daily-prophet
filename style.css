@@ -1,0 +1,207 @@
+body {
+  background-color: rgb(236, 232, 219);
+}
+
+header {
+  font-family: Vollkorn, serif;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  margin: 20px;
+}
+
+.fly {
+  animation: flying 2s linear 3s 3 alternate forwards;
+  margin-left: -300px;
+  position: absolute;
+  width: 200px;
+}
+
+.hotnews {
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: 40px;
+}
+
+footer {
+  font-size: 30px;
+  text-align: center;
+}
+
+@keyframes flying {
+
+  from {
+    display: none;
+    margin-left: -200px;
+    margin-top: 200px;
+  }
+
+  50% {
+    margin-left: 900px;
+    margin-top: 100px;
+  }
+
+  to {
+    margin-left: 1800px;
+    margin-top: 400px;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .articles {
+    margin: auto;
+    width: 90%;
+  }
+
+  .article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-animation {
+    text-align: justify;
+    width: 80%;
+  }
+
+  img {
+    margin-right: 30px;
+    width: 40%;
+  }
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  aside .note {
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    width: 20%;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .main {
+    display: flex;
+  }
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .articles {
+    margin: auto;
+    width: 90%;
+  }
+
+  .article {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .article-animation {
+    padding: 20px;
+    text-align: justify;
+    width: 80%;
+  }
+
+  img {
+    margin-right: 30px;
+    width: 40%;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+  }
+
+  aside .note {
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    width: 80%;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
+}
+
+.hat {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.hat:hover {
+  transform: scale(2, 2);
+}
+
+.owl {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.owl:hover {
+  transform: skew(30deg, 30deg);
+}
+
+.plataform {
+  transition-duration: 2s;
+  transition-property: all;
+  width: 200px;
+}
+
+.plataform:hover {
+  transform: translate(500px, 600px);
+}
+
+.article-animation {
+  animation: article-grow 4s steps(4) infinite;
+  animation-play-state: paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
+}
