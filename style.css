@@ -1,8 +1,14 @@
 @font-face {
   font-family: goticween;
-  src: url('./fonts/agoticween.ttf');
+  font-style: normal;
+  font-weight: 400;
+  src: url('gotic_weengoticween.eot');
+  src: url('./fonts/gotic_weengoticween.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/gotic_weengoticween.woff2') format('woff2'),
+    url('./fonts/gotic_weengoticween.woff') format('woff'),
+    url('./fonts/gotic_weengoticween.ttf') format('truetype'),
+    url('./fonts/gotic_weengoticween.svg#webfontregular') format('svg');
 }
-
 
 @media ( max-width : 760px ) {
 
@@ -52,8 +58,11 @@ h1 {
 }
 
 header > nav {
+  margin: 0;
+  padding: 0;
   border-bottom: black solid 1px;
   border-top: solid black 1px;
+  width: 100%;
 }
 
 header > nav > ul {
@@ -66,7 +75,7 @@ header > nav > ul {
   list-style-type: none;
   overflow: hidden;
   text-decoration: none;
-  width: 100vw;
+  width: 90%;
 }
 
 a {
@@ -138,12 +147,18 @@ article {
 }
 
 .tituloD {
+  font-size: 20px;
   height: auto;
-  width: 500px;
+  width: 450px;
+  border-bottom: 2px solid black;
 }
 
 .mapa {
   border: 2px solid black;
   height: 300px;
   width: 300px;
+}
+
+.pArtigo {
+  width: 500px;
 }
