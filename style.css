@@ -33,18 +33,28 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
 @media ( max-width : 760px ) {
 
   @keyframes flying {
 
     from {
       margin-left: 50px;
-      width: 200px;
     }
 
     to {
       margin-left: 350px;
-      width: 250px;
     }
   }
 
