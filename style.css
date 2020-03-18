@@ -1,0 +1,150 @@
+body {
+  background-color: black;
+}
+
+.article-animation {
+  animation: article-grow 4s steps(4, end);
+  animation-play-state: paused;
+}
+
+.container-layout {
+  background-color: #fff8ee;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1032px;
+}
+
+.fly {
+  animation: steps(3, end);
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  transition-duration: 1s;
+}
+
+.scale {
+  animation: scalee 0.3s steps(3, end) infinite;
+  animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+  transition-duration: 1s;
+}
+
+.skeww {
+  animation: skewww 0.3s steps(3, end) infinite;
+  animation-direction: alternate;
+  transform: skew(0deg);
+  transition-duration: 1s;
+  width: 83%;
+}
+
+@keyframes article-grow {
+
+  0% {
+    animation: steps(3, end);
+    transform: scale(1);
+    transition-duration: 1s;
+  }
+
+  50% {
+    animation: steps(3, end);
+    font-weight: 500;
+    transition-duration: 1s;
+  }
+
+  100% {
+    animation: steps(3, end);
+    font-weight: 600;
+    transform: scale(1.5);
+    transition-duration: 1s;
+  }
+}
+
+@keyframes scalee {
+
+  0% {
+    animation: steps(3, end);
+    transform: scale(0.5);
+    transition-duration: 1s;
+  }
+
+  100% {
+    animation: steps(3, end);
+    transform: scale(1);
+    transition-duration: 1s;
+  }
+}
+
+@keyframes skewww {
+
+  0% {
+    animation: steps(3, end);
+    transform: skewY(3deg);
+    transition-duration: 1s;
+  }
+
+  100% {
+    animation: steps(3, end);
+    transform: skewY(-3deg);
+    transition-duration: 1s;
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    animation: steps(3, end);
+    transform: translate(0, -120%) rotate(45deg);
+    transition-duration: 1s;
+  }
+
+  20% {
+    animation: steps(3, end);
+    transform: translate(40%, -100%) rotate(-45deg);
+    transition-duration: 1s;
+  }
+
+  50% {
+    animation: steps(3, end);
+    transform: translate(-40%, -80%) rotate(33deg);
+    transition-duration: 1s;
+  }
+
+  80% {
+    animation: steps(3, end);
+    transform: translate(20%, -40%) rotate(-17deg);
+    transition-duration: 1s;
+  }
+
+  100% {
+    animation: steps(3, end);
+    transform: translate(0, 0) rotate(0);
+    transition-duration: 1s;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
