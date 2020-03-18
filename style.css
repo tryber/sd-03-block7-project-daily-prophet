@@ -173,14 +173,14 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 }
 
 @media ( min-width : 1170px ) {
-  
+
   .container-layout {
     background-color: red;
     margin: 0 auto;
     width: 1170px;
   }
 
- .box-title {
+  .box-title {
     background-size: 1000px;
     height: 200px;
     margin: 0 auto;
