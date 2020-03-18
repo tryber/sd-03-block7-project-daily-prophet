@@ -16,20 +16,20 @@
 } */
 
 body {
-  background-color: #fffafa;
+  background-color: #fffa;
   border: 100px solid;
   margin: 0;
   padding: 0;
 }
 
 article {
-  background-color: #fffafa;
+  background-color: #fffa;
+  border: 1px solid;
   display: flex;
   height: auto;
-  width: 90%;
   margin: 0 auto;
   margin-top: 40px;
-  border: 1px solid;
+  width: 90%;
 }
 
 header {
@@ -38,16 +38,16 @@ header {
 
 .hr1 {
   border-bottom: 1px solid #1c1915;
-  border-top: 0.1875em solid #1c1915;
-  width: 90%;
+  border-top: 0.187em solid #1c1915;
   margin: auto;
+  width: 90%;
 }
 
 .hr2 {
-  border-bottom: 0.1875em solid #1c1915;
+  border-bottom: 0.187em solid #1c1915;
   border-top: 1px solid #1c1915;
-  width: 90%;
   margin: auto;
+  width: 90%;
 }
 
 .header {
@@ -61,17 +61,17 @@ header {
 
 .subtitle {
   display: flex;
-  width: 35%;
   margin: auto;
+  width: 35%;
 }
 
 .exclusivo {
+  align-items: center;
   background-color: black;
   color: white;
+  display: flex;
   font-size: 35px;
   height: 190px;
-  display: flex;
-  align-items: center;
 }
 
 .gif {
@@ -81,7 +81,7 @@ header {
 
 .section1 {
   align-items: center;
-  background-color: #fffafa;
+  background-color: rgb(255, 255, 255);
   border: 1px solid;
   display: flex;
   height: 190px;
@@ -90,11 +90,11 @@ header {
 }
 
 .psection1 {
-  width: 30%;
-  margin-left: 20px;
-  display: flex;
   align-items: center;
+  display: flex;
   line-height: 1.5;
+  margin-left: 20px;
+  width: 30%;
 }
 
 .link {
@@ -102,29 +102,32 @@ header {
 }
 
 .fly {
-  height: 80px;
   animation: flying 4s;
   animation-delay: 3s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  height: 80px;
 }
 
 @keyframes flying {
+
   0% {
-    margin-left: 0%;
+    margin-left: 0;
   }
+
   100% {
     margin-left: 90%;
   }
+  
 }
 
-.noticias h3 {
+.noticiash3 {
   margin-left: 30px;
 }
 
 .gifheppy {
-  width: 400px;
   display: flex;
+  width: 400px;
 }
 
 .asidedireita {
@@ -135,8 +138,8 @@ header {
   width: 30%;
 }
 
-.asidedireita h2 {
-  background-color: #000000;
+.asidedireitah2 {
+  background-color: black;
   color: white;
   text-align: center;
   width: 100%;
