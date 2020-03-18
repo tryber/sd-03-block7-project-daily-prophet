@@ -115,20 +115,90 @@ header {
 
 @media screen and ( max-width : 760px ) {
 
+  body {
+    background-color: rgb(255, 247, 238);
+    width: 100%;
+  }
+
+  .header-container {
+    border-bottom: 3px solid black;
+    border-top: none;
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .container {
+    border-radius: 0px;
+    width: 100%;
+  }
+
   .container-layout {
-    background-color: yellow;
+    /* background-color: yellow; */
+    padding: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-letters img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .tag {
+    text-align: center;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .scape {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .p-scape {
+    margin: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .img-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-center img {
+    width: 95%;
+  }
+
+  .left{
+    margin: 15px;
+    text-align: center;
   }
 
 }
 
-@media screen and ( min-width : 1170px ) and ( orientation : landscape ) {
-
-  .container-layout {
-    background-color: red;
-  }
+@media only screen and ( orientation : landscape) {
 
   .container-orientation {
     border: 1px solid red;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
   }
 
 }
