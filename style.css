@@ -117,6 +117,7 @@ header {
 
   to {
     margin-left: 100%;
+    transition: steps(20);
   }
 
 }
