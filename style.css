@@ -375,10 +375,10 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 
   .notice-fourth-1 p {
-    text-align: justify;
     margin-right: 10px;
+    text-align: justify;
   }
-  
+
   footer {
     background-color: rgb(28, 36, 63);
     color: white;
@@ -387,7 +387,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 }
 
-@media (orientation : landscape) {
+@media ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
