@@ -54,8 +54,8 @@
     ],
     "keyframe-declaration-no-important": true,
     "length-zero-no-unit": true,
-    "linebreaks": "unix",
     "max-empty-lines": 2,
+    "linebreaks":"unix",
     "max-line-length": 90,
     "max-nesting-depth": 2,
     "media-feature-colon-space-after": "always",
@@ -108,7 +108,7 @@
     "selector-max-empty-lines": 0,
     "selector-max-id": 5,
     "selector-max-pseudo-class": 3,
-    "selector-max-specificity": 5,
+    "selector-max-specificity": "5",
     "selector-max-type": 5,
     "selector-max-universal": 3,
     "selector-no-qualifying-type": true,
@@ -132,4 +132,5 @@
     "value-list-max-empty-lines": 0,
     "value-no-vendor-prefix": true
   }
+  
 }
