@@ -1,10 +1,27 @@
 .container-layout {
+  background-size: cover;
   background-color: yellow;
   border: 1px solid black;
   display: flex;
   justify-content: center;
   margin: auto 0;
   max-width: 760px;
+}
+
+.fly:hover {
+  animation-delay: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+.imgtopo {
+  max-width: 100%
+}
+
+@keyframes flying {
+  0% {left: 0px; width: 100px;}
+  100% {left: 760px; width: 300px;}
 }
 
 @media ( orientation : landscape ) {
