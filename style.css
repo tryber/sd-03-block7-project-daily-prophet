@@ -98,7 +98,7 @@ header {
 }
 
 .fly {
-  animation: flying 2s ease-in-out 3s 3;
+  animation: flying 2s ease-in-out 3s 3 alternate;
 }
 
 @keyframes flying {
