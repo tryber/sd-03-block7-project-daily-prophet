@@ -48,7 +48,7 @@ article > p {
 }
 
 .container-layout {
-  background: url('img/img-lg-vert-border.png') repeat-y top left repeat-y right 100px;
+  background: url('img/img-lg-vert-border.png') repeat-y top left;
   background-size: 0.75em;
   margin: 0.5em auto;
   padding: 0 2px;
