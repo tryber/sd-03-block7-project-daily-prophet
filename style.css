@@ -54,6 +54,11 @@ header {
   font-size: 2.5rem;
 }
 
+.h1-1:hover {
+  transform: translate(40px, 20px);
+  transition-duration: 3s;
+}
+
 .logo-img {
   height: 120px;
   margin: 15px;
@@ -73,6 +78,11 @@ header {
 
 .h1-2 {
   font-size: 4rem;
+}
+
+.h1-2:hover {
+  transform: scale(1.18);
+  transition-duration: 3s;
 }
 
 .sub-header {
