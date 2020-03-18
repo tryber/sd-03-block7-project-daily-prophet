@@ -37,6 +37,7 @@ header {
 
   /* animation-name: article-grow; */
   animation: article-grow 4s steps(4, end);
+  animation-play-state: paused;
   transition: all 4s linear;
 }
 
