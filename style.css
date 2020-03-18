@@ -5,6 +5,10 @@ header {
   width: 100%;
 }
 
+article {
+  border: 3px solid black
+}
+
 .logo-container {
   height: 10vh;
   width: 100%;
@@ -24,8 +28,7 @@ header .meta-data-container {
 }
 
 .fly {
-  animation: flying 3s ease alternate;
-  position: absolute;
+  animation: flying 3s ease alternate forwards;
 }
 
 .article-animation:active {
@@ -36,13 +39,19 @@ header .meta-data-container {
 @keyframes flying {
 
   from {
-    left: 4%;
-    top: 100px;
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(100%, 200%);
+  }
+
+  50% {
+    transform: translate(5%, 1500%);
   }
 
   to {
-    left: 75%;
-    top: 190px;
+    transform: translate(0, 0);
   }
 }
 
