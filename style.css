@@ -17,7 +17,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   animation-name: flying;
   margin-left: 50px;
   position: absolute;
-  transform: skew(180deg) scale(2 , 2) translateY(50px);
+  transform: skew(180deg) scale(2, 2) translateY(50px);
   transition: transform 3s;
   width: 200px;
 }
@@ -36,7 +36,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 @media ( max-width : 760px ) {
 
   @keyframes flying {
-    
+
     from {
       margin-left: 50px;
       width: 200px;
