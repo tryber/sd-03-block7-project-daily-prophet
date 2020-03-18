@@ -151,6 +151,12 @@ header {
   width: 97%;
 }
 
+.p-aside {
+  animation: p-aside 4s;
+  animation-delay: 2s;
+  transition-duration: 1s;
+}
+
 footer {
   align-items: center;
   background-color: rgb(202, 202, 202);
@@ -167,6 +173,18 @@ footer {
   animation: aumentar 4s ease-in-out;
   display: flex;
   justify-content: flex-end;
+}
+
+@keyframes p-aside {
+
+  from {
+    transform: skew(0deg) scale(0, 0) translate(0, 0);
+  }
+
+  to {
+    transform: skew(180deg) scale(1, 1) translate(0, 0);
+    transition: steps(4, end);
+  }
 }
 
 @keyframes aumentar {
@@ -203,6 +221,13 @@ footer {
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .p-footer {
+    color: blue;
   }
 }
 
