@@ -44,6 +44,8 @@ plugins:
         enabled: false
       box-model:
         enabled: false
+      bulletproof-font-face:
+        enabled: false
   editorconfig:
     enabled: true
   eslint:
