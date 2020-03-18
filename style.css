@@ -11,29 +11,35 @@
 }
 
 @keyframes flying {
+
   0% {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   50% {
     margin-left: 300px;
   }
+
   75% {
     margin-left: 800px;
   }
+
   80% {
     margin-left: 1200px;
   }
+
   90% {
     margin-left: 600px;
   }
+  
   100% {
     margin-left: 0;
   }
 }
 
 .fly {
-animation-name: flying;
-animation-duration: 6s;
+  animation-duration: 6s;
+  animation-name: flying;
 }
 
 @media ( orientation : landscape ) {
