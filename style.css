@@ -86,7 +86,7 @@
   }
 
   .text-header {
-    font-family: Mugglenews;
+    font-family: Mugglenews, Fallback, sans-serif;
     font-size: 100px;
     font-stretch: expanded;
     font-weight: 900;
