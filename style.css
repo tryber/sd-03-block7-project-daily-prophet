@@ -100,7 +100,7 @@ header {
 }
 
 .fly {
-  animation: flying 2s ease-in-out 3s 3 alternate forwards;
+  animation: flying 2s steps(10) 3s 3 alternate forwards;
   transition: 1s;
 }
 
