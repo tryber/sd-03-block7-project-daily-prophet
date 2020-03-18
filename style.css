@@ -9,9 +9,9 @@ nav {
 }
 
 p {
-  animation-name: skew;
   animation-delay: 2s;
   animation-duration: 3s;
+  animation-name: skew;
 }
 
 img {
