@@ -84,7 +84,9 @@ header {
 }
 
 .scape {
-  font-size: 130px;
+  font-family: Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
 }
@@ -133,6 +135,24 @@ header {
   100% {
     margin-left: 100%;
     transform: translate(50px, 100px);
+  }
+
+}
+
+.article-animation {
+  animation: article-grow 4s;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 100;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
   }
 
 }
