@@ -1,0 +1,157 @@
+body {
+  background-color: rgb(210, 197, 171);
+  border: 4px solid black;
+  font-family: Amatic SC, cursive;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 1px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-articles {
+    border: none;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    border: 2px solid black;
+    padding: 1px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .section-articles {
+    border-right: 1px solid black;
+    margin-right: 30px;
+    padding: 30px;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+.article {
+  border: 1px solid black;
+  margin-bottom: 7px;
+}
+
+.paragraph {
+  font-size: 25px;
+}
+
+.main-container {
+  display: flex;
+  padding: 50px;
+}
+
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle:hover {
+  transform: scale(2.5);
+  transition-duration: 3s;
+}
+
+.subtitle-aside {
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle-aside:hover {
+  transform: translate(200px, 100px);
+  transition-duration: 10s;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.fly {
+  animation: flying 3s steps(8, end);
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+}
+
+.article-animation {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.transfo {
+  animation: transfor 4s;
+  animation-delay: 2s;
+  transition-duration: 1s;
+}
+
+.footer {
+  display: flex;
+  font-size: 30px;
+  height: 50px;
+  justify-content: center;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 80%;
+  }
+}
+
+@keyframes transfor {
+
+  from {
+    transform: skew(0deg) scale(0, 0) translate(0, 0);
+  }
+
+  to {
+    transform: skew(180deg) scale(1, 1) translate(0, 0);
+    transition: steps(4, end);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
