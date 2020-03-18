@@ -33,9 +33,9 @@ header .meta-data-container {
 }
 
 .article-animation:active {
-  animation-name: article-grow;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  animation-name: article-grow;
   animation-timing-function: steps(1000);
   word-wrap: break-word;
 }
