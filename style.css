@@ -40,8 +40,8 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 @keyframes article-grow {
 
   to {
-    transform: scale(1.5, 1.5);
     font-weight: 800;
+    transform: scale(1.5, 1.5);
   }
 }
 
