@@ -15,7 +15,7 @@
   }
 
   .fly {
-    animation: flying 4s steps(200) 3 alternate forwards;
+    animation: flying 4s 3s steps(200) 3 alternate forwards;
 
     /* a@media screen and ( max-width : 760px ) {nimation-direction: alternate;
       animation-duration: 4s;
@@ -76,7 +76,7 @@
   }
 
   .fly {
-    animation: flying 4s steps(200) 3 alternate forwards;
+    animation: flying 4s 3s steps(200) 3 alternate forwards;
 
     /* @media screen and ( max-width : 760px ) {nimation-direction: alternate;
     animation-duration: 4s;
@@ -136,8 +136,12 @@
     flex-direction: row;
   }
 
+  .container-orientation {
+    border: 1px solid red;
+  }
+
   .fly {
-    animation: flying 4s steps(200) 3 alternate forwards;
+    animation: flying 4s 3s steps(200) 3 alternate forwards;
 
     /* a@media screen and ( max-width : 760px ) {nimation-direction: alternate;
       animation-duration: 4s;
