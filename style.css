@@ -91,14 +91,14 @@ footer a:hover {
   }
 }
 
-@media ( max-width : 760px ) { 
+@media (max-width : 760px) {
 
   .container-layout {
     margin: 30px 0;
   }
 }
 
-@media ( min-width : 1170px ) { 
+@media (min-width : 1170px) {
 
   header {
     text-align: center;
