@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 4px solid black;
-} */
+}
 
 @media ( max-width : 760px ) {
 
@@ -23,9 +23,31 @@
   }
 }
 
+/* span {
+  font-size: 150px;
+} */
+
 body {
   margin: 0 auto;
   width: 80%;
+  font-family: 'Slabo 27px', serif;
+}
+
+article {
+  margin: 20px;
+}
+
+.newspaper {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/paperboard-texture_95678-72.jpg);
+  background-repeat: repeat;
+  height: 100%;
+  padding: 2em;
+}
+
+.header-img {
+  width: 100%;
 }
 
 .potter-icon {
@@ -38,17 +60,18 @@ body {
 
 .fly {
   animation: flying 2s linear 3s 3 alternate forwards;
-  position: relative;
+  position: absolute;
+  transform: translateX(-300%);
 }
 
 @keyframes flying {
 
   from {
-    left: 10px;
+    transform: translateX(-300%) rotate(30deg);
   }
 
   to {
-    left: 100px;
+    transform: translateX(700%) rotate(30deg);
   }
 }
 
@@ -67,7 +90,7 @@ body {
   }
 }
 
-.translate {
+/* .translate {
   animation: translate 2s linear 2 alternate;
 }
 
@@ -80,7 +103,7 @@ body {
   to {
     transform: translateX(180px);
   }
-}
+} */
 
 .article-animation {
   animation: article-grow 4s linear 2 alternate;
@@ -99,4 +122,13 @@ body {
     font-weight: 800;
     width: 150%;
   }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+}
+
+.nimbus {
+  width: 15%;
 }
