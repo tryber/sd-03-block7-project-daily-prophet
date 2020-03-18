@@ -59,7 +59,6 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  /* height: 10%; */
   margin-left: 100px;
   transition: flying 4s;
   width: 100%;
@@ -83,19 +82,8 @@ body {
   }
 }
 
-/* @keyframes article-grow {
-
-  0% {
-    transform: scale(1, 1);
-  }
-
-  100% {
-    transform: scale(1.5, 1.5);
-  }
-} */
-
 .pulse {
-  animation: transfor 4s;
+  animation: pulse 4s;
   animation-delay: 2s;
   transition-duration: 1s;
 }
