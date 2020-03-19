@@ -96,12 +96,13 @@ body {
   animation: flying 4s 3s 3 alternate forwards;
   height: 55px;
   position: relative;
+  margin-left: -95%;
 }
 
 @keyframes flying {
 
   0% {
-    margin-left: 0;
+    margin-left: -95%;
     transform: scale(1, 1) translate(0, 0);
   }
 
@@ -111,7 +112,7 @@ body {
   }
 
   100% {
-    margin-left: 95%;
+    margin-left: 90%;
     transform: skew(15deg, 180deg);
   }
 }
@@ -121,6 +122,36 @@ footer {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  text-align: center;
+}
+
+section {
+  border: 2px solid purple;
+}
+
+article {
+  border: 1px solid green;
+}
+
+aside {
+  align-content: space-around;
+  background-color: rgb(14, 59, 14);
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  height: 500px;
+  justify-content: space-around;
+  text-align: center;
+  width: 20%;
+}
+
+.copo {
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.alert {
   text-align: center;
 }
 
