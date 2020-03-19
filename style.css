@@ -13,7 +13,7 @@ article {
   margin: 20px;
 }
 
-.article-animation:hover {
+.article-animation {
   animation-direction: alternate;
   animation-duration: 4s;
   animation-iteration-count: 2;
