@@ -64,13 +64,13 @@ h1:hover {
 }
 
 .fly {
-  animation: fly 1s infinite;
+  animation: flying 1s infinite;
   margin: 30px;
   transform: rotate(45deg);
   width: 75px;
 }
 
-@keyframes fly {
+@keyframes flying {
 
   100% {
     transform: translate(1000px, 0);
