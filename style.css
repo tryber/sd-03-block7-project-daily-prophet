@@ -145,13 +145,13 @@ aside {
 }
 
 .copo {
+  animation: swing 1s linear  infinite alternate;
   height: 50px;
   margin: 0 auto;
   position: relative;
-  animation: swing 1s linear  infinite alternate;
 }
 
-.copo:hover{
+.copo:hover {
   opacity: 0;
   transition: opacity 2s;
 }
@@ -159,15 +159,15 @@ aside {
 @keyframes swing {
 
   0% {
-    transform: rotateZ( -25deg );
+    transform: rotateZ(-25deg);
   }
 
-  50%{
-    transform: rotateZ( 0deg );
+  50% {
+    transform: rotateZ(0deg);
   }
 
-  100%{
-    transform: rotateZ( 25deg );
+  100% {
+    transform: rotateZ(25deg);
   }
 }
 
