@@ -117,12 +117,9 @@ body {
   }
 }
 
-footer {
-  background-color: black;
+main {
   display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  text-align: center;
+  flex-direction: column;
 }
 
 section {
@@ -158,4 +155,13 @@ aside {
 .copy {
   color: white;
   text-shadow: gray 2px 3px 2px;
+}
+
+footer {
+  background-color: black;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  text-align: center;
 }
