@@ -1,10 +1,21 @@
-article:active {
+.article-animation:active {
+  animation-name: article-grow;
   background-color: #1c1915;
   color: rgb(247, 134, 28);
-  font-weight: 600;
   transform: scale(1.5);
-  transition-duration: 4s;
+  transition: 4s;
   z-index: 1;
+}
+
+@keyframes article-grow {
+  
+  from {
+    font-weight: 100;
+  }
+
+  to {
+    font-weight: 600;
+  }
 }
 
 body {
@@ -206,11 +217,11 @@ main {
   width: 50px;
 }
 
-.dementor {
+.fly {
   animation-delay: 2s;
   animation-duration: 7s;
   animation-fill-mode: forwards;
-  animation-name: dementor;
+  animation-name: fly;
   bottom: 120px;
   position: relative;
   right: 1000px;
@@ -285,7 +296,7 @@ main {
   text-align: center;
 }
 
-@keyframes dementor {
+@keyframes fly {
 
   0% {
     transform: scale(6) skew(15deg, 50deg);
