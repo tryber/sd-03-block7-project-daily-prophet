@@ -19,21 +19,18 @@ article {
   animation-iteration-count: 2;
   animation-name: article-grow;
   animation-timing-function: linear;
-  background-color: slategray;
 }
 
 @keyframes article-grow {
 
   from {
-    font-size: 100%;
     font-weight: 400;
-    width: 100%;
+    transform: scale(1);
   }
 
   to {
-    font-size: 150%;
     font-weight: 800;
-    width: 150%;
+    transform: scale(1.5);
   }
 }
 
