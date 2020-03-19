@@ -273,8 +273,3 @@ footer {
   position: absolute;
   width: 100px;
 }
-
-.article-animation {
-  animation-name: article-grow;
-}
-
