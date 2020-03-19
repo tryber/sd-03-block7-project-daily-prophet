@@ -7,6 +7,19 @@ body {
   width: 100%;
 }
 
+.container-layout {
+  width: 100%;
+}
+
+.scale {
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: scale;
+
+}
+
 .skew {
   animation-delay: 1s;
   animation-direction: alternate-reverse;
@@ -16,13 +29,36 @@ body {
 }
 
 .fly {
+  animation:move-in-steps 8s steps(20);
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation-name: go;
+  animation-name: flying;
   left: 0;
+}
+
+.article-animation {
+  font-weight: lighter;
+  text-align: center;
+}
+.article-animation:hover {
+  animation: move-in-steps 8s steps(20);
+  font-weight: bolder;
+  transition: 4s;
+  transform: scale(1.5, 1.5);
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
 }
 
 @keyframes skew {
@@ -36,7 +72,7 @@ body {
   }
 }
 
-@keyframes go {
+@keyframes flying {
 
   0% {
     transform: translateX(0);
@@ -50,14 +86,14 @@ body {
 @media only screen and ( max-width : 1170px ) {
 
   .container-layout {
-    background-color: red;
+    background-color: yellow;
   }
 }
 
 @media only screen and ( max-width : 760px ) {
 
   .container-layout {
-    background-color: yellow;
+    background-color: red;
     margin-left: 0;
     margin-right: 0;
   }
