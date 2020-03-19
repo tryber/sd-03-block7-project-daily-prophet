@@ -242,7 +242,6 @@ main {
     opacity: 1;
     right: 10px;
     transform: scale(1);
-    transition: steps(120);
     z-index: 1;
   }
 
