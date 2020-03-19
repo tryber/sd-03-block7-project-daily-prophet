@@ -28,9 +28,8 @@ a:hover {
 }
 
 .bigbox {
-  display: flex; 
-
-  position: relative;  
+  display: flex;
+  position: relative;
 }
 
 .box2 {
@@ -70,36 +69,28 @@ nav {
 }
 
 .book-animation {
+  animation: book 5s linear infinite backwards;
   cursor: pointer;
   left: 60%;
   position: absolute;
   top: 5%;
   transform: rotateZ(60deg);
   z-index: 10;
-  animation: book 5s linear infinite backwards;
 }
 
 .pomo-animation {
+  animation: pomo 30s linear infinite backwards;
   cursor: pointer;
   position: absolute;
   top: 10%;
   z-index: 11;
-  animation: pomo 30s linear infinite backwards;
 }
 
 @media ( min-width: 1170px ) {
 
-  .container-layout {     
-    background-color: red;  
+  .container-layout {
+    background-color: red;
   }
-}
-
-.book-animation {
-
-}
-
-.pomo-animation {
-
 }
 
 @keyframes book {
@@ -128,7 +119,7 @@ nav {
 
 @keyframes pomo {
   0% {
-    transform: scale(2, 2) translateX(0vh);
+    transform: scale(2, 2) translateX(0);
   }
 
   50% {
@@ -136,6 +127,6 @@ nav {
   }
 
   100% {
-    transform: scale(2, 2) translateX(0vh);
+    transform: scale(2, 2) translateX(0);
   }
 }
