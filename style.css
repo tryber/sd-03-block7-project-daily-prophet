@@ -38,10 +38,10 @@
 }
 
 .fly {
+  animation-delay: 3s;
   animation-duration: 6s;
   animation-name: flying;
-  animation-delay: 3s;
-}
+ } 
 
 @media ( orientation : landscape ) {
 
