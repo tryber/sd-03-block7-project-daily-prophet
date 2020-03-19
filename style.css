@@ -34,8 +34,8 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
 }
 
 .article-animation:active {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   animation-timing-function: steps(4, start);
 }
 
