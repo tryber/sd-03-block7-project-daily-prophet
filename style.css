@@ -91,14 +91,29 @@ footer a:hover {
   }
 }
 
+@media ( orientation : landscape ) {
+  
+  .container-orientation {
+    border: solid 1px red;
+  }
+}
+
 @media ( max-width : 760px ) {
 
   .text-block {
     margin: 30px 0;
   }
+
+  .container-layout {
+    background-color: yellow;
+  }
 }
 
 @media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
 
   header {
     text-align: center;
