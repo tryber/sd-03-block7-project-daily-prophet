@@ -84,13 +84,13 @@ div , section , nav , aside , footer {
 }
 
 @keyframes pointing-left {
-  
+
   from {
     transform: rotateX(-360deg);
   }
 
   to {
-    transform: translate( 0 10px);
+    transform: translate(0 10px);
   }
 }
 
@@ -242,7 +242,6 @@ main {
 
 .aside-div-second-section {
   margin-right: 25px;
-
   text-align: justify;
 }
 
@@ -283,7 +282,7 @@ main {
 
 .footer {
   margin-top: 10px;
-  text-align:  center;
+  text-align: center;
 }
 
 @keyframes dementor {
