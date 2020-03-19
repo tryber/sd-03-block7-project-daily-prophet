@@ -13,27 +13,27 @@
 @keyframes article-grow {
   
   0% {
-    scale: 0%;
+    transform: scale(0%);
     font-weight: 100; 
   }
   
   20% {
-    scale: 5%;
+    transform: scale(5%);
     font-weight: 200;
   }   
   
   50% {
-    scale: 15%;
+    transform: scale(15%);
     font-weight: 400;
   }
   
   75% {
-    scale: 30%;
+    transform: scale(30%);
     font-weight: 600;
   }
 
   95% {
-    scale: 50%;
+    transform: scale(50%);
     font-weight: 900;
   }
 
@@ -67,7 +67,7 @@
 }
 
 .article-animation {
-  animation-duration: 7s;
+  animation-duration: 10s;
   animation-name: article-grow;
 }
 
