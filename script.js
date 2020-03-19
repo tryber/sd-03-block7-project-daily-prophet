@@ -1,7 +1,1 @@
-document.querySelectorAll('article').forEach((e) => {
-  e.addEventListener('click', (event) => {
-    if (event.target.parentNode.tagName === 'ARTICLE') {
-      event.target.parentNode.classList.add('article-animation');
-    }
-  });
-});
+document.querySelectorAll('article').forEach((e) => { e.addEventListener('click', () => { e.classList.add('article-animation'); }); });
