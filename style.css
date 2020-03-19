@@ -14,11 +14,11 @@ article {
 }
 
 .article-animation:hover {
-  animation-name: article-grow;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: 2;
   animation-direction: alternate;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-name: article-grow;
+  animation-timing-function: linear;
   background-color: slategray;
 }
 
