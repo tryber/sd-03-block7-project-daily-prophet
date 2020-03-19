@@ -132,7 +132,8 @@ div, section, nav, aside, footer {
   margin-right: 10px;
   position: relative;
   text-align: justify;
-  top: 35px;
+  top: 65px;
+  transform: rotate(90deg);
 }
 
 main section {
@@ -153,10 +154,10 @@ main {
 .dementor {
   position: relative;
   right: 1000px;
-  bottom: 80px;
+  bottom: 100px;
   animation-name: dementor;
   animation-duration: 7s;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
   transition: 1s;
 }
@@ -165,7 +166,7 @@ main {
 
   0% { opacity: 0.3; transform: scale(6); transform: skew(15deg, 50deg);}
   50% { opacity: 0.65; transform: scale(3); right: -500px; transform: rotateY(180deg)}
-  100% { opacity: 1; transform: scale(.6); right: -100px; transform: skew(1 2);}
+  100% { opacity: 1; transform: scale(.9); right: -100px; transform: skew(1 2);}
  }
 
 @keyframes shocking {
