@@ -1,5 +1,5 @@
 body {
-    background-color: #EDE9DE;
+    background-color: #ede9de;
     font-family: 'Kelly Slab', cursive;
 }
 
@@ -20,7 +20,7 @@ a:hover {
 
 .container-orientation {
     margin: 0 auto;
-    width: 947px;;
+    width: 947px;
 }
 
 .container-layout {
@@ -74,7 +74,7 @@ nav {
     left: 60%;
     position: absolute;
     top: 5%;
-    transform: rotateZ( 60deg );
+    transform: rotateZ(60deg);
     z-index: 10;
 }
 
@@ -86,7 +86,8 @@ nav {
 }
 
 @media (min-width: 1170px) {
-    .container-layout {
+
+    .container-layout {       
         background-color: red;  
     }
 }
@@ -101,7 +102,7 @@ nav {
 
 @keyframes book {
     0% {
-        transform: scale(1,2) rotate(0deg);
+        transform: scale(1, 2) rotate(0deg);
     }
     25% {
         transform: translateX(10vh) translateY(15vh);
@@ -116,7 +117,7 @@ nav {
         transform: scaleX(30vw) translateY(5vh);
     }
     90%{
-        transform: scale(1,1) rotate(180deg);
+        transform: scale(1, 1) rotate(180deg);
     }
     100%{
         transform: scale(1,2) rotate(0deg);
@@ -125,14 +126,14 @@ nav {
 
 @keyframes pomo {
     0% {
-        transform: scale(2,2) translateX(0vh);
+        transform: scale(2, 2) translateX(0vh);
     }
 
     50% {
-        transform: scale(1,1) translateX(100vh);
+        transform: scale(1, 1) translateX(100vh);
     }
 
     100% {
-        transform: scale(2,2) translateX(0vh);
+        transform: scale(2, 2) translateX(0vh);
     }
 }
