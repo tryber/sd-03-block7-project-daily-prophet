@@ -97,8 +97,13 @@ footer {
   width: 100%;
 }
 
+.gif {
+  width: 100%;
+  height: 100%;
+}
+
 .newspaper {
-  background-image: url('img/paperboard-texture_95678-72.jpg');
+  background-image: url('img/paperboard-texture_gray.jpg');
   background-repeat: repeat;
   box-shadow: 10px 10px black;
   display: flex;
