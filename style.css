@@ -13,7 +13,7 @@ article {
   margin: 20px;
 }
 
-article:hover {
+.article-animation:hover {
   animation: article-grow 4s linear 2 alternate;
   background-color: slategray;
 }
@@ -211,7 +211,7 @@ footer {
   }
 }
 
-@media ( max-width : 760px ) {
+@media screen and ( max-width : 760px ) {
 
   .name {
     font-size: 60px;
@@ -222,14 +222,14 @@ footer {
   }
 }
 
-@media ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background: red;
   }
 }
 
-@media ( orientation : landscape ) {
+@media screen and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
