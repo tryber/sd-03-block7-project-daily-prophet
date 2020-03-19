@@ -218,7 +218,7 @@ footer {
 }
 
 .article-animation {
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: article-animation;
   animation-play-state: paused;
 }
