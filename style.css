@@ -33,8 +33,8 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   }
 }
 
-.article-animation {
-  animation: article-grow 4s steps(4, end);
+.article-animation:active {
+  animation: article-grow 4s steps(4, start);
 }
 
 @keyframes article-grow {

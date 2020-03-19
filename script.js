@@ -1,4 +1,4 @@
-function aumentarArtigos() {
+/* function aumentarArtigos() {
   const articleAnimation = document.querySelectorAll('p');
   for (let i = 0; i < articleAnimation.length; i += 1) {
     articleAnimation[i].addEventListener('click', () => {
@@ -11,3 +11,4 @@ function aumentarArtigos() {
 }
 
 aumentarArtigos();
+ */
