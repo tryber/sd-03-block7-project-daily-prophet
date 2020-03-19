@@ -217,6 +217,23 @@ footer {
   }
 }
 
+.article-animation {
+  animation-duration: 3s;
+  animation-name: article-animation;
+  animation-play-state: paused;
+}
+
+@keyframes article-animation {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
 @media ( orientation : landscape ) {
 
   .container-orientation {
@@ -261,13 +278,3 @@ footer {
   animation-name: article-grow;
 }
 
-@keyframes article-grow {
-
-  0% {
-    color: red;
-  }
-
-  100% {
-    font-size: 12px;
-  }
-}
