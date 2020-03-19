@@ -39,6 +39,9 @@
 
 .fly {
   animation-delay: 3s;
+  animation-direction: normal;
+  animation-direction: reverse;
+  -moz-animation-direction: normal;
   animation-duration: 6s;
   animation-name: flying;
 }
