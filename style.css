@@ -69,8 +69,7 @@ hr {
   width: 98%;
 }
 
-@media screen and ( min-width : 1170px ) {
-  
+@media screen and ( min-width : 1170px ) {  
   .figuras-principais {
     background-color: red;
   }
@@ -96,6 +95,7 @@ hr {
     background-color: sandybrown;
     opacity: 0;
   }
+  
   to {
     background-color: black;
     height: 25%;
