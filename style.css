@@ -22,7 +22,16 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+}
+.container-principal {
   cursor: url(http://cur.cursors-4u.net/others/oth-3/oth246.cur), auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: justify;
+  width: 800px;
 }
 
 .container-orientation {
@@ -32,30 +41,50 @@ body {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
+  animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3s;
+  animation-iteration-count: 3;
   animation-name: flying;
 }
 
 @keyframes flying {
 
-  o% {}
-  50% {}
-  100% {}
+  o% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform:rotate(0deg);
+  }
 }
 
 .article-animation {
-  animation-duration: 2s;
+  transition: all;
+  transition-duration: 1s;
+}
+.article-animation:hover {
+  animation-direction: alternate;
+  animation-duration: 4s;
   animation-name: article-grow;
+  transition: all;
+  transition-duration: 1s;
 }
 
 @keyframes article-grow {
 
   0% {
-    transform: scale(100%);
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
   }
   100% {
-    transform: scale(120%);
+    transform: scale(1);
   }
 }
 
+.aside {
+  border: 5px solid black;
+}
