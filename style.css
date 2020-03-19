@@ -39,11 +39,11 @@ body {
   left: 0;
 }
 
-.article-animation {
+article {
   font-weight: 600;
   text-align: center;
 }
-.article-animation:hover {
+article:hover {
   animation: 8s steps(20);
   font-weight: 900;
   transform: scale(1.5, 1.5);
