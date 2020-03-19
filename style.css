@@ -7,17 +7,34 @@ html , body , div , p , form , input , main , label , section {
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   background-color: darkslategray;
 }
 
 .container-layout {
   background-color: green;
+  background-image: url('images/sonserina.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
 }
 
 .profeta {
   height: 5em;
+}
+
+.links{
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  text-shadow: #000000 2px 3px 2px;
 }
 
 .fly {
@@ -56,6 +73,22 @@ body {
 
   .container-layout {
     background-color: yellow;
+    background-image: url('images/lufa-lufa.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+@media screen and ( min-width : 761px ) and ( max-width : 965px ) {
+
+  .container-layout {
+    background-color: blue;
+    background-image: url('images/corvinal.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
 }
@@ -64,6 +97,10 @@ body {
 
   .container-layout {
     background-color: red;
+    background-image: url('images/grifinoria.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
 }
