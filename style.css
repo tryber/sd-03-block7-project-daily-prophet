@@ -24,6 +24,7 @@ body {
 @keyframes flying {
 
   0% { left: 0; }
+  
   100% { left: 95%; }
 }
 
