@@ -5,8 +5,8 @@
 }
 
 .article-animation:active {
-  animation-play-state: running;
   animation-duration: 4s;
+  animation-play-state: running;
   transform: scale(1.5);
   transition: all 4s ease-in 0.2s;
 }
@@ -227,8 +227,8 @@ main {
 
 .fly {
   animation-delay: 3s;
-  animation-duration: 6s;
   animation-direction: alternate;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
