@@ -23,9 +23,20 @@ body {
 
 @keyframes flying {
 
-  0% { left: 0; }
-  
-  100% { left: 95%; }
+  0% {
+    margin-left: 0;
+    transform: scale(1, 1) translate(0, 0);
+  }
+
+  50% {
+    margin-left: 50%;
+    transform: scale(1.3, 1.3) translate(0, -80px);
+  }
+
+  100% {
+    margin-left: 95%;
+    transform: skew(15deg, 180deg);
+  }
 }
 
 .container-layout {
