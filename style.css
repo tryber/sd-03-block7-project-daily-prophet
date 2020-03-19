@@ -1,13 +1,9 @@
 /* fonts usadas no projeto 
 font-family: 'Kelly Slab', cursive;
 font-family: 'Open Sans Condensed', sans-serif; */
-
 /* default: para 0 a 759px (mobile) */
-*{
-    /* border: 1px solid rgba(255, 0, 200); */
-
-}
-
+/* *{border: 1px solid rgba(255, 0, 200); 
+} */
 body {
     background-color: #EDE9DE;
     font-family: 'Kelly Slab', cursive;
@@ -36,35 +32,27 @@ a:hover {
 .container-layout {
 
     background-color: yellow;
-    
-
 }
-.article-animation {
-
-}
-header{
-
-}
-
+/* .article-animation {
+} */
+/* header{
+} */
+/* 
 main{
-}
-
+} */
 .bigbox {
     display: flex; 
-    position: relative;
-    
+    position: relative;  
 }
-
-.box1 {
-}
-
+/* .box1 {
+} */
 .box2 {
     background-color: yellow;
     width: 30%;
 }
-
+/* 
 aside {
-}
+} */
 nav {
     display: flex;
     justify-content: space-between;
@@ -107,12 +95,10 @@ nav {
 
 .pomo-animation {
     cursor: pointer;
-    left: 0%;
     position: absolute;
     top: 10%;
     z-index: 11;
 }
-
 /* para dispositivos acima de 1170px (desktop) */
 @media (min-width: 1170px) {
     .container-layout {
@@ -129,19 +115,19 @@ nav {
 }
 
 @keyframes book {
-    0%{
+    0% {
         transform: scale(1,2) rotate(0deg);
     }
-    25%{
+    25% {
         transform: translateX(10vh) translateY(15vh);
     }
-    35%{
+    35% {
         transform: skewX(30deg) skew(60deg);
     }
-    50%{
+    50% {
         transform: skewX(0deg) skew(0deg) rotateZ(300deg) rotateX(120deg);
     }
-    75%{
+    75% {
         transform: scaleX(30vw) translateY(5vh);
     }
     90%{
@@ -153,15 +139,15 @@ nav {
 }
 
 @keyframes pomo {
-    0%{
+    0% {
         transform: scale(2,2) translateX(0vh);
     }
 
-    50%{
+    50% {
         transform: scale(1,1) translateX(100vh);
     }
 
-    100%{
+    100% {
         transform: scale(2,2) translateX(0vh);
     }
 }
