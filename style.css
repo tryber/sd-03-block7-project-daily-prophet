@@ -1,8 +1,13 @@
-article.article-animation:active {
+article.article-animation {
   animation-name: article-grow;
+  animation-play-state: paused;
+
+}
+
+.article-animation:active {
+  animation-play-state: running;
   transform: scale(1.5);
-  transition: all 4s ease-in .2s ;
-  z-index: 1;
+  transition: all 4s ease-in 0.2s;
 }
 
 @keyframes article-grow {
