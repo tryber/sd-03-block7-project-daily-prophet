@@ -1,0 +1,18 @@
+body{
+  background-color: rgb(241, 215, 175);
+}
+.titulo{
+  font-size: 5em;
+  font-family: cursive;
+  text-shadow: burlywood;
+  animation: titulo alternate;
+  text-align: center;
+  animation-duration: 15s;
+  margin: 0%;
+  color: rgb(0, 0, 59);
+}
+@keyframes titulo{
+  30%{opacity: 100%;}
+  60%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
