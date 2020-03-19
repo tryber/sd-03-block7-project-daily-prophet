@@ -21,7 +21,7 @@ body {
   }
 
 .fly {
-  animation: flying 4s 3s 3 alternate forwards ;
+  animation: flying 4s 3s 3 alternate forwards;
   height: 55px;
   position: relative;
 }
