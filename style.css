@@ -8,58 +8,30 @@ html , body , div , p , form , input , main , label , section {
 
 body {
   background-color: darkslategray;
-  
 }
 
-/* header { 
-  border: 1px solid purple;
-} */
-
-nav {
-  border: 1px solid red;
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
   animation-name: flying;
-}
-
-.fly{
   height: 55px;
   position: relative;
-  animation-name: flying;
-  animation-duration: 2s;
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
 }
 
-@keyframes flying{
-  
-  0%{
-    left: 0%;
+@keyframes flying {
+  0% {
+    left: 0;
   }
-  100%{
+  100% {
     left: 95%;
   }
 }
 
-/* .fly {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 2s;
-}
-
-@keyframes example {
-  0%   {background-color: red; left:0px;}
-  50%  {background-color: yellow; left:200px;}
-  100% {background-color: red; left:100%;}
-} */
-
 .container-layout {
   background-color: green;
-  animation-direction: alternate;
-  border: 1px solid ;
 }
 
 @media screen and ( orientation : landscape ) {
@@ -67,6 +39,7 @@ nav {
   .container-orientation {
     border: 1px solid red;
   }
+
 }
 
 @media screen and ( max-width : 760px ) {
@@ -74,6 +47,7 @@ nav {
   .container-layout {
     background-color: yellow;
   }
+
 }
 
 @media screen and ( min-width : 1170px ) {
@@ -81,4 +55,5 @@ nav {
   .container-layout {
     background-color: red;
   }
+
 }
