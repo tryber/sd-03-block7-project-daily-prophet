@@ -95,8 +95,8 @@ body {
 .fly {
   animation: flying 4s 3s 3 alternate forwards;
   height: 55px;
-  position: relative;
   margin-left: -95%;
+  position: relative;
 }
 
 @keyframes flying {
