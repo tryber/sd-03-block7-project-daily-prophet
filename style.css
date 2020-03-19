@@ -41,14 +41,19 @@ h2 {
   font-size: 105pt;
 }
 
-.especial {
+.container-orientation {
   align-items: center;
   border: 1px solid black;
   display: flex;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   justify-content: space-around;
   margin: 5px 0;
   width: 100%;
+}
+
+.article-animation {
+  animation: article-grow 4s steps(5, start) forwards;
+  animation-play-state: paused;
 }
 
 .imgEspecial:hover {
@@ -108,11 +113,24 @@ h2 {
   margin-top: 5px;
 }
 
+footer {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 18pt;
+  margin-top: 10px;
+  padding: 10px;
+}
+
 @keyframes flying {
 
   0% { margin-left: 0; }
 
   100% { margin-left: 700%; }
+}
+
+@keyframes article-grow {
+  to { transform: scale(1.5,1.5); 
+      font-weight: 900 ;}
 }
 
 @media screen and ( max-width : 760px ) {
