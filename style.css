@@ -10,13 +10,18 @@ body {
   background-color: darkslategray;
 }
 
+.container-layout {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+.profeta {
+  height: 5em;
+  }
+
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
+  animation: flying 4s 3s 3 alternate forwards ;
   height: 55px;
   position: relative;
 }
@@ -37,10 +42,6 @@ body {
     margin-left: 95%;
     transform: skew(15deg, 180deg);
   }
-}
-
-.container-layout {
-  background-color: green;
 }
 
 @media screen and ( orientation : landscape ) {
