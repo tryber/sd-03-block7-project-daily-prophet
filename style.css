@@ -31,6 +31,7 @@ article {
 }
 
 nav {
+  display: none;
   font-size: 30px;
   margin-top: 20px;
   text-align: center;
@@ -196,6 +197,10 @@ footer {
   .aside-col {
     display: flex;
     flex-direction: column;
+  }
+
+  .nav {
+    display: block;
   }
 }
 
