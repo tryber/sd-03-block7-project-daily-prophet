@@ -142,21 +142,6 @@ footer {
   }
 }
 
-.skew {
-  animation: skew 2s linear 2 alternate;
-}
-
-@keyframes skew {
-
-  from {
-    transform: skew(-15deg, -15deg) scale(0.7);
-  }
-
-  to {
-    transform: skew(15deg, 15deg) scale(1.5);
-  }
-}
-
 .news-grid {
   display: grid;
   grid-template-columns: 40% 40% 20%;
@@ -231,4 +216,12 @@ footer {
   .container-orientation {
     border: 1px solid red;
   }
+}
+
+.footer {
+  transition: transform 1s;
+
+}
+.footer:hover {
+  transform: skew(-15deg);
 }
