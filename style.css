@@ -76,10 +76,10 @@ hr {
 }
 
 @media screen and ( max-width: 760px ) {
-    footer {
+  footer {
     background-color: yellow;
-    }
-    .img1 {
+  }
+  .img1 {
     align-self: flex-start;
     display: flex;
     height: 200px;
@@ -88,6 +88,7 @@ hr {
 }
 
 @keyframes flying {
+  
   from {
     background-color: sandybrown;
     opacity: 0;
