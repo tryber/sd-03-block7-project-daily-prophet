@@ -1,1 +1,1 @@
-document.querySelectorAll('article').forEach((e) => { e.addEventListener('click', () => { e.classList.add('article-animation'); }); });
+document.querySelectorAll('article').forEach((e) => { e.addEventListener('click', () => { e.style.animationPlayState = 'running' }); });
