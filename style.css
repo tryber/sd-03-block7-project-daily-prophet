@@ -1,5 +1,6 @@
 body{
   background-color: rgb(241, 215, 175);
+  color: rgb(0, 0, 59);
 }
 .titulo{
   font-size: 5em;
@@ -7,12 +8,46 @@ body{
   text-shadow: burlywood;
   animation: titulo alternate;
   text-align: center;
-  animation-duration: 15s;
+  animation-duration: 20s;
   margin: 0%;
-  color: rgb(0, 0, 59);
+  
 }
 @keyframes titulo{
   30%{opacity: 100%;}
   60%{opacity: 0%;}
   100%{opacity: 100%;}
+}
+.blocos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.bloco-esquerdo{
+  
+}
+.bloco-direito{
+  
+}
+.leviosa{
+  filter: grayscale(100%);
+  animation: leviosa;
+  animation-duration: 15s;
+}
+@keyframes leviosa{
+  20%{}
+  60%{transform:skew(-10deg, 10deg) scale(1.5); margin-left: 25em;}
+  100%{}
+}
+.dance{
+  filter: grayscale(100%);
+  animation: dance;
+  animation-duration: 15s;
+}
+@keyframes dance{
+  20%{}
+  60%{transform:skew(10deg, -10deg) scale(1.5); margin-right: 15em;}
+  100%{}
+}
+.leviosa-text{
+  margin-right: 40%;
 }
