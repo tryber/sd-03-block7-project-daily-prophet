@@ -1,4 +1,4 @@
-article.article-animation {
+article>.article-animation {
   animation-name: article-grow;
   animation-play-state: paused;
 
