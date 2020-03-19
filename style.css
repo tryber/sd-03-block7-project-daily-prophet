@@ -44,6 +44,7 @@
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
+  transform: skew(10deg);
 }
 
 @media ( orientation : landscape ) {
