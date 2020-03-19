@@ -75,6 +75,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
   }
+  
   .links {
     background-color: gold;
   }
@@ -116,15 +117,15 @@ body {
   }
 }
 
-footer{
+footer {
   background-color: black;
-  text-align: center;
-  padding: 15px 0;
   display: flex;
   justify-content: center;
+  padding: 15px 0;
+  text-align: center;
 }
 
-.copy{
+.copy {
   color: white;
   text-shadow: gray 2px 3px 2px;
 }
