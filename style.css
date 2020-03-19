@@ -14,7 +14,7 @@ article {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(100, jump-none) 2 alternate paused;
+  animation: article-grow 4s linear 2 alternate paused;
 }
 
 @keyframes article-grow {
@@ -126,7 +126,7 @@ footer {
 }
 
 .fly {
-  animation: flying 2s linear 3s 3 alternate forwards;
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
   position: absolute;
   transform: translateX(-300%);
 }
