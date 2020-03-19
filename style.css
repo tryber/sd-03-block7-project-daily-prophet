@@ -1,12 +1,10 @@
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   animation-play-state: paused;
-
 }
 
 .article-animation:active {
-
   animation-play-state: running;
   transform: scale(1.5);
   transition: all 4s ease-in 0.2s;
