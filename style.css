@@ -20,20 +20,76 @@ body {
   justify-content: center;
 }
 
-.profeta {
-  height: 5em;
-}
-
 .links {
-  background-color: green;
+  background-color: black;
   display: flex;
   justify-content: space-around;
 }
 
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    background-image: url('images/lufa-lufa.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .links {
+    background-color: black;
+  }
+
+}
+
+@media screen and ( min-width : 761px ) and ( max-width : 965px ) {
+
+  .container-layout {
+    background-color: blue;
+    background-image: url('images/corvinal.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .links {
+    background-color: grey;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    background-image: url('images/grifinoria.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .links {
+    background-color: gold;
+  }
+
+}
+
+.profeta {
+  height: 5em;
+}
+
+
 .links a {
   color: white;
   text-decoration: none;
-  text-shadow: black 2px 3px 2px;
+  text-shadow: gray 2px 3px 2px;
 }
 
 .fly {
@@ -60,46 +116,15 @@ body {
   }
 }
 
-@media screen and ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid red;
-  }
-
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
 }
 
-@media screen and ( max-width : 760px ) {
-
-  .container-layout {
-    background-color: yellow;
-    background-image: url('images/lufa-lufa.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-}
-
-@media screen and ( min-width : 761px ) and ( max-width : 965px ) {
-
-  .container-layout {
-    background-color: blue;
-    background-image: url('images/corvinal.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-}
-
-@media screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: red;
-    background-image: url('images/grifinoria.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
+.copy{
+  color: white;
+  text-shadow: gray 2px 3px 2px;
 }
