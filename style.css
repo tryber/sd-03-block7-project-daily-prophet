@@ -20,6 +20,6 @@ body {
 @media screen and ( orientation : landscape ) {
 
   .container-orientation {
-    background-color: blue;
+    border: 1px solid red;
   }
 }
