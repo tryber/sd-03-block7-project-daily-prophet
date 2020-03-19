@@ -14,7 +14,7 @@ article {
 }
 
 .article-animation {
-  animation: article-grow 4s linear 2 alternate paused;
+  animation: article-grow 4s steps(100, jump-none) 2 alternate paused;
 }
 
 @keyframes article-grow {
@@ -220,7 +220,6 @@ footer {
 
 .footer {
   transition: transform 1s;
-
 }
 
 .footer:hover {
