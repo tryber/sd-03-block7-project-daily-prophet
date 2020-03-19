@@ -63,6 +63,20 @@ h1:hover {
   width: 100%;
 }
 
+.fly {
+  margin: 30px;
+  transform: rotate(45deg);
+  width: 75px;
+  animation: fly 1s infinite;
+}
+
+@keyframes fly {
+
+  100% {
+    transform: translate(1000px, 0);
+  }
+}
+
 footer {
   align-items: center;
   background-color: lightgray;
