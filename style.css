@@ -17,7 +17,7 @@ article {
   animation-direction: alternate;
   animation-duration: 4s;
   animation-iteration-count: 2;
-  animation-name: article-grow;
+  animation-name: 'article-grow';
   animation-timing-function: linear;
   background-color: slategray;
 }
