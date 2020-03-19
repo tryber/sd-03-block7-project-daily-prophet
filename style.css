@@ -64,10 +64,10 @@ h1:hover {
 }
 
 .fly {
+  animation: fly 1s infinite;
   margin: 30px;
   transform: rotate(45deg);
   width: 75px;
-  animation: fly 1s infinite;
 }
 
 @keyframes fly {
