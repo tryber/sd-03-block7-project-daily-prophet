@@ -7,120 +7,126 @@ font-family: 'Open Sans Condensed', sans-serif; */
     /* border: 1px solid rgba(255, 0, 200); */
 
 }
-body{
-    font-family: 'Kelly Slab', cursive;
+
+body {
     background-color: #EDE9DE;
+    font-family: 'Kelly Slab', cursive;
 }
-a{
+
+a {
+    color: black;
     font-size: 30px;
     text-decoration: none;
-    color: black;
 }
-a:hover{
+
+a:hover {
     font-weight: 800;
 }
-.img-topo{
-    width: 100%;
+
+.img-topo {
     max-width: 1000px;
+    width: 100%;
 }
-.container-orientation{
+
+.container-orientation {
     margin: 0 auto;
     width: 947px;;
 }
-.container-layout{
+
+.container-layout {
 
     background-color: yellow;
     
 
 }
-.article-animation{
+.article-animation {
 
 }
 header{
 
 }
+
 main{
-
-
 }
-.bigbox{
+
+.bigbox {
     display: flex; 
     position: relative;
-    /* flex-direction: row; */
-    /* width: 800px; */
     
 }
-.box1{
- 
 
+.box1 {
 }
-.box2{
-    width: 30%;
+
+.box2 {
     background-color: yellow;
+    width: 30%;
 }
 
-aside{
-
+aside {
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
 }
 
-.topo{
-    width: 947px;
+.topo {
     height: 172px;
+    width: 947px;
 }
 
-.w10{
+.w10 {
     width: 10%;
 }
-.w20{
+
+.w20 {
     width: 20%;
 }
-.w30{
+
+.w30 {
     width: 30%;
 }
-.w75{
+
+.w75 {
     width: 75%;
 }
-.w100{
+
+.w100 {
     width: 100%;
 }
 
-.book-animation{
-    position: absolute;
-    left: 60%;
-    top: 5%;
-    z-index: 10;
-    transform: rotateZ( 60deg );
+.book-animation {
     cursor: pointer;
-}
-.pomo-animation{
+    left: 60%;
     position: absolute;
+    top: 5%;
+    transform: rotateZ( 60deg );
+    z-index: 10;
+}
+
+.pomo-animation {
+    cursor: pointer;
     left: 0%;
+    position: absolute;
     top: 10%;
     z-index: 11;
-    cursor: pointer;
 }
 
 /* para dispositivos acima de 1170px (desktop) */
-@media (min-width: 1170px){
-
-    .container-layout{
-        background-color: red;
-    
+@media (min-width: 1170px) {
+    .container-layout {
+        background-color: red;  
     }
 }
 
-.book-animation{
+.book-animation {
     animation: book 5s linear infinite backwards;
 }
-.pomo-animation{
+
+.pomo-animation {
     animation: pomo 30s linear infinite backwards;
 }
-
 
 @keyframes book {
     0%{
