@@ -45,7 +45,7 @@ h2 {
   align-items: center;
   border: 1px solid black;
   display: flex;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Courier New, Courier, monospace;
   justify-content: space-around;
   margin: 5px 0;
   width: 100%;
@@ -114,11 +114,11 @@ h2 {
 }
 
 footer {
-  text-align: center;
   border: 1px solid black;
   font-size: 18pt;
   margin-top: 10px;
   padding: 10px;
+  text-align: center;
 }
 
 @keyframes flying {
@@ -129,8 +129,10 @@ footer {
 }
 
 @keyframes article-grow {
-  to { transform: scale(1.5,1.5); 
-      font-weight: 900 ;}
+  to { 
+    font-weight: 900;
+    transform:scale(1.5, 1.5);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
