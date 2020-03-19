@@ -1,6 +1,6 @@
 body {
   background-color: #ede9de;
-  font-family: 'Kelly Slab', cursive;
+  font-family: "Kelly Slab", cursive;
 }
 
 a {
@@ -86,7 +86,7 @@ nav {
   z-index: 11;
 }
 
-@media ( min-width: 1170px ) {
+@media ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
@@ -94,24 +94,31 @@ nav {
 }
 
 @keyframes book {
+
   0% {
     transform: scale(1, 2) rotate(0deg);
   }
+
   25% {
     transform: translateX(10vh) translateY(15vh);
   }
+
   35% {
     transform: skewX(30deg) skew(60deg);
   }
+
   50% {
     transform: skewX(0deg) skew(0deg) rotateZ(300deg) rotateX(120deg);
   }
+
   75% {
     transform: scaleX(30vw) translateY(5vh);
   }
+
   90% {
     transform: scale(1, 1) rotate(180deg);
   }
+  
   100% {
     transform: scale(1, 2) rotate(0deg);
   }
