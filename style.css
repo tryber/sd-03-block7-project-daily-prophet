@@ -66,9 +66,10 @@ h1:hover {
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
-  animation: flying 1s infinite;
+  animation-name: flying;
   margin: 30px;
   transform: rotate(45deg);
   width: 75px;
