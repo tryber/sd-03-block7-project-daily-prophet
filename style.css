@@ -41,7 +41,7 @@
   animation-delay: 3s;
   animation-duration: 6s;
   animation-name: flying;
- } 
+}
 
 @media ( orientation : landscape ) {
 
