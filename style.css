@@ -13,28 +13,28 @@
 @keyframes article-grow {
   
   0% {
-    transform: scale(0%);
     font-weight: 100; 
+    transform: scale(0%);    
   }
   
   20% {
-    transform: scale(5%);
     font-weight: 200;
+    transform: scale(5%);    
   }   
   
   50% {
-    transform: scale(15%);
     font-weight: 400;
+    transform: scale(15%);    
   }
   
   75% {
-    transform: scale(30%);
     font-weight: 600;
+    transform: scale(30%);    
   }
 
   95% {
-    transform: scale(50%);
     font-weight: 900;
+    transform: scale(50%);    
   }
 
 }
