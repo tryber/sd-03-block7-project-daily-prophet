@@ -1,0 +1,107 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Artifika, serif;
+  text-align: justify;
+  width: 100%;
+}
+
+.container-layout {
+  width: 100%;
+}
+
+.scale {
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: scale;
+
+}
+
+.skew {
+  animation-delay: 1s;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: skew;
+}
+
+.fly {
+  animation: 8s steps(20);
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  left: 0;
+}
+
+article {
+  font-weight: 600;
+  text-align: center;
+}
+article:hover {
+  animation: 8s steps(20);
+  font-weight: 900;
+  transform: scale(1.5, 1.5);
+  transition: 4s;
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes skew {
+
+  0% {
+    transform: skewX(20deg);
+  }
+
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(95%);
+  }
+}
+
+@media only screen and ( max-width : 1170px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: red;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
