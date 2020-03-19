@@ -22,17 +22,9 @@ body {
 }
 
 @keyframes flying {
-  0% {
+  0% { left: 0; }
 
-    left: 0;
-
-  }
-
-  100% {
-
-    left: 95%;
-    
-  }
+  100% { left: 95%; }
 }
 
 .container-layout {
