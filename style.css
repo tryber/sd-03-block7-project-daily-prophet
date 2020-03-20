@@ -55,10 +55,6 @@ h4 {
   margin-top: 5px;
 }
 
-img {
-  float: left;
-}
-
 .left-content {
   animation: entorta 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
@@ -149,13 +145,30 @@ p {
 @media only screen and ( min-width : 800px ) {
 
   article {
-    float: left;
-    position: relative;
+    flex: 3;
   }
 
   aside {
-    float: right;
-    position: relative;
+    flex: 1;
+  }
+
+  img {
+    float: left;
+    padding-bottom: 15px;
+    padding-right: 15px;
+  }
+
+  .nav-text {
+    text-align: justify;
+  }
+
+  .sheet {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .side-text {
+    font-size: 20px;
   }
 
 }
