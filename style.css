@@ -15,7 +15,7 @@ body {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-name: flying;
   height: 50%;
   width: 50%;
@@ -28,7 +28,7 @@ hr {
 
 .img1 {
   align-self: flex-end;
-  animation: scaling 2s linear infinite alternate;
+  animation: scaling 1s infinite alternate;
   height: 100%;
   margin-right: 10px;
   padding: 10px;
@@ -41,7 +41,9 @@ hr {
 
 .img2:hover {
   transform: translate(20px, 50px);
+  transition-delay: 1s;
   transition-duration: 3s;
+  transition-timing-function: ease;
   width: 50%;
 }
 
@@ -69,6 +71,7 @@ hr {
 
 .titulo-principal {
   align-self: center;
+  animation: translating 2s infinite alternate;
   margin: 10px;
   width: 98%;
 }
@@ -104,11 +107,11 @@ hr {
 @keyframes flying {
 
   from {
-    margin-left: 100%;
+    margin-left: 1%;
   }
 
   to {
-    margin-left: 1%;
+    margin-left: 90%;
   }
 }
 
@@ -124,5 +127,16 @@ hr {
 
   75% {
     transform: skew(20deg);
+  }
+}
+
+@keyframes translating {
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(25px);
   }
 }
