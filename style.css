@@ -112,6 +112,7 @@ aside > div {
 
 .fly {
   animation: flying 3s alternate 3 forwards 3s;
+  transition: animation steps(500, end);
 }
 
 @keyframes flying {
@@ -124,7 +125,24 @@ aside > div {
   to {
     margin-left: 400px;
     margin-top: -550px;
-    transform: scale(1.5);
+    transform: scale(1.25);
+
+  }
+}
+
+.skew:hover {
+  animation: mover 1.5s forwards 0.25s;
+  transition: animation steps(500, end);
+}
+
+@keyframes mover {
+
+  from {
+    transform: skewY(0deg) scale(1);
+  }
+
+  to {
+    transform: skewY(180deg) scale(1.75) translate(-250px, 0);
   }
 }
 
