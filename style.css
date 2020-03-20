@@ -35,7 +35,7 @@ body{
 }
 @keyframes leviosa{
   20%{}
-  60%{transform:skew(-10deg, 10deg) scale(1.5); margin-left: 25em;}
+  60%{transform:skew(-10deg, 10deg) scale(2); margin-left: 25em;}
   100%{}
 }
 .dance{
@@ -50,4 +50,14 @@ body{
 }
 .leviosa-text{
   margin-right: 40%;
+}
+@media only screen and (max-width:760px){
+  .container-layout{
+    background-color: rgb(255, 255, 0);
+  }
+}
+@media only screen and (min-width:1170px){
+  .container-layout{
+    background-color: rgb(255, 0, 0);
+  }
 }
