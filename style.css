@@ -293,7 +293,7 @@ a:hover {
   }
 }
 
-@media ( orientation : landscape ) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
