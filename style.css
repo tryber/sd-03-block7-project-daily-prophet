@@ -130,7 +130,7 @@ aside > div {
   }
 }
 
-.skew:hover {
+.mapa-onclick {
   animation: mover 1.5s forwards 0.25s;
   transition: animation steps(500, end);
 }
@@ -156,6 +156,27 @@ article {
   margin: 1%;
   width: 50%;
 }
+
+.article-animation {
+  animation: article-grow 4s forwards;
+  transition: animation steps(500, end);
+
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+
+  }
+
+  to {
+    font-weight: 700;
+    transform: scale(2);
+    translate: (-100px, 0);
+
+  }}
 
 .tituloD {
   border-bottom: 2px solid black;
