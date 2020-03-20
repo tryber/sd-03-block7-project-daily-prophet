@@ -293,7 +293,7 @@ a:hover {
   }
 }
 
-@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
+@media ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
@@ -317,6 +317,8 @@ a:hover {
 
   .titulo-lateral {
     transform: rotate(0);
+    transition-duration: 2s;
+    transition-property: all;
     writing-mode: unset;
   }
 
