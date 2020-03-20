@@ -21,8 +21,8 @@
 
 .maverick {
   max-width: 760px;
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 
 .fly {
@@ -36,11 +36,11 @@
   animation-timing-function: linear;
   max-width: 100px;
 }
- 
+
 @keyframes flying {
 
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   50% {
@@ -55,8 +55,7 @@
 .cont-art2c {
   align-items: flex-start;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
 }
@@ -81,7 +80,7 @@ p {
 .art50-direito {
   display: flex;
   flex-direction: column;
-  justify-content: right;
+  justify-content: flex-end;
   padding-right: 10px;
   width: 48%;
 }
@@ -89,8 +88,7 @@ p {
 .art50-esquerdo {
   align-self: center;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   width: 48%;
 }
