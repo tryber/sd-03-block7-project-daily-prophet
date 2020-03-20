@@ -63,7 +63,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     transition: background-color 2s, background-image 2s;
-    
   }
 
   .links {
@@ -117,7 +116,7 @@ body {
 
   50% {
     margin-left: 50%;
-    transform:  rotate(115deg) scale(1, 1) translate(0, 20px);
+    transform: rotate(115deg) scale(1, 1) translate(0, 20px);
   }
 
   100% {
