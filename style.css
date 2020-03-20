@@ -25,24 +25,45 @@ body{
   animation: leviosa;
   animation-duration: 15s;
   filter: grayscale(100%);
+  height: 10em;
 }
 @keyframes leviosa{
   20%{}
-  60%{transform:skew(-10deg, 10deg) scale(2); margin-left: 25em;}
+  60%{transform:skew(-10deg, 10deg) scale(2); margin-left: 20em;}
   100%{}
 }
 .dance{
   animation: dance;
   animation-duration: 15s;
   filter: grayscale(100%);
+  height: 10em;
 }
 @keyframes dance{
   20%{}
-  60%{transform:skew(10deg, -10deg) scale(1.5); margin-right: 15em;}
+  60%{transform:skew(10deg, -10deg) scale(1.5); margin-right: 15em; margin-top:20em;}
   100%{}
 }
 .leviosa-text{
+  animation: aparece ;
+  animation-delay: 15s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin-left: 10%;
   margin-right: 40%;
+  opacity: 0;
+}
+.escola-text{
+  animation: aparece ;
+  animation-delay: 15s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  margin-left: 20%;
+  margin-right: 10%;
+  opacity: 0;
+}
+@keyframes aparece{
+  from{opacity: 0;}
+  to{opacity:100}
 }
 @media only screen and (max-width:760px){
   .container-layout{
