@@ -70,6 +70,7 @@
   animation: steps(3, end) infinite;
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
 }
 
 .fly {
