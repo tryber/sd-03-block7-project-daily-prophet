@@ -103,17 +103,17 @@ body {
 
   0% {
     margin-left: -95%;
-    transform: scale(1, 1) translate(0, 0);
+    transform: skew(0, 25deg) scale(1, 1) translate(0, -50px);
   }
 
   50% {
     margin-left: 50%;
-    transform: scale(1.3, 1.3) translate(0, -80px);
+    transform:  rotate(115deg) scale(1, 1) translate(0, 20px);
   }
 
   100% {
     margin-left: 90%;
-    transform: skew(15deg, 180deg);
+    transform: rotate(-25deg) skew(-50deg, 180deg);
   }
 }
 
@@ -159,15 +159,15 @@ aside {
 @keyframes swing {
 
   0% {
-    transform: rotateZ(-25deg);
+    transform: rotate(-25deg);
   }
 
   50% {
-    transform: rotateZ(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotateZ(25deg);
+    transform: rotate(25deg);
   }
 }
 
