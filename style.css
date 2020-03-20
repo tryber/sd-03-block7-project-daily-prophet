@@ -142,7 +142,7 @@ aside > div {
   }
 
   to {
-    transform: skewY(180deg) scale(1.75) translate(-250px, 0);
+    transform: skewY(180deg) scale(1.75) translate(-150px, 0);
   }
 }
 
