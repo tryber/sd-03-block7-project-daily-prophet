@@ -32,6 +32,10 @@
   text-align: center;
 }
 
+header {
+  border: 1px solid black;
+}
+
 .headline {
   font-size: 65px;
   font-weight: 900;
@@ -51,6 +55,10 @@ h4 {
   margin-top: 5px;
 }
 
+img {
+  float: left;
+}
+
 .left-content {
   animation: entorta 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
@@ -62,15 +70,15 @@ h4 {
 }
 
 nav {
-  font-size: 5px;
+  font-size: 10px;
   margin: 0;
   text-align: center;
 }
 
 p {
+  font-size: 25px;
   margin: 5px;
   text-align: justify;
-  font-size: 25px;
 }
 
 .principal {
@@ -124,6 +132,10 @@ p {
     display: none;
   }
 
+  nav {
+    display: none;
+  }
+
 }
 
 @media only screen and ( max-width : 760px ) and ( orientation : landscape ) {
@@ -152,6 +164,10 @@ p {
 
   .container-layout {
     background-color: red;
+  }
+
+  header {
+    min-width: 1170px;
   }
 
   html , body {
