@@ -6,6 +6,6 @@ artigo.addEventListener('click', _ =>
 artigo.classList.toggle('article-animation')); */
 
 function articleClick() {
-let artigo = document.querySelector('.pArtigo');
-artigo.classList.toggle('article.animation');
+  const artigo = document.querySelector('.pArtigo');
+  artigo.classList.toggle('article.animation');
 }
