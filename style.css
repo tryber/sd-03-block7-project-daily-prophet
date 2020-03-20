@@ -67,7 +67,7 @@
 }
 
 .article-animation {
-  animation-duration: 10s;
+  animation-duration: 4s;
   animation-name: article-grow;
 }
 
