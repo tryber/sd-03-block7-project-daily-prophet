@@ -173,8 +173,7 @@ article {
 
   to {
     font-weight: 700;
-    transform: scale(2);
-    translate: (-100px, 0);
+    transform: scale(2) translate(-100px, 0);
 
   }}
 
