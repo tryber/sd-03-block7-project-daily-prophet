@@ -158,9 +158,8 @@ article {
 }
 
 .article-animation {
-  animation: article-grow 4s forwards;
+  animation: article-grow 4s forwards paused;
   transition: animation steps(500, end);
-
 }
 
 @keyframes article-grow {
@@ -173,7 +172,28 @@ article {
 
   to {
     font-weight: 700;
-    transform: scale(2) translate(-100px, 0);
+    transform: scale(1.5) translate(-200px, 0);
+
+  }}
+
+
+.article-animation-return {
+  animation: article-ungrow 4s forwards paused;
+  transition: animation steps(500, end);
+
+}
+
+@keyframes article-ungrow {
+
+  from {
+    font-weight: 700;
+    transform: scale(1);
+
+  }
+
+  to {
+    font-weight: 400;
+    transform: scale(1) translate(0, 0);
 
   }}
 
