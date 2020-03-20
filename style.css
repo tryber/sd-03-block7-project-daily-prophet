@@ -1,0 +1,272 @@
+article , aside , body , div , footer {
+  border: 0;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
+  margin: 0;
+  padding: 0;
+}
+
+form , html , input , label {
+  border: 0;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
+  margin: 0;
+  padding: 0;
+}
+
+main , nav , p , section {
+  border: 0;
+  border-radius: 5px;
+  font-family: Lusitana, serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.container-layout {
+  background-color: white;
+  margin: 0 auto;
+  min-height: 800px;
+  padding: 15px;
+  width: 80%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.header-left {
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.h1-1 {
+  font-size: 2.5rem;
+}
+
+.h1-1:hover {
+  transform: translate(40px, 20px);
+  transition-duration: 3s;
+}
+
+.logo-img {
+  height: 120px;
+  margin: 15px;
+  width: 60%;
+}
+
+.header-right {
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin-left: 10px;
+  width: 57%;
+}
+
+.h1-2 {
+  font-size: 4rem;
+}
+
+.h1-2:hover {
+  transform: scale(1.18);
+  transition-duration: 3s;
+}
+
+.sub-header {
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 5px;
+  width: 97%;
+}
+
+.sub-header , .h1-3 {
+  font-size: 3rem;
+}
+
+.sub-header p {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.asides {
+  display: flex;
+  margin: 0 auto;
+  width: 98%;
+}
+
+.aside-left {
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  margin: 10px 10px 10px 0;
+  padding: 15px;
+  width: 35%;
+}
+
+.content-center {
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  height: 300px;
+  justify-content: flex-start;
+  margin: 10px 0;
+  padding: 15px;
+  width: 70%;
+}
+
+.harry {
+  height: 170px;
+  margin-top: 60px;
+  width: 30%;
+}
+
+.sub-content {
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100px;
+  padding: 5px;
+  width: 97%;
+}
+
+.p-aside {
+  animation: p-aside 4s;
+  animation-delay: 2s;
+  transition-duration: 1s;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(202, 202, 202);
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 50px;
+  padding: 15px;
+  width: 80%;
+}
+
+.changeW:active {
+  animation: aumentar 4s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@keyframes p-aside {
+
+  from {
+    transform: skew(0deg) scale(0, 0) translate(0, 0);
+  }
+
+  to {
+    transform: skew(180deg) scale(1, 1) translate(0, 0);
+    transition: steps(4, end);
+  }
+}
+
+@keyframes aumentar {
+
+  from {
+    font-weight: 300;
+    transform: scale(1);
+  }
+
+  to {
+    font-size: 40px;
+    transform: scale(1.5);
+  }
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-left {
+    width: 100%;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: steps(4, start);
+}
+
+@keyframes article-grow {
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+    transform: scale(0.1);
+  }
+
+  to {
+    margin-left: 40%;
+    transform: skew(10deg, 30deg) translate(10px, 60px);
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: ease-in;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+}
