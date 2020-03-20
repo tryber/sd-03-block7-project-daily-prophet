@@ -28,7 +28,7 @@
 .fly {
   animation: flying 3s steps(2, end);
   animation-delay: 3s;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: backwards;
   animation-iteration-count: 3;
