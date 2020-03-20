@@ -13,9 +13,12 @@ body {
 
 .fly {
   animation-delay: 3s;
+  animation-direction: alternate;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
   animation-name: flying;
+  height: 50%;
+  width: 50%;
 }
 
 hr {
@@ -25,6 +28,7 @@ hr {
 
 .img1 {
   align-self: flex-end;
+  animation: scaling 2s linear infinite alternate;
   height: 100%;
   margin-right: 10px;
   padding: 10px;
@@ -36,7 +40,7 @@ hr {
 }
 
 .img2:hover {
-  transform: translate(200px);
+  transform: translate(20px, 50px);
   transition-duration: 3s;
   width: 50%;
 }
@@ -69,17 +73,25 @@ hr {
   width: 98%;
 }
 
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+        
+  }
+}
+
 @media screen and ( min-width : 1170px ) {
 
-  .figuras-principais {
-    background-color: red;
+  .container-layout {
+    background-color: rgb(255, 0, 0);
   }
 }
 
 @media screen and ( max-width : 760px ) {
 
-  footer {
-    background-color: yellow;
+  .container-layout {
+    background-color: rgb(255, 255, 0);
   }
 
   .img1 {
@@ -93,14 +105,25 @@ hr {
 @keyframes flying {
 
   from {
-    background-color: sandybrown;
-    opacity: 0;
+    margin-left: 100%;
   }
 
   to {
-    background-color: black;
-    height: 25%;
-    opacity: 1;
-    width: 25%;
+    margin-left: 0%;
+  }
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(0.4, 0.4);
+  }
+
+  50% {
+    transform: scale(1.0, 1.0);
+  }
+
+  75% {
+    transform: skew(50deg);
   }
 }
