@@ -219,18 +219,15 @@ footer {
 
 .article-animation {
   animation-duration: 4s;
-  animation-name: article-animation;
+  animation-name: article-grow;
   animation-play-state: paused;
+  animation-timing-function: steps(4, start);
 }
 
-@keyframes article-animation {
-
-  from {
-    transform: scale(0);
-  }
+@keyframes article-grow {
 
   to {
-    transform: scale(1.5);
+    transform: scale(1.5, 1.5);
   }
 }
 
