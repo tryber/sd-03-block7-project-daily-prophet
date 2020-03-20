@@ -249,7 +249,7 @@ a:hover {
   .container-layout {
     background-color: yellow;
   }
-  
+
   .div-passaro , .escudo , .vassoura , .cabecalho-noticia > img , hr {
     display: none;
   }
