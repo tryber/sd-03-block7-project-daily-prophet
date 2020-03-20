@@ -294,6 +294,10 @@ a:hover {
 
 @media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
+  .container-orientation {
+    border: 1px solid red;
+  }
+
   .div-passaro , .vassoura , .cabecalho-noticia > img , hr {
     display: none;
   }
