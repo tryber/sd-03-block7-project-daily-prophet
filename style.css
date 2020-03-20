@@ -7,14 +7,14 @@ body{
   animation-duration: 20s;
   font-family: cursive;
   font-size: 5em;
-  margin: 0px;
+  margin: 0;
   text-align: center;
   text-shadow: burlywood;
   
 }
 @keyframes titulo{
-  30%{opacity-value: 100%;}
-  60%{opacity-value: 0%;}
+  30%{opacity: 100;}
+  60%{opacity: 0;}
 }
 .blocos{
   display: flex;
