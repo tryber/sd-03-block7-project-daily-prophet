@@ -18,12 +18,14 @@ body {
   background-size: contain;
   display: flex;
   justify-content: center;
+  transition: background-color 2s, background-image 2s;
 }
 
 .links {
   background-color: black;
   display: flex;
   justify-content: space-around;
+  transition: background-color 2s;
 }
 
 @media screen and ( orientation : landscape ) {
@@ -42,10 +44,12 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: background-color 2s, background-image 2s;
   }
 
   .links {
     background-color: black;
+    transition: background-color 2s;
   }
 
 }
@@ -58,10 +62,13 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: background-color 2s, background-image 2s;
+    
   }
 
   .links {
     background-color: grey;
+    transition: background-color 2s;
   }
 
 }
@@ -74,10 +81,12 @@ body {
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: background-color 2s, background-image 2s;
   }
 
   .links {
     background-color: gold;
+    transition: background-color 2s;
   }
 }
 
@@ -93,7 +102,7 @@ body {
 }
 
 .fly {
-  animation: flying 4s 3s 3 alternate forwards;
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
   height: 55px;
   margin-left: -95%;
   position: relative;
@@ -188,4 +197,21 @@ footer {
   justify-content: center;
   padding: 15px 0;
   text-align: center;
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
 }
