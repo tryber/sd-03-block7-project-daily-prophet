@@ -8,6 +8,12 @@
   min-height: 100%;
 }
 
+.descripting {
+  font-weight: 900;
+  margin-top: 0;
+  text-align: center;
+}
+
 .fly {
   animation: flying 4s ease-in 3s 3 alternate;
   animation-fill-mode: forwards;
@@ -26,6 +32,13 @@
   text-align: center;
 }
 
+.headline {
+  font-size: 65px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
+}
+
 html , body {
   background-color: lightgrey;
   height: 100%;
@@ -33,6 +46,8 @@ html , body {
 }
 
 h4 {
+  font-size: 30px;
+  font-weight: 900;
   margin-top: 5px;
 }
 
@@ -44,6 +59,25 @@ h4 {
 .main {
   overflow: auto;
   padding-bottom: 10px;
+}
+
+nav {
+  font-size: 5px;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  margin: 5px;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.principal {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0;
+  text-align: center;
 }
 
 .prophet {
@@ -63,6 +97,17 @@ h4 {
 .side-bar {
   animation: translada 2s steps(4, end) 3s;
   transition: transform 2s ease-out;
+}
+
+.subtitle {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.the {
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
 }
 
 @media only screen and ( max-width : 760px ) {
