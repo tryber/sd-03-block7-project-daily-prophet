@@ -3,35 +3,28 @@ body{
   color: rgb(0, 0, 59);
 }
 .titulo{
-  font-size: 5em;
-  font-family: cursive;
-  text-shadow: burlywood;
   animation: titulo alternate;
-  text-align: center;
   animation-duration: 20s;
-  margin: 0%;
+  font-family: cursive;
+  font-size: 5em;
+  margin: 0px;
+  text-align: center;
+  text-shadow: burlywood;
   
 }
 @keyframes titulo{
-  30%{opacity: 100%;}
-  60%{opacity: 0%;}
-  100%{opacity: 100%;}
+  30%{opacity-value: 100%;}
+  60%{opacity-value: 0%;}
 }
 .blocos{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.bloco-esquerdo{
-  
-}
-.bloco-direito{
-  
-}
 .leviosa{
-  filter: grayscale(100%);
   animation: leviosa;
   animation-duration: 15s;
+  filter: grayscale(100%);
 }
 @keyframes leviosa{
   20%{}
@@ -39,9 +32,9 @@ body{
   100%{}
 }
 .dance{
-  filter: grayscale(100%);
   animation: dance;
   animation-duration: 15s;
+  filter: grayscale(100%);
 }
 @keyframes dance{
   20%{}
