@@ -5,8 +5,25 @@ body {
   width: 80%;
 }
 
-@media screen and ( max-width : 760px ) {
+@media screen and ( orientation : landscape ) {
 
+  .container-layout {
+    background-color : yellow;
+    border: red 1px solid;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .ladoR {
+    width: 100%;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) {
+  
   .container-layout {
     background-color : yellow;
   }
@@ -19,13 +36,10 @@ body {
     display: none;
   }
 
-  .ladoL {
-    float: none;
+  .ladoR {
+    width: 100%;
   }
 
-  .ladoR {
-    float: none;
-  }
 }
 
 @media screen and ( min-width : 1170px ) {
@@ -46,19 +60,39 @@ body {
   width: 200px;
 }
 
+.logo:hover {
+  animation-direction: alternate-reverse;
+  animation-duration: 0.20s;
+  animation-iteration-count: infinite;
+  animation-name: logo;
+}
+
+@keyframes logo {
+
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+
+}
+
 .cabecalho {
   display: flex;
   justify-content: space-between;
 }
 
-.animacao {
+.fly {
   animation-direction: alternate;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-name: anima;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
 }
 
-@keyframes anima {
+@keyframes flying {
 
   from {
     margin-left: 0;
@@ -112,4 +146,16 @@ p {
 
 .casas {
   border-top: 1px solid black;
+}
+
+.prisioneiro {
+  animation-duration: 3s;
+  animation-name: fugiu;
+}
+
+@keyframes fugiu {
+
+  0% {
+    transform: scale(-5);
+  }
 }
