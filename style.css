@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'Harry', serif;
-  src: url('harry_p/HARRYP__.TTF') format('truetype');
-}
-
 body {
   background-color : red;
-  border: 5px solid black;
-  font-family: 'Harry', serif;
+/*   border: 5px solid black; */
+  font-family: 'Times New Roman', Times, serif;
   margin: 0 auto;
   width: 80%;
 }
@@ -20,7 +15,17 @@ body {
   .logo {
     margin: auto;
   }
+  .img-center {
+    display: none;
+  }
 
+  .ladoL {
+    float: none;
+  }
+
+  .ladoR {
+    float: none;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
@@ -54,6 +59,7 @@ body {
 }
 
 @keyframes anima {
+  
   from {
     margin-left: 0;
   }
@@ -79,8 +85,9 @@ p {
   text-align: justify;
 }
 
-span {
+.destaque {
   font-style: italic;
+  margin-bottom: 350px;
 }
 
 .ladoL {
@@ -102,6 +109,7 @@ span {
   text-align: center;
 }
 
-.casas {
+.casas h3 {
+  border-top: 1px solid black;
   font-size: 26px;
 }
