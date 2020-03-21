@@ -112,6 +112,7 @@ article .fjalla {
 }
 
 @media screen and ( max-width : 760px ) {
+
   body {
     margin: 10px;
   }
