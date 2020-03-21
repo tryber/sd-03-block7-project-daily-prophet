@@ -78,7 +78,7 @@ body {
   }
 
   50% {
-    transform: translate(300px,400px);
+    transform: translate(300px, 400px);
   }
 
   100% {
@@ -125,11 +125,7 @@ body {
 
 @keyframes negrito {
 
-  0% {
-    font-weight: 0;
-  }
-
-  50%{
+  50% {
     font-weight: 300;
   }
 
