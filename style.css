@@ -24,7 +24,7 @@
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 4s;
-  animation-iteration-count: 3s;
+  animation-iteration-count: 3;
   animation-timing-function: linear;
   position: relative;
 }
