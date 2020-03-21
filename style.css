@@ -15,6 +15,7 @@ body {
 }
 
 .fly {
+  animation-delay: 3s;
   animation-duration: 8s;
   animation-iteration-count: 3;
   animation-name: flying;
