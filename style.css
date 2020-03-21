@@ -66,20 +66,16 @@ footer {
   padding: 1%;
 }
 
-/* .fly {
+.fly {
   animation: flying 4s 3s steps(200) 3 alternate forwards;
-
-  @media screen and ( max-width : 760px ) {a
-    nimation-direction: alternate;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 3;
-    animation-name: flying;
-    height: 17%;
-    margin-left: -150px;
-    transition: flying 4s;
-    width: 17%;
-  } */
+  /* animation-direction: alternate;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying; */
+  transition: flying 4s;
+  width: 10%;
+  }
 
 header {
   border-bottom: 1px solid black;
@@ -100,7 +96,7 @@ header {
 }
 
 .header-h2 {
-  font-size: 0.9rem;
+  font-size: 100%;
   margin-top: -1%;
   padding-right: 5%;
 }
@@ -129,7 +125,6 @@ nav {
 @keyframes flying {
 
   0% {
-    margin-left: -100px;
     transform: scale(1, 1) translate(0, 0);
   }
 
@@ -139,7 +134,7 @@ nav {
   }
 
   100% {
-    margin-left: 100%;
+    margin-left: 90%;
     transform: scale(1, 1) translate(0, 0);
   }
 }
