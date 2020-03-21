@@ -109,6 +109,7 @@ header {
   height: 95%;
   padding-left: 3%;
   padding-top: 2%;
+  transition: transform 1s;
 }
 
 .shield-logo:hover {
