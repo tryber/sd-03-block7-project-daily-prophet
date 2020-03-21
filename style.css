@@ -1,72 +1,135 @@
-h1 , p , span {
+h1 , p , span , div , figure , img {
   margin: 0;
   padding: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 body {
-  align-items: center;
-  background-color: #fff8ee;
+  background-color: #1c1915;
   color: #1c1915;
-  display: flex;
-  flex-direction: column;
   font-family: Vollkorn, serif;
   font-size: 1rem;
+  line-height: 1.15;
+  margin: 20px;
   padding: 0 0.5em;
 }
 
-.header , .aside , .article , .section , .footer {
-  width: 100%;
+.fjalla {
+  font-family: Fjalla One, sans-serif;
 }
 
-.hr1 {
+.kreon {
+  font-family: Kreon, serif;
+}
+
+.grid {
+  background-color: #fff8ee;
+  border-radius: 0.5%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1em;
+  grid-row-gap: 0.5em;
+  margin: 0 auto;
+  max-width: 64em;
+  padding: 1em;
+}
+
+.header {
+  grid-column-end: 7;
+  grid-column-start: 1;
+  text-align: center;
+}
+
+.header figcaption {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  margin: 0.375em 0.5em 0em 0.5em;
+  text-transform: uppercase;
+}
+
+.header figcaption:before {
+  content: '*';
+  font-size: 1.5rem;
+  margin-left: -0.625em;
+  position: absolute;
+}
+
+.header figcaption:after {
+  content: '*';
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.hr-top {
   border-bottom: 1px solid #1c1915;
   border-top: 0.188em solid #1c1915;
   height: 0.125em;
   margin: 0.5em auto;
 }
 
-.hr2 {
+.hr-bottom {
   border-bottom: 0.188em solid #1c1915;
   border-top: 1px solid #1c1915;
   height: 0.125em;
   margin: 0.5em auto;
 }
 
-figure {
-  margin: 0;
+.logo-img {
+  box-sizing: border-box;
+  float: left;
+  max-width: 15%;
 }
 
-figure figcaption {
-  text-align: center;
+.title-img {
+  box-sizing: border-box;
+  max-width: 85%;
 }
 
-.title-img , .n3VNCb {
-  width: 100%;
+.n3VNCb {
+  max-width: 100%;
 }
 
 .section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  grid-column-end: 7;
+  grid-column-start: 1;
+  line-height: 1;
+  padding: 0;
 }
 
 .exclusive {
+  align-items: center;
   background-color: #1c1915;
   color: #fff8ee;
-  width: 100%;
+  font-size: 2rem;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  padding-top: 5px;
+  text-align: center;
 }
 
-.sec-content {
-  border: 1px solid #1c1915;
-  box-sizing: border-box;
-  display: flex;
-  margin: 0.5em 0 0;
-  padding: 0.375em 0.25em 0;
+.exclusive .fjalla::before {
+  content: '>> ';
+}
+
+.exclusive .fjalla {
+  font-size: 2.5rem;
+}
+
+.exclusive .fjalla::after {
+  content: ' <<';
+}
+
+.content-exlusive {
+  grid-column-end: 7;
+  grid-column-start: 3;
 }
 
 .link {
   background-color: #1c1915;
-  padding-right: 5px;
+  padding: 2.5px 5px 2.5px 0;
   text-align: right;
 }
 
@@ -76,42 +139,68 @@ figure figcaption {
   text-decoration: none;
 }
 
-.news {
-  border: 1px solid #1c1915;
-  box-sizing: border-box;
-  display: flex;
-  margin: 0.5em 0 0;
-  padding: 0.375em 0.25em 0;
+.section-news {
+  grid-column-end: 7;
+  grid-column-start: 1;
 }
 
 .article {
-  margin-right: 5px;
-  width: 75%;
+  display: grid;
+  grid-column-gap: 1em;
+  grid-row-gap: 0;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0.125em 0.125em 0 0.5em;
+}
+
+.article-title {
+  font-size: 4rem;
+  grid-column-end: 4;
+  grid-column-start: 1;
+  text-align: justify;
+}
+
+.ghost {
+  margin: 0 0 10px;
+}
+
+.article-p1 {
+  grid-column-end: 2;
+  grid-column-start: 1;
+}
+
+.article-p1 p {
+  padding: 0 0 20px;
+}
+
+.article-p2 {
+  grid-column-end: 4;
+  grid-column-start: 2;
 }
 
 .aside {
-  width: 24%;
+  grid-column-end: 5;
+  grid-column-start: 4;
+  grid-row-end: span 3;
+  grid-row-start: 1;
 }
 
-.aside-title {
+.aside-header {
   background-color: #1c1915;
   color: #fff8ee;
   text-align: center;
+  padding: 5px 0;
 }
 
-.fjalla {
-  font-family: Fjalla One, sans-serif;
-}
-
-.fjalla span {
-  font-family: Kreon, serif;
-}
-
-article .fjalla {
+.aside-title {
   font-size: 2rem;
 }
 
+
 @media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
 
   body {
     margin: 10px;
@@ -120,24 +209,11 @@ article .fjalla {
   .logo-img {
     display: none;
   }
-
-  .sec-content , .news {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article , .aside {
-    width: 100%;
-  }
-
-  .fjalla span {
-    font-family: Fjalla One, sans-serif;
-  }
 }
 
 @media screen and ( min-width : 1170px ) {
 
-  body {
+  .container-layout {
     background-color: red;
   }
 }
