@@ -184,10 +184,6 @@ header {
   background-color: transparent;
 }
 
-.container-orientation {
-  border: 1px solid red;
-}
-
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
@@ -202,9 +198,21 @@ header {
   }
 }
 
-@media screen and ( min-width : 480px ) and ( orientation : landscape ) {
+@media screen and ( orientation : landscape ) {
 
   .container-layout {
     border: 1px solid red;
+  }
+}
+
+@keyframes article-grow {
+  
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transition: scale(1.5);
+    background-color: red;
   }
 }
