@@ -20,12 +20,7 @@
 }
 
 .fly {
-  animation: flying;
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 4s;
-  animation-iteration-count: 3;
-  animation-timing-function: linear;
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
   position: relative;
 }
 
