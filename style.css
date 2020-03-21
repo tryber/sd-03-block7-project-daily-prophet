@@ -1,5 +1,5 @@
 body {
-  background-color:red;
+  background-color :red;
   border: 5px solid black;
   font-family: Harry, serif;
   margin: 0 auto;
@@ -7,17 +7,18 @@ body {
 }
 
 @font-face {
-  font-family: Harry;
-  src: url("harry_p/HARRYP__.TTF");
+  font-family: 'Harry';
+  src: url('harry_p/HARRYP__.TTF') format('truetype');
 }
 
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
 
-    background-color: yellow;
+    background-color : yellow;
 
   }
+
   .logo {
 
     margin: auto;
@@ -59,19 +60,18 @@ body {
 }
 
 @keyframes anima {
-
   from {
 
     margin-left: 0;
 
   }
+
   to {
 
     margin-left: 87%;
     transform: rotate(360deg);
 
   }
-  
 }
 
 .noticia-principal {
@@ -85,7 +85,7 @@ h3 {
 }
 
 p {
-  margin: auto 20px auto 20px;
+  margin: auto 20px;
   text-align: justify;
 }
 
