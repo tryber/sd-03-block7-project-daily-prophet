@@ -16,6 +16,7 @@ body {
 
 .fly {
   animation-delay: 3s;
+  animation-direction: alternate;
   animation-duration: 8s;
   animation-iteration-count: 3;
   animation-name: flying;
@@ -33,8 +34,13 @@ body {
     transform: translateX(1500px) rotateY(180deg);
   }
 
-  51% {
+  51%{
+    transform: skew() scale();
+  }
+
+  52% {
     transform: translateX(1500px);
+    
   }
 
   100% {
