@@ -151,3 +151,9 @@ header {
     background-color: red;
   }
 }
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .container-layout {
+    background-color: grey;
+  }
+}
