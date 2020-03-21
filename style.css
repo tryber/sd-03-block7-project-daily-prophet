@@ -35,8 +35,9 @@ body {
 
 @keyframes leviosa {
 
-  60% { margin-left: 20em; 
-    transform:scale(2) skew(-10deg, 10deg)}
+  60% { margin-left:20em;
+
+    transform:scale(2), skew(-10deg, 10deg)}
 
 }
 
@@ -50,9 +51,11 @@ body {
 
 @keyframes dance {
 
-  60% { margin-right: 20em; 
+  60% { margin-right:20em; 
+
     margin-top:20em;
-    transform:scale(1.5) skew(10deg, -10deg)}
+
+    transform:scale(1.5), skew(10deg, -10deg)}
 
 }
 
@@ -80,7 +83,7 @@ body {
 
 @keyframes aparece {
 
-  from { opacity: 0;}
+  from { opacity:0;}
   to { opacity:1}
 
 }
