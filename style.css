@@ -1,0 +1,84 @@
+.hp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  transition: flying 4s;
+}
+
+@keyframes flying {
+
+  0% {
+    font-size: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    transform: translate(2, 1);
+    transition: initial;
+  }
+
+  50% {
+    font-size: 15px;
+    margin-left: 85%;
+    margin-top: 40px;
+    transform: skew(0.312rad);
+    transition: inherit;
+  }
+
+  100% {
+    font-size: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    transform: scale(1, 2);
+    transition: steps(1, 2);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+/* first mobile */
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
