@@ -19,12 +19,25 @@ header {
 }
 
 .exclusivo {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-name: scaleAnimation;
   background-color: rgb(28, 25, 21);
   color: white;
   font-size: 1.7em;
   text-align: center;
-  transform: scale(0.99);
   width: 30%;
+}
+
+@keyframes scaleAnimation {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.99);
+  }
 }
 
 .artigos-section {
