@@ -105,8 +105,8 @@ body {
 }
 
 a {
-  animation: pisca infinite;
-  animation-duration: 1000ms;
+  animation: pisca;
+  animation-duration: 1s;
   margin-left: 20em;
 }
 
