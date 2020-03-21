@@ -92,18 +92,3 @@ body {
 a {
   margin-left: 20em;
 }
-
-.fly {
-  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
-  height: 10em;
-  position: absolute;
-  transform: translateX(-300%);
-}
-
-@keyframes flying {
-
-  from { transform: translateY(0) translateX(-300%) rotate(30deg);}
-
-  to { transform: translateY(100%) translateX(700%) rotate(30deg);}
-
-}
