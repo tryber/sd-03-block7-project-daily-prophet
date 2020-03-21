@@ -1,5 +1,8 @@
 body {
+  animation-name: inicial;
+  animation-duration: 3s;
   background-color: black;
+  
 }
 
 .fly {
@@ -13,6 +16,7 @@ body {
 }
 
 .corpo {
+  animation-name: corpo;
   background-color: rgb(255, 246, 217);
   border: solid black 1px;
   border-radius: 15px;
@@ -20,6 +24,9 @@ body {
 }
 
 .header {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-name: profeta;
   text-align: center;
 }
 
@@ -85,3 +92,29 @@ body {
     transform: rotate(90deg);
   }
 }
+
+@keyframes profeta {
+
+from{
+  transform: skew(360deg);
+}
+
+to{
+  transform: skew(0deg);
+ }
+}
+
+@keyframes inicial {
+
+  from{
+    transform: scale(10);
+  }
+  
+  50%{
+    transform: scale(30);
+  }
+
+  to{
+    transform: scale(0);
+   }
+  }
