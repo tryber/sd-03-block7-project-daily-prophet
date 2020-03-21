@@ -25,28 +25,26 @@
 @keyframes flying {
 
   0% {
+    font-size: 0;
     margin-top: 20px;
-    margin-left: 0px;
-    transform: skew(15deg, 15deg);
-    font-size: 0px;
+    margin-left: 0;
+    transform: translate(2, 1);
     transition: initial;
   }
 
   50% {
+    font-size: 15px;
     margin-top: 40px;
     margin-left: 85%;
     transform: skew(.312rad);
-    font-size: 15px;
-    transform: scale(1, 2);
-    transform: translate(2, 1);
     transition: inherit;
   }
 
   100% {
+    font-size: 0;
     margin-top: 20px;
-    margin-left: 0px;
-    transform: skew(15deg, 15deg);
-    font-size: 0px;
+    margin-left: 0;
+    transform: scale(1, 2);
     transition: unset;
   }
 }
@@ -55,6 +53,7 @@
 
   from {
     transform: scale(0);
+    transition: steps(1, 2);
   }
 
   to {
