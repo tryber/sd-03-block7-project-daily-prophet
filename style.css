@@ -102,11 +102,8 @@ a {
 
 @keyframes flying {
 
-  from {
-    transform: translateY(0) translateX(-300%) rotate(30deg);
-  }
+  from { transform: translateY(0) translateX(-300%) rotate(30deg);}
 
-  to {
-    transform: translateY(100%) translateX(700%) rotate(30deg);
-  }
+  to { transform: translateY(100%) translateX(700%) rotate(30deg);}
+  
 }
