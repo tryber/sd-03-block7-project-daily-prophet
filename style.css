@@ -91,7 +91,7 @@ p {
 .barra-lateral {
   border-left: 1px solid black;
   padding: 0.7rem 0.7rem 0.7rem 0.9rem;
-  text-align: justify;
+  text-align: center;
 }
 
 aside {
@@ -111,20 +111,6 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-.nuncio-vassoura {
-  margin: 1rem auto auto;
-  max-width: 6rem;
-  transform: rotateY(180deg);
-}
-
-.anuncio-vassoura:hover {
-  cursor: pointer;
-}
-
-.vassoura {
-  width: 6rem;
 }
 
 /* animação pássaro */
