@@ -107,6 +107,7 @@ body {
   from {
     transform: scale(10);
   }
+
   50% {
     transform: scale(30);
   }
