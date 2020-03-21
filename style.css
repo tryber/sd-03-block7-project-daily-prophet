@@ -1,9 +1,8 @@
 body {
   background-color: black;
-  
 }
 
-.fly{
+.fly {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
@@ -12,50 +11,49 @@ body {
   width: 100px;
 }
 
-.corpo{
+.corpo {
   background-color: rgb(255, 246, 217);
-  border: solid black 1px;
   border-radius: 15px;
+  border: solid black 1px;
   margin: 50px;
 }
 
-.header{
+.header {
   text-align: center;
 }
 
-.morte{
+.morte {
+  animation: reliquias 5s infinite alternate;
+  border-radius: 100%;
   float: left;
   margin-top: 30px;
   width: 300px;
-  border-radius:100%;
-  animation: reliquias 5s infinite alternate;
 }
-.text{
+
+.text {
   font-size: 30px;
 }
-.historia{
+
+.historia {
   border: black solid 3px;
 }
-@media screen and ( max-width : 760px ) {
 
-  .container-layout, .morte{
+@media screen and ( max-width: 760px) {
+  .container-layout, .morte {
     background-color: yellow;
-    width: 100%;
     display: none;
+    width: 100%;
   }
-  
 }
 
-@media screen and ( min-width : 1170px ) {
-
+@media screen and ( min-width: 1170px) {
   .container-layout {
     background-color: red;
     width: 100%;
   }
 }
 
-@media screen and ( orientation : landscape ) {
-
+@media screen and ( orientation: landscape) {
   .container-orientation {
     border: solid 1px red;
     width: 100%;
@@ -63,21 +61,20 @@ body {
 }
 
 @keyframes flying {
-  0%{
+  0% {
     margin-left: 0%;
   }
-  100%{
-    margin-left:90%;
-   
-  };
-
+  100% {
+    margin-left: 90%;
+  }
+  ;
 }
 
 @keyframes reliquias {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(90deg);
   }
 }
