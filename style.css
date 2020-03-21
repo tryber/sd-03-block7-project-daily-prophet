@@ -2,6 +2,7 @@
   animation-duration: 4s;
   animation-name: article-grow;
   animation-play-state: paused;
+  animation-timing-function: steps(4, end);
 }
 
 .content {
@@ -15,7 +16,7 @@
 }
 
 .fly {
-  animation: flying 4s ease-in 3s 3 alternate;
+  animation: flying 4s steps(4, end) 3s 3 alternate;
   animation-fill-mode: forwards;
   margin-left: -50px;
   overflow: hidden;
@@ -144,17 +145,6 @@ p {
 
 @media only screen and ( min-width : 800px ) {
 
-  .aparecendo {
-    color: black;
-    transition-delay: 1s;
-    transition-duration: 2s;
-    transition-property: color;
-  }
-
-  .aparecendo:hover {
-    color: red;
-  }
-
   article {
     flex: 3;
   }
@@ -167,7 +157,7 @@ p {
     animation: cheguei;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    animation-timing-function: steps(4, end);
   }
 
   img {
@@ -195,6 +185,17 @@ p {
 
   .right-content {
     flex: 1;
+  }
+
+  .sangue {
+    color: black;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-property: color;
+  }
+
+  .sangue:hover {
+    color: red;
   }
 
   .sheet {
