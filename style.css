@@ -1,6 +1,4 @@
-*{
-  border: solid 1px red
-}
+
 body {
   background-color: rgb(241, 215, 175);
   color: rgb(0, 0, 59);
@@ -38,13 +36,13 @@ body {
 
 @keyframes leviosa {
 
-  0%{ margin-left: 0%;
+  0% { margin-left: 0;
     transform: scale(1) skew(0deg, 0deg);}
 
-  60%{ margin-left: 10em;
+  60% { margin-left: 10em;
     transform: scale(2) skew(-10deg, 10deg);}
 
-  100%{ margin-left: 0%;
+  100% { margin-left: 0;
     transform: scale(1) skew(0deg, 0deg);}
 }
 
@@ -57,14 +55,14 @@ body {
 
 @keyframes dance {
 
-  0%{ margin-right: 0%;
+  0% { margin-right: 0;
     transform: scale(1) skew(0deg, 0deg);}
 
-  60%{ margin-right: 10em;
+  60% { margin-right: 10em;
     transform: scale(1.5) skew(10deg, -10deg);}
 
-  100%{ margin-right: 0%;
-    transform: scale(1) skew(0deg, 0deg);}  
+  100% { margin-right: 0;
+    transform: scale(1) skew(0deg, 0deg);}
 
 }
 
