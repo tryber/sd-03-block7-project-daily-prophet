@@ -11,3 +11,10 @@
     background-color: red;
   }
 }
+
+@media ( orientation : landscape ) {
+  
+  .container-layout {
+    font-weight: 900;
+  }
+}
