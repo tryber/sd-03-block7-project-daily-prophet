@@ -15,16 +15,21 @@
 @media ( orientation : landscape ) {
 
   .container-orientation {
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid red;
   }
 }
 
 .fly {
-  position: relative;
   animation: flying 9s linear 2s infinite alternate;
+  position: relative;
 }
 
 @keyframes flying {
-  0%   { left : 0px; top: 0px; }
-  100%  { left : 1700px; top: 0px; }
+  
+  0% { 
+    left : 0; top: 0; 
+  }
+  100% {
+    left : 1700px; top: 0; 
+  }
 }
