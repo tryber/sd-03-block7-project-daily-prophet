@@ -140,11 +140,11 @@ header {
 }
 
 .container-layout {
-  border: 1px solid red;
+  background-color: transparent;
 }
 
 .container-orientation {
-  background-color: transparent;
+  border: 1px solid red;
 }
 
 @media screen and ( max-width : 760px ) {
