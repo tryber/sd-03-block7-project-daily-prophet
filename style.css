@@ -26,8 +26,8 @@ header {
   width: 30%;
 }
 
-.exclusivo h1 {
-  transform: scale(1.7);
+.exclusivo {
+  transform: scale(0.99);
 }
 
 .artigos-section {
@@ -73,6 +73,7 @@ header {
 
 .barra {
   background-color: rgb(28, 25, 21);
+  transform: translate(-1px, -1px);
   height: 25%;
 }
 
