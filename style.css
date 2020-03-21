@@ -14,22 +14,18 @@
   text-decoration: none;
 }
 
-.container-layout {
-  background-color: yellow;
-}
-
 /* first mobile */
 
-@media screen and ( max-width : 760px ) {
+@media ( max-width : 760px ) {
 
-  body {
-    background-color: khaki;
+ .container-layout {
+    background-color: yellow;
   }
 }
 
-@media screen and ( min-width : 1170px ) {
+@media ( min-width : 1170px ) {
 
-  body {
-    background-color: blue;
+  .container-layout {
+    background-color: yellow;
   }
 }
