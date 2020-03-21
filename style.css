@@ -7,21 +7,29 @@ html , body , div , p , form , input , main , label , section {
 }
 
 body {
-  background-color: rgb(253, 255, 153);
+  background-color: rgb(207, 203, 203);
 }
 
-h1 {
+.espaço {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-orientation {
   background-color: white;
-  text-align: center;
-  transition: background-color 2s;
+  opacity: 0%;
+  transition: opacity 1s;
+  width: 400px;
 }
 
-h1:hover {
-  background-color: red;
+.container-orientation:hover {
+  opacity: 100%;
 }
 
 .container-layout {
-  background-color: green;
+  background-color: white;
+  text-align: center;
+  transition: background-color 2s;
 }
 
 .fly {
@@ -32,7 +40,7 @@ h1:hover {
   animation-iteration-count: 3;
   animation-name: flying;
   animation-timing-function: linear;
-  position: relative;
+  position: absolute;
   transform: translateX(-200px);
 }
 
