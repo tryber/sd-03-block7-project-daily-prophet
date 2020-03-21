@@ -87,7 +87,6 @@ header {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  transform: skew(180deg, 180deg);
 }
 
 @keyframes flying {
@@ -98,6 +97,7 @@ header {
 
   to {
     margin-left: 95%;
+    transform: skew(180deg, 180deg);
   }
 }
 
