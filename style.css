@@ -8,7 +8,7 @@ body {
 
 @font-face {
   font-family: Harry;
-  src: url(harry_p/HARRYP__.TTF);
+  src: url("harry_p/HARRYP__.TTF");
 }
 
 @media screen and (max-width: 760px) {
@@ -20,7 +20,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1170px){
+@media screen and (min-width: 1170px) {
   .container-layout {
     background-color: rgb(255, 0, 0);
   }
@@ -42,10 +42,10 @@ body {
 }
 
 .animacao {
-  animation-name: anima;
-  animation-duration: 4s;
   animation-direction: alternate;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
+  animation-name: anima;
 }
 
 @keyframes anima {
@@ -59,13 +59,13 @@ body {
 }
 
 .noticia-principal {
-  text-align: center;
   font-size: 45px;
+  text-align: center;
 }
 
 h3 {
-  text-align: center;
   font-size: xx-large;
+  text-align: center;
 }
 
 p {
@@ -78,17 +78,24 @@ span {
 }
 
 .ladoL {
+  font-size: 26px;
   float: left;
   text-align: right;
   width: 30%;
 }
 
 .ladoR {
+  font-size: 26px;
   float: right;
   text-align: left;
   width: 30%;
 }
 
 .img-center {
+  font-size: 26px;
   text-align: center;
+}
+
+.casas {
+  font-size: 26px;
 }
