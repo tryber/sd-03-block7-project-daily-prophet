@@ -1,6 +1,6 @@
-/* font-family: 'Kreon', serif;
+/* font-family: 'Bebas Neue', cursive;
 font-family: 'Vollkorn', serif;
-font-family: 'Great Vibes', cursive; */
+font-family: 'Kreon', serif; */
 
 body {
   background-color: black;
@@ -42,19 +42,42 @@ body {
 
   h1 {
     font-family: Vollkorn, serif;
-    font-size: 3em;
-    font-weight: 400;
-    margin: 0;
+    font-size: 4em;
+    font-weight: 800;
+    line-height: 0.5em;
+    margin: 1.5rem 0 0;
     padding: 0;
     text-align: center;
   }
 
   h4 {
     font-family: Kreon, serif;
+    font-size: 0.8em;
     font-weight: 400;
     margin: 0;
     padding: 0.2em 0;
     text-align: center;
+  }
+
+  .exclusive {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 2.1em;
+    justify-content: flex-start;
+  }
+
+  .paragraph-exclusive {
+    color: rgb(255, 248, 238);
+    font-family: Bebas Neue, cursive;
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .potter {
+    height: 32px;
+    margin: 0.2em;
+    width: 32px;
   }
 }
 
