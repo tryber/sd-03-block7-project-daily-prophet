@@ -121,8 +121,8 @@ a {
 
   0% { margin-right: 0;}
 
-  60% { margin-right: 10em;
-    margin-left: 200em;
+  60% { margin-left: 200em;
+    margin-right: 10em;    
     transform: scale(3) skew(10deg, -10deg) translateY(50%);
   }
 
