@@ -68,6 +68,7 @@ footer {
 
 .fly {
   animation: flying 4s 3s steps(200) 3 alternate forwards;
+
   /* animation-direction: alternate;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -75,7 +76,7 @@ footer {
   animation-name: flying; */
   transition: flying 4s;
   width: 10%;
-  }
+}
 
 header {
   border-bottom: 1px solid black;
