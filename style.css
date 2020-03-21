@@ -1,6 +1,12 @@
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:hover {
+  animation: transiting 2s;
+  transition: width 2s linear 1s;
 }
 
 .artigo-principal {
@@ -172,5 +178,20 @@ hr {
 
   100% {
     background-color: lavender;
+  }
+}
+
+@keyframes transiting {
+
+  from {
+    font-size: 10px;
+    font-weight: 100;
+    width: 1%;
+  }
+
+  to {
+    font-size: 70px;
+    font-weight: 600;
+    width: 50%;
   }
 }
