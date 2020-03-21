@@ -10,6 +10,16 @@ body {
   background-color: rgb(253, 255, 153);
 }
 
+h1 {
+  text-align: center;
+  background-color: white;
+  transition: background-color 2s;
+}
+
+h1:hover {
+  background-color: red;
+}
+
 .container-layout {
   background-color: green;
 }
@@ -42,7 +52,6 @@ body {
 
   52% {
     transform: translateX(1500px);
-
   }
 
   100% {
