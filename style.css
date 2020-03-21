@@ -112,6 +112,7 @@ article .fjalla {
 }
 
 @media screen and ( max-width : 760px ) {
+  
   body {
     margin: 10px;
   }
@@ -135,6 +136,7 @@ article .fjalla {
 }
 
 @media screen and ( min-width : 1170px ) {
+
   body {
     background-color: red;
   }
