@@ -144,12 +144,11 @@ p {
 
 @media only screen and ( min-width : 800px ) {
 
-
-  .aparecendo:hover {
+  .aparecendo {
     color: black;
-    transition-property: color;
+    transition-delay: 1s;
     transition-duration: 2s;
-    transition-delay: 1s;  
+    transition-property: color;
   }
 
   .aparecendo:hover {
@@ -162,11 +161,6 @@ p {
 
   aside {
     flex: 1;
-  }
-
-  div {
-    transition-property: opacity;
-  transition-duration: 5s;
   }
 
   html {
