@@ -1,5 +1,5 @@
 body {
-  background-color :red;
+  background-color : red;
   border: 5px solid black;
   font-family: Harry, serif;
   margin: 0 auto;
@@ -7,22 +7,18 @@ body {
 }
 
 @font-face {
-  font-family: 'Harry';
+  font-family: 'Harry', serif;
   src: url('harry_p/HARRYP__.TTF') format('truetype');
 }
 
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
-
     background-color : yellow;
-
   }
 
   .logo {
-
     margin: auto;
-
   }
 
 }
@@ -30,9 +26,7 @@ body {
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
-
     background-color: red;
-
   }
 
 }
@@ -60,17 +54,15 @@ body {
 }
 
 @keyframes anima {
+  
   from {
-
     margin-left: 0;
-
   }
 
   to {
-
     margin-left: 87%;
     transform: rotate(360deg);
-
+  
   }
 }
 
