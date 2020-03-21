@@ -206,13 +206,13 @@ header {
 }
 
 @keyframes article-grow {
-  
+
   from {
     transform: scale(1);
   }
 
   to {
-    transition: scale(1.5);
     background-color: red;
+    transition: scale(1.5);
   }
 }
