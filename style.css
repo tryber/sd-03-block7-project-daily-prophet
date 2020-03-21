@@ -77,6 +77,10 @@ body {
     margin-left: 1%;
   }
 
+  50% {
+    transform: translate(300px , 400px);
+  }
+
   100% {
     margin-left: 90%;
   }
@@ -128,7 +132,7 @@ body {
   50%{
     font-weight: 300px;
   }
-  
+
   100% {
     font-weight: 600px;
   }
