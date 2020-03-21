@@ -1,9 +1,9 @@
-body{
+body {
   background-color: rgb(241, 215, 175);
   color: rgb(0, 0, 59);
 }
 
-.titulo{
+.titulo {
   animation: titulo alternate;
   animation-duration: 20s;
   font-family: cursive;
@@ -12,20 +12,20 @@ body{
   text-align: center;
 }
 
-@keyframes titulo{
+@keyframes titulo {
 
   30%{ opacity: 1;}
   60%{ opacity: 0;}
 
 }
 
-.blocos{
+.blocos {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.leviosa{
+.leviosa {
   animation: leviosa;
   animation-duration: 15s;
   filter: grayscale(100%);
@@ -33,13 +33,13 @@ body{
   position: absolute;
 }
 
-@keyframes leviosa{
+@keyframes leviosa {
 
   60%{ margin-left: 20em;transform:scale(2) skew(-10deg, 10deg) ; }
 
 }
 
-.dance{
+.dance {
   animation: dance;
   animation-duration: 15s;
   filter: grayscale(100%);
@@ -47,13 +47,13 @@ body{
   position: absolute;
 }
 
-@keyframes dance{
+@keyframes dance {
 
-  60%{ margin-top:20em;margin-right: 20em; transform:scale(1.5) skew(10deg, -10deg) ;}
+  60%{ margin-right: 20em;margin-top:20em; transform:scale(1.5) skew(10deg, -10deg) ;}
 
 }
 
-.leviosa-text{
+.leviosa-text { 
   animation: aparece ;
   animation-delay: 15s;
   animation-duration: 2s;
@@ -64,7 +64,7 @@ body{
   opacity: 0;
 }
 
-.escola-text{
+.escola-text {
   animation: aparece ;
   animation-delay: 15s;
   animation-duration: 2s;
@@ -75,22 +75,22 @@ body{
   opacity: 0;
 }
 
-@keyframes aparece{
+@keyframes aparece {
 
-  from{opacity: 0;}
-  to{opacity:1}
+  from{ opacity: 0;}
+  to{ opacity:1}
 
 }
 
-@media only screen and (max-width:760px){
-  .container-layout{
+@media only screen and (max-width:760px) {
+  .container-layout {
     background-color: rgb(255, 255, 0);
   }
 
 }
 
-@media only screen and (min-width:1170px){
-  .container-layout{
+@media only screen and (min-width:1170px) {
+  .container-layout {
     background-color: rgb(255, 0, 0);
   }
 }
