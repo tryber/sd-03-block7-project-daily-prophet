@@ -156,22 +156,18 @@ nav {
   }
 }
 
-/* @media screen and ( max-width : 760px ) {
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
   }
 
-} */
+}
 
-/* @media screen and ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
-    align-items: center;
     background-color: red;
-    display: flex;
-    justify-content: center;
-    width: 80%;
   }
 }
 
@@ -180,4 +176,4 @@ nav {
   .container-orientation {
     border: 1px solid red;
   }
-} */
+}
