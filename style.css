@@ -26,24 +26,24 @@
 
   0% {
     font-size: 0;
-    margin-top: 20px;
     margin-left: 0;
+    margin-top: 20px;
     transform: translate(2, 1);
     transition: initial;
   }
 
   50% {
     font-size: 15px;
-    margin-top: 40px;
     margin-left: 85%;
-    transform: skew(.312rad);
+    margin-top: 40px;
+    transform: skew(0.312rad);
     transition: inherit;
   }
 
   100% {
     font-size: 0;
-    margin-top: 20px;
     margin-left: 0;
+    margin-top: 20px;
     transform: scale(1, 2);
     transition: unset;
   }
