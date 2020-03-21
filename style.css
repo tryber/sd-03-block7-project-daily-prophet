@@ -1,8 +1,7 @@
 body {
-  animation-name: inicial;
   animation-duration: 3s;
+  animation-name: inicial;
   background-color: black;
-  
 }
 
 .fly {
@@ -95,26 +94,28 @@ body {
 
 @keyframes profeta {
 
-from{
-  transform: skew(360deg);
+  from {
+    transform: skew(360deg);
+  }
+  
+  to {
+    transform: skew(0deg);
+  }
 }
 
-to{
-  transform: skew(0deg);
- }
-}
+
 
 @keyframes inicial {
 
-  from{
+  from {
     transform: scale(10);
   }
   
-  50%{
+  50% {
     transform: scale(30);
   }
 
-  to{
+  to {
     transform: scale(0);
    }
   }
