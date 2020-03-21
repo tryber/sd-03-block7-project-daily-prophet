@@ -23,7 +23,7 @@ body {
 }
 
 @media screen and ( max-width : 760px ) {
-  
+
   .container-layout {
     background-color : yellow;
   }
@@ -62,7 +62,7 @@ body {
 
 .logo:hover {
   animation-direction: alternate-reverse;
-  animation-duration: 0.20s;
+  animation-duration: 200ms;
   animation-iteration-count: infinite;
   animation-name: logo;
 }
