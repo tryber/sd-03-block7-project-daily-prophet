@@ -20,7 +20,8 @@
 }
 
 .fly {
-  animation: flying 9s linear 2s infinite alternate;
+  animation: flying 9s linear 3s infinite alternate;
+  animation-delay: 3s;
   position: relative;
 }
 
