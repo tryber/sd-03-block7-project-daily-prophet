@@ -1,3 +1,8 @@
+.article-animation {
+  animation-duration: 4s;
+  animation-name:  article-grow;
+}
+
 .artigo-principal {
   display: flex;
   flex-direction: column;
@@ -40,10 +45,9 @@ hr {
 }
 
 .img2:hover {
-  transform: translate(20px, 50px);
   transition-delay: 1s;
-  transition-duration: 3s;
-  transition-timing-function: ease;
+  transition-duration: 5s;
+  transition-property: initial;
   width: 50%;
 }
 
@@ -62,6 +66,10 @@ hr {
 
 .secao1 {
   color: white;
+}
+
+.step {
+  animation: steps 3s 1s alternate;
 }
 
 .sub-hr {
@@ -138,5 +146,31 @@ hr {
 
   100% {
     transform: translateX(25px);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 10px;
+    font-weight: 100;
+    width: 1%;
+  }
+
+  to {
+    font-size: 70px;
+    font-weight: bold;
+    width: 50%;
+  }
+}
+
+@keyframes steps {
+
+  50% {
+    background-color: ivory;
+  }
+
+  100% {
+    background-color: lavender;
   }
 }
