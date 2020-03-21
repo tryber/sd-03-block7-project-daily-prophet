@@ -144,12 +144,29 @@ p {
 
 @media only screen and ( min-width : 800px ) {
 
+
+  .aparecendo:hover {
+    color: black;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-delay: 1s;  
+  }
+
+  .aparecendo:hover {
+    color: red;
+  }
+
   article {
     flex: 3;
   }
 
   aside {
     flex: 1;
+  }
+
+  div {
+    transition-property: opacity;
+  transition-duration: 5s;
   }
 
   html {
