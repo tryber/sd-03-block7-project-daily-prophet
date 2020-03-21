@@ -11,8 +11,6 @@ article {
   animation-duration: 4s;
   animation-name: article-grow;
   animation-play-state: paused;
-  transition-duration: 4s;
-  transition-property: article-grow;
 }
 
 body {
@@ -72,6 +70,8 @@ footer {
 
 .fly {
   animation: flying 4s 3s steps(5, jump-none) 3 alternate forwards;
+  transition-duration: 4s;
+  transition-property: article-grow;
 
   /* animation-direction: alternate;
   animation-duration: 4s;
