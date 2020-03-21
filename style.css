@@ -34,13 +34,13 @@ body {
     transform: translateX(1500px) rotateY(180deg);
   }
 
-  51%{
+  51% {
     transform: skew() scale();
   }
 
   52% {
     transform: translateX(1500px);
-    
+
   }
 
   100% {
