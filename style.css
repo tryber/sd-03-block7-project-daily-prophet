@@ -36,7 +36,7 @@ body {
   width: 300px;
 }
 
-.text:hover{
+.text:hover {
   animation-name: negrito;
   font-size: 30px;
   transition: 50%;
@@ -78,7 +78,7 @@ body {
   }
 
   50% {
-    transform: translate(300px , 400px);
+    transform: translate(300px,400px);
   }
 
   100% {
@@ -124,16 +124,16 @@ body {
 }
 
 @keyframes negrito {
-  
+
   0% {
-    font-weight: 0px;
+    font-weight: 0;
   }
 
   50%{
-    font-weight: 300px;
+    font-weight: 300;
   }
 
   100% {
-    font-weight: 600px;
+    font-weight: 600;
   }
 }
