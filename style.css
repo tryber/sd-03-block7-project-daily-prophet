@@ -14,7 +14,17 @@
 
 @media ( orientation : landscape ) {
 
-  .container-layout {
-    font-weight: 900;
+  .container-orientation {
+    border: 1px solid rgb(255, 0, 0);
   }
+}
+
+.fly {
+  position: relative;
+  animation: flying 9s linear 2s infinite alternate;
+}
+
+@keyframes flying {
+  0%   { left : 0px; top: 0px; }
+  100%  { left : 1700px; top: 0px; }
 }
