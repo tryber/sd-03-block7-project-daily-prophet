@@ -17,13 +17,13 @@ body {
 
 .container-orientation {
   background-color: white;
-  opacity: 0%;
+  opacity: 0;
   transition: opacity 1s;
   width: 400px;
 }
 
 .container-orientation:hover {
-  opacity: 100%;
+  opacity: 100;
 }
 
 .container-layout {
