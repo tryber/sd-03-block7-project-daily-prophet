@@ -1,3 +1,18 @@
+.transform {
+  animation: transFormation 3s steps(50, end) infinite;
+}
+
+.fly {
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
+  position: relative;
+  transition-duration: 2s;
+  transition-property: all;
+}
+
+.article-animation {
+  animation: article-grow 4s forwards steps(300, end) paused;
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -21,17 +36,6 @@
     transition-duration: 2s;
     transition-property: all;
   }
-}
-
-.fly {
-  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
-  position: relative;
-  transition-duration: 2s;
-  transition-property: all;
-}
-
-.article-animation {
-  animation: article-grow 4s forwards steps(300, end) paused;
 }
 
 @keyframes flying {
