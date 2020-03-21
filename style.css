@@ -127,15 +127,20 @@ header {
 
 .artigo-lateral-direito {
   line-height: 30px;
-  width: 25%;
+  width: 15%;
 }
 
 .artigo-lateral-esquerdo {
+  line-height: 30px;
   width: 25%;
 }
 
 .container-layout {
   background-color: transparent;
+}
+
+.container-orientation {
+
 }
 
 @media screen and ( max-width : 760px ) {
@@ -155,6 +160,6 @@ header {
 @media screen and ( min-width : 480px ) and ( orientation : landscape ) {
 
   .container-layout {
-    background-color: grey;
+    border: 1px solid red;
   }
 }
