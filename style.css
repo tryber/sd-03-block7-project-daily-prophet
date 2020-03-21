@@ -10,6 +10,13 @@ body {
   background-color: rgb(207, 203, 203);
 }
 
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
 .espaço {
   display: flex;
   justify-content: space-around;
@@ -19,7 +26,6 @@ body {
   background-color: white;
   opacity: 0;
   transition: opacity 1s;
-  width: 400px;
 }
 
 .container-orientation:hover {
@@ -29,7 +35,7 @@ body {
 .container-layout {
   background-color: white;
   text-align: center;
-  transition: background-color 2s;
+  transition: background-color 2s, background-image 2s;
 }
 
 .fly {
