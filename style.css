@@ -1,14 +1,70 @@
-@media screen and (max-width: 760px) {
+
+
+@media only screen and (max-width: 760px) {
   .container-layout {
     background-color: yellow;
+    border: 1px double black;
+    position: center;
+    width: 100%;
   }
+
   .container-orientation {
     border: 1px solid red;
   }
+
+  .logo {
+    width: 100%;
+  }
 }
 
-@media screen and (min-widht: 1170px) {
+@media only screen and (min-width: 1170px) {
   .container-layout {
+    align-items: center;
     background-color: red;
+    border: 1px double black;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
   }
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 14px;
+}
+
+.hr-double-top {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  padding: 1px;
+}
+
+.hr-double-bottom {
+  border-top: 1px solid black;
+  border-top: 2px solid black;
+  padding: 1px;
+}
+
+main {
+  padding: 15px;
+}
+
+.books {
+  padding: 20px;
+}
+
+.book1_gryffindor, .book2_hufflepuff, .book3_slytherin, .book4_ravenclaw {
+  padding: 10px 0;
 }
