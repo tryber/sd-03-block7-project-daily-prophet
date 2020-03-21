@@ -1,5 +1,15 @@
-.artigos {
-  border: 1px solid black;
-  height: 300px;
-  width: 200px;
+.hp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
 }
