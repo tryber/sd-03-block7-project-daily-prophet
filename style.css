@@ -11,8 +11,8 @@ body {
 }
 
 h1 {
-  text-align: center;
   background-color: white;
+  text-align: center;
   transition: background-color 2s;
 }
 
