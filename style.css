@@ -71,7 +71,7 @@ footer {
 .fly {
   animation: flying 4s 3s steps(5, jump-none) 3 alternate forwards;
   transition-duration: 4s;
-  transition-property: article-grow;
+  transition-property: flying;
 
   /* animation-direction: alternate;
   animation-duration: 4s;
