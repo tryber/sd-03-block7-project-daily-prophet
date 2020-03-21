@@ -18,8 +18,10 @@ body {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 8s;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
+  animation-timing-function: linear;
   position: relative;
   transform: translateX(-200px);
 }
