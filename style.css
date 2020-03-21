@@ -40,7 +40,7 @@ body {
 
 @media screen and ( max-width : 760px ) {
 
-  .container-layout, .morte {
+  .container-layout , .morte {
     background-color: yellow;
     display: none;
     width: 100%;
@@ -64,6 +64,7 @@ body {
 }
 
 @keyframes flying {
+
   0% {
     margin-left: 1%;
   }
@@ -73,8 +74,8 @@ body {
 }
 
 @keyframes reliquias {
+
   0% {
-  
     transform: rotate(0deg);
   }
   100% {
