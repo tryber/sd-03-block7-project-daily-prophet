@@ -17,10 +17,9 @@
 /* first mobile */
 
 @media screen and ( max-width : 780px ) {
-    
+
   body {
     background-color: khaki;
-
   }
 }
 
@@ -28,6 +27,5 @@
 
   body {
     background-color: blue;
-
   }
 }
