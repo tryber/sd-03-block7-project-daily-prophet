@@ -8,8 +8,8 @@ article {
 }
 
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   transition: scale() 3s;
 }
 
