@@ -1,14 +1,14 @@
-body {
-  background-color : red;
-  border: 5px solid black;
-  font-family: Harry, serif;
-  margin: 0 auto;
-  width: 80%;
-}
-
 @font-face {
   font-family: 'Harry', serif;
   src: url('harry_p/HARRYP__.TTF') format('truetype');
+}
+
+body {
+  background-color : red;
+  border: 5px solid black;
+  font-family: 'Harry', serif;
+  margin: 0 auto;
+  width: 80%;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -54,7 +54,6 @@ body {
 }
 
 @keyframes anima {
-  
   from {
     margin-left: 0;
   }
@@ -62,7 +61,6 @@ body {
   to {
     margin-left: 87%;
     transform: rotate(360deg);
-  
   }
 }
 
