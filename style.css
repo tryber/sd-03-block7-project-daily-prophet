@@ -134,6 +134,7 @@ p {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-timing-function: step-start;
   overflow: hidden;
 }
 
@@ -147,7 +148,6 @@ p {
   100% {
     font-weight: 700;
     transform: scale(1.5);
-    animation-timing-function: step-start;
   }
 }
 
