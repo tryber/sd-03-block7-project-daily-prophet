@@ -1,8 +1,7 @@
 .fly {
   animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
   position: relative;
-  transition-duration: 2s;
-  transition-property: all;
+  transform: translateX(-300%);
 }
 
 @keyframes flying {
@@ -10,12 +9,13 @@
   0% {
     left: 0;
     top: 0;
+    transform: scale(1, 1) skew(1deg) translate(1, 1);
   }
 
   100% {
     left: 1700px;
     top: 0;
-    transform: scale(1, 1) skew(1deg) translate(1, 1);
+    transform: scale(2, 2) skew(1deg) translate(2, 2);
   }
 }
 
@@ -50,13 +50,11 @@
 
 @keyframes article-grow {
 
-  from {
-    font-weight: 400;
+  0% {
     transform: scale(1);
   }
 
-  to {
-    font-weight: 800;
+  100% {
     transform: scale(1.5);
   }
 }
