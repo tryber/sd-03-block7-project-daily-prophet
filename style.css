@@ -13,8 +13,8 @@ body {
 
 .corpo {
   background-color: rgb(255, 246, 217);
-  border-radius: 15px;
   border: solid black 1px;
+  border-radius: 15px;
   margin: 50px;
 }
 
@@ -38,7 +38,8 @@ body {
   border: black solid 3px;
 }
 
-@media screen and ( max-width: 760px) {
+@media screen and ( max-width : 760px ) {
+
   .container-layout, .morte {
     background-color: yellow;
     display: none;
@@ -46,14 +47,16 @@ body {
   }
 }
 
-@media screen and ( min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
     width: 100%;
   }
 }
 
-@media screen and ( orientation: landscape) {
+@media screen and ( orientation : landscape ) {
+
   .container-orientation {
     border: solid 1px red;
     width: 100%;
@@ -61,20 +64,26 @@ body {
 }
 
 @keyframes flying {
+
   0% {
-    margin-left: 0%;
+  
+    margin-left: 1%;
   }
+
   100% {
+  
     margin-left: 90%;
   }
-  ;
 }
 
 @keyframes reliquias {
+
   0% {
+  
     transform: rotate(0deg);
   }
   100% {
+  
     transform: rotate(90deg);
   }
 }
