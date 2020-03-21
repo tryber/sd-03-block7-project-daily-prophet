@@ -10,6 +10,7 @@ article {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
   transition: scale() 3s;
 }
 
@@ -62,7 +63,7 @@ body {
 footer {
   border: 1.5px solid #1c1915;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;e crescer em 50% ao longo de 4 segundos, e sua fonte deve ir ficando gradativamente mais em negrito durante
   justify-content: center;
   margin-top: 1%;
   padding: 1%;
@@ -70,7 +71,8 @@ footer {
 
 .fly {
   animation: flying 4s 3s steps(200) 3 alternate forwards;
-
+  transition-duration: 4s;
+  transition-property: flying;
   /* animation-direction: alternate;
   animation-duration: 4s;
   animation-fill-mode: forwards;
