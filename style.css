@@ -109,6 +109,10 @@ header {
   padding-top: 2%;
 }
 
+.shield-logo:hover {
+  transform: skew(-20deg, -20deg)
+}
+
 nav {
   align-items: center;
   display: flex;
