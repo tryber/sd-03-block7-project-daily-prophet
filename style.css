@@ -71,7 +71,6 @@ header {
 .barra {
   background-color: rgb(28, 25, 21);
   height: 25%;
-  transform: translate(-1px, -1px);
 }
 
 .barra p {
@@ -102,6 +101,10 @@ header {
 }
 
 .corpo-do-jornal {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-name: translateAnimation;
   border: 1px solid black;
   display: flex;
   height: 20%;
@@ -109,6 +112,22 @@ header {
   margin-top: 5px;
   width: 100%;
 }
+
+@keyframes translateAnimation {
+
+  0% {
+    transform: translate(0px ,0px);
+  }
+
+  50% {
+    transform: translate(10px ,10px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }  
+}
+
 
 .artigo-principal {
   height: 50%;
