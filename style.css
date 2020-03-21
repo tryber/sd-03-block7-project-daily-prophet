@@ -23,7 +23,7 @@ body {
 }
 
 .container-orientation:hover {
-  opacity: 100;
+  opacity: initial;
 }
 
 .container-layout {
