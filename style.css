@@ -9,7 +9,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 40px;
 }
 
 header .meta-data-container {
@@ -37,9 +37,9 @@ header .meta-data-container {
   animation: article-grow 4s steps(1000, end) backwards running;
 }
 
-.meta-data-container li:nth-child(1) {
-  transform: translateX(100px) scale(2px);
+.meta-data-container li:nth-child( 1 ) {
   opacity: 100%;
+  transform: translateX(100px) scale(2px);
   transition: transform 2s;
 }
 
