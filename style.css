@@ -74,10 +74,102 @@ body {
     font-weight: 400;
   }
 
+  .paragraph-not-exclusive {
+    color: black;
+    font-family: Bebas Neue, cursive;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .paragraph-briefing {
+    font-family: Vollkorn, serif;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.2em 0 0;
+  }
+
   .potter {
     height: 32px;
     margin: 0.2em;
     width: 32px;
+  }
+
+  .section-container {
+    border: 1px solid black;
+    margin: 0.5em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main-section-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .container-link {
+    background-color: black;
+    text-align: end;
+    width: 100%;
+  }
+
+  .container-link:hover {
+    background-color: yellow;
+  }
+
+  .container-link:hover a {
+    color: black;
+  }
+
+  .section-link {
+    color: white;
+    display: block;
+    font-family: Kreon, serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .img-main-gif {
+    width: 98%;
+  }
+
+  .wrap-title {
+    padding: 0;
+    position: relative;
+  }
+
+  .wrap-title span {
+    font-family: Bebas Neue, cursive;
+    font-size: 1rem;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .main-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 5.1em;
+    font-weight: 400;
+    line-height: 0.9em;
+    margin: 0;
+  }
+
+  .paragraph-normal {
+    font-family: Vollkorn, serif;
+    text-indent: 2em;
+  }
+
+  .bold {
+    font-weight: 400;
+    text-indent: 0;
   }
 }
 
