@@ -29,6 +29,11 @@ header {
   width: 30%;
 }
 
+.exclusivo-title:hover {
+  transform: scale(1.8);
+  transition: 1s;
+}
+
 @keyframes scaleAnimation {
 
   from {
