@@ -107,12 +107,11 @@ body {
   from {
     transform: scale(10);
   }
-  
   50% {
     transform: scale(30);
   }
 
   to {
     transform: scale(0);
-   }
   }
+}
