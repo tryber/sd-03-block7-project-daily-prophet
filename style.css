@@ -234,6 +234,7 @@ p {
   to {
     font-weight: 900;
     transform: scale(1.5);
+    transition: font-weight 4s;
   }
 
 }
@@ -242,6 +243,7 @@ p {
 
   to {
     transform: scale(1.5);
+    transition: scale() 4s;
   }
 
 }
@@ -254,6 +256,7 @@ p {
 
   100% {
     transform: scale(1);
+    transition: scale() 4s;
   }
 
 }
@@ -262,6 +265,7 @@ p {
 
   to {
     transform: skew(60deg);
+    transition: skew 4s;
   }
 
 }
@@ -276,6 +280,7 @@ p {
   100% {
     margin-left: 90%;
     margin-top: 90%;
+    transition: margin-left 4s, margin-top 4s;
   }
 
 }
@@ -284,6 +289,7 @@ p {
 
   to {
     transform: translate(25px, 25px);
+    transition: translate() 4s;
   }
 
 }
