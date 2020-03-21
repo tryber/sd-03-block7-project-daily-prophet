@@ -64,26 +64,20 @@ body {
 }
 
 @keyframes flying {
-
   0% {
-  
     margin-left: 1%;
   }
-
   100% {
-  
     margin-left: 90%;
   }
 }
 
 @keyframes reliquias {
-
   0% {
   
     transform: rotate(0deg);
   }
   100% {
-  
     transform: rotate(90deg);
   }
 }
