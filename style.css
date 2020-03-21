@@ -1,7 +1,7 @@
 body {
-  background-color: rgb(255, 0, 0);
+  background-color:red;
   border: 5px solid black;
-  font-family: Harry;
+  font-family: Harry, serif;
   margin: 0 auto;
   width: 80%;
 }
@@ -11,19 +11,29 @@ body {
   src: url("harry_p/HARRYP__.TTF");
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
+
   .container-layout {
-    background-color: rgb(255, 255, 0);
+
+    background-color: yellow;
+
   }
   .logo {
+
     margin: auto;
+
   }
+
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
-    background-color: rgb(255, 0, 0);
+
+    background-color: red;
+
   }
+
 }
 
 .titulo {
@@ -49,13 +59,19 @@ body {
 }
 
 @keyframes anima {
-  form {
-    margin-left: 0%;
+
+  from {
+
+    margin-left: 0;
+
   }
   to {
+
     margin-left: 87%;
     transform: rotate(360deg);
+
   }
+  
 }
 
 .noticia-principal {
@@ -78,15 +94,15 @@ span {
 }
 
 .ladoL {
-  font-size: 26px;
   float: left;
+  font-size: 26px;
   text-align: right;
   width: 30%;
 }
 
 .ladoR {
-  font-size: 26px;
   float: right;
+  font-size: 26px;
   text-align: left;
   width: 30%;
 }
