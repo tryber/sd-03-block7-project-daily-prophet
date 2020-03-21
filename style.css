@@ -115,7 +115,7 @@ header {
 
 .titulo-principal {
   border: 1px solid black;
-  font-size: 40px;
+  font-size: 38px;
   margin-top: 5px;
 }
 
@@ -153,7 +153,6 @@ header {
 }
 
 @media screen and ( min-width : 480px ) and ( orientation : landscape ) {
-  
   .container-layout {
     background-color: grey;
   }
