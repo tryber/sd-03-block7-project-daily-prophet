@@ -6,7 +6,7 @@
 }
 
 .article-animation {
-  animation: article-grow 4s steps(1000, end) infinite backwards paused;
+  animation: 4s steps(1000, end) infinite backwards paused;
 }
 
 @media ( max-width : 760px ) {
