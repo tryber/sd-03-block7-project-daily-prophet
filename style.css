@@ -25,11 +25,15 @@
 }
 
 @keyframes flying {
-  
+
   0% { 
     left : 0; top: 0; 
   }
   100% {
     left : 1700px; top: 0; 
+    transform: skew(1deg);
+    transform: scale(1, 1);
+    transform: translate(1, 1);
+
   }
 }
