@@ -1,13 +1,13 @@
 @media only screen and ( max-width : 760px ) {
 
   .container-layout {
-    background-color: yellow;
+    background-color: rgb(255, 255, 0, 0.2);
     border: 1px double black;
     width: 100%;
   }
 
   .container-orientation {
-    border: 1px solid red;
+    border: 1px solid rgb(255, 0, 0, 0.2)
   }
 
   .logo {
@@ -40,20 +40,30 @@ img {
   max-width: 100%;
 }
 
+.subtitle {
+  font-size: 18px;
+  margin-top: -10px;
+  text-align: center;
+}
+
 p {
   font-size: 14px;
 }
 
-.hr-double-top {
+.hr-header-top {
   border-bottom: 1px solid black;
   border-top: 2px solid black;
   padding: 1px;
 }
 
-.hr-double-bottom {
+.hr-header-bottom {
   border-bottom: 2px solid black;
   border-top: 1px solid black;
   padding: 1px;
+}
+
+.logo {
+  margin-top: -20px;
 }
 
 main {
