@@ -15,18 +15,20 @@
 }
 
 .container-layout {
-  background-color: rgb(255, 255, 0);
+  background-color: yellow;
 }
 
 /* first mobile */
 
 @media screen and ( max-width : 780px ) {
+
   body {
     background-color: khaki;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
+
   body {
     background-color: blue;
   }
