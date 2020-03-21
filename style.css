@@ -36,8 +36,10 @@ body {
   width: 300px;
 }
 
-.text {
+.text:hover{
+  animation-name: negrito;
   font-size: 30px;
+  transition: 50%;
 }
 
 .historia {
@@ -114,5 +116,20 @@ body {
 
   to {
     transform: scale(0);
+  }
+}
+
+@keyframes negrito {
+  
+  0% {
+    font-weight: 0px;
+  }
+
+  50%{
+    font-weight: 300px;
+  }
+  
+  100% {
+    font-weight: 600px;
   }
 }
