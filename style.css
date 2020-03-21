@@ -71,7 +71,7 @@ footer {
 }
 
 .fly {
-  animation: flying 4s 3s 3 alternate forwards;
+  animation: flying 4s 3s steps(5) 3 alternate forwards;
 
   /* animation-direction: alternate;
   animation-duration: 4s;
