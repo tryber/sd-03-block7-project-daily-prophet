@@ -112,8 +112,10 @@ a {
 
 @keyframes pisca {
 
-  from { opacity: 0;font-size: small;}
+  from { font-size: small;
+     opacity: 0; }
 
-  to { opacity: 1;font-size: xx-large;}
+  to { font-size: xx-large;
+     opacity: 1; }
 
 }
