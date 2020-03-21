@@ -109,26 +109,19 @@ a {
 }
 
 .fly {
-  animation: flying;
-  animation-delay: 3s;
-  animation-duration: 6s;
-  animation-fill-mode: forwards;
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  height: 10em;
   position: absolute;
-  width: 8em;
+  transform: translateX(-300%);
 }
 
 @keyframes flying {
 
-  0% { margin-right: 0;}
-
-  60% { margin-left: 200em;
-    margin-right: 10em;
-    transform: scale(3) skew(10deg, -10deg) translateY(50%);
+  from {
+    transform: translateY(0) translateX(-300%) rotate(30deg);
   }
 
-  90% { margin-right: 0;
-    transform: scale(-1) skew(-20deg, 20deg) translateY(0);}
-
-  100% { transform: scale(1) skew(0deg, 0deg) translateY(0);}
-
+  to {
+    transform: translateY(100%) translateX(700%) rotate(30deg);
+  }
 }
