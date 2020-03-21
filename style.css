@@ -37,12 +37,6 @@ header .meta-data-container {
   animation: article-grow 4s steps(1000, end) backwards running;
 }
 
-.meta-data-container li:nth-child( 1 ) {
-  opacity: 100%;
-  transform: translateX(100px) scale(2px);
-  transition: transform 2s;
-}
-
 @keyframes flying {
 
   from {
