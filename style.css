@@ -21,6 +21,7 @@
 
 .fly {
   animation: flying;
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 4s;
   animation-iteration-count: infinite;
