@@ -3,5 +3,68 @@ font-family: 'Vollkorn', serif;
 font-family: 'Great Vibes', cursive; */
 
 body {
+  background-color: black;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.fat {
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.thin {
+  border: 0.5px solid black;
+  margin: 0.2em 0;
+  padding: 0;
+}
+
+.main-container {
   background-color: rgb(255, 248, 238);
+  border-radius: 5%;
+  margin: 0;
+  padding: 1em;
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  /* Requisito container-layout */
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .container-layout-show {
+    color: yellow;
+  }
+
+  h1 {
+    font-family: Vollkorn, serif;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h4 {
+    font-family: Kreon, serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.2em 0;
+    text-align: center;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .container-layout-show {
+    color: red;
+  }
 }
