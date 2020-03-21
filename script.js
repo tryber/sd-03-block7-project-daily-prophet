@@ -1,4 +1,4 @@
 const artAlvo = document.querySelector('.alvo');
-artAlvo.addEventListener('click', () => {
-  artAlvo.classList.add('article-animation');
+artAlvo.addEventListener('click', (e) => {
+  artAlvo.classList.toggle('article-animation');
 });

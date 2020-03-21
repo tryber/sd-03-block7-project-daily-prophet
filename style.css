@@ -26,7 +26,7 @@
 }
 
 .fly {
-  animation: flying 3s steps(2, end);
+  animation: flying 3s steps(3);
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
@@ -132,22 +132,27 @@ p {
 }
 
 .article-animation {
+  animation: article-grow 4s steps(4);
+  animation-direction: initial;
   animation-duration: 4s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: 1;
   animation-name: article-grow;
-  animation-timing-function: step-start;
-  overflow: hidden;
+  animation-timing-function: linear;
 }
 
 @keyframes article-grow {
 
   0% {
-    font-weight: 300;
-    transition-timing-function: linear;
+    position: initial;
+  }
+
+  50% {
+    transform: scale(1.5);
   }
 
   100% {
-    font-weight: 700;
-    transform: scale(1.5);
+    font-weight: 700%;
   }
 }
 
