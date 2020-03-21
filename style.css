@@ -105,17 +105,7 @@ body {
 }
 
 a {
-  animation: pisca;
-  animation-duration: 1s;
   margin-left: 20em;
 }
 
-@keyframes pisca {
 
-  from { font-size: small;
-    opacity: 0; }
-
-  to { font-size: xx-large;
-    opacity: 1; }
-
-}
