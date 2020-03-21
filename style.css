@@ -95,7 +95,6 @@ p {
 
 .scale:hover {
   animation-duration: 1s;
-  animation-fill-mode: forwards;
   animation-name: scale;
 }
 
@@ -128,19 +127,27 @@ p {
   }
 }
 
-.article-animation:hover {
+.pointer {
+  cursor: pointer;
+}
+
+.article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
-  font-weight: 300;
   overflow: hidden;
 }
 
 @keyframes article-grow {
 
-  to {
+  0% {
+    font-weight: 300;
+    transition-timing-function: linear;
+  }
+
+  100% {
     font-weight: 700;
     transform: scale(1.5);
-    transition-timing-function: ease-out;
+    animation-timing-function: step-start;
   }
 }
 
