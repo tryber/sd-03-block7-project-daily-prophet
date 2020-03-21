@@ -63,16 +63,17 @@ body {
 footer {
   border: 1.5px solid #1c1915;
   display: flex;
-  flex-direction: row;e crescer em 50% ao longo de 4 segundos, e sua fonte deve ir ficando gradativamente mais em negrito durante
+  flex-direction: row;
   justify-content: center;
   margin-top: 1%;
   padding: 1%;
 }
 
 .fly {
-  animation: flying 4s 3s steps(200) 3 alternate forwards;
+  animation: flying 4s 3s 3 alternate forwards;
   transition-duration: 4s;
   transition-property: flying;
+
   /* animation-direction: alternate;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -155,7 +156,7 @@ nav {
 
   100% {
     font-weight: 800;
-    transform: scale(1.2, 1.2) skew(-20deg, -20deg);;
+    transform: scale(1.2, 1.2) skew(-20deg, -20deg);
   }
 }
 
