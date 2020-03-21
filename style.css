@@ -18,13 +18,13 @@
 
 @media ( max-width : 760px ) {
 
- .container-layout {
+  .container-layout {
     background-color: yellow;
   }
 }
 
 @media ( min-width : 1170px ) {
-
+  
   .container-layout {
     background-color: yellow;
   }
