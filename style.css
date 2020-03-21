@@ -1,12 +1,4 @@
-html,
-body,
-div,
-p,
-form,
-input,
-main,
-label,
-section {
+html, body, div, p, form, input, main, label, section {
   border: 0;
   font-family: sans-serif;
   font-size: 100%;
@@ -27,37 +19,43 @@ body {
   animation-iteration-count: 3;
   animation-name: flying;
   position: relative;
-  transform: translate(-200px, 0px);
+  transform: translateX(-200px);
 }
 
 @keyframes flying {
+
   0% {
     transform: translateX(-200px) rotateY(180deg);
   }
+
   50% {
     transform: translateX(1500px) rotateY(180deg);
   }
+
   51% {
     transform: translateX(1500px);
   }
+
   100% {
     transform: translateX(-200px);
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and ( max-width : 760px ) {
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
