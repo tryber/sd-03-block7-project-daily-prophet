@@ -15,7 +15,6 @@ body {
 }
 
 .corpo {
-  animation-name: corpo;
   background-color: rgb(255, 246, 217);
   border: solid black 1px;
   border-radius: 15px;
@@ -97,13 +96,11 @@ body {
   from {
     transform: skew(360deg);
   }
-  
+
   to {
     transform: skew(0deg);
   }
 }
-
-
 
 @keyframes inicial {
 
