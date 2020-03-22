@@ -32,7 +32,28 @@ body {
 @media ( orientation : landscape ) {
 
   .container-orientation {
-    background-color: rgb(206, 195, 131);
+    border: 1px solid black;
+  }
+}
+
+.fly {
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
+  position: relative;
+  width: 80px;
+}
+
+@keyframes flying {
+
+  0% {
+    left: 0;
+    top: 0;
+    transform:  translate(1, 1);
+  }
+
+  100% {
+    left: 660px;
+    top: -520px;
+    transition: steps(1000);
   }
 }
 
@@ -80,7 +101,7 @@ body {
 }
 
 .escala:hover {
-  animation: crescer 4s;
+  animation: crescer 4s alternate forwards;
 }
 
 @keyframes crescer {
@@ -89,7 +110,11 @@ body {
     transform: scale(1, 1);
   }
 
-  100% {
+  50% {
     transform: scale(2, 2);
+  }
+
+  100% {
+    transform: scale(.5, .5);
   }
 }
