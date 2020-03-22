@@ -34,10 +34,6 @@ body {
   padding-bottom: 1.25rem;
 }
 
-.escudo {
-  margin-right: 2rem;
-}
-
 .sub-titulo {
   display: flex;
   justify-content: center;
@@ -65,45 +61,52 @@ body {
   width: 100%;
 }
 
-@media screen and ( min-width : 760px ) {
+@keyframes flying {
 
-  article , body , div , footer , ol , main , nav , p , section {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-
-  .jornal {
-    border-radius: 1rem;
-    margin: 1rem auto;
-    padding: 1rem;
-    width: 65%;
-    z-index: 3;
-  }
-
-  article {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 70%;
-  }
-
-  .primeiro-container {
-    width: 40%;
+  100% {
+    background-position: -900px 0;
   }
 }
 
-@media screen and ( min-width : 1170px ) {
+.escudo {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: rodar;
+  animation-timing-function: linear;
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  width: 10rem;
+}
+
+@keyframes rodar {
+
+  to {
+    transform: rotate(0);
+  }
+
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
