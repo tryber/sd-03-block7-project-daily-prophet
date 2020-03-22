@@ -46,19 +46,24 @@ body {
   animation-iteration-count: 3;
   animation-name: flying;
   animation-timing-function: linear;
+  margin-left: -20%;
   position: absolute;
-  transform: rotateY(180deg);
   width: 20vw;
 }
 
 @keyframes flying {
 
   0% {
-    margin-left: -20%;
+    margin-left: 100%;
+  }
+
+  50% {
+    margin-left: 40%;
+    transform: translate(100px, 100px);
   }
 
   100% {
-    margin-left: 100%;
+    margin-left: -20%;
   }
 }
 
@@ -88,7 +93,20 @@ body {
 .section_article {
   font-size: 2.2vw;
   text-align: justify;
-  transform: scale(1);
+}
+
+@keyframe article-grow {
+  0% {
+    color: blue;
+  }
+
+  50% {
+    color: pink;
+  }
+
+  100% {
+    color: orange;
+  }
 }
 
 @media screen and ( max-width : 760px ) {
