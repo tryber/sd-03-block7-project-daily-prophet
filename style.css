@@ -11,14 +11,14 @@ body {
 }
 
 .link {
-  bottom: 0;
-  position: fixed;
-  text-align: center;
-  width: 100%;
   background-color: black;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  text-align: center;
   transition: background-color 2s;
+  width: 100%;
 }
 
 .espaço {
