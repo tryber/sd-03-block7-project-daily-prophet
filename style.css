@@ -200,7 +200,7 @@ header {
 
 @media ( orientation : landscape ) {
 
-  .container-orientation{
+  .container-orientation {
     border: 1px solid red;
   }
 }
