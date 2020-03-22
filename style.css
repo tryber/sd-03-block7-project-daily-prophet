@@ -1,7 +1,7 @@
-/* h1 , p , span , div , figure , img {
+h1 , p , span , div , figure , img {
   margin: 0;
   padding: 0;
-} */
+}
 
 p {
   text-align: justify;
@@ -30,7 +30,7 @@ body {
   border-radius: 0.5%;
   column-gap: 1em;
   display: grid;
-  grid-template-columns: repeat(6, {1fr});
+  grid-template-columns: [column1] 1fr [column2] 1fr [column3] 1fr [column4] 1fr [column5] 1fr [column6] 1fr;
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
@@ -142,7 +142,7 @@ body {
 .article {
   column-gap: 1em;
   display: grid;
-  grid-template-columns: repeat(4, {1fr});
+  grid-template-columns: [column1] 1fr [column2] 1fr [column3] 1fr [column4] 1fr;
   padding: 0.125em 0.125em 0 0.5em;
 }
 
