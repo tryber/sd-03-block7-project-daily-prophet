@@ -69,7 +69,9 @@ body {
 
 @keyframes passo {
 
-  from {}
+  from {
+    background-position: 0;
+  }
 
   to {
     background-position: 1200px;
