@@ -28,12 +28,13 @@ body {
 .grid {
   background-color: #fff8ee;
   border-radius: 0.5%;
+  column-gap: 1em;
   display: grid;
-  grid-gap: 1em 0.5em;
   grid-template-columns: repeat(6, 1fr);
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
+  row-gap: 0.5em;
 }
 
 .header {
@@ -155,10 +156,11 @@ body {
 
 .article {
   border: 1px solid #1c1915;
+  column-gap: 1em;
   display: grid;
-  grid-gap: 1em 0.5em;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.125em 0.125em 0 0.5em;
+  row-gap: 0.5em;
 }
 
 .article-title {
