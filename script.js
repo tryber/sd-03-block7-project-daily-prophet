@@ -3,8 +3,8 @@ window.onload = () => {
   for (let i = 0; i < artigos.length; i += 1) {
     const artigo = document.querySelectorAll('.article-animation')[i];
     artigo.addEventListener('click', () => {
-        artigo.style.animationPlayState = 'running';
-        return true
+      artigo.style.animationPlayState = 'running';
+      return true;
     });
   }
 };

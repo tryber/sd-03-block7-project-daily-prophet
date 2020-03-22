@@ -259,6 +259,15 @@ body {
 }
 
 .link-animation:hover {
+  transform: skew(20deg,10deg);
+}
+
+.aside-animation {
+  cursor: pointer;
+  transition: all 2s linear;
+}
+
+.aside-animation:hover {
   transform: scale(1, 2);
 }
 
