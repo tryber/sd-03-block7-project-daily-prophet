@@ -1,0 +1,109 @@
+article , body , div , footer , h1 , h3 , ol , main , nav , p , section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.alinha {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina {
+
+  /* background: rgb( 116 , 116 , 109 ); */
+  display: flex;
+  flex-direction: column;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.25rem;
+}
+
+.escudo {
+  margin-right: 2rem;
+}
+
+.sub-titulo {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 30px;
+}
+
+
+.alinha-nav {
+  background-color: seagreen;
+  border-radius: 2px;
+  margin: 0 30px;
+}
+
+.principal-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and ( min-width : 760px ) {
+
+  article , body , div , footer , ol , main , nav , p , section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .jornal {
+    border-radius: 1rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 65%;
+    z-index: 3;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .primeiro-container {
+    width: 40%;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
