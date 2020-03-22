@@ -1,0 +1,72 @@
+.fly {
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
+  position: relative;
+}
+
+@keyframes flying {
+
+  0% {
+    left: 0;
+    top: 0;
+    transform: scale(1, 1) skew(1deg) translate(1, 1);
+  }
+
+  100% {
+    left: 1700px;
+    top: 0;
+    transition: steps(1000);
+  }
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    transition-duration: 2s;
+    transition-property: all;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    transition-duration: 2s;
+    transition-property: all;
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transition: steps(1000);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.coruja {
+  text-align: center;
+}
