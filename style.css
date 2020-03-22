@@ -20,6 +20,19 @@
   }
 }
 
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
+}
+
 body {
   background-color: seashell;
 }
@@ -34,6 +47,10 @@ body {
   animation: fly 4s steps(400, end) 3 alternate;
   animation-delay: 5s;
   width: 10em;
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
 }
 
 @media ( max-width : 760px ) {
