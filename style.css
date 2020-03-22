@@ -31,8 +31,7 @@
 
   .books {
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 
@@ -43,8 +42,7 @@
 
   .on-stage-photos {
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
   }
 
