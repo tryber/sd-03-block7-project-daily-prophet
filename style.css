@@ -24,14 +24,38 @@ body {
 
 .main-container {
   background-color: rgb(255, 248, 238);
-  border-radius: 5%;
-  margin: 0;
+  border-radius: 16px;
+  margin: auto;
   padding: 1em;
+  width: 95%;
+}
+
+h1 {
+  font-family: Vollkorn, serif;
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.5em;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+h2 {
+  font-family: Kreon, serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0.2em 0;
+  text-align: center;
 }
 
 @media only screen and ( max-width : 760px ) {
 
   /* Requisito container-layout */
+  .logo {
+    display: none;
+  }
+
   .container-layout {
     background-color: yellow;
   }
@@ -40,23 +64,234 @@ body {
     color: yellow;
   }
 
-  h1 {
+  .exclusive {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 2.1em;
+    justify-content: flex-start;
+  }
+
+  .paragraph-exclusive {
+    color: rgb(255, 248, 238);
+    font-family: Bebas Neue, cursive;
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .paragraph-not-exclusive {
+    color: black;
+    font-family: Bebas Neue, cursive;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .paragraph-briefing {
     font-family: Vollkorn, serif;
-    font-size: 4em;
-    font-weight: 800;
-    line-height: 0.5em;
-    margin: 1.5rem 0 0;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0.2em 0 0;
+  }
+
+  .potter {
+    height: 32px;
+    margin: 0.2em;
+    width: 32px;
+  }
+
+  .section-container {
+    border: 1px solid black;
+    margin: 0.5em 0;
     padding: 0;
+    width: 100%;
+  }
+
+  .main-section-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .container-link {
+    background-color: black;
+    text-align: end;
+    width: 100%;
+  }
+
+  .container-link:hover {
+    background-color: yellow;
+  }
+
+  .footer-list-item a {
+    color: black;
+    display: block;
+    font-family: Vollkorn, serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .container-link:hover a {
+    color: black;
+  }
+
+  .section-link {
+    color: white;
+    display: block;
+    font-family: Kreon, serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .img-main-gif {
+    margin: 0.5em 0;
+    width: 98%;
+  }
+
+  .wrap-title {
+    padding: 0;
+    position: relative;
+  }
+
+  .wrap-title span {
+    font-family: Bebas Neue, cursive;
+    font-size: 1rem;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+
+  .main-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 5.1em;
+    font-weight: 400;
+    line-height: 0.9em;
+    margin: 0;
+  }
+
+  .paragraph-normal {
+    font-family: Vollkorn, serif;
+    text-indent: 2em;
+  }
+
+  .bold {
+    font-weight: 700;
+    text-indent: 0;
+  }
+
+  .diferentao {
+    color: black;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0;
+    padding: 1em 0.1em;
+    text-shadow: yellow;
+  }
+
+  .wrap-container {
+    width: 100%;
+  }
+
+  .center {
     text-align: center;
   }
 
-  h2 {
-    font-family: Kreon, serif;
-    font-size: 0.8em;
-    font-weight: 400;
+  .fat {
+    border: 2px solid black;
     margin: 0;
-    padding: 0.2em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .thin {
+    border: 0.5px solid black;
+    margin: 0.2em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .italic {
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .jornal {
+    display: flex;
+  }
+
+  .wrap {
+    width: 50%;
+  }
+
+  .second-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .redondo {
+    border-radius: 50%;
+    float: left;
+    margin: 0.5em 1.5em;
+    width: 50%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-container-side-by-side {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
+  }
+
+  .footer-list-item {
+    list-style: none;
+    width: 90%;
+  }
+
+  .footer-list-item p {
+    font-family: Kreon, serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
     text-align: center;
+    text-shadow: 3px 0 yellow;
+  }
+}
+
+@media only screen and ( min-width : 761px ) and ( max-width : 1169px ) {
+
+  /* Requisito container-layout */
+  .logo {
+    display: none;
+  }
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .container-layout-show {
+    color: yellow;
   }
 
   .exclusive {
@@ -275,11 +510,338 @@ body {
 
 @media only screen and ( min-width : 1170px ) {
 
+  /* Requisito container-layout */
   .container-layout {
     background-color: red;
   }
 
   .container-layout-show {
     color: red;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .logo-container {
+    width: 10%;
+  }
+
+  .header-sub-container {
+    align-self: center;
+    width: 90%;
+  }
+
+  .normal-size {
+    font-family: Vollkorn, serif;
+    font-size: 7em;
+    font-weight: 800;
+    line-height: 0.5em;
+    margin: 1.5rem 0 0;
+    padding: 0 1em;
+    text-align: left;
+  }
+
+  .second-normal-size {
+    font-family: Kreon, serif;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0.2em 0;
+    text-align: center;
+  }
+
+  .wrap-this-section {
+    display: flex;
+    height: 10em;
+    justify-content: space-between;
+    margin: 0.5em 0;
+  }
+
+  .exclusive-pai {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 20%;
+  }
+
+  .exclusive {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    height: 2.1em;
+    justify-content: flex-start;
+  }
+
+  .paragraph-exclusive {
+    color: rgb(255, 248, 238);
+    font-family: Bebas Neue, cursive;
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  .paragraph-normal {
+    font-family: Vollkorn, serif;
+    padding: 0.5em;
+    text-indent: 2em;
+  }
+
+  .potter {
+    height: 32px;
+    margin: 0.2em;
+    width: 32px;
+  }
+
+  .section-container-pai {
+    border: 1px solid black;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 78%;
+  }
+
+  .one-paragraph {
+    width: 30%;
+  }
+
+  .paragraph-not-exclusive {
+    color: black;
+    font-family: Bebas Neue, cursive;
+    font-size: 4em;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .change-font {
+    font-family: Kreon, serif;
+    font-size: 1rem;
+  }
+
+  .two-paragraph {
+    width: 85%;
+  }
+
+  .paragraph-briefing {
+    font-family: Vollkorn, serif;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight: 400;
+    padding-bottom: 3.8em;
+  }
+
+  .container-link {
+    background-color: black;
+    text-align: end;
+    width: 100%;
+  }
+
+  .container-link:hover {
+    background-color: red;
+  }
+
+  .footer-list-item a {
+    color: black;
+    display: block;
+    font-family: Vollkorn, serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .container-link:hover a {
+    color: black;
+  }
+
+  .section-link {
+    color: white;
+    display: block;
+    font-family: Kreon, serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  /* Inicio do main content */
+  .section-container {
+    border: 1px solid black;
+    margin: 0.5em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .split-containers {
+    display: flex;
+  }
+
+  .left-side {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+
+  .right-side {
+    width: 30%;
+  }
+
+  .wrap-title {
+    width: 100%;
+  }
+
+  .wrap-title span {
+    font-family: Bebas Neue, cursive;
+    font-size: 3rem;
+    left: -1em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0.9em;
+    transform: rotate(-90deg);
+  }
+
+  .main-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 6.5em;
+    font-weight: 400;
+    line-height: 0.9em;
+    margin: 0;
+    position: relative;
+  }
+
+  .split-inside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  .wrap-main-text {
+    padding: 1em;
+    width: 30%;
+  }
+
+  .bold {
+    font-weight: 700;
+    text-indent: 0;
+  }
+
+  .diferentao {
+    color: black;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0;
+    padding: 1em 0.1em;
+    text-shadow: 3px 0 red;
+  }
+
+  .wrap-main-img {
+    width: 100%;
+  }
+
+  .img-main-gif {
+    margin: 0.5em 0;
+    width: 100%;
+  }
+
+  .wrap-middle-text {
+    width: 100%;
+  }
+
+  .wrap-elements {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .element-left {
+    width: 50%;
+  }
+
+  .element-right {
+    width: 50%;
+  }
+
+
+  .center {
+    text-align: center;
+  }
+
+  .fat {
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .thin {
+    border: 0.5px solid black;
+    margin: 0.2em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .italic {
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .jornal {
+    display: flex;
+  }
+
+  .wrap {
+    width: 50%;
+  }
+
+  .second-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .redondo {
+    border-radius: 50%;
+    float: left;
+    margin: 0.5em 1.5em;
+    width: 50%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-container-side-by-side {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
+  }
+
+  .footer-list-item {
+    list-style: none;
+    width: 90%;
+  }
+
+  .footer-list-item p {
+    font-family: Kreon, serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 3px 0 yellow;
+  }
+
+  .rodape {
+    border-radius: 10px;
   }
 }
