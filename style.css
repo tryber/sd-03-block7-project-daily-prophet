@@ -27,6 +27,8 @@ body {
 }
 
 .article-animation {
+  animation: article-grow 4s;
+  animation-play-state: initial;
   background-color: white;
   opacity: 0;
   transition: all 1s;
@@ -34,7 +36,8 @@ body {
 }
 
 .article-animation:hover {
-  animation: article-grow 4s forwards;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
   opacity: initial;
 }
 
