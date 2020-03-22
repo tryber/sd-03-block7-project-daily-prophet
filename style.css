@@ -1,36 +1,12 @@
-/* @keyframes a { steps() } a (transition).+} a {(translate)} a {(scale)} a {(skew)} */
-​
-@media screen and ( max-width : 760px ) {
-​
-  .container-layout {
-    background: yellow;
-  }
+body {
+  background-color: seashell;
 }
-​
-@media screen and ( min-width : 1170px ) {
-​
-  .container-layout {
-    background: red;
-  }
+
+.leviosa{
+  animation: leviosa 4s steps(400, end) infinite;
+  animation-delay: 5s;
 }
-​
-@media screen and ( orientation : landscape ) {
-​
-  .container-orientation {
-    border: 1px solid red;
-  }
-}
-​
-.article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
-  animation-play-state: paused;
-}
-​
-.fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
-  animation-play-state: running;
+
+ @keyframes leviosa { 
+     from{scale: (1); transform: skew(0) translate(0);}
+     to{scale: (2); transform: skew(-80deg, 80deg) translate(1000%,200%);}
