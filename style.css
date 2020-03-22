@@ -57,18 +57,37 @@ body {
   }
 }
 
+.article-animation {
+  animation: article-grow 3s linear 16s alternate;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  position: relative;
+  width: 600px;
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: bold;
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+    transition: steps(1000);
+  }
+}
+
 .navegacao {
   align-items: center;
   background-color: rgb(172, 172, 172);
   display: flex;
   justify-content: space-around;
-}
-
-.artigoOne {
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  width: 600px;
 }
 
 .asideDumble {
