@@ -25,8 +25,9 @@ body {
 }
 
 .leviosa {
-  animation: leviosa 4s steps(400, end) infinite;
+  animation: leviosa 4s steps(400, end);
   animation-delay: 5s;
+  transition: leviosa 2s;
 }
 
 .fly {
