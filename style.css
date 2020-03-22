@@ -63,7 +63,6 @@ a:hover {
   flex-wrap: wrap;
   height: 100px;
   position: absolute;
-  transform: skew(10deg, 10deg);
   width: 100px;
   z-index: 5;
 }
@@ -73,6 +72,7 @@ a:hover {
   0% {
     left: 25%;
     top: 20%;
+    transform: translate(50px, 100px);
   }
 
   25% {
@@ -84,6 +84,7 @@ a:hover {
     left: 25%;
     top: 50%;
     transform: scale(2, 3);
+    transform: skew(10deg, 10deg);
   }
 
   75% {
