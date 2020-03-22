@@ -104,18 +104,18 @@ body {
 @keyframes article-grow {
 
   0% {
+    font-weight: 500;
     transform: scale(1);
-    font-weight: normal;
   }
 
   50% {
+    font-weight: 600;
     transform: scale(1.25);
-    font-weight: bold;
   }
 
   100% {
+    font-weight: 700;
     transform: scale(1.5);
-    font-weight: bolder;
   }
 }
 
