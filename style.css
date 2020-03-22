@@ -133,18 +133,16 @@ p {
 
 .article-animation {
   animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
   animation-timing-function: steps(4, end);
 }
 
 @keyframes article-grow {
 
-  0% {
+  100% {
     font-weight: 700;
     transform: scale(1.5);
-  }
-
-  100% {
-    position: initial;
   }
 }
 
