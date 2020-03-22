@@ -101,18 +101,21 @@ body {
   animation-timing-function: linear;
 }
 
-@keyframe article-grow {
-  
+@keyframes article-grow {
+
   0% {
-    color: blue;
+    transform: scale(1);
+    font-weight: normal;
   }
 
   50% {
-    color: pink;
+    transform: scale(1.25);
+    font-weight: bold;
   }
 
   100% {
-    color: orange;
+    transform: scale(1.5);
+    font-weight: bolder;
   }
 }
 
