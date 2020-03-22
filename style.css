@@ -279,7 +279,7 @@ h2 {
   }
 }
 
-@media only screen and ( min-width : 761px ) and ( max-width : 1169px ) {
+@media only screen and ( min-width : 761px ) and ( orientation : landscape ) {
 
   /* Requisito container-layout */
   .logo {
@@ -288,6 +288,10 @@ h2 {
 
   .container-layout {
     background-color: yellow;
+  }
+
+  .container-orientation {
+    border: 1px solid red;
   }
 
   .container-layout-show {
