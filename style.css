@@ -84,7 +84,7 @@ a:hover {
     left: 25%;
     top: 50%;
     transform: scale(2, 3);
-    transform: skew(10deg, 10deg);
+    transform: skew(10deg, 20deg);
   }
 
   75% {
