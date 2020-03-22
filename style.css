@@ -114,8 +114,8 @@ a:hover {
 
 .gif {
   height: 300px;
-  width: 300px;
   transition: heigth 1s, width 1s;
+  width: 300px;
 }
 
 iframe:hover {
