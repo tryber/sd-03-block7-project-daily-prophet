@@ -49,13 +49,13 @@ hr {
 }
 
 h2 {
+  animation-delay: 3s;
+  animation-duration: 4s;
+  animation-name: title-move;
   color: rgb(110, 55, 0);
   font-family: MyWebFont, sans-serif;
   font-size: 150px;
   margin: 0;
-  animation-name: title-move;
-  animation-delay: 3s;
-  animation-duration: 4s;
 }
 
 .h2-first {
