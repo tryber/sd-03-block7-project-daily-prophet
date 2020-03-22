@@ -1,6 +1,6 @@
 /* font-family: 'Bebas Neue', cursive;
-font-family: 'Vollkorn', serif;
-font-family: 'Kreon', serif; */
+font-family: Vollkorn, serif;
+font-family: Kreon, serif; */
 
 body {
   background-color: black;
@@ -50,7 +50,7 @@ body {
     text-align: center;
   }
 
-  h4 {
+  h2 {
     font-family: Kreon, serif;
     font-size: 0.8em;
     font-weight: 400;
@@ -120,6 +120,16 @@ body {
     background-color: yellow;
   }
 
+  .footer-list-item a {
+    color: black;
+    display: block;
+    font-family: Vollkorn, serif;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
   .container-link:hover a {
     color: black;
   }
@@ -135,6 +145,7 @@ body {
   }
 
   .img-main-gif {
+    margin: 0.5em 0;
     width: 98%;
   }
 
@@ -168,8 +179,97 @@ body {
   }
 
   .bold {
-    font-weight: 400;
+    font-weight: 700;
     text-indent: 0;
+  }
+
+  .diferentao {
+    color: yellow;
+    font-size: 4em;
+    line-height: 1em;
+    margin: 0;
+    padding: 1em 0.1em;
+  }
+
+  .wrap-container {
+    width: 100%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .fat {
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .thin {
+    border: 0.5px solid black;
+    margin: 0.2em 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .italic {
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .jornal {
+    display: flex;
+  }
+
+  .wrap {
+    width: 50%;
+  }
+
+  .second-title {
+    font-family: Bebas Neue, cursive;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+
+  .redondo {
+    border-radius: 50%;
+    float: left;
+    margin: 0.5em 1.5em;
+    width: 50%;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-container-side-by-side {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 50%;
+  }
+
+  .footer-list-item {
+    list-style: none;
+    width: 90%;
+  }
+
+  .footer-list-item p {
+    font-family: Kreon, serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: 3px 0 yellow;
   }
 }
 
