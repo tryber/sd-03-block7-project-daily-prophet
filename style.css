@@ -73,7 +73,6 @@ body {
   }
 
   50% {
-    font-weight: bold;
     transform: scale(1.5);
   }
 
