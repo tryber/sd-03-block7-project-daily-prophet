@@ -10,11 +10,15 @@ body {
   background-color: rgb(207, 203, 203);
 }
 
-footer {
+.link {
   bottom: 0;
   position: fixed;
   text-align: center;
   width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  transition: background-color 2s;
 }
 
 .espaço {
@@ -78,12 +82,22 @@ footer {
   .container-layout {
     background-color: yellow;
   }
+
+  .link {
+    background-color: black;
+    transition: background-color 2s;
+  }
 }
 
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
+  }
+
+  .link {
+    background-color: grey;
+    transition: background-color 2s;
   }
 }
 
