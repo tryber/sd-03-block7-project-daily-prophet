@@ -22,7 +22,15 @@
 }
 ​
 .article-animation {
-  animation-name: article-grow;
   animation-duration: 4s;
+  animation-name: article-grow;
   animation-play-state: paused;
 }
+​
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-play-state: running;
