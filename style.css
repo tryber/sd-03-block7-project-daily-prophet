@@ -198,9 +198,9 @@ header {
   }
 }
 
-@media screen and ( orientation : landscape ) {
+@media ( orientation : landscape ) {
 
-  .container-layout {
+  .container-orientation{
     border: 1px solid red;
   }
 }
