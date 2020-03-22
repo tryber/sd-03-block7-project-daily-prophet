@@ -196,7 +196,7 @@ body {
 
 
 .fly {
-  animation: flying 3s ease-in-out 3s infinite alternate-reverse;
+  animation: flying 3s ease-in-out 3s 3 alternate;
 }
 
 @keyframes flying {
