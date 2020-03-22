@@ -238,7 +238,7 @@ body {
 } */
 
 .fly {
-  animation: flying 3s ease-in-out 3s 3 alternate forwards;
+  animation: flying 3s steps(50, end) 3s 3 alternate forwards;
 }
 
 @keyframes flying {
@@ -254,7 +254,7 @@ body {
 }
 
 .logo-animation {
-  animation: down 2s both;
+  animation: down 2s steps(60, end) both;
 }
 
 @keyframes down {
@@ -302,7 +302,7 @@ body {
 }
 
 .header-animation {
-  transition: all 2s linear;
+  transition: all 2s;
 }
 
 .header-animation:hover {
@@ -311,7 +311,7 @@ body {
 
 .aside-animation {
   margin: 10px 0 0;
-  transition: all 2s linear;
+  transition: all 2s steps(60, end);
 }
 
 .aside-animation:hover {
