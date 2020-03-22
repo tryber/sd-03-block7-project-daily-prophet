@@ -23,7 +23,8 @@
   }
 }
 
-@media (orientation: landscape) {
+@media ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
@@ -31,7 +32,7 @@
   .books {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-around;
   }
 
@@ -43,7 +44,7 @@
   .on-stage-photos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-around;
   }
 
