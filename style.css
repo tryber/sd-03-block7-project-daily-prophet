@@ -14,7 +14,6 @@ body {
   }
 
   to {
-    scale: 2;
-    transform: skew(-80deg, 80deg) scale(1) translate(1000%, 200%);
+    transform: skew(-80deg, 80deg) scale(3) translate(1000%, 200%);
   }
 }
