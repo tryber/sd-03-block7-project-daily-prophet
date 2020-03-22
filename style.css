@@ -1,3 +1,24 @@
+@keyframes leviosa {
+
+  from {
+    transform: skew(0) scale(1) translate(0);
+  }
+
+  to {
+    transform: skew(-80deg, 80deg) scale(3) translate(1000%, 200%);
+  }
+}
+
+@keyframes fly {
+
+  from {
+    transform: skew(0) scale(1) translate(0);
+  }
+
+  to {
+    transform: skew(-80deg, 80deg) scale(3) translateX(100%);
+  }
+}
 body {
   background-color: seashell;
 }
@@ -7,13 +28,22 @@ body {
   animation-delay: 5s;
 }
 
-@keyframes leviosa {
+.fly {
+  animation: fly 4s steps(400, end) 3 alternate;
+  animation-delay: 5s;
+  width: 10em;
+}
 
-  from {
-    transform: skew(0) scale(1) translate(0);
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
   }
+}
 
-  to {
-    transform: skew(-80deg, 80deg) scale(3) translate(1000%, 200%);
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
   }
 }
