@@ -40,6 +40,11 @@
   text-decoration: none;
 }
 
+a:hover {
+    background-color: burlywood;
+    color: black;
+  }
+
 .sub-navbar {
   display: flex;
   float: left;
@@ -95,13 +100,12 @@
     width: 100%;
   }
 
-  a:hover {
-    background-color: yellow;
-    color: black;
-  }
-
   .section-conteudo {
     float: left;
+  }
+
+  .section-footer {
+    background-color: rgb(255, 255, 0);
   }
 }
 
@@ -128,8 +132,7 @@
     flex-direction: column;
   }
 
-  .navbar a:hover {
-    background-color: red;
-    color: black;
+  .section-footer {
+    background-color: rgb(255, 0, 0);
   }
 }
