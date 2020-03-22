@@ -1,6 +1,7 @@
 .body {
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
 .container-layout {
@@ -49,6 +50,47 @@ a:hover {
   display: flex;
   float: left;
   margin: 5px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  animation-name: flying;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  z-index: 5;
+}
+
+@keyframes flying {
+
+  0% {
+    left: 0%;
+    top: 20%;
+  }
+
+  25% {
+    left: 100%;
+    top: 20%;
+  }
+  50% {
+    left: 100%;
+    top: 50%;
+  }
+
+  75% {
+    left: 0px;
+    top: 50;
+  }
+  100% {
+    left: 0%;
+    top: 50%px;
+  }
 }
 
 .section-article {
