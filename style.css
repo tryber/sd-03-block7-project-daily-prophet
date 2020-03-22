@@ -136,6 +136,11 @@ body {
   text-decoration: none;
 }
 
+.link:hover {
+  background-color: #FBB03B;
+  color: #1c1915;
+}
+
 .section-news {
   grid-column: 1/7;
 }
@@ -259,16 +264,15 @@ body {
 }
 
 .link-animation:hover {
-  transform: skew(20deg,10deg);
+  transform: scale(1, 2)
 }
 
 .aside-animation {
-  cursor: pointer;
   transition: all 2s linear;
 }
 
 .aside-animation:hover {
-  transform: scale(1, 2);
+  transform: skew(20deg, 10deg) rotate(360deg);
 }
 
 @media screen and ( max-width : 760px ) {
