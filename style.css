@@ -10,12 +10,12 @@ body {
 @keyframes leviosa {
 
   from {
-    scale: 1;
+    scale: (1);
     transform: skew(0) translate(0);
   }
 
   to {
-    scale: 2;
+    scale: (2);
     transform: skew(-80deg, 80deg) translate(1000%, 200%);
   }
 }
