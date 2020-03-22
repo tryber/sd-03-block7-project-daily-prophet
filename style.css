@@ -11,6 +11,7 @@ body {
 }
 
 .main-title {
+  overflow: hidden;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -85,17 +86,19 @@ p {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  margin-left: -1350px;
+  margin-left: -1650px;
+  margin-top: -140px;
+  margin-bottom: -160px;
 }
 
 @keyframes flying {
 
   0% {
-    margin-left: -1350px;
+    margin-left: -1650px;
   }
 
   100% {
-    margin-left: 960px;
+    margin-left: 1860px;
   }
 }
 
