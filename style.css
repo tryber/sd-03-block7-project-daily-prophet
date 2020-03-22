@@ -1,8 +1,80 @@
 body {
+  background-color: moccasin;
+  font-family: Pirata One, cursive;
   margin: 0;
 }
 
-@media ( max-width : 760px ) {
+.header_title {
+  margin: 0;
+}
+
+.header_img {
+  height: auto;
+  width: 100%;
+}
+
+.nav_div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pointing_hand {
+  height: auto;
+  width: 20vw;
+}
+
+.nav_lists {
+  font-size: 1.8vw;
+  margin: auto;
+}
+
+.nav_lists ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+}
+
+.nav_titles {
+  margin: 0;
+}
+
+.section_title {
+  font-size: 5vw;
+  margin: auto;
+  width: 80%;
+}
+
+.section_subtitle {
+  display: flex;
+}
+
+.section_img {
+  height: auto;
+  margin: 1vw;
+  width: 40vw;
+}
+
+.section_aside {
+  font-size: 2vw;
+  margin: 1vw;
+  text-align: justify;
+}
+
+.section_article {
+  font-size: 2.2vw;
+  text-align: justify;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .pointing_hand {
+    display: none;
+  }
+
+  .nav_lists {
+    font-size: 2.5vw;
+  }
+
 
   .container-layout {
     background-color: yellow;
@@ -10,10 +82,18 @@ body {
 
 }
 
-@media ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
+  }
+
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 
 }
