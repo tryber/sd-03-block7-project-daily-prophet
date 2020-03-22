@@ -1,10 +1,9 @@
 body {
   background-color: rgb(255, 238, 143);
-  width: 100%;
   height: 100%;
   margin: 0;
-  ;
   padding: 0;
+  width: 100%;
 }
 
 .normalize {
@@ -12,47 +11,47 @@ body {
 }
 
 .main-title {
-  padding-top: 20px;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .everything {
-  border-radius: 20px;
   background-color: rgb(232, 246, 255);
+  border-radius: 20px;
+  flex-wrap: wrap;
   height: 100%;
   margin: 3% 6%;
-  flex-wrap: wrap;
 }
 
 hr {
-  padding-left: 1100px;
   border-bottom: 3px black solid;
+  padding-left: 1100px;
 }
 
 .main-content {
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .conteudo {
+  border: 1px solid black;
+  border-radius: 20px;
+  min-width: 300px;
+  overflow: hidden;
   padding: 10px 0 10px 10px;
   text-indent: 18px;
   width: 30%;
-  border: 1px solid black;
-  min-width: 300px;
-  border-radius: 20px;
-  overflow: hidden;
 }
 
 h2 {
-  margin: 0;
-  font-size: 150px;
   color: rgb(110, 55, 0);
   font-family: MyWebFont, sans-serif;
+  font-size: 150px;
+  margin: 0;
 }
 
 .h2-first {
@@ -61,24 +60,22 @@ h2 {
 }
 
 p {
-  letter-spacing: 1px;
-  font-family: MyWebFont, sans-serif;
+  font-family: monospace, sans-serif;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 22px;
 }
 
 .first-letter {
-  font-family: MyWebFont, sans-serif;
-  font-size: 36px;
+  font-family: Times New Roman, Times, serif;
+  font-size: 44px;
 }
 
 .voldemort {
   margin-top: 15px;
-  width: 85%;
   -webkit-user-drag: none;
+  width: 85%;
 }
-
-
 
 .fly {
   animation-delay: 3s;
@@ -91,32 +88,32 @@ p {
 }
 
 @keyframes flying {
+
   0% {
     margin-left: -1350px;
   }
+
   100% {
     margin-left: 960px;
   }
 }
 
-@font-face {
-  font-family: 'MyWebFont';
-  src: URL('./fonts/mugglenews_by_nathanthenerd_d41qn8p.ttf') format('truetype');
-}
+@media screen and ( max-width : 760px ) {
 
-@media screen and ( max-width: 760px) {
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and ( min-width: 1170px) {
+@media screen and ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and ( orientation: landscape) {
+@media screen and ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
@@ -124,15 +121,5 @@ p {
 
 .noselect {
   -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Old versions of Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
   user-select: none;
-  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
