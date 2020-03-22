@@ -157,8 +157,8 @@ body {
 }
 */
 
-.ghost {
-  animation: fly 3s ease-in-out infinite alternate-reverse;
+.fly {
+  animation: flying 3s ease-in-out infinite alternate-reverse;
   margin: 0 0 10px;
 }
 
@@ -195,7 +195,7 @@ body {
   padding: 20px 0;
 } */
 
-@keyframes fly {
+@keyframes flying {
 
   from {
     margin-left: 0;
