@@ -236,7 +236,21 @@ body {
 }
 
 .article-animation {
+  animation: article-grow 4s;
+  animation-play-state: paused;
+  cursor: pointer;
+}
 
+@keyframes article-grow {
+  from {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  to {
+    font-size: 150%;
+    font-weight: 700;
+  }
 }
 
 @media screen and ( max-width : 760px ) {
