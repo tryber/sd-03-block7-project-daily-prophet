@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
-  row-gap: 0.5em;
+  /* row-gap: 0.5em; */
 }
 
 .header {
