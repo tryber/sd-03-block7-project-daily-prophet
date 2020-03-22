@@ -21,6 +21,27 @@
   }
 }
 
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
 body {
   background-color: rgb(255, 252, 238);
   color: #1c1915;
@@ -176,7 +197,6 @@ main {
 }
 
 .second-div-first-section-headline {
-  background-color: #1c1915;
   font-size: 15px;
   padding: 0;
 }
