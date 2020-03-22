@@ -196,16 +196,19 @@ body {
 } */
 
 @keyframes fly {
+
   from {
-    margin-left: 0%;
+    margin-left: 0;
   }
 
   to {
     margin-left: 97%;
   }
+
 }
 
 @keyframes down {
+
   0% {
     transform: translate(0, -120%) rotate(45deg);
     visibility: visible;
@@ -226,6 +229,7 @@ body {
   100% {
     transform: translate(0, 0) rotate(0);
   }
+
 }
 
 @media screen and ( max-width : 760px ) {
@@ -254,5 +258,6 @@ body {
 
   .container-orientation {
     border: 1px solid red;
+    display: none;
   }
 }
