@@ -19,7 +19,7 @@
 }
 
 .column {
-  background-color: aqua;
+  background-color:aqua;
   float: left;
   padding: 20px;
   width: 25%;
@@ -35,15 +35,15 @@
 }
 
 .navbar a {
-  color: darkgoldenrod;
+  color:darkgoldenrod;
   padding: 14px 20px;
   text-align: center;
   text-decoration: none;
 }
 
 a:hover {
-    background-color: burlywood;
-    color: black;
+    background-color:burlywood;
+    color:black;
   }
 
 .sub-navbar {
@@ -56,8 +56,8 @@ a:hover {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 5s;
-  animation-iteration-count: 3;
   animation-fill-mode: forwards;
+  animation-iteration-count: 3;
   animation-name: flying;
   display: flex;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@ a:hover {
 @keyframes flying {
 
   0% {
-    left: 0%;
+    left: 0;
     top: 20%;
   }
 
@@ -78,23 +78,25 @@ a:hover {
     left: 100%;
     top: 20%;
   }
+
   50% {
     left: 100%;
     top: 50%;
   }
 
   75% {
-    left: 0px;
-    top: 50;
+    left: 0;
+    top: 50%;
   }
+
   100% {
-    left: 0%;
-    top: 50%px;
+    left: 0;
+    top: 50%;
   }
 }
 
 .section-article {
-  background-color: blueviolet;
+  background-color:blueviolet;
   display: flex;
   flex: 70%;
   padding: 20px;
@@ -108,7 +110,7 @@ a:hover {
 }
 
 .section-aside {
-  background-color: blue;
+  background-color:blue;
   display: flex;
   flex: 30%;
   padding: 20px;
@@ -147,7 +149,7 @@ a:hover {
   }
 
   .section-footer {
-    background-color: yellow;
+    background-color:yellow;
   }
 }
 
@@ -175,6 +177,6 @@ a:hover {
   }
 
   .section-footer {
-    background-color: red;
+    background-color:red;
   }
 }
