@@ -81,8 +81,8 @@ body {
 .section_aside {
   font-size: 2vw;
   margin: 1vw;
-  transform: skew(5deg, 1deg);
   text-align: justify;
+  transform: skew(5deg, 1deg);
 }
 
 .section_article {
