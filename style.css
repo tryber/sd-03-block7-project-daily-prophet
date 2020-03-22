@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-width: 700px) and (orientation: landscape) {
+@media ( max-width : 700px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
