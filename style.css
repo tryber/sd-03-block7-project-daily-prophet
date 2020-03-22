@@ -58,7 +58,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s linear alternate;
+  animation: article-grow 4s linear 16s;
   display: flex;
   flex-direction: column;
   margin: 15px;
@@ -69,14 +69,17 @@ body {
 @keyframes article-grow {
 
   0% {
+    font-weight: 300;
     transform: scale(1);
   }
 
   50% {
+    font-weight: 600;
     transform: scale(1.5);
   }
 
   100% {
+    font-weight: 300;
     transform: scale(1);
     transition: steps(1000);
   }
