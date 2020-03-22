@@ -19,7 +19,7 @@
 }
 
 .column {
-  background-color:aqua;
+  background-color: aqua;
   float: left;
   padding: 20px;
   width: 25%;
@@ -35,16 +35,16 @@
 }
 
 .navbar a {
-  color:darkgoldenrod;
+  color: darkgoldenrod;
   padding: 14px 20px;
   text-align: center;
   text-decoration: none;
 }
 
 a:hover {
-    background-color:burlywood;
-    color:black;
-  }
+    background-color: burlywood;
+    color: black;
+}
 
 .sub-navbar {
   display: flex;
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .section-article {
-  background-color:blueviolet;
+  background-color: blueviolet;
   display: flex;
   flex: 70%;
   padding: 20px;
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .section-aside {
-  background-color:blue;
+  background-color: blue;
   display: flex;
   flex: 30%;
   padding: 20px;
@@ -149,7 +149,7 @@ a:hover {
   }
 
   .section-footer {
-    background-color:yellow;
+    background-color: yellow;
   }
 }
 
@@ -177,6 +177,6 @@ a:hover {
   }
 
   .section-footer {
-    background-color:red;
+    background-color: red;
   }
 }
