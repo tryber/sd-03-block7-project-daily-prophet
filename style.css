@@ -75,17 +75,14 @@ body {
   height: 0.125em;
   margin: 0.5em auto;
 }
-*/
+
 
 .logo-img {
-  animation: down 2s both;
   box-sizing: border-box;
   float: left;
   max-width: 15%;
 }
 
-
-/*
 .title-img {
   box-sizing: border-box;
   max-width: 85%;
@@ -155,14 +152,11 @@ body {
   grid-column: 1/4;
   text-align: justify;
 }
-*/
 
-.fly {
-  animation: flying 3s ease-in-out infinite alternate-reverse;
+.ghost {
   margin: 0 0 10px;
 }
 
-/*
 .article-p1 {
   grid-column: 1/2;
 }
@@ -195,6 +189,11 @@ body {
   padding: 20px 0;
 } */
 
+
+.fly {
+  animation: flying 3s ease-in-out 3s infinite alternate-reverse;
+}
+
 @keyframes flying {
 
   from {
@@ -205,6 +204,10 @@ body {
     margin-left: 97%;
   }
 
+}
+
+.logo-animation {
+  animation: down 2s both;
 }
 
 @keyframes down {
@@ -229,6 +232,10 @@ body {
   100% {
     transform: translate(0, 0) rotate(0);
   }
+
+}
+
+.article-animation {
 
 }
 
