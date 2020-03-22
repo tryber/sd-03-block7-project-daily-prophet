@@ -58,6 +58,26 @@ body {
   transition: background-color 2s, background-image 2s;
 }
 
+.pegada {
+  animation: passo 10s steps(20) infinite;
+  background-image: url(Images/pegada.png);
+  background-size: 100px;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+}
+
+@keyframes passo {
+
+  form {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: 1200px;
+  }
+}
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -66,7 +86,7 @@ body {
   animation-iteration-count: 3;
   animation-name: flying;
   animation-timing-function: linear;
-  position: absolute;
+  position: relative;
   transform: translateX(-200px);
 }
 
