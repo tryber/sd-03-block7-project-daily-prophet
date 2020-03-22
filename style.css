@@ -1,14 +1,48 @@
 body {
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.foot {
+.footTrack {
+  height: 15%;
+  width: 100%;
+}
+
+.footRight {
+  animation: walk 10s 0.5s steps(10, start);
   background-image: url('img/right-foot-footstep-shoe-512.png');
+  background-size: 100% 100%;
+  height: 24px;
+  margin-top: 20px;
+  opacity: 0.5;
+  position: absolute;
+  width: 45px;
+}
+
+.footLeft {
+  animation: walk 10s steps(10, start);
+  background-image: url('img/left-foot-footstep-shoe-512.png');
   background-size: 100% 100%;
   height: 24px;
   opacity: 0.5;
   position: absolute;
   width: 45px;
+}
+
+footer {
+  display: flex;
+  flex-flow: column;
+}
+
+@keyframes walk {
+
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 100%;
+  }
 }
 
 header {
@@ -36,7 +70,6 @@ article {
 article > p {
   display: flex;
   object-fit: cover;
-  transition: all 2s;
   width: 30%;
 }
 
@@ -55,12 +88,11 @@ article > p {
   width: 99%;
 }
 
-.marquee {
-  align-content: flex-end;
-  animation: scrollRight 10s linear infinite alternate;
-  display: flex;
-  line-height: 50px;
-  position: relative;
+
+marquee {
+  position: absolute;
+  right: -50%;
+  transform: rotate(-90deg);
   white-space: nowrap;
 }
 
@@ -69,22 +101,9 @@ article > p {
   height: 100px;
 }
 
-@keyframes scrollRight {
-
-  from {
-    flex-direction: column;
-    justify-content: flex-end;
-    transform: translateY(100%) rotate(-90deg);
-  }
-
-  to {
-    transform: translateY(-100%) rotate(-90deg);
-  }
-}
-
 @media screen and ( max-width : 760px ) {
 
-  .container-layout {
+  .styledBordHoriz {
     background-color: yellow;
     font-size: 1.12em;
     line-height: 1.6;
@@ -95,16 +114,16 @@ article > p {
   }
 }
 
-@media screen and ( max-width : 1200px ) and ( orientation : landspace ) {
+@media all and ( orientation : landspace ) {
 
-  img {
+  .container-orientation {
     border: 1px solid red;
   }
 }
 
 @media screen and ( min-width : 1170px ) {
 
-  .header {
+  .styledBordHoriz {
     background-color: red;
   }
 }
@@ -131,7 +150,19 @@ article > p {
   }
 }
 
-p:hover {
-  font-weight: 800;
-  transform: scale(1.5);
+.article-animation {
+  animation: article-grow 4s linear alternate 2 paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 400;
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
 }
