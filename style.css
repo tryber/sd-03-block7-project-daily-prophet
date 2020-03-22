@@ -83,6 +83,7 @@ a:hover {
   50% {
     left: 25%;
     top: 50%;
+    transform: scale(2, 3);
   }
 
   75% {
@@ -150,7 +151,7 @@ a:hover {
   }
 
   .section-footer {
-    background-color: RGB(255, 0, 0);
+    background-color: yellow;
   }
 }
 
@@ -178,6 +179,6 @@ a:hover {
   }
 
   .section-footer {
-    background-color: RGB(255, 255, 0);
+    background-color: red;
   }
 }
