@@ -75,13 +75,17 @@ body {
   height: 0.125em;
   margin: 0.5em auto;
 }
+*/
 
 .logo-img {
+  animation: down 2s both;
   box-sizing: border-box;
   float: left;
   max-width: 15%;
 }
 
+
+/*
 .title-img {
   box-sizing: border-box;
   max-width: 85%;
@@ -151,11 +155,14 @@ body {
   grid-column: 1/4;
   text-align: justify;
 }
+*/
 
 .ghost {
+  animation: fly 3s ease-in-out infinite alternate-reverse;
   margin: 0 0 10px;
 }
 
+/*
 .article-p1 {
   grid-column: 1/2;
 }
@@ -187,6 +194,39 @@ body {
 .aside-content p {
   padding: 20px 0;
 } */
+
+@keyframes fly {
+  from {
+    margin-left: 0%;
+  }
+
+  to {
+    margin-left: 97%;
+  }
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0, -120%) rotate(45deg);
+    visibility: visible;
+  }
+
+  20% {
+    transform: translate(40%, -100%) rotate(-45deg);
+  }
+
+  50% {
+    transform: translate(-40%, -80%) rotate(33deg);
+  }
+
+  80% {
+    transform: translate(20%, -40%) rotate(-17deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
 
 @media screen and ( max-width : 760px ) {
 
