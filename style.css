@@ -127,6 +127,7 @@ a:hover {
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
+    background-color: yellow;
     width: 100%;
   }
 
@@ -149,10 +150,6 @@ a:hover {
   .section-conteudo {
     float: left;
   }
-
-  .section-footer {
-    background-color: yellow;
-  }
 }
 
 @media screen and ( orientation : landscape ) {
@@ -167,6 +164,7 @@ a:hover {
 @media screen and ( min-width : 1170px ) {
 
   .container-layout {
+    background-color: red;
     width: 50%;
   }
 
@@ -176,9 +174,5 @@ a:hover {
 
   .container-orientation {
     flex-direction: column;
-  }
-
-  .section-footer {
-    background-color: red;
   }
 }
