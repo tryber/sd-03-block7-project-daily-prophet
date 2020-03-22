@@ -63,6 +63,7 @@ a:hover {
   flex-wrap: wrap;
   height: 100px;
   position: absolute;
+  transform: skew(10deg, 10deg);
   width: 100px;
   z-index: 5;
 }
@@ -149,7 +150,7 @@ a:hover {
   }
 
   .section-footer {
-    background-color: yellow;
+    background-color: RGB(255, 0, 0);
   }
 }
 
@@ -177,6 +178,6 @@ a:hover {
   }
 
   .section-footer {
-    background-color: red;
+    background-color: RGB(255, 255, 0);
   }
 }
