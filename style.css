@@ -58,7 +58,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s 16s;
+  animation: article-grow 4s 16s linear alternate-reverse paused;
   display: flex;
   flex-direction: column;
   margin: 15px;
