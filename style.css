@@ -3,10 +3,10 @@
 }
 
 .fly {
-  width: 150px;
   animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
   position: absolute;
   transform: translateX(-300%);
+  width: 150px;
 }
 
 @keyframes flying {
