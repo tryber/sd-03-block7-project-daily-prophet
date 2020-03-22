@@ -9,6 +9,40 @@
   width: 150px;
 }
 
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
+}
+
+article {
+  margin: 20px;
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 500;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 600;
+    transform: scale(1.25);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
 @keyframes flying {
 
   from {
