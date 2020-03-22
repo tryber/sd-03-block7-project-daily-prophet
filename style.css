@@ -161,6 +161,23 @@ body {
   }
 }
 
+.article-animation {
+  animation: article-grow 4s steps(4) infinite;
+  animation-play-state: paused;
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
+}
+
 @media only screen and ( max-width : 760px ) {
 
   .container-layout {
