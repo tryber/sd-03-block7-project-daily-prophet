@@ -1,7 +1,6 @@
 .fly {
   animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
   position: relative;
-  transform: translateX(-300%);
 }
 
 @keyframes flying {
