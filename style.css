@@ -242,6 +242,7 @@ body {
 }
 
 @keyframes article-grow {
+
   from {
     font-size: 1em;
     font-weight: 500;
@@ -251,6 +252,14 @@ body {
     font-size: 150%;
     font-weight: 700;
   }
+}
+
+.link-animation {
+  transition: all 2s linear;
+}
+
+.link-animation:hover {
+  transform: scale(1, 2);
 }
 
 @media screen and ( max-width : 760px ) {
