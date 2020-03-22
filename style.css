@@ -112,6 +112,17 @@ a:hover {
   justify-content: center;
 }
 
+.gif {
+  height: 300px;
+  width: 300px;
+  transition: heigth 1s, width 1s;
+}
+
+iframe:hover {
+  height: 500px;
+  width: 500px;
+}
+
 .section-aside {
   background-color: blue;
   display: flex;
