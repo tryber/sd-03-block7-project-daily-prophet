@@ -19,7 +19,7 @@
 
   .container-layout {
     align-items: center;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.2);
     border: 1px double black;
     display: flex;
     flex-direction: column;
@@ -46,8 +46,18 @@ img {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
 p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .hr-header-top {
@@ -76,4 +86,17 @@ main {
 
 .book1_gryffindor , .book2_hufflepuff , .book3_slytherin , .book4_ravenclaw {
   padding: 10px 0;
+}
+
+.photo-subtitle {
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+nav {
+  padding: 15px;
+}
+
+.on-stage-photos {
+  padding: 20px;
 }
