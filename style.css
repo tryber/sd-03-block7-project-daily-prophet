@@ -132,26 +132,19 @@ p {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(4);
   animation-duration: 4s;
-  animation-fill-mode: backwards;
-  animation-name: article-grow;
-  animation-timing-function: ease-in-out;
-  transition: all 4s linear;
+  animation-timing-function: steps(4, end);
 }
 
 @keyframes article-grow {
 
   0% {
-    position: initial;
-  }
-
-  50% {
+    font-weight: 700;
     transform: scale(1.5);
   }
 
   100% {
-    font-weight: 700;
+    position: initial;
   }
 }
 

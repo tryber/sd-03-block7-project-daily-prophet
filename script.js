@@ -1,4 +1,9 @@
-const artAlvo = document.querySelector('.alvo');
+const artAlvo = document.querySelector('.article-animation');
 artAlvo.addEventListener('click', () => {
-  artAlvo.classList.toggle('article-animation');
+  if (artAlvo.style.animationName === 'article-grow') {
+    artAlvo.style.animationName = 'unset';
+  }
+  else {
+    artAlvo.style.animationName = 'article-grow'
+  }
 });
