@@ -95,7 +95,14 @@ body {
   text-align: justify;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-timing-function: linear;
+}
+
 @keyframe article-grow {
+  
   0% {
     color: blue;
   }
