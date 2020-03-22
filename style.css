@@ -87,6 +87,14 @@ a {
   opacity: 0;
 }
 
+li{
+  animation: aparece;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
 .fly {
   animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
   height: 10em;
