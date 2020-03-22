@@ -4,20 +4,9 @@ body {
 }
 
 .titulo {
-  animation: titulo alternate;
-  animation-duration: 20s;
-  font-family: cursive;
   font-size: 5em;
   margin: 0;
   text-align: center;
-}
-
-@keyframes titulo {
-
-  30% { opacity: 1;}
-
-  60% { opacity: 0;}
-
 }
 
 .blocos {
@@ -90,5 +79,25 @@ body {
 }
 
 a {
+  animation: aparece;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
   margin-left: 20em;
+  opacity: 0;
+}
+
+.fly {
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  height: 10em;
+  position: absolute;
+  transform: translateX(-300%);
+}
+
+@keyframes flying {
+
+  from { transform: translateY(0) translateX(-300%) rotate(30deg);}
+
+  to { transform: translateY(100%) translateX(700%) rotate(30deg);}
+
 }
