@@ -159,7 +159,7 @@ header {
 
 .titulo-principal {
   border: 1px solid black;
-  font-size: 38px;
+  font-size: 40px;
   margin-top: 5px;
   width: 100%;
 }
@@ -205,6 +205,12 @@ header {
   }
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
 @keyframes article-grow {
 
   from {
@@ -212,7 +218,6 @@ header {
   }
 
   to {
-    background-color: red;
-    transition: scale(1.5);
+    transform: scale(1.5);
   }
 }
