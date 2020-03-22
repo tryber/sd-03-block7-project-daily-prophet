@@ -1,4 +1,4 @@
-/* h1 , p , span , div , figure , img {
+/* h1 , h2 , p , span , div , figure , img , ul , li {
   margin: 0;
   padding: 0;
 }
@@ -121,6 +121,7 @@ body {
 }
 
 .content-exlusive {
+  border: 1px solid #1c1915;
   grid-column: 3/7;
 }
 
@@ -132,13 +133,22 @@ body {
 
 .link a {
   color: #fff8ee;
+  font-weight: 700;
   padding: 0;
   text-decoration: none;
 }
 
 .link:hover {
   background-color: #FBB03B;
+}
+
+.link:hover > a {
   color: #1c1915;
+}
+
+.ghost {
+  grid-column: 1/7;
+  margin: 0 0 10px;
 }
 
 .section-news {
@@ -146,10 +156,12 @@ body {
 }
 
 .article {
+  border: 1px solid #1c1915;
   column-gap: 1em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 0.125em 0.125em 0 0.5em;
+  row-gap: 0.5em;
 }
 
 .article-title {
@@ -158,20 +170,54 @@ body {
   text-align: justify;
 }
 
-.ghost {
-  margin: 0 0 10px;
-}
-
 .article-p1 {
   grid-column: 1/2;
 }
 
-.article-p1 p {
-  padding: 0 0 20px;
-}
-
 .article-p2 {
   grid-column: 2/4;
+}
+
+.article-p3 {
+  border: 1px solid #1c1915;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.article-p3-header {
+  background-color: #1c1915;
+  color: #fff8ee;
+  padding: 10px 0;
+}
+
+.ul {
+  padding: 15px 0 10px;
+}
+
+.ul li {
+  list-style: none;
+  padding: 2.5px 0;
+}
+
+.ul .alert {
+  margin: 10px;
+}
+
+.ul .alert:hover {
+  background-color: #FBB03B;
+  color: #1c1915;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.article-p1 p , .article-p2 p , .aside-content p {
+  padding: 0 0 10px;
+}
+
+.article-p1 .last , .article-p2 .last , .aside-content .last {
+  padding: 0;
 }
 
 .aside {
@@ -182,18 +228,14 @@ body {
 .aside-header {
   background-color: #1c1915;
   color: #fff8ee;
+  margin: 0 0 10px;
   padding: 5px 0;
   text-align: center;
 }
 
 .aside-title {
   font-size: 2rem;
-}
-
-.aside-content p {
-  padding: 20px 0;
 } */
-
 
 .fly {
   animation: flying 3s ease-in-out 3s 3 alternate;
@@ -259,15 +301,16 @@ body {
   }
 }
 
-.link-animation {
+.header-animation {
   transition: all 2s linear;
 }
 
-.link-animation:hover {
+.header-animation:hover {
   transform: scale(1, 2);
 }
 
 .aside-animation {
+  margin: 10px 0 0;
   transition: all 2s linear;
 }
 
