@@ -89,6 +89,11 @@ h2 {
   width: 100%;
 }
 
+.noticia3 img {
+  margin: 2%;
+  width: 100%;
+}
+
 .reportagem img:hover {
   transform: skew(-5deg, -5deg);
 }
@@ -114,11 +119,6 @@ h2 {
   margin-top: 5px;
 }
 
-.noticia3 img {
-  margin: 2%;
-  width: 100%;
-}
-
 footer {
   border: 1px solid black;
   font-size: 18pt;
@@ -130,7 +130,6 @@ footer {
 @keyframes tudoEmUma {
 
   to {
-    transform: skew(-3deg, -3deg);
     transform: translate(700px, 0);
     transition: transform 2s ease-in-out;
   }
