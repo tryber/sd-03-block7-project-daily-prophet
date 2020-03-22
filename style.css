@@ -133,12 +133,11 @@ p {
 
 .article-animation {
   animation: article-grow 4s steps(4);
-  animation-direction: initial;
   animation-duration: 4s;
   animation-fill-mode: backwards;
-  animation-iteration-count: 1;
   animation-name: article-grow;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
+  transition: all 4s linear;
 }
 
 @keyframes article-grow {
@@ -152,7 +151,7 @@ p {
   }
 
   100% {
-    font-weight: 700%;
+    font-weight: 700;
   }
 }
 
