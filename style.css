@@ -19,6 +19,7 @@
     transform: skew(-80deg, 80deg) scale(3) translateX(100%);
   }
 }
+
 body {
   background-color: seashell;
 }
