@@ -1,0 +1,139 @@
+html , body , div , p , form , input , main , label , section {
+  border: 0;
+  font-family: sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(207, 203, 203);
+}
+
+.link {
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  text-align: center;
+  transition: background-color 2s;
+  width: 100%;
+}
+
+.container-orientation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.article-animation {
+  animation: article-grow 4s;
+  animation-play-state: paused;
+  background-color: white;
+  opacity: 0;
+  transition: all 1s;
+  width: 30%;
+}
+
+.article-animation:hover {
+  opacity: initial;
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5);
+    width: 800;
+  }
+}
+
+.container-layout {
+  background-color: white;
+  text-align: center;
+  transition: background-color 2s, background-image 2s;
+}
+
+.pegada {
+  animation: passo 10s steps(20) infinite;
+  background-image: url('Images/pegada.png');
+  background-size: 100px;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+}
+
+@keyframes passo {
+
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: 1200px;
+  }
+}
+
+.fly {
+  animation: flying 8s steps(200, jump-none) 3s 3 forwards alternate;
+  position: relative;
+  transform: translateX(-200px);
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(-200px) rotateY(180deg);
+  }
+
+  50% {
+    transform: translateX(1500px) rotateY(180deg);
+  }
+
+  51% {
+    transform: skew() scale();
+  }
+
+  52% {
+    transform: translateX(1500px);
+  }
+
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .link {
+    background-color: black;
+    transition: background-color 2s;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .link {
+    background-color: grey;
+    transition: background-color 2s;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
