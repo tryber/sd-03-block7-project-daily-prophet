@@ -1,6 +1,6 @@
 document.querySelectorAll('.article-animation').forEach((e) => {
-  e.addEventListener('click', () => { e.style.animationPlayState === 'running' ?
-    e.style.animationPlayState = 'paused' : e.style.animationPlayState = 'running';
+  e.addEventListener('click', () => {
+     e.style.animationPlayState = 'running'
   });
 });
 /* function track() {
