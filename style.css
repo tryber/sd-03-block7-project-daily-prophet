@@ -97,6 +97,7 @@ body {
 }
 
 .fly {
+  animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -197,5 +198,20 @@ p {
 
   0% {
     transform: scale(-5);
+  }
+}
+
+.movimenta:hover {
+  animation-duration: 3s;
+  animation-name: emblema;
+}
+
+@keyframes emblema {
+
+  from {
+    transform: skew(360deg);
+  }
+  to {
+    transform: skew(0deg);
   }
 }
