@@ -540,6 +540,7 @@ h2 {
     width: 10%;
   }
 
+
   .header-sub-container {
     align-self: center;
     width: 90%;
@@ -775,7 +776,6 @@ h2 {
     width: 50%;
   }
 
-
   .center {
     text-align: center;
   }
@@ -789,7 +789,7 @@ h2 {
 
   .thin {
     border: 0.5px solid black;
-    margin: 0.2em 0;
+    margin: 0.5em 0;
     padding: 0;
     width: 100%;
   }
@@ -855,5 +855,41 @@ h2 {
 
   .rodape {
     border-radius: 10px;
+  }
+
+  /* Animations */
+  .fly {
+    animation: flying 3s ease-in-out 3s 3 alternate forwards;
+    opacity: 0;
+  }
+
+  @keyframes flying {
+    0% {
+      margin-left: 90%;
+      opacity: 0;
+    }
+
+    100% {
+      margin-left: 0;
+      opacity: 1;
+    }
+  }
+
+  .appear {
+    animation: appear 3s ease-in-out 12s forwards;
+    left: 10%;
+    opacity: 0;
+    position: absolute;
+  }
+
+  @keyframes appear {
+
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }
