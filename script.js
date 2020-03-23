@@ -1,4 +1,5 @@
-const artigos = document.querySelectorAll('#article');
+const artigos = document.querySelectorAll('.art');
+
 
 for (let i = 0; i < artigos.length; i += 1) {
   artigos[i].addEventListener('click', (ev) => {

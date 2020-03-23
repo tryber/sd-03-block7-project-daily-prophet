@@ -852,6 +852,11 @@ h2 {
     padding: 0;
     text-align: center;
     text-shadow: 3px 0 yellow;
+    transition: transform 2s steps(50, end);
+  }
+
+  .footer-list-item p:hover {
+    transform: scale(1.5, 1.5);
   }
 
   .rodape {
@@ -953,23 +958,6 @@ h2 {
 
     100% {
       transform: translateX(0);
-    }
-  }
-
-  .article-appear {
-    animation: article-appear 4s forwards;
-    opacity: 0;
-  }
-
-  @keyframes article-appear {
-
-    0% {
-      transform: scale(0, 0);
-    }
-
-    100% {
-      opacity: 1;
-      transform: scale(1, 1);
     }
   }
 
