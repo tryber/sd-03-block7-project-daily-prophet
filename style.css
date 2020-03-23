@@ -201,12 +201,12 @@ p {
   }
 }
 
-.movimenta:hover {
+.movimenta1:hover {
   animation-duration: 3s;
-  animation-name: emblema;
+  animation-name: emblema1;
 }
 
-@keyframes emblema {
+@keyframes emblema1 {
 
   from {
     transform: skew(360deg);
@@ -214,5 +214,21 @@ p {
 
   to {
     transform: skew(0deg);
+  }
+}
+
+.movimenta2:hover {
+  animation-duration: 3s;
+  animation-name: emblema2;
+}
+
+@keyframes emblema2 {
+
+  0% {
+    transform: translate(50px, 100px);
+  }
+
+  100% {
+    transform: translate(150px, 200px);
   }
 }
