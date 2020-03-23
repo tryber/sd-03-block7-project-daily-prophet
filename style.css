@@ -616,8 +616,19 @@ h2 {
     justify-content: flex-start;
   }
 
-  .exclusive:hover {
-    animation: skewing 2s linear;
+  @keyframes translating {
+
+    0% {
+      transform: translateX(0);
+    }
+
+    40% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .paragraph-exclusive {
@@ -653,6 +664,7 @@ h2 {
   }
 
   .paragraph-not-exclusive {
+    animation: translating 4s 14s linear infinite;
     color: black;
     font-family: Bebas Neue, cursive;
     font-size: 4em;
@@ -909,7 +921,7 @@ h2 {
 
   /* Animations */
   .fly {
-    animation: flying 3s ease-in-out 3s 3 alternate forwards;
+    animation: flying 3s 3s 3 alternate forwards;
     opacity: 0;
   }
 
