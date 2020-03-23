@@ -1,0 +1,195 @@
+@keyframes varinha {
+
+  from {
+    transform: skew(-30deg);
+  }
+
+  50% {
+    transform: skew(30deg);
+  }
+
+  to {
+    transform: skew(1deg);
+  }
+}
+
+body {
+  animation-duration: 3s;
+  animation-name: inicial;
+  background-color: black;
+  transition: ease-in-out;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: steps(10);
+  transition: step-end;
+  width: 100px;
+}
+
+.corpo {
+  background-color: rgb(255, 246, 217);
+  border: solid black 1px;
+  border-radius: 15px;
+  margin: 50px;
+}
+
+.header {
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-name: profeta;
+  text-align: center;
+}
+
+.morte:hover {
+  animation: reliquias 5s infinite alternate;
+  margin-top: 30px;
+  width: 450px;
+}
+
+.all {
+  float: left;
+}
+
+.varinha {
+  float: right;
+  width: 450px;
+}
+
+.varinha:hover {
+  animation-duration: 4s;
+  animation-name: varinha;
+}
+
+.text {
+  font-size: 30px;
+  transition: 50%;
+}
+
+.historia {
+  border: black solid 3px;
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+  transform: scale(1.5);
+  transition: all 4s ease-in 0.2s;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout , .morte {
+    background-color: yellow;
+    display: none;
+    width: 100%;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    width: 100%;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: solid 1px red;
+    width: 100%;
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    margin-left: 1%;
+  }
+
+  25% {
+    transform: translate(200px, 900px);
+  }
+
+  50% {
+    transform: translate(200px, 600px);
+  }
+
+  100% {
+    margin-left: 90%;
+  }
+}
+
+@keyframes reliquias {
+
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes profeta {
+
+  from {
+    transform: skew(360deg);
+  }
+
+  to {
+    transform: skew(0deg);
+  }
+}
+
+@keyframes inicial {
+
+  from {
+    transform: scale(10);
+    width: 500px;
+  }
+
+  to {
+    transform: step(4s, scale(-20));
+  }
+}
+
+@keyframes negrito {
+
+  50% {
+    font-weight: 300;
+  }
+
+  100% {
+    font-weight: 600;
+  }
+}
+
+@keyframes article {
+
+  from {
+    font-size: 50%;
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 100;
+  }
+
+  to {
+    font-weight: 800;
+  }
+}
