@@ -101,11 +101,8 @@ header {
 }
 
 .middle {
-  width: 30%;
-}
-
-.middle h3{
   text-align: center;
+  width: 30%;
 }
 
 .middle img {
