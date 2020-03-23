@@ -1,3 +1,16 @@
+@media screen and ( orientation : landscape ) {
+  
+  .container-orientation {
+    align-items: center;
+    background-color: black;
+    border: 1px solid red;
+    color: white;
+    display: flex;
+    font-size: 35px;
+    height: 190px;
+  }
+}
+
 @media ( max-width : 760px ) {
 
   .container-layout {
@@ -9,13 +22,6 @@
 
   .container-layout {
     background-color: red;
-  }
-}
-
-@media only screen and ( orientation : landscape ) {
-
-  .container-layout {
-    background-color: white;
   }
 }
 
@@ -85,15 +91,6 @@ header {
   display: flex;
   margin: auto;
   width: 35%;
-}
-
-.exclusivo {
-  align-items: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  font-size: 35px;
-  height: 190px;
 }
 
 .gif {
@@ -215,8 +212,21 @@ header {
 }
 
 footer {
+  animation: urgente 4s  linear;
   color: black;
   font-size: 20px;
   text-align: center;
   transform: scale(1);
+}
+
+@keyframes urgente {
+
+  0% {
+    font-weight: 400;
+    transform: scale(1);
+  }
+  100% {
+    font-weight: 800;
+    transform: scale(1.5);
+  }
 }
