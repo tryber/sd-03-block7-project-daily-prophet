@@ -17,7 +17,6 @@
 
   .container-orientation {
     background-color: burlywood;
-    border: 5px solid blue;
   }
 }
 
@@ -70,6 +69,8 @@ body {
 }
 
 .article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
   margin: 8px;
   padding: 5px;
   transition: all;
