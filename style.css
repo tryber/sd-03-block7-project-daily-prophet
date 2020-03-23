@@ -186,12 +186,16 @@ hr {
   from {
     font-size: 10px;
     font-weight: 100;
+    transition-property: initial;
+    transition-duration: 2s;
     width: 1%;
   }
 
   to {
     font-size: 70px;
     font-weight: 600;
+    transition-property: initial;
+    transition-duration: 4s;
     width: 50%;
   }
 }
