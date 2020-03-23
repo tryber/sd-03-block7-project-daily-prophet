@@ -49,7 +49,7 @@ body {
 }
 
 .cabecalho-titulo {
-    display: none;
+  display: none;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -93,9 +93,11 @@ body {
 }
 
 @keyframes flying {
+
   0% {
     transform: translate(20px, 5px);
   }
+
   100% {
     transform: translate(-20px, -5px);
   }
@@ -106,9 +108,11 @@ body {
 }
 
 @keyframes skewing {
+
   0% {
     transform: skew(0deg);
   }
+  
   100% {
     transform: skew(180deg);
   }
