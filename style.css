@@ -1,87 +1,79 @@
-@media (max-width: 760px) {
-    .container-layout{
-        background-color: rgb(255, 255, 0);
-    }
+@media ( max-width : 760px ) {
+  .container-layout {
+    background-color: yellow;
+  }
 }
 
-@media (min-width: 1170px) {
-    .container-layout{
-        background-color: rgb(255, 0, 0);
-    }
+@media ( min-width : 1170px ) {
+  .container-layout {
+    background-color: red;
+  }
 }
 
-@media (orientation:landscape){
-    .container-orientation{
-        border: 1px red solid;
-    }
+@media ( orientation : landscape ) {
+  .container-orientation {
+    border: 1px red solid;
+  }
 }
 
 @keyframes flying {
-
-    from {
-        margin-left: 3%;
-    }
-  
-    to {
-        margin-left: 95%;
-    }
+  from {
+    margin-left: 3%;
+  }
+  to {
+    margin-left: 95%;
+  }
 }
 
 @keyframes skewing {
-    0% {
-      transform: skew(0deg);
-    }
-    100% {
-      transform: skew(180deg);
-    }
+  0% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(180deg);
+  }
 }
 
 @keyframes article-grow {
-    0% {
-      transform: scale(1, 1);
-      font-weight: normal;
-    }
-    100% {
-      transform: scale(1.6, 1.6);
-      font-weight: bolder;
-    }
+  0% {
+    font: normal;
+    transform: scale(1, 1);
+  }
+  100% {
+    font: bolder;
+    transform: scale(1.6, 1.6);
+  }
 }
 
 .tituto-top {
-    width: fit-content;
-    animation-name: skewing;
-    animation-duration: 5s; 
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-name: skewing;
+  animation-timing-function: linear;
+  width: fit-content;
 }
 
-.nave:hover{
-    transform: translateY(-5px);
-    color: black;
-    font-weight: bold;
+.nave:hover {
+  color: black;
+  font: bold;
+  transform: translateY(-5px);
 }
 
-.article-animation:hover{
-    width: fit-content;
-    animation-name: article-grow;
-    animation-duration: 4s; 
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    font-weight: bolder;
-}
-
-.test {
-    transform: skew(180deg);
-    animation-timing-function: linear;
+.article-animation:hover {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-timing-function: linear;
+  width: fit-content;
 }
 
 .fly {
-    animation-delay: 3s;
-    animation-direction: alternate;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 3;
-    animation-name: flying;
-    margin-left: 3%;
-    width: 3%;
-  }
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  margin-left: 3%;
+  width: 3%;
+}
