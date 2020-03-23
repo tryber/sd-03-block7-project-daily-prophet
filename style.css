@@ -76,13 +76,14 @@ header {
 }
 
 .programming {
+  transform: skew(-5deg);
   width: 80%;
 }
 
 .wizard {
-  height: 200px;
   margin-left: 15%;
-  width: 40%;
+  transform: scale(2, 3);
+  width: 10%;
 }
 
 .middle {
@@ -90,6 +91,7 @@ header {
 }
 
 .middle img {
+  transform: translate(5px, 10px);
   width: 500px;
 }
 
@@ -97,7 +99,7 @@ header {
   float: right;
 }
 
-.materia-3 img{
+.materia-3 img {
   width: 80%;
 }
 
@@ -124,9 +126,8 @@ header {
 
 .fly {
   animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
+  animation: flying 3s ease-in-out 3s 3 alternate;
+  animation: flying 3s ease-in-out 3s 3 alternate forwards;
   animation-name: flying;
 }
 
