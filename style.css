@@ -73,8 +73,7 @@ body {
 }
 
 .article-animation {
-  animation: article-animattion 6s steps(4) infinite;
-  animation-play-state: paused;
+  animation: article-grow 6s steps(4) infinite;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -106,6 +105,10 @@ body {
 
   0% {
     margin-left: 1%;
+  }
+
+  25%{
+    transform: translate(200px, 600px);
   }
 
   50% {
@@ -169,7 +172,7 @@ body {
   }
 }
 
-@keyframes article-animattion {
+@keyframes article-grow {
 
   from {
     transform: scale(1, 1);
