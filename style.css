@@ -73,7 +73,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(4) infinite;
+  animation: article-animattion 6s steps(4) infinite;
   animation-play-state: paused;
 }
 
@@ -169,7 +169,7 @@ body {
   }
 }
 
-@keyframes article-grow {
+@keyframes article-animattion {
 
   from {
     transform: scale(1, 1);
@@ -180,4 +180,3 @@ body {
     transform: scale(1.5, 1.5);
   }
 }
-
