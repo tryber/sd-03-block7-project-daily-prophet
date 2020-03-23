@@ -76,7 +76,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 6s steps(4) infinite;
+  animation: article-grow 4s steps(4) infinite;
 }
 
 @media screen and ( max-width : 760px ) {
