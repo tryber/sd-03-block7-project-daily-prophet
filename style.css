@@ -2,6 +2,24 @@
 font-family: Vollkorn, serif;
 font-family: Kreon, serif; */
 
+@keyframes article-grow {
+
+  0% {
+    font-weight: initial;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 900;
+    transform: scale(1.5);
+  }
+
+  100% {
+    font-weight: initial;
+    transform: scale(1);
+  }
+}
+
 body {
   background-color: black;
   box-sizing: border-box;
@@ -865,7 +883,7 @@ h2 {
 
   /* Animations */
   .fly {
-    animation: flying 3s 3s 3 alternate forwards;
+    animation: flying 3s 3s 3 alternate forwards steps(200, end);
     opacity: 0;
   }
 
@@ -963,23 +981,5 @@ h2 {
 
   .article-animation {
     animation: article-grow 4s;
-  }
-
-  @keyframes article-grow {
-
-    0% {
-      font-weight: initial;
-      transform: scale(1);
-    }
-
-    50% {
-      font-weight: 900;
-      transform: scale(1.5);
-    }
-
-    100% {
-      font-weight: initial;
-      transform: scale(1);
-    }
   }
 }
