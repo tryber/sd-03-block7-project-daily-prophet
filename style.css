@@ -8,7 +8,7 @@ article:hover {
 }
 
 .article-animation {
-  animation-name: article-grow;
+  animation: article-grow 4s;
   display: flex;
 }
 
