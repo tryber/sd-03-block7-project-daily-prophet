@@ -115,10 +115,12 @@ nav {
   transition-duration: 1s;
 }
 
-@media ( max-width : 760 ) {
+@media ( max-width : 760px ) {
 
   .container-layout {
-    background-color: blue;
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 1px;
   }
 }
 
@@ -126,6 +128,15 @@ nav {
 
   .container-layout {
     background-color: red;
+    border: 2px solid black;
+    padding: 1px;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
   }
 }
 
