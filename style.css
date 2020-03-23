@@ -76,7 +76,15 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(4) infinite;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+  transform: scale(1.5);
+  transition: all 4s ease-in 0.2s;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -89,7 +97,7 @@ body {
 }
 
 @media screen and ( min-width : 1170px ) {
-
+  
   .container-layout {
     background-color: red;
     width: 100%;
@@ -97,7 +105,7 @@ body {
 }
 
 @media screen and ( orientation : landscape ) {
-
+  
   .container-orientation {
     border: solid 1px red;
     width: 100%;
@@ -105,71 +113,71 @@ body {
 }
 
 @keyframes flying {
-
+  
   0% {
     margin-left: 1%;
   }
-
+  
   25% {
     transform: translate(200px, 900px);
   }
-
+  
   50% {
     transform: translate(200px, 600px);
   }
-
+  
   100% {
     margin-left: 90%;
   }
 }
 
 @keyframes reliquias {
-
+  
   0% {
     transform: rotate(360deg);
   }
-
+  
   100% {
     transform: rotate(-360deg);
   }
 }
 
 @keyframes profeta {
-
+  
   from {
     transform: skew(360deg);
   }
-
+  
   to {
     transform: skew(0deg);
   }
 }
 
 @keyframes inicial {
-
+  
   from {
     transform: scale(10);
     width: 500px;
   }
-
+  
   to {
     transform: step(4s, scale(-20));
   }
 }
 
 @keyframes negrito {
-
+  
   50% {
     font-weight: 300;
   }
-
+  
   100% {
     font-weight: 600;
   }
 }
 
 @keyframes article {
-
+  
   from {
     font-size: 50%;
   }
@@ -178,11 +186,10 @@ body {
 @keyframes article-grow {
 
   from {
-    transform: scale(1, 1);
+    font-weight: 100;
   }
 
   to {
-    font-weight: 900;
-    transform: scale(1.5, 1.5);
+    font-weight: 800;
   }
 }
