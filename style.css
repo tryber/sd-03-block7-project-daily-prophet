@@ -1,0 +1,89 @@
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    transition-duration: 2s;
+    transition-property: all;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    transition-duration: 2s;
+    transition-property: all;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.catImage {
+  margin-left: 100%;
+  max-width: 200px;
+}
+
+.fly {
+  animation: flying 3s alternate 3 forwards 3s steps(300, end);
+  overflow: hidden;
+  transition: 2s 1s;
+  word-wrap: normal;
+}
+
+.transform {
+  animation: transFormation 3s steps(50, end) infinite;
+}
+
+.article-animation {
+  animation: article-grow 4s forwards steps(300, end) paused;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 200%;
+  }
+
+  to {
+    margin-left: -100%;
+    transition: steps(300, end);
+  }
+}
+
+@keyframes transFormation {
+
+  from {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+  }
+
+  to {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+  }
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-size: 16;
+    font-weight: 400;
+    transform: scale(1, 1);
+  }
+
+  100% {
+    font-size: 56;
+    font-weight: 700;
+    max-width: 200px;
+    transform: scale(1.5, 1.5);
+  }
+}
