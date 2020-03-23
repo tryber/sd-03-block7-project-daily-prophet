@@ -13,9 +13,10 @@
 }
 
 @media only screen and (orientation: landscape) {
-  
+
   .container-layout {
     background-color: white;
+  }
 }
 
 body {
