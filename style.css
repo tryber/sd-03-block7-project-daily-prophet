@@ -55,10 +55,8 @@
 
 .tituto-top {
   transform: skew(180deg);
-  transition-delay: 2s;
-  transition-duration: 10s;
-  transition-property: transform;
-  transition-timing-function: linear;
+  transition: transform 10s linear 2s;
+
   /* animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-name: skewing;
