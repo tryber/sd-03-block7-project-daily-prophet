@@ -4,8 +4,13 @@
     left: 0;
   }
 
+  30% {
+    transform: scale(1.5, 1.5);
+  }
+
   100% {
     left: 687px;
+    transform: translateY(70px);
   }
 }
 
@@ -119,7 +124,19 @@ p {
   padding: 1px;
 }
 
+@keyframes moving {
+
+  50% {
+    transform: skewX(-10deg);
+  }
+
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
 .logo {
+  animation: moving 5s linear infinite;
   margin-top: -20px;
 }
 
