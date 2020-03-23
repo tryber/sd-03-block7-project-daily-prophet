@@ -68,10 +68,6 @@ body {
   animation-delay: 3s;
 }
 
-img.fly {
-  animation-delay: 3s;
-}
-
 @keyframes skewing {
 
   0% {
