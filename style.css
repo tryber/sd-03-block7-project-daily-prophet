@@ -209,6 +209,7 @@ header {
   animation-duration: 4s;
   animation-name: article-grow;
   animation-play-state: paused;
+  transition: article-grow 4s;
 }
 
 @keyframes article-grow {
