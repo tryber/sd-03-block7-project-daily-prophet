@@ -581,54 +581,12 @@ h2 {
     width: 20%;
   }
 
-  .exclusive-pai:hover {
-    animation: skewing 2s linear;
-  }
-
-  @keyframes skewing {
-
-    0% {
-      transform: skew(0);
-    }
-
-    30% {
-      transform: skew(15deg, 15deg);
-    }
-
-    60% {
-      transform: skew(-0.06turn, 18deg);
-    }
-
-    90% {
-      transform: skew(0.312rad);
-    }
-
-    100% {
-      transform: skew(0);
-    }
-  }
-
   .exclusive {
     align-items: center;
     background-color: black;
     display: flex;
     height: 2.1em;
     justify-content: flex-start;
-  }
-
-  @keyframes translating {
-
-    0% {
-      transform: translateX(0);
-    }
-
-    40% {
-      transform: translateX(20px);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
   }
 
   .paragraph-exclusive {
@@ -757,25 +715,6 @@ h2 {
     position: absolute;
     top: 0.9em;
     transform: rotate(-90deg);
-  }
-
-  .spin {
-    animation: spin 200ms 14s linear infinite;
-  }
-
-  .spin:hover {
-    animation: spin 200ms linear;
-  }
-
-  @keyframes spin {
-
-    from {
-      transform: rotate(-90deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   .main-title {
@@ -953,6 +892,84 @@ h2 {
 
     to {
       opacity: 1;
+    }
+  }
+
+  .spin {
+    animation: spin 200ms 14s linear infinite;
+  }
+
+  .spin:hover {
+    animation: spin 200ms linear;
+  }
+
+  @keyframes spin {
+
+    from {
+      transform: rotate(-90deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .exclusive-pai:hover {
+    animation: skewing 2s linear;
+  }
+
+  @keyframes skewing {
+
+    0% {
+      transform: skew(0);
+    }
+
+    30% {
+      transform: skew(15deg, 15deg);
+    }
+
+    60% {
+      transform: skew(-0.06turn, 18deg);
+    }
+
+    90% {
+      transform: skew(0.312rad);
+    }
+
+    100% {
+      transform: skew(0);
+    }
+  }
+
+  @keyframes translating {
+
+    0% {
+      transform: translateX(0);
+    }
+
+    40% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .article-appear {
+    animation: article-appear 4s 14s forwards;
+    opacity: 0;
+  }
+
+  @keyframes article-appear {
+
+    0% {
+      transform: scale(0, 0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
     }
   }
 }
