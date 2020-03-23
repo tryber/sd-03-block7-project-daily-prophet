@@ -48,7 +48,6 @@
   }
 
   100% {
-    font-weight: 700;
     transform: scale(1.5, 1.5);
   }
 }
@@ -60,7 +59,8 @@
   /* animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-name: skewing;
-  animation-timing-function: linear; */
+  animation-timing-function: linear; 
+  animation: name duration delay time-function(steps(number of steps) interation-count fill-mode) */
   width: fit-content;
 }
 
@@ -72,11 +72,17 @@
 }
 
 .article-animation:active {
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-  animation-name: article-grow;
-  animation-timing-function: linear;
-  width: fit-content;
+  animation: article-grow 4s steps(10) infinite forwards;
+}
+
+.article-animation:active p {
+    font-weight: 700;
+    transition: font-weight 4s linear 2s;
+}
+
+.article-animation:active h2 {
+    font-weight: 700;
+    transition: font-weight 4s linear 2s;
 }
 
 .fly {
