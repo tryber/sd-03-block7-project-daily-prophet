@@ -4,7 +4,6 @@ body {
 }
 
 header {
-    grid-area: header;
     display: flex;
     justify-content: center;
 }
@@ -49,13 +48,13 @@ p {
     justify-content: space-around;
 }
 
-.main-lead h2 {
+.main-lead-h2 {
     font-size: 2em;
 }
 
-.main-lead img {
-    width: 4em;
+.main-lead-img {
     margin: 1em 0;
+    width: 4em;
 }
 
 .sub-lead {
