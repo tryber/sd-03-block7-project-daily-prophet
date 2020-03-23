@@ -97,7 +97,7 @@ body {
 }
 
 @media screen and ( min-width : 1170px ) {
-  
+
   .container-layout {
     background-color: red;
     width: 100%;
@@ -105,7 +105,7 @@ body {
 }
 
 @media screen and ( orientation : landscape ) {
-  
+
   .container-orientation {
     border: solid 1px red;
     width: 100%;
@@ -113,30 +113,30 @@ body {
 }
 
 @keyframes flying {
-  
+
   0% {
     margin-left: 1%;
   }
-  
+
   25% {
     transform: translate(200px, 900px);
   }
-  
+
   50% {
     transform: translate(200px, 600px);
   }
-  
+
   100% {
     margin-left: 90%;
   }
 }
 
 @keyframes reliquias {
-  
+
   0% {
     transform: rotate(360deg);
   }
-  
+
   100% {
     transform: rotate(-360deg);
   }
@@ -147,26 +147,26 @@ body {
   from {
     transform: skew(360deg);
   }
-  
+
   to {
     transform: skew(0deg);
   }
 }
 
 @keyframes inicial {
-  
+
   from {
     transform: scale(10);
     width: 500px;
   }
-  
+
   to {
     transform: step(4s, scale(-20));
   }
 }
 
 @keyframes negrito {
-  
+
   50% {
     font-weight: 300;
   }
@@ -177,7 +177,7 @@ body {
 }
 
 @keyframes article {
-  
+
   from {
     font-size: 50%;
   }
