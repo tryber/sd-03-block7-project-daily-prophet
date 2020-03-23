@@ -61,25 +61,10 @@ header {
   width: 8%;
 }
 
-.content-area {
-  align-items: center;
-  border: 5px solid black;
-  display: flex;
-  margin: 20px;
-  width: 95%;
-}
-
 .title2 {
   font-size: 50px;
   margin: 0;
   text-align: center;
-}
-
-.all-texts {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 0;
 }
 
 .materia-one {
@@ -101,12 +86,19 @@ header {
 }
 
 .middle {
-  text-align: center;
-  width: 30%;
+  margin-right: 600px;
 }
 
 .middle img {
-  width: 40%;
+  width: 500px;
+}
+
+.materia-3 {
+  float: right;
+}
+
+.materia-3 img{
+  width: 80%;
 }
 
 @media screen and ( max-width : 760px ) {
@@ -138,14 +130,19 @@ header {
   animation-name: flying;
 }
 
+.fly img {
+  float: right;
+  width: 5%;
+}
+
 @keyframes flying {
 
   from {
-    margin-left: 30%;
+    margin-left: 100%;
     width: 20%;
   }
 
   to {
-    margin-left: 0;
+    margin-bottom: 0;
   }
 }
