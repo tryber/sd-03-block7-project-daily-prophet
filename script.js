@@ -1,4 +1,4 @@
-const article = document.querySelector('.article-animation');
+const article = document.getElementById('article-animation');
 article.addEventListener('click', () => {
   article.style.animationPlayState = 'running';
 });
