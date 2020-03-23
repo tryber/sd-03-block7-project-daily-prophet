@@ -1,11 +1,11 @@
 @keyframes flying {
 
   0% {
-    margin-left: 260px;
+    left: 0;
   }
 
   100% {
-    margin-left: 937px;
+    left: 687px;
   }
 }
 
