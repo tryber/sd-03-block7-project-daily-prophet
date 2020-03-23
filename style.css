@@ -1,4 +1,4 @@
-@media screen and ( max-width : 760px ) {
+@media ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -6,14 +6,14 @@
   }
 }
 
-@media screen and ( min-width : 1170px ) {
+@media ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and ( orientation : landscape ) {
+@media ( orientation : landscape ) {
 
   .container-orientation {
     background-color: burlywood;
@@ -22,6 +22,7 @@
 }
 
 body {
+  background-color: darkgray;
   display: flex;
   justify-content: center;
 }
@@ -30,7 +31,7 @@ body {
   background: linear-gradient(#FFF8EE, white);
   border: 2px solid black;
   border-radius: 20px;
-  cursor: url(http://cur.cursors-4u.net/others/oth-3/oth246.cur), auto;
+  cursor: url('http://cur.cursors-4u.net/others/oth-3/oth246.cur'), auto;
   display: flex;
   flex-direction: column;
   height: 90vh;
@@ -62,11 +63,13 @@ body {
   o% {
     transform: translate(initial);
   }
-  50% {
-    transform: translate(1000px);
-  }
+
+50% {
+  transform: translate(5000px);
+}
+
   100% {
-    transform:translate(1600px);
+    transform: translate(1600px);
   }
 }
 
@@ -76,6 +79,7 @@ body {
   transition: all;
   transition-duration: 1s;
 }
+
 .article-animation:hover {
   animation-direction: alternate;
   animation-duration: 4s;
@@ -102,7 +106,8 @@ body {
 }
 
 .aside {
-  border: 2px solid black;
+  border: 1px solid black;
+  font-size: 14px;
   margin: 8px;
   padding: 5px;
 }
