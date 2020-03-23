@@ -1,16 +1,18 @@
 @keyframes varinha {
-  
-  from{
+
+  from {
     transform: skew(-30deg);
   }
 
-  50%{
+  50% {
     transform: skew(30deg);
   }
+
   to {
     transform: skew(1deg);
   }
 }
+
 body {
   animation-duration: 3s;
   animation-name: inicial;
@@ -50,10 +52,10 @@ body {
   width: 450px;
 }
 
-.varinha{
-  animation-name: varinha;
+.varinha {
   animation-delay: 4s;
   animation-duration: 4s;
+  animation-name: varinha;
   float: right;
   width: 450px;
 }
