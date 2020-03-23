@@ -91,13 +91,12 @@ header {
 }
 
 .middle img {
-  transform: translate(5px, 10px);
+  transform: translate(50px, 100px);
   width: 500px;
 }
 
 .materia-3 {
   float: right;
-  width: 20%;
 }
 
 .materia-3 img {
@@ -127,8 +126,9 @@ header {
 
 .fly {
   animation-delay: 3s;
-  animation: flying 3s ease-in-out 3s 3 alternate;
-  animation: flying 3s ease-in-out 3s 3 alternate forwards;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
   animation-name: flying;
 }
 
