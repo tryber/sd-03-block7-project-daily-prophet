@@ -154,6 +154,7 @@ footer {
 }
 
 @media screen and ( max-width : 760px ) {
+  
   img {
     width: 5em;
   }
@@ -163,7 +164,7 @@ footer {
     display: block;
   }
 
-  .tituloPrinc, .versalete {
+  .tituloPrinc , .versalete {
     font-size: 4em;
   }
 
@@ -171,7 +172,7 @@ footer {
     display: block;
   }
 
-  .blocoEsq, .blocoDir {
+  .blocoEsq , .blocoDir {
     width: 100%;
   }
 
