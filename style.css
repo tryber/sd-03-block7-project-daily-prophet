@@ -28,19 +28,43 @@ img:nth-child( 2) {
 .top-header h3 {
   font-size: 18px;
   letter-spacing: 2px;
-  margin-left: 180px;
+  margin: 0px 0px 15px 180px;
   text-transform: uppercase;
 }
 
 .wrapper {
+  display: flex;
   flex-direction: row;
 }
 
-.exclusive-box {
+.exclusive {
+  justify-content: space-evenly;
+}
+
+.exclusive > div:first-child {
   background-color: black;
   color: rgb(255, 249, 212);
+  margin-right: 20px;
   padding: 20px 10px;
   text-transform: uppercase;
-  white-space: nowrap;
-  width: 20%;
+}
+
+.exclusive > div:last-child {
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  flex: 1;
+}
+
+.exclusive-items {
+  margin: 0;
+  width: 33%;
+}
+
+.exclusive-items:first-child {
+  font-size: 30px;
+}
+
+.exclusive-items:nth-child(2) {
+  margin: 0px 20px;
 }
