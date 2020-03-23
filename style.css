@@ -15,6 +15,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  transform: ;
 }
 
 .normalize {
@@ -113,12 +114,7 @@ p {
 }
 
 .fly {
-  animation-delay: 3s;
-  animation-direction: alternate;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 3;
-  animation-name: flying;
+  animation: flying 3s alternate 3s forwards 3 steps(200, end);
   margin-bottom: -160px;
   margin-left: -1650px;
   margin-top: -140px;
