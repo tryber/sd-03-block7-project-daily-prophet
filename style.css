@@ -955,9 +955,9 @@ h2 {
       transform: translateX(0);
     }
   }
-/* 
+
   .article-appear {
-    animation: article-appear 4s 14s forwards;
+    animation: article-appear 4s forwards;
     opacity: 0;
   }
 
@@ -971,10 +971,10 @@ h2 {
       opacity: 1;
       transform: scale(1, 1);
     }
-  } */
+  }
 
   .article-animation {
-      animation: article-grow 4s;
+    animation: article-grow 4s;
   }
 
   @keyframes article-grow {
