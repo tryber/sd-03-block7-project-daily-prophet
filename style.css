@@ -47,6 +47,7 @@ header {
 }
 
 @keyframes logo {
+
   0% {
     transform: translate(1px);
   }
