@@ -98,6 +98,24 @@ a:hover {
   }
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
 .section-article {
   background-color: blueviolet;
   display: flex;
@@ -126,12 +144,13 @@ iframe:hover {
 .section-aside {
   background-color: blue;
   display: flex;
-  flex: 30%;
+  flex: 70%;
   padding: 20px;
 }
 
 .section-footer {
   display: flex;
+  flex: 70%;
   justify-content: space-around;
   padding: 20px;
 }
