@@ -25,6 +25,16 @@ body {
   flex-wrap: wrap;
   height: 100%;
   margin: 3% 6%;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  transition-delay: 100ms;
+}
+
+.everything:hover {
+  box-shadow:
+  3px 3px #53a7ea;
+  transform: translateX(-3px);
 }
 
 hr {
@@ -76,16 +86,6 @@ h2 {
   transition: all 4s ease-in 0.2s;
 }
 
-@keyframes article-grow {
-
-  from {
-    font-weight: 100;
-  }
-
-  to {
-    font-weight: 700;
-  }
-}
 
 p {
   font-family: monospace, sans-serif;
@@ -105,6 +105,10 @@ p {
   width: 85%;
 }
 
+.second-content {
+  
+}
+
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -117,8 +121,19 @@ p {
   margin-top: -140px;
 }
 
-@keyframes title-move {
+@keyframes article-grow {
 
+  from {
+    font-weight: 100;
+  }
+
+  to {
+    font-weight: 700;
+  }
+}
+
+@keyframes title-move {
+  
   25% {
     transform: skew(-27deg, 28deg);
   }
