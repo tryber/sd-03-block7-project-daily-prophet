@@ -1,5 +1,5 @@
-let negr=document.getElementById('negrito');
+const negr = document.getElementById('negrito');
 
-negr.addEventListener('click', function(){
-  negr.className="article-animation"
-})
+negr.addEventListener('click', function () {
+  negr.className = 'article-animation';
+});
