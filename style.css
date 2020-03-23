@@ -1,0 +1,87 @@
+@media (max-width: 760px) {
+    .container-layout{
+        background-color: rgb(255, 255, 0);
+    }
+}
+
+@media (min-width: 1170px) {
+    .container-layout{
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@media (orientation:landscape){
+    .container-orientation{
+        border: 1px red solid;
+    }
+}
+
+@keyframes flying {
+
+    from {
+        margin-left: 3%;
+    }
+  
+    to {
+        margin-left: 95%;
+    }
+}
+
+@keyframes skewing {
+    0% {
+      transform: skew(0deg);
+    }
+    100% {
+      transform: skew(180deg);
+    }
+}
+
+@keyframes article-grow {
+    0% {
+      transform: scale(1, 1);
+      font-weight: normal;
+    }
+    100% {
+      transform: scale(1.6, 1.6);
+      font-weight: bolder;
+    }
+}
+
+.tituto-top {
+    width: fit-content;
+    animation-name: skewing;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nave:hover{
+    transform: translateY(-5px);
+    color: black;
+    font-weight: bold;
+}
+
+.article-animation:hover{
+    width: fit-content;
+    animation-name: article-grow;
+    animation-duration: 4s; 
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    font-weight: bolder;
+}
+
+.test {
+    transform: skew(180deg);
+    animation-timing-function: linear;
+}
+
+.fly {
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-name: flying;
+    margin-left: 3%;
+    width: 3%;
+  }
