@@ -10,12 +10,12 @@
 }
 
 .fly {
+  align-self: flex-start;
   animation: flying 5s linear 3s 3 alternate both;
   height: 60px;
   margin-left: 260px;
   margin-top: 135px;
   position: absolute;
-  align-self: flex-start;
 }
 
 @media only screen and ( max-width : 760px ) {
