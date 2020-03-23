@@ -6,8 +6,6 @@ body {
 header {
   border: 2px solid black;
   display: flex;
-  height: 150px;
-  padding-bottom: 20px;
   text-align: center;
   width: 100%;
 }
@@ -27,7 +25,7 @@ header img {
 
 h1 {
   font-family: Chomsky, Times New Roman, Times, serif;
-  font-size: 58pt;
+  font-size: 5em;
   margin: 5px;
 }
 
@@ -38,7 +36,7 @@ h2 {
 
 .tituloPrinc {
   font-family: Impact, Haettenschweiler, sans-serif;
-  font-size: 105pt;
+  font-size: 9em;
 }
 
 .container-orientation {
@@ -68,7 +66,7 @@ h2 {
 }
 
 .versalete {
-  font-size: 72pt;
+  font-size: 5em;
 }
 
 .blocoEsq {
@@ -112,6 +110,11 @@ h2 {
   transition: transform 2s ease-in-out;
 }
 
+table {
+  border: 2px solid black;
+  margin-top: 15px;
+}
+
 .noticia3 {
   animation: tudoEmUma 5s linear;
   border: 1px solid black;
@@ -151,9 +154,33 @@ footer {
 }
 
 @media screen and ( max-width : 760px ) {
+  img {
+    width: 5em;
+  }
 
   .container-layout {
     background-color: yellow;
+    display: block;
+  }
+
+  .tituloPrinc, .versalete {
+    font-size: 4em;
+  }
+
+  .principal {
+    display: block;
+  }
+
+  .blocoEsq, .blocoDir {
+    width: 100%;
+  }
+
+  .reportagem {
+    column-count: 1;
+  }
+
+  .noticia3 {
+    column-count: 1;
   }
 }
 
