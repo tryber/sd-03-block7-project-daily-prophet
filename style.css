@@ -116,7 +116,7 @@ table {
 }
 
 .noticia3 {
-  animation: tudoEmUma 5s linear;
+  animation: deslizaDireita 4s steps(5, start) alternate;
   border: 1px solid black;
   column-count: 3;
   margin-top: 5px;
@@ -130,11 +130,10 @@ footer {
   text-align: center;
 }
 
-@keyframes tudoEmUma {
+@keyframes deslizaDireita {
 
   to {
     transform: translate(100%, 0);
-    transition: step(6, start);
   }
 }
 
@@ -154,7 +153,7 @@ footer {
 }
 
 @media screen and ( max-width : 760px ) {
-  
+
   img {
     width: 5em;
   }
