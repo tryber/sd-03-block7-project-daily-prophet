@@ -71,6 +71,7 @@ body {
 .article-animation {
   animation-duration: 4s;
   animation-name: article-grow;
+  animation-play-state: paused;
   margin: 8px;
   padding: 5px;
   transition: all;
@@ -79,8 +80,7 @@ body {
 
 .article-animation:hover {
   animation-direction: alternate;
-  animation-duration: 4s;
-  animation-name: article-grow;
+  animation-play-state: running;
   transition: all;
 }
 
