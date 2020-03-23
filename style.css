@@ -1,35 +1,35 @@
 @font-face {
-    font-family: "Harry Title";
-    src: url(./font/Mugglenews.ttf);
+  font-family: "Harry Title";
+  src: url(./font/Mugglenews.ttf);
 }
 
 body {
-    background: url(./img/background.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    margin: 0;
-    width:100%;
+  background: url(./img/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  margin: 0;
+  width:100%;
 }
 
 header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.title img{
+.title {
   width: 40%;
 }
 
-.logo img{
-  width: 3%;
+.logo {
+  width: 10%;
 }
 @media screen and ( max-width : 760px ) {
 
