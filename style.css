@@ -39,7 +39,7 @@ body {
 }
 
 .fly {
-  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
+  animation: flying 3s alternate 3s forwards 3 steps(200, end);
   margin-left: -20%;
   position: absolute;
   transition: all;
@@ -91,7 +91,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(200, jump-none) 2 alternate paused;
+  animation: article-grow 4s linear 2 alternate paused;
 }
 
 @keyframes article-grow {
