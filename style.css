@@ -1,13 +1,13 @@
 body {
-  background-color : red;
+  background-color : rgb(112, 112, 112);
   border: 5px solid black;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 @media screen and ( orientation : landscape ) {
 
-  .container-layout {
+  .container-orientation {
     background-color : yellow;
     border: red 1px solid;
   }
@@ -16,7 +16,13 @@ body {
     margin: auto;
   }
 
+  .ladoL {
+    float: none;
+    width: 100%;
+  }
+
   .ladoR {
+    float: none;
     width: 100%;
   }
 
@@ -36,7 +42,13 @@ body {
     display: none;
   }
 
+  .ladoL {
+    float: none;
+    width: 100%;
+  }
+
   .ladoR {
+    float: none;
     width: 100%;
   }
 
@@ -109,6 +121,10 @@ body {
   text-align: center;
 }
 
+.container {
+  height: 800px;
+}
+
 h3 {
   font-size: xx-large;
   text-align: center;
@@ -122,21 +138,23 @@ p {
 
 .destaque {
   font-style: italic;
-  margin-bottom: 350px;
+  margin-bottom: 100px;
 }
 
 .ladoL {
   float: left;
   font-size: 26px;
+  height: 500px;
   text-align: right;
-  width: 30%;
+  width: 50%;
 }
 
 .ladoR {
   float: right;
   font-size: 26px;
+  height: 500px;
   text-align: left;
-  width: 30%;
+  width: 50%;
 }
 
 .img-center {
@@ -146,6 +164,28 @@ p {
 
 .casas {
   border-top: 1px solid black;
+}
+
+.casaRed {
+  background-color: red;
+}
+
+.casaGreen {
+  background-color: green;
+}
+
+.casaBlue {
+  background-color: darkblue;
+}
+
+.casaYellow {
+  background-color: yellow;
+}
+
+.para {
+  float: right;
+  position: relative;
+  width: 80%;
 }
 
 .prisioneiro {
