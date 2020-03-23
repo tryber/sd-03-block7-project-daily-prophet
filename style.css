@@ -45,7 +45,7 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
-  animation-timing-function: linear;
+  animation-timing-function: steps(200, jump-none);
   margin-left: -20%;
   position: absolute;
   transition: all;
@@ -116,6 +116,14 @@ body {
     font-weight: 700;
     transform: scale(1.5);
   }
+}
+
+.footer {
+  transition: transform 1s;
+}
+
+.footer:hover {
+  transform: skew(-15deg);
 }
 
 @media screen and ( max-width : 760px ) {
