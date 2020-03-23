@@ -65,6 +65,7 @@ body {
 
 .fly {
   animation: flying 3s linear infinite alternate;
+  animation-delay: 3s;
 }
 
 @keyframes skewing {
