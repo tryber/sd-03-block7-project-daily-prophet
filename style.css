@@ -25,15 +25,11 @@ body {
   flex-wrap: wrap;
   height: 100%;
   margin: 3% 6%;
-  transition-property: box-shadow;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;
-  transition-delay: 100ms;
+  transition: box-shadow 200ms ease-in-out;
 }
 
 .everything:hover {
-  box-shadow:
-  3px 3px #53a7ea;
+  box-shadow: 2px 2px #f1ff71, 4px 4px #c8ca52, 6px 6px #99852b;
   transform: translateX(-3px);
 }
 
@@ -105,10 +101,6 @@ p {
   width: 85%;
 }
 
-.second-content {
-  
-}
-
 .fly {
   animation-delay: 3s;
   animation-direction: alternate;
@@ -133,7 +125,7 @@ p {
 }
 
 @keyframes title-move {
-  
+
   25% {
     transform: skew(-27deg, 28deg);
   }
