@@ -24,12 +24,9 @@
 }
 
 body {
+  background-color: rgb(255, 248, 238);
   font-family: Vollkorn, serif;
   margin: 0;
-}
-
-header {
-  font-family: Vollkorn, serif;
 }
 
 section {
