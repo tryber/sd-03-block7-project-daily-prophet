@@ -206,19 +206,17 @@ header {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
-  animation-play-state: paused;
+  animation: article-grow 4s steps(1000, end) paused;
   transition: article-grow 4s;
 }
 
 @keyframes article-grow {
 
-  from {
+  0% {
     transform: scale(1);
   }
 
-  to {
+  100% {
     transform: scale(1.5);
   }
 }
