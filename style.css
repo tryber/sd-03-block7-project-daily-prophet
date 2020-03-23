@@ -100,12 +100,12 @@ body {
 @keyframes profeta {
 
   from {
-  
+
     transform: skew(360deg);
   }
 
   to {
-  
+
     transform: skew(0deg);
   }
 }
