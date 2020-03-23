@@ -5,18 +5,11 @@ font-family: Kreon, serif; */
 @keyframes article-grow {
 
   0% {
-    font-weight: initial;
-    transform: scale(1);
-  }
-
-  50% {
-    font-weight: 900;
-    transform: scale(1.5);
+    font-weight: 400;
   }
 
   100% {
-    font-weight: initial;
-    transform: scale(1);
+    font-weight: 900;
   }
 }
 
@@ -883,7 +876,7 @@ h2 {
 
   /* Animations */
   .fly {
-    animation: flying 3s 3s 3 alternate forwards steps(200, end);
+    animation: flying 3s 3s 3 alternate forwards steps(900, end);
     opacity: 0;
   }
 
@@ -980,6 +973,12 @@ h2 {
   }
 
   .article-animation {
-    animation: article-grow 4s;
+    animation: article-grow 4s paused;
+  }
+
+  .article-animation:active {
+    animation: running;
+    transform: scale(1.5);
+    transition: all 4s ease 0.2s;
   }
 }
