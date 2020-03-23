@@ -48,9 +48,12 @@ body {
 
 .morte:hover {
   animation: reliquias 5s infinite alternate;
-  float: left;
   margin-top: 30px;
   width: 450px;
+}
+
+.all{
+  float: left;
 }
 
 .varinha {
@@ -72,7 +75,7 @@ body {
   border: black solid 3px;
 }
 
-.article-animation {
+.article-animation:hover {
   animation: article-grow 6s steps(4) infinite;
 }
 
@@ -108,7 +111,7 @@ body {
   }
 
   25%{
-    transform: translate(200px, 600px);
+    transform: translate(200px, 900px);
   }
 
   50% {
