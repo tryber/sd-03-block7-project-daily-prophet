@@ -1,3 +1,16 @@
+@keyframes varinha {
+  
+  from{
+    transform: skew(-30deg);
+  }
+
+  50%{
+    transform: skew(30deg);
+  }
+  to {
+    transform: skew(1deg);
+  }
+}
 body {
   animation-duration: 3s;
   animation-name: inicial;
@@ -34,10 +47,18 @@ body {
   animation: reliquias 5s infinite alternate;
   float: left;
   margin-top: 30px;
+  width: 450px;
+}
+
+.varinha{
+  animation-name: varinha;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  float: right;
+  width: 450px;
 }
 
 .text {
-  animation-name: negrito;
   font-size: 30px;
   transition: 50%;
 }
