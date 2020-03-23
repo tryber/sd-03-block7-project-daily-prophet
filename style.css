@@ -8,25 +8,107 @@ body {
 }
 
 header {
+  border-bottom: 5px solid black;
   display: flex;
+  height: 120px;
   justify-content: center;
 }
 
-nav {
+.navigation {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  margin: 5px;
+}
+
+.navigation ul{
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.navigation li {
+  font-size: 18px;
+  width: 20%;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+.navigation img {
+  width: 60%;
+}
+.salario-text {
+  background-color: black;
+  color: aliceblue;
+  font-size: 27px;
+  height: 62px;
+  text-align: center;
+  width: 20%;
 }
 
 .title {
-  width: 40%;
+  width: 50%;
 }
 
 .logo {
-  width: 10%;
+  width: 8%;
 }
 
+.content-area {
+  align-items: center;
+  border: 5px solid black;
+  display: flex;
+  margin: 20px;
+  width: 95%;
+}
+
+.title2 {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.all-texts {
+  align-items: center;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.materia-one {
+  font-size: 20px;
+  float: left;
+  margin-left: 3%;
+  margin-right: 2%;
+  width: 20%;
+}
+
+.programming {
+  width: 80%;
+}
+
+.wizard {
+  height: 200px;
+  margin-left: 15%;
+  width: 40%;
+}
+
+.middle {
+  width: 30%;
+}
+
+.middle h3{
+  text-align: center;
+}
+
+.middle img {
+  width: 40%;
+}
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
