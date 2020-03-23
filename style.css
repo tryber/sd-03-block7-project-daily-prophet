@@ -1,46 +1,55 @@
 @media ( max-width : 760px ) {
+
   .container-layout {
     background-color: yellow;
   }
 }
 
 @media ( min-width : 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
 @media ( orientation : landscape ) {
+
   .container-orientation {
     border: 1px red solid;
   }
 }
 
 @keyframes flying {
+
   from {
     margin-left: 3%;
   }
+
   to {
     margin-left: 95%;
   }
 }
 
 @keyframes skewing {
+
   0% {
     transform: skew(0deg);
   }
+
   100% {
     transform: skew(180deg);
   }
 }
 
 @keyframes article-grow {
+
   0% {
-    font: normal;
+    font-weight: 'normal';
     transform: scale(1, 1);
   }
+
   100% {
-    font: bolder;
+    font-weight: 'bolder';
     transform: scale(1.6, 1.6);
   }
 }
@@ -55,7 +64,7 @@
 
 .nave:hover {
   color: black;
-  font: bold;
+  font-weight: 'bold';
   transform: translateY(-5px);
 }
 
