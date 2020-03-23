@@ -11,9 +11,11 @@ body {
 
 .container-diario {
   background-color: white;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 5px;
+  border-radius: 15px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 8px;
+  padding: 10px;
 }
 
 .hr-top {
@@ -46,7 +48,11 @@ body {
   text-transform: uppercase;
 }
 
-@media ( max-width : 760px ) {
+.cabecalho-titulo {
+    display: none;
+}
+
+@media screen and ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -55,8 +61,10 @@ body {
   .container-diario {
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
-    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+    padding: 10px;
   }
 
   .cabecalho-titulo {
@@ -64,7 +72,7 @@ body {
   }
 }
 
-@media ( min-width : 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
@@ -73,13 +81,41 @@ body {
   .container-diario {
     background-color: white;
     border-radius: 15px;
-    margin: 50px;
-    padding: 10px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 8px;
+    padding: 15px;
   }
 
   .cabecalho-titulo {
     display: none;
   }
+}
+
+@keyframes flying {
+  0% {
+    transform: translate(20px, 5px);
+  }
+  100% {
+    transform: translate(-20px, -5px);
+  }
+}
+
+.fly {
+  animation: flying 3s linear infinite alternate;
+}
+
+@keyframes skewing {
+  0% {
+    transform: skew(0deg);
+  }
+  100% {
+    transform: skew(180deg);
+  }
+}
+
+.eternal-skewing {
+  animation: skewing 5s linear;
 }
 
 @media ( max-width : 760px ) and ( orientation : landscape ) {
@@ -91,8 +127,10 @@ body {
   .container-diario {
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
-    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+    padding: 10px;
   }
 
   .cabecalho-titulo {
