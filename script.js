@@ -3,4 +3,4 @@ function articleClick(a) {
   elemA.style.animationPlayState = 'running';
 }
 
-addEventListener('click', articleClick)
+addEventListener('click', articleClick);
