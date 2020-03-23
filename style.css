@@ -1,4 +1,4 @@
-@media screen and ( max-width : 760px ) {
+@media ( max-width : 760px ) {
 
   .container-layout {
     background-color: yellow;
@@ -10,6 +10,12 @@
   .container-layout {
     background-color: red;
   }
+}
+
+@media only screen and (orientation: landscape) {
+  
+  .container-layout {
+    background-color: white;
 }
 
 body {
@@ -44,6 +50,7 @@ header {
   animation: logo 2s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+  transition: ease-in;
 }
 
 @keyframes logo {
@@ -120,6 +127,7 @@ header {
   animation-iteration-count: 3;
   height: 80px;
   transform: skew(1deg);
+  transition: steps(1);
 }
 
 @keyframes flying {
@@ -167,7 +175,7 @@ header {
   font-size: large;
   height: auto;
   justify-content: center;
-  margin-left: 13%;
+  margin-left: 20%;
   margin-top: 10px;
   width: 41%;
 }
