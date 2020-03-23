@@ -53,12 +53,14 @@ body {
 }
 
 .varinha {
-  animation-delay: 4s;
+  float: right;
+  width: 450px;
+}
+
+.varinha:hover {
   animation-duration: 4s;
   animation-name: varinha;
   animation-timing-function: step(10);
-  float: right;
-  width: 450px;
 }
 
 .text {
@@ -68,10 +70,6 @@ body {
 
 .historia {
   border: black solid 3px;
-}
-
-article-animation {
-  animation: article-grow 4s steps(4) infinite;
 }
 
 @media screen and ( max-width : 760px ) {
