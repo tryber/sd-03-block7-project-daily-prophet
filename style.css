@@ -1,0 +1,199 @@
+body {
+  background-color: wheat;
+  flex-flow: column wrap;
+}
+
+header {
+  border: 2px solid black;
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+
+header img {
+  animation: flying 5s ease-out 3s 3 alternate forwards;
+  height: 10em;
+}
+
+.logoCabecalho {
+  width: 10%;
+}
+
+.textoCabecalho {
+  width: 80%;
+}
+
+h1 {
+  font-family: Chomsky, Times New Roman, Times, serif;
+  font-size: 5em;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 25pt;
+  margin: 0;
+}
+
+.tituloPrinc {
+  font-family: Impact, Haettenschweiler, sans-serif;
+  font-size: 9em;
+}
+
+.container-orientation {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  font-family: Courier New, Courier, monospace;
+  justify-content: space-around;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.article-animation {
+  animation: article-grow 4s forwards;
+  animation-play-state: paused;
+}
+
+.imgEspecial:hover {
+  transform: scale(7, 7);
+  transform-origin: top right;
+  transition: transform 2s ease-in;
+}
+
+.principal {
+  border: 1px solid black;
+  display: flex;
+}
+
+.versalete {
+  font-size: 5em;
+}
+
+.blocoEsq {
+  padding: 10px;
+  width: 70%;
+}
+
+.reportagem {
+  column-count: 2;
+}
+
+.reportagem img {
+  transition: transform 2s linear;
+  width: 100%;
+}
+
+.blocoDir img {
+  width: 100%;
+}
+
+.noticia3 img {
+  margin: 2%;
+  width: 100%;
+}
+
+.reportagem img:hover {
+  transform: skew(-5deg, -5deg);
+}
+
+.texto {
+  font-size: 16pt;
+}
+
+.blocoDir {
+  padding: 20px;
+  width: 30%;
+}
+
+.blocoDir img:hover {
+  transform: translateY(700px);
+  transition: transform 2s ease-in-out;
+}
+
+table {
+  border: 2px solid black;
+  margin-top: 15px;
+}
+
+.noticia3 {
+  animation: deslizaDireita 4s steps(5, start) alternate;
+  border: 1px solid black;
+  column-count: 3;
+  margin-top: 5px;
+}
+
+footer {
+  border: 1px solid black;
+  font-size: 18pt;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes deslizaDireita {
+
+  to {
+    transform: translate(100%, 0);
+  }
+}
+
+@keyframes flying {
+
+  0% { margin-left: 0; }
+
+  100% { margin-left: 700%; }
+}
+
+@keyframes article-grow {
+
+  to {
+    font-weight: 900;
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  img {
+    width: 5em;
+  }
+
+  .container-layout {
+    background-color: yellow;
+    display: block;
+  }
+
+  .tituloPrinc , .versalete {
+    font-size: 4em;
+  }
+
+  .principal {
+    display: block;
+  }
+
+  .blocoEsq , .blocoDir {
+    width: 100%;
+  }
+
+  .reportagem {
+    column-count: 1;
+  }
+
+  .noticia3 {
+    column-count: 1;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
