@@ -86,7 +86,7 @@ body {
 @keyframes article-grow {
 
   50% {
-    transform: scale(1.5) skew(45deg);
+    transform: scale(1.5) skew(10deg);
   }
 
   100% {
