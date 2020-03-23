@@ -1,0 +1,211 @@
+body {
+  background-color: #ede9de;
+  font-family: Kelly Slab, cursive;
+}
+
+a {
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.article-animation {
+  animation-delay: 2s;
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  font-family: Kelly Slab, cursive;
+}
+
+.img-topo {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.container-orientation {
+  margin: 0 auto;
+  width: 947px;
+}
+
+.container-layout {
+  background-color: yellow;
+}
+
+.bigbox {
+  display: flex;
+  position: relative;
+}
+
+.box2 {
+  background-color: yellow;
+  width: 30%;
+}
+
+.topo {
+  height: 172px;
+  width: 947px;
+}
+
+.subtitle {
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle:hover {
+  transform: scale(1.5);
+  transition-duration: 3s;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.book-animation {
+  animation: book 5s linear infinite backwards;
+  cursor: pointer;
+  left: 60%;
+  position: absolute;
+  top: 5%;
+  transform: rotateZ(60deg);
+  transition-duration: 3s, 5s;
+  transition-property: opacity, left, top, height;
+  z-index: 10;
+}
+
+.pomo-animation {
+  animation: pomo 30s linear infinite backwards;
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  transition-duration: 3s, 5s;
+  transition-property: opacity, left, top, height;
+  z-index: 11;
+}
+
+.trans {
+  animation: trans 4s;
+  animation-delay: 2s;
+  font-size: 30px;
+  transition-duration: 1s;
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 1px;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+    border: 2px solid black;
+    padding: 1px;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@keyframes book {
+
+  0% {
+    transform: scale(1, 2) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(10vh) translateY(15vh);
+  }
+
+  35% {
+    transform: skewX(30deg) skew(60deg);
+  }
+
+  50% {
+    transform: skewX(0deg) skew(0deg) rotateZ(300deg) rotateX(120deg);
+  }
+
+  75% {
+    transform: scaleX(30vw) translateY(5vh);
+  }
+
+  90% {
+    transform: scale(1, 1) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1, 2) rotate(0deg);
+  }
+
+}
+
+@keyframes pomo {
+
+  0% {
+    transform: scale(2, 2) translateX(0);
+  }
+
+  50% {
+    transform: scale(1, 1) translateX(100vh);
+  }
+
+  100% {
+    transform: scale(2, 2) translateX(0);
+  }
+}
+
+@keyframes trans {
+
+  from {
+    transform: skew(0deg) scale(0, 0) translate(0, 0);
+  }
+
+  to {
+    transform: skew(180deg) scale(1, 1) translate(0, 0);
+    transition: steps(4, end);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
