@@ -55,12 +55,6 @@
 .tituto-top {
   transform: skew(180deg);
   transition: transform 10s linear 2s;
-
-  /* animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-name: skewing;
-  animation-timing-function: linear; 
-  animation: name duration delay time-function(steps(number of steps) interation-count fill-mode) */
   width: fit-content;
 }
 
@@ -76,13 +70,13 @@
 }
 
 .article-animation:active p {
-    font-weight: 700;
-    transition: font-weight 4s linear 2s;
+  font-weight: 700;
+  transition: font-weight 4s linear 2s;
 }
 
 .article-animation:active h2 {
-    font-weight: 700;
-    transition: font-weight 4s linear 2s;
+  font-weight: 900;
+  transition: font-weight 4s linear 2s;
 }
 
 .fly {
