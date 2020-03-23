@@ -65,11 +65,26 @@ h2 {
 }
 
 .first-content {
-  transition: transform 1s ease-in-out 1s;
 }
 
-.first-content:hover {
+.first-content:active {
+  animation: content-bigger 4s forwards;
   transform: scale(1.5);
+  transition: all 3s ease-in-out;
+}
+
+@keyframes content-bigger {
+
+  from {
+    font-weight: 400;
+  }
+
+  to {
+    font-weight: 700;
+  }
+
+
+
 }
 
 p {
