@@ -99,19 +99,17 @@ a:hover {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
-  animation-play-state: paused;
+  animation: article-grow 4s steps(2, end) paused;
 
 }
 
 @keyframes article-grow {
 
-  from {
+  0% {
     transform: scale(1);
   }
 
-  to {
+  100% {
     transform: scale(1.5);
   }
 }
