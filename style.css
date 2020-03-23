@@ -52,6 +52,17 @@
   }
 }
 
+@keyframes bolde {
+
+    from {
+      font-weight: 400;
+    }
+  
+    t0 {
+      font-weight: 700;
+    }
+  }
+
 .tituto-top {
   transform: skew(180deg);
   transition: transform 10s linear 2s;
@@ -70,8 +81,7 @@
 }
 
 .article-animation:active p {
-  font-weight: 700;
-  transition: font-weight 4s linear 2s;
+  animation: bolde 4s steps(10) infinite forwards;
 }
 
 .fly {
