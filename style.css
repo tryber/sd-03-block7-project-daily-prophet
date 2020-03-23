@@ -11,7 +11,7 @@
 
 .fly {
   align-self: flex-start;
-  animation: flying 5s linear 3s 3 alternate both;
+  animation: flying 5s linear 3s 3 alternate forwards;
   height: 60px;
   margin-left: 260px;
   margin-top: 135px;
