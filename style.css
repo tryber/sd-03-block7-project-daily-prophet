@@ -581,12 +581,43 @@ h2 {
     width: 20%;
   }
 
+  .exclusive-pai:hover {
+    animation: skewing 2s linear;
+  }
+
+  @keyframes skewing {
+
+    0% {
+      transform: skew(0);
+    }
+
+    30% {
+      transform: skew(15deg, 15deg);
+    }
+
+    60% {
+      transform: skew(-0.06turn, 18deg);
+    }
+
+    90% {
+      transform: skew(0.312rad);
+    }
+
+    100% {
+      transform: skew(0);
+    }
+  }
+
   .exclusive {
     align-items: center;
     background-color: black;
     display: flex;
     height: 2.1em;
     justify-content: flex-start;
+  }
+
+  .exclusive:hover {
+    animation: skewing 2s linear;
   }
 
   .paragraph-exclusive {
@@ -708,12 +739,31 @@ h2 {
   .wrap-title span {
     font-family: Bebas Neue, cursive;
     font-size: 3rem;
-    left: -1em;
+    left: 0.2em;
     margin: 0;
     padding: 0;
     position: absolute;
     top: 0.9em;
     transform: rotate(-90deg);
+  }
+
+  .spin {
+    animation: spin 200ms 14s linear infinite;
+  }
+
+  .spin:hover {
+    animation: spin 200ms linear;
+  }
+
+  @keyframes spin {
+
+    from {
+      transform: rotate(-90deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   .main-title {
@@ -878,7 +928,7 @@ h2 {
 
   .appear {
     animation: appear 3s ease-in-out 12s forwards;
-    left: 10%;
+    left: 15%;
     opacity: 0;
     position: absolute;
   }
