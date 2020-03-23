@@ -64,13 +64,13 @@ h2 {
   font-size: 180px;
 }
 
-.first-content:active {
-  animation: content-bigger 4s forwards;
+.article-animation:active {
+  animation: article-grow 4s forwards;
   transform: scale(1.5);
   transition: all 3s ease-in-out;
 }
 
-@keyframes content-bigger {
+@keyframes article-grow {
 
   from {
     font-weight: 400;
