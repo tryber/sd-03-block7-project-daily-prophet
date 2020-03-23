@@ -1,19 +1,19 @@
-@media screen and (max-width: 760px) {
+@media screen and ( max-width: 760px ) {
   .container-layout {
-    background-color: rgb(255, 255, 0);
+    background-color: #ff0;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and ( min-width: 1170px ) {
   .container-layout {
-    background-color: rgb(255, 0, 0);
+    background-color: red;
   }
 }
-@media screen and (){
+/* @media screen and (){
   .container-orientation{
     border: 1px solid red;
   }
-}
+} */
 
 body {
   background-color: #fffa;
@@ -24,7 +24,7 @@ body {
 
 article {
   background-color: #fffa;
-  border: 0.187em solid #1c1915;
+  border: 0.187em solid black;
   display: flex;
   height: auto;
   margin: 0 auto;
@@ -37,19 +37,21 @@ header {
 }
 
 .hr1 {
-  border-bottom: 1px solid #1c1915;
-  border-top: 0.187em solid #1c1915;
+  border-bottom: 1px solid black;
+  border-top: 0.187em solid black;
   margin: auto;
   width: 90%;
 }
 
-.logo{
+.logo {
   animation: logo 2s;
   animation-delay: 2s;
 }
 
-@keyframes logo{
-  0% {}
+@keyframes logo {
+  0% {
+
+  }
 
   100% {
     transform: translate(10px, 10px);
@@ -57,8 +59,8 @@ header {
 }
 
 .hr2 {
-  border-bottom: 0.187em solid #1c1915;
-  border-top: 1px solid #1c1915;
+  border-bottom: 0.187em solid black;
+  border-top: 1px solid black;
   margin: auto;
   width: 90%;
 }
@@ -153,12 +155,12 @@ header {
   width: 100%;
 }
 
-.noticias{
+.noticias {
   font-size: large;
   width: 23%;
 }
 
-.silence{
+.silence {
   align-items: center;
   border: 1px solid;
   display: flex;
@@ -171,30 +173,29 @@ header {
   width: 41%;
 }
 
-.centro{
+.centro {
   display: flex;
   flex-direction: column;
   font-size: large;
   text-align: center;
 }
 
-.center{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.center {
   font-size: 50px;
   margin-top: 10%;
 }
-.hrfooter{
-  border-bottom: 0.187em solid #1c1915;
-  border-top: 1px solid #1c1915;
+.hrfooter {
+  border-bottom: 0.187em solid black;
+  border-top: 1px solid black;
   margin: auto;
   width: 90%;
 }
-.gato{
+.gato {
   height: 400px;
   margin-bottom: 30px;
 }
 
-.paside{
+.paside {
   display: flex;
   width: 15%;
   position: absolute;
@@ -203,7 +204,7 @@ header {
   font-size: large;
 }
 
-footer{
+footer {
   color: #000;
   font-size: 20px;
   text-align: center;
