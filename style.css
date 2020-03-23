@@ -67,7 +67,7 @@ h2 {
 .article-animation:active {
   animation: article-grow 4s forwards;
   transform: scale(1.5);
-  transition: all 3s ease-in-out;
+  transition: all 4s ease-in-out;
 }
 
 @keyframes article-grow {
