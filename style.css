@@ -1,0 +1,235 @@
+@keyframes logo {
+
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+body {
+  background-color : rgb(112, 112, 112);
+  border: 5px solid black;
+  margin: 0 auto;
+  transition: ease-in-out;
+  width: 90%;
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    background-color : yellow;
+    border: red 1px solid;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .ladoL {
+    float: none;
+    width: 100%;
+  }
+
+  .ladoR {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color : yellow;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .img-center {
+    display: none;
+  }
+
+  .ladoL {
+    float: none;
+    width: 100%;
+  }
+
+  .ladoR {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+}
+
+.titulo {
+  font-size: 65px;
+  text-align: center;
+}
+
+.logo {
+  margin: auto;
+  width: 200px;
+}
+
+.logo:hover {
+  animation-direction: alternate-reverse;
+  animation-duration: 200ms;
+  animation-iteration-count: infinite;
+  animation-name: logo;
+}
+
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 0;
+  }
+
+  to {
+    margin-left: 87%;
+    transform: rotate(360deg);
+  }
+}
+
+.noticia-principal {
+  font-size: 45px;
+  text-align: center;
+}
+
+.container {
+  height: 800px;
+}
+
+h3 {
+  font-size: xx-large;
+  text-align: center;
+}
+
+p {
+  font-size: 26px;
+  margin: auto 20px;
+  text-align: justify;
+}
+
+.destaque {
+  font-style: italic;
+  margin-bottom: 100px;
+}
+
+.ladoL {
+  float: left;
+  font-size: 26px;
+  height: 500px;
+  text-align: right;
+  width: 50%;
+}
+
+.ladoR {
+  float: right;
+  font-size: 26px;
+  height: 500px;
+  text-align: left;
+  width: 50%;
+}
+
+.img-center {
+  font-size: 26px;
+  text-align: center;
+}
+
+.casas {
+  border-top: 1px solid black;
+}
+
+.casaRed {
+  background-color: red;
+}
+
+.casaGreen {
+  background-color: green;
+}
+
+.casaBlue {
+  background-color: darkblue;
+}
+
+.casaYellow {
+  background-color: yellow;
+}
+
+.para {
+  float: right;
+  position: relative;
+  width: 80%;
+}
+
+.prisioneiro {
+  animation-duration: 3s;
+  animation-name: fugiu;
+}
+
+@keyframes fugiu {
+
+  0% {
+    transform: scale(-5);
+  }
+}
+
+.movimenta1:hover {
+  animation-duration: 3s;
+  animation-name: emblema1;
+}
+
+@keyframes emblema1 {
+
+  from {
+    transform: skew(360deg);
+  }
+
+  to {
+    transform: skew(0deg);
+  }
+}
+
+.movimenta2:hover {
+  animation-duration: 3s;
+  animation-name: emblema2;
+}
+
+@keyframes emblema2 {
+
+  0% {
+    transform: translate(50px, 100px);
+  }
+
+  100% {
+    transform: translate(150px, 200px);
+  }
+}
