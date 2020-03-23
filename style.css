@@ -51,9 +51,9 @@ nav {
   padding-bottom: 10px;
 }
 
-.subtitle:hover {
-  transform: scale(1.5);
-  transition-duration: 3s;
+.topo {
+  height: 172px;
+  width: 947px;
 }
 
 .w10 {
