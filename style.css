@@ -1,3 +1,33 @@
+@keyframes article-grow {
+
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes embold {
+
+  25% {
+    font-weight: 500;
+  }
+
+  50% {
+    font-weight: 600;
+  }
+
+  75% {
+    font-weight: 700;
+  }
+
+  100% {
+    font-weight: 800;
+  }
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -9,9 +39,7 @@ nav {
 }
 
 p {
-  animation-delay: 2s;
-  animation-duration: 3s;
-  animation-name: skew;
+  animation: skew 3s 2s steps(4);
 }
 
 .img {
@@ -73,36 +101,6 @@ p {
     border-color: red;
     border-style: solid;
     border-width: 1px;
-  }
-}
-
-@keyframes article-grow {
-
-  from {
-    transform: scale(1, 1);
-  }
-
-  to {
-    transform: scale(1.5, 1.5);
-  }
-}
-
-@keyframes embold {
-
-  25% {
-    font-weight: 500;
-  }
-
-  50% {
-    font-weight: 600;
-  }
-
-  75% {
-    font-weight: 700;
-  }
-
-  100% {
-    font-weight: 800;
   }
 }
 
