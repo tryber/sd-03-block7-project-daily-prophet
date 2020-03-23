@@ -64,16 +64,22 @@ h2 {
   font-size: 180px;
 }
 
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
 .article-animation:active {
-  animation: article-grow 4s forwards;
+  animation-play-state: running;
   transform: scale(1.5);
-  transition: all 4s ease-in-out;
+  transition: all 4s ease-in 0.2s;
 }
 
 @keyframes article-grow {
 
   from {
-    font-weight: 400;
+    font-weight: 100;
   }
 
   to {
