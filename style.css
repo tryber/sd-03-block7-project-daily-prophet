@@ -1,3 +1,21 @@
+@keyframes article-grow {
+
+  0% {
+    font-weight: 500;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 600;
+    transform: scale(1.25);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
 body {
   background-color: moccasin;
   font-family: Pirata One, cursive;
@@ -39,7 +57,7 @@ body {
 }
 
 .fly {
-  animation: flying 3s alternate 3s forwards 3 steps(200, end);
+  animation: flying 2s steps(200, jump-none) 3s 3 alternate forwards;
   margin-left: -20%;
   position: absolute;
   transition: all;
@@ -91,25 +109,7 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 4s linear 2 alternate paused;
-}
-
-@keyframes article-grow {
-
-  0% {
-    font-weight: 500;
-    transform: scale(1);
-  }
-
-  50% {
-    font-weight: 600;
-    transform: scale(1.25);
-  }
-
-  100% {
-    font-weight: 700;
-    transform: scale(1.5);
-  }
+  animation: article-grow 4s linear 2 alternate paused; 
 }
 
 .footer {
