@@ -1,7 +1,20 @@
+@keyframes logo {
+
+  0% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+
+}
+
 body {
   background-color : rgb(112, 112, 112);
   border: 5px solid black;
   margin: 0 auto;
+  transition: ease-in-out;
   width: 90%;
 }
 
@@ -79,17 +92,6 @@ body {
   animation-name: logo;
 }
 
-@keyframes logo {
-
-  0% {
-    transform: rotate(20deg);
-  }
-
-  100% {
-    transform: rotate(-20deg);
-  }
-
-}
 
 .cabecalho {
   display: flex;
