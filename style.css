@@ -100,22 +100,26 @@ body {
 @keyframes profeta {
 
   from {
+  
     transform: skew(360deg);
   }
 
   to {
+  
     transform: skew(0deg);
   }
 }
 
 @keyframes inicial {
+
   from {
 
     transform: scale(10);
     width: 500px;
   }
+
   to {
-    
+
     transform: step(4s, scale(-20));
   }
 }
