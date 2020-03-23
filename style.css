@@ -1,13 +1,13 @@
-@media screen and ( max-width:760px ) {
-.container-layout {
-  background-color: yellow;
-}
+@media screen and ( max-width : 760px ) {
+  .container-layout {
+    background-color: yellow;
+  }
 }
 
-@media screen and ( min-width:1170px ) {
-.container-layout {
-  background-color: red;
-}
+@media screen and ( min-width : 1170px ) {
+  .container-layout {
+    background-color: red;
+  }
 }
 
 body {
@@ -41,16 +41,17 @@ header {
 .logo {
   animation: logo 2s;
   animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes logo {
-0% {
+  0% {
+    transform: translate(0px);
+  }
 
-}
-
-100% {
-  transform: translate(10px, 10px);
-}
+  100% {
+    transform: translate(15px, 15px);
+  }
 }
 
 .hr2 {
@@ -119,13 +120,13 @@ header {
 }
 
 @keyframes flying {
-0% {
-  margin-left: 0;
-}
+  0% {
+    margin-left: 0;
+  }
 
-100% {
-  margin-left: 90%;
-}
+  100% {
+    margin-left: 90%;
+  }
 }
 
 .gifheppy {
@@ -160,8 +161,8 @@ header {
   display: flex;
   flex-direction: column;
   font-size: large;
-  justify-content: center;
   height: auto;
+  justify-content: center;
   margin-left: 13%;
   margin-top: 10px;
   width: 41%;
