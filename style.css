@@ -12,13 +12,14 @@ article:hover {
 }
 
 .container-layout {
+  animation: 
+  scale 2s infinite, skew 0.5s infinite alternate;
   background-color: red;
   display: flex;
 }
 
 .fly {
-  animation: flying 1s ease-in-out 3s 3 alternate forwards,
-    scale 2s infinite, skew 0.5s infinite alternate;
+  animation: flying 1s ease-in-out 3s 3 alternate forwards;
   display: flex;
   z-index: 10;
 }
