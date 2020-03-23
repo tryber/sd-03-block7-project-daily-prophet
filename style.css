@@ -12,8 +12,7 @@ article:hover {
 }
 
 .container-layout {
-  animation: 
-  scale 2s infinite, skew 0.5s infinite alternate;
+  animation: scale 2s infinite, skew 0.5s infinite alternate;
   background-color: red;
   display: flex;
 }
