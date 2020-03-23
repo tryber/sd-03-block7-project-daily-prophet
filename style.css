@@ -115,6 +115,13 @@ nav {
   transition-duration: 1s;
 }
 
+@media ( max-width : 760 ) {
+
+  .container-layout {
+    background-color: blue;
+  }
+}
+
 @media ( min-width : 1170px ) {
 
   .container-layout {
