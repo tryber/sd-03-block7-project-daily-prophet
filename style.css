@@ -44,7 +44,6 @@
 @keyframes article-grow {
 
   0% {
-    font-weight: 400;
     transform: scale(1, 1);
   }
 
@@ -55,10 +54,15 @@
 }
 
 .tituto-top {
-  animation-duration: 5s;
+  transform: skew(180deg);
+  transition-delay: 2s;
+  transition-duration: 10s;
+  transition-property: transform;
+  transition-timing-function: linear;
+  /* animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-name: skewing;
-  animation-timing-function: linear;
+  animation-timing-function: linear; */
   width: fit-content;
 }
 
@@ -69,7 +73,7 @@
   transform: translateY(-5px);
 }
 
-.article-animation:hover {
+.article-animation:active {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-name: article-grow;
