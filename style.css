@@ -111,6 +111,7 @@ p {
   margin-bottom: -160px;
   margin-left: -1650px;
   margin-top: -140px;
+  transition: linear;
 }
 
 @keyframes article-grow {
