@@ -1,0 +1,201 @@
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:hover {
+  animation: transiting 3s;
+  transition: width 2s linear 1s;
+}
+
+.artigo-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: white;
+}
+
+.container-layout {
+  border: 1px solid red;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  height: 50%;
+  width: 50%;
+}
+
+hr {
+  background-color: black;
+  height: 5px;
+}
+
+.img1 {
+  align-self: flex-end;
+  animation: scaling 1s infinite alternate;
+  height: 100%;
+  margin-right: 10px;
+  padding: 10px;
+  width: 400px;
+}
+
+.img2 {
+  width: 25%;
+}
+
+.img2:hover {
+  transition-delay: 1s;
+  transition-duration: 5s;
+  transition-property: initial;
+  width: 50%;
+}
+
+.paragrafo1 {
+  align-self: flex-start;
+  display: flex;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.paragrafo2 {
+  background-color: sandybrown;
+  font-size: 50px;
+  text-align: center;
+}
+
+.secao1 {
+  color: white;
+}
+
+.step {
+  animation: steps 3s 1s alternate;
+}
+
+.sub-hr {
+  background: grey;
+  height: 1px;
+}
+
+.titulo-principal {
+  align-self: center;
+  animation: translating 2s infinite alternate;
+  margin: 10px;
+  width: 98%;
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .img1 {
+    align-self: flex-start;
+    display: flex;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 1%;
+  }
+
+  to {
+    margin-left: 90%;
+  }
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(0.4, 0.4);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  75% {
+    transform: skew(20deg);
+  }
+}
+
+@keyframes translating {
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(25px);
+  }
+}
+
+@keyframes article-grow {
+
+  from {
+    font-size: 10px;
+    font-weight: 100;
+    width: 1%;
+  }
+
+  to {
+    font-size: 70px;
+    font-weight: 600;
+    width: 50%;
+  }
+}
+
+@keyframes steps {
+
+  50% {
+    background-color: ivory;
+  }
+
+  100% {
+    background-color: lavender;
+  }
+}
+
+@keyframes transiting {
+
+  from {
+    font-size: 10px;
+    font-weight: 100;
+    transition-duration: 2s;
+    transition-property: initial;
+    width: 1%;
+  }
+
+  to {
+    font-size: 70px;
+    font-weight: 600;
+    transition-duration: 4s;
+    transition-property: initial;
+    width: 50%;
+  }
+}
