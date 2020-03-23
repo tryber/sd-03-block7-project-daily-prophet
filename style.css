@@ -143,7 +143,7 @@ body {
 }
 
 @keyframes profeta {
-  
+
   from {
     transform: skew(360deg);
   }
@@ -170,7 +170,7 @@ body {
   50% {
     font-weight: 300;
   }
-  
+
   100% {
     font-weight: 600;
   }
