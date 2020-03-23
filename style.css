@@ -1,37 +1,3 @@
-@keyframes flying {
-
-  0% {
-    margin-left: 100%;
-  }
-
-  50% {
-    margin-left: 40%;
-    transform: translate(100px, 100px);
-  }
-
-  100% {
-    margin-left: -20%;
-  }
-}
-
-@keyframes article-grow {
-
-  0% {
-    font-weight: 500;
-    transform: scale(1);
-  }
-
-  50% {
-    font-weight: 600;
-    transform: scale(1.25);
-  }
-
-  100% {
-    font-weight: 700;
-    transform: scale(1.5);
-  }
-}
-
 body {
   background-color: moccasin;
   font-family: Pirata One, cursive;
@@ -86,6 +52,22 @@ body {
   width: 20vw;
 }
 
+@keyframes flying {
+
+  0% {
+    margin-left: 100%;
+  }
+
+  50% {
+    margin-left: 40%;
+    transform: translate(100px, 100px);
+  }
+
+  100% {
+    margin-left: -20%;
+  }
+}
+
 .section_title {
   font-size: 5vw;
   margin: auto;
@@ -112,6 +94,28 @@ body {
 .section_article {
   font-size: 2.2vw;
   text-align: justify;
+}
+
+.article-animation {
+  animation: article-grow 4s linear 2 alternate paused;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 500;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 600;
+    transform: scale(1.25);
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
 }
 
 @media screen and ( max-width : 760px ) {
