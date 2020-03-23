@@ -1,19 +1,14 @@
-@media screen and ( max-width: 760px ) {
-  .container-layout {
-    background-color: #ff0;
-  }
+@media screen and ( max-width:760px ) {
+.container-layout {
+  background-color: yellow;
+}
 }
 
-@media screen and ( min-width: 1170px ) {
-  .container-layout {
-    background-color: red;
-  }
+@media screen and ( min-width:1170px ) {
+.container-layout {
+  background-color: red;
 }
-/* @media screen and (){
-  .container-orientation{
-    border: 1px solid red;
-  }
-} */
+}
 
 body {
   background-color: #fffa;
@@ -49,13 +44,13 @@ header {
 }
 
 @keyframes logo {
-  0% {
+0% {
 
-  }
+}
 
-  100% {
-    transform: translate(10px, 10px);
-  }
+100% {
+  transform: translate(10px, 10px);
+}
 }
 
 .hr2 {
@@ -124,14 +119,13 @@ header {
 }
 
 @keyframes flying {
+0% {
+  margin-left: 0;
+}
 
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: 90%;
-  }
+100% {
+  margin-left: 90%;
+}
 }
 
 .gifheppy {
@@ -184,12 +178,14 @@ header {
   font-size: 50px;
   margin-top: 10%;
 }
+
 .hrfooter {
   border-bottom: 0.187em solid black;
   border-top: 1px solid black;
   margin: auto;
   width: 90%;
 }
+
 .gato {
   height: 400px;
   margin-bottom: 30px;
@@ -197,15 +193,15 @@ header {
 
 .paside {
   display: flex;
-  width: 15%;
-  position: absolute;
+  font-size: large;
   margin-left: 45%;
   margin-top: -580px;
-  font-size: large;
+  position: absolute;
+  width: 15%;
 }
 
 footer {
-  color: #000;
+  color: black;
   font-size: 20px;
   text-align: center;
   transform: scale(1);
