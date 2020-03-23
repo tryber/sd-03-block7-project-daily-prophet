@@ -13,18 +13,12 @@ a:hover {
   font-weight: 800;
 }
 
-.article-animation{
-  font-family: Kelly Slab, cursive;
+.article-animation {
   animation-delay: 2s;
   animation-duration: 4s;
   animation-name: article-grow;
   animation-play-state: paused;
-}
-
-.trans {
-  animation: transfor 4s;
-  animation-delay: 2s;
-  transition-duration: 1s;
+  font-family: Kelly Slab, cursive;
 }
 
 .img-topo {
@@ -72,7 +66,6 @@ nav {
   transition-duration: 3s;
 }
 
-
 .w10 {
   width: 10%;
 }
@@ -100,9 +93,9 @@ nav {
   position: absolute;
   top: 5%;
   transform: rotateZ(60deg);
-  z-index: 10;
-  transition-property: opacity, left, top, height;
   transition-duration: 3s, 5s;
+  transition-property: opacity, left, top, height;
+  z-index: 10;
 }
 
 .pomo-animation {
@@ -110,9 +103,16 @@ nav {
   cursor: pointer;
   position: absolute;
   top: 10%;
-  z-index: 11;
-  transition-property: opacity, left, top, height;
   transition-duration: 3s, 5s;
+  transition-property: opacity, left, top, height;
+  z-index: 11;
+}
+
+.trans {
+  animation-delay: 2s;
+  animation: trans 4s;
+  font-size: 30px;
+  transition-duration: 1s;
 }
 
 @media ( min-width : 1170px ) {
