@@ -12,12 +12,7 @@ article:hover {
 }
 
 .container-layout {
-  background-color: yellow;
-  display: flex;
-}
-
-.container-orientation {
-  border: 1px solid red;
+  background-color: red;
   display: flex;
 }
 
@@ -74,7 +69,8 @@ article:hover {
 
 @media only screen and ( orientation : landscape ) {
 
-  body {
-    background-color: blue;
+  .container-orientation {
+    border: 1px solid red;
+    display: flex;
   }
 }
