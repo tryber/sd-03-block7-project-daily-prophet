@@ -64,9 +64,6 @@ h2 {
   font-size: 180px;
 }
 
-.first-content {
-}
-
 .first-content:active {
   animation: content-bigger 4s forwards;
   transform: scale(1.5);
@@ -82,9 +79,6 @@ h2 {
   to {
     font-weight: 700;
   }
-
-
-
 }
 
 p {
