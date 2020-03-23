@@ -75,7 +75,7 @@ body {
   border: black solid 3px;
 }
 
-.article-animation:hover {
+.article-animation {
   animation: article-grow 6s steps(4) infinite;
 }
 
