@@ -64,7 +64,11 @@ body {
 }
 
 .fly {
-  animation: flying 3s linear infinite alternate;
+  animation: flying 5s linear infinite alternate;
+  animation-delay: 3s;
+}
+
+.img.fly {
   animation-delay: 3s;
 }
 
