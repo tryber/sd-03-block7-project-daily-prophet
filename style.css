@@ -138,8 +138,8 @@ marquee {
 
 @media screen and ( max-width : 760px ) {
 
-  .styledBordHoriz {
-    background-color: rgb(255, 255, 0);
+  .styledBordHoriz .container-layout {
+    background-color: yellow;
     font-size: 1.12em;
     line-height: 1.6;
   }
@@ -158,7 +158,7 @@ marquee {
 
 @media screen and ( min-width : 1170px ) {
 
-  .styledBordHoriz {
+  .styledBordHoriz .container-layout {
     background-color: red;
   }
 }
