@@ -52,7 +52,7 @@ body {
   width: 450px;
 }
 
-.all{
+.all {
   float: left;
 }
 
@@ -110,7 +110,7 @@ body {
     margin-left: 1%;
   }
 
-  25%{
+  25% {
     transform: translate(200px, 900px);
   }
 
