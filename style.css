@@ -44,12 +44,12 @@
 @keyframes article-grow {
 
   0% {
-    font-weight: 'normal';
+    font-weight: 400;
     transform: scale(1, 1);
   }
 
   100% {
-    font-weight: 'bolder';
+    font-weight: 700;
     transform: scale(1.6, 1.6);
   }
 }
@@ -64,7 +64,7 @@
 
 .nave:hover {
   color: black;
-  font-weight: 'bold';
+  font-weight: 700;
   transform: translateY(-5px);
 }
 
