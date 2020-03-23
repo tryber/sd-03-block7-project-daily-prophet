@@ -28,7 +28,7 @@ body {
 }
 
 .container-principal {
-  background: linear-gradient(#FFF8EE, white);
+  background: linear-gradient(rgb(255, 248, 238), white);
   border: 2px solid black;
   border-radius: 20px;
   cursor: url('http://cur.cursors-4u.net/others/oth-3/oth246.cur'), auto;
@@ -88,6 +88,7 @@ body {
   50% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
