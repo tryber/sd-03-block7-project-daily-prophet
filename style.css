@@ -110,15 +110,12 @@ article > p {
   width: 30%;
 }
 
-.styledBordHoriz {
+
+.container-layout {
   background-image: url('img/img-lg-horiz-border.png');
   height: 10px;
   object-fit: contain;
-  width: 100%;
-}
-
-.container-layout {
-  background: url('img/img-lg-vert-border.png') repeat-y top left;
+  /* background: url('img/img-lg-vert-border.png') repeat-y top left; */
   background-size: 0.75em;
   margin: 0.5em auto;
   padding: 0 2px;
@@ -140,7 +137,7 @@ marquee {
 
 @media screen and ( max-width : 760px ) {
 
-  .styledBordHoriz .container-layout {
+  .container-layout {
     background-color: yellow;
     font-size: 1.12em;
     line-height: 1.6;
@@ -160,7 +157,7 @@ marquee {
 
 @media screen and ( min-width : 1170px ) {
 
-  .styledBordHoriz .container-layout {
+  .container-layout {
     background-color: red;
   }
 }
