@@ -1,0 +1,163 @@
+body {
+  background: url('./img/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  border-bottom: 5px solid black;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  margin: 5px;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigation li {
+  font-size: 18px;
+  width: 20%;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation img {
+  width: 60%;
+}
+
+.salario-text {
+  background-color: black;
+  color: aliceblue;
+  font-size: 27px;
+  height: 62px;
+  text-align: center;
+  width: 20%;
+}
+
+.title {
+  width: 50%;
+}
+
+.logo {
+  width: 8%;
+}
+
+.title2 {
+  font-size: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.materia-one {
+  animation: programming 3s steps(50, end) infinite;
+  float: left;
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 2%;
+  transition: steps(3 start);
+  width: 20%;
+}
+
+.programming {
+  width: 80%;
+}
+
+.wizard {
+  margin-left: 15%;
+  transform: scale(2, 3);
+  width: 10%;
+}
+
+.middle {
+  margin-right: 600px;
+}
+
+.middle img {
+  transform: translate(50px, 100px);
+  width: 500px;
+}
+
+.materia-3 {
+  float: right;
+}
+
+.materia-3 img {
+  width: 80%;
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media all and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-name: flying;
+}
+
+.fly img {
+  float: right;
+  width: 5%;
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 100%;
+    width: 20%;
+  }
+
+  to {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes programming {
+
+  from {
+    transform: skewY(20deg), scaleY(1.5), translate(5, 20);
+  }
+
+  to {
+    transform: skewY(20deg), scaleY(3.5), translate(7, 10);
+  }
+
+}
