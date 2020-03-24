@@ -343,8 +343,8 @@ body {
 }
 
 .footer-ul {
+  column-gap: 1em;
   display: grid;
-  grid-column-gap: 1em;
   grid-template-columns: repeat(8, auto);
   list-style-type: none;
   margin: 0.25em 0 0;
