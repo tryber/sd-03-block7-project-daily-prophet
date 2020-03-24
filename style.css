@@ -211,15 +211,12 @@ header {
   width: 15%;
 }
 
-footer {
+.article-animation {
+  animation: article-grow 4s  linear;
   color: black;
   font-size: 20px;
   text-align: center;
   transform: scale(1);
-}
-
-.article-animation:active {
-  animation: article-grow 4s  linear;
 }
 
 @keyframes article-grow {
