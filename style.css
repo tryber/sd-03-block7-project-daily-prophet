@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu-itens {
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 200px;
+}
+
+.menu-itens:hover {
+  animation: project 0.2s linear;
+}
+
+@keyframes project {
+
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(5px, 10px);
+  }
+}
+
+.menu-itens a {
+  color: white;
+  text-decoration: none;
+}
+
+.brasoes {
+  width: 100px;
+}
+
+.brasoes:hover {
+  animation: zoom 2s linear;
+}
+
+@keyframes zoom {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
+
+.taça {
+  animation: distortion 2s linear infinite;
+  transition: linear;
+}
+
+@keyframes distortion {
+
+  from {
+    transform: skew(0);
+  }
+
+  to {
+    transform: skew(40deg);
+  }
+}
+
+.coruja {
+  animation: coruja 1s steps(4) infinite;
+  background-image: url('images/coruja.png');
+  height: 100px;
+  width: 95px;
+}
+
+@keyframes coruja {
+
+  from {
+    background-position: 0;
+  }
+
+  to {
+    background-position: -400px;
+  }
+}
+
+.container-layout {
+  display: flex;
+  flex-wrap: wrap;
+  transition: linear 2s;
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
