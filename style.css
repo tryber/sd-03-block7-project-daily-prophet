@@ -124,7 +124,8 @@ body {
 }
 
 .article-animation {
-  animation: article-grow 2s;
+  animation: article-grow;
+  animation-direction: 4s;
 }
 
 @media screen and ( max-width : 760px ) {
