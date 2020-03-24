@@ -133,8 +133,9 @@ body {
 .contain-chapeu {
   animation: chapeu 4s steps(4, end) infinite;
 }
- 
+
 @keyframes chapeu {
+
   to {
     transform: translateX(940px);
   }
