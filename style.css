@@ -17,9 +17,9 @@ body {
 }
 
 .colunas {
-    margin-left: 160px;
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  margin-left: 160px;
 }
 
 .itens-logo {
