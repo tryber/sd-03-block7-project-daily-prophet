@@ -54,14 +54,14 @@
 
 @keyframes bolde {
 
-    from {
-      font-weight: 400;
-    }
-  
-    t0 {
-      font-weight: 700;
-    }
+  from {
+    font-weight: 400;
   }
+
+  to {
+    font-weight: 700;
+  }
+}
 
 .tituto-top {
   transform: skew(180deg);
