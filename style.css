@@ -1,0 +1,50 @@
+main {
+  background-color: rgb(74, 58, 102);
+}
+
+.article-animation {
+  color: azure;
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@keyframes flying {
+
+  50% {
+    transform: scale(1.5) skew(15deg) translate(150px);
+  }
+
+  100% {
+    transform: scale(1) skew(0deg) translate(initial);
+  }
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  transition: all;
+  transition-duration: 3s;
+}
