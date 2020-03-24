@@ -68,7 +68,7 @@ header {
 }
 
 .materia-one {
-  animation-name: programming;
+  animation: programming 3s steps(50, end) infinite;
   float: left;
   font-size: 20px;
   margin-left: 3%;
@@ -150,11 +150,14 @@ header {
 }
 
 @keyframes programming {
+
   from {
-    transform: skewY(20deg), scaleY(1.5), translate(5,20);
+    transform: skewY(20deg), scaleY(1.5), translate(5, 20);
   }
-  to
-    {transform: skewY(20deg), scaleY(3.5), translate(7,10);
+
+  to {
+    transform: skewY(20deg), scaleY(3.5), translate(7, 10);
   }
+  
 }
 
