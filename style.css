@@ -218,11 +218,11 @@ footer {
   transform: scale(1);
 }
 
-footer:active {
-  animation: urgente 4s  linear;
+.article-animation:active {
+  animation: article-grow 4s  linear;
 }
 
-@keyframes urgente {
+@keyframes article-grow {
 
   0% {
     font-weight: 200;
