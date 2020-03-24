@@ -75,6 +75,24 @@ body {
   }
 }
 
+.coruja {
+  animation: coruja 1s steps(4) infinite;
+  background-image: url(images/coruja.png);
+  height: 100px;
+  width: 95px;
+}
+
+@keyframes coruja {
+
+  from {
+    background-position: 0px;
+  }
+
+  to {
+    background-position: -400px;
+  }
+}
+
 .container-layout {
   display: flex;
   flex-wrap: wrap;
