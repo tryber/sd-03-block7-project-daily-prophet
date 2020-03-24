@@ -1,0 +1,41 @@
+main {
+    background-color: rgb(74, 58, 102);
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .container-layout {
+        background-color: rgb(255, 255,0);
+    }
+    
+    }
+    @media ( max-width : 760px ) {
+    
+    .container-layout {
+        background-color: rgb(255, 0, 0);
+    }
+
+}
+.container-orientation {
+    border: 1px solid red;
+}
+
+@keyframes flying {
+
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fly {
+    animation-name: flying;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;   
+    animation-iteration-count: 3;
+}
+
