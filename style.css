@@ -57,7 +57,7 @@
   from {
     font-weight: 400;
   }
-
+x
   to {
     font-weight: 700;
   }
@@ -77,7 +77,11 @@
 }
 
 .article-animation:active {
-  animation: article-grow 4s steps(10) infinite forwards;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-name: article-grow;
+  animation-timing-function: steps(10);
 }
 
 .article-animation:active p {
