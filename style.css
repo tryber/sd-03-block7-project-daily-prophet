@@ -212,18 +212,25 @@ header {
 }
 
 footer {
-  animation: urgente 4s  linear;
   color: black;
   font-size: 20px;
   text-align: center;
   transform: scale(1);
 }
 
+footer:active {
+  animation: urgente 4s  linear;
+}
+
 @keyframes urgente {
 
   0% {
-    font-weight: 400;
+    font-weight: 200;
     transform: scale(1);
+  }
+
+  50% {
+    font-weight: 400;
   }
 
   100% {
