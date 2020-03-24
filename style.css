@@ -158,6 +158,5 @@ header {
   to {
     transform: skewY(20deg), scaleY(3.5), translate(7, 10);
   }
-  
-}
 
+}
