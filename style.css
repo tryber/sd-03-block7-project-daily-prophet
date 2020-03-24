@@ -42,7 +42,6 @@ body {
   /* grid-row-gap: 0.5em; */
 
   /* grid-template-columns: repeat(6, 1fr); */
-
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
@@ -177,7 +176,6 @@ body {
   display: grid;
 
   /* grid-template-columns: repeat(4, 1fr); */
-
   padding: 0.125em 0.5em 0;
 }
 
