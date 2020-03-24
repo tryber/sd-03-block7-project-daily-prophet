@@ -1,7 +1,6 @@
 body {
   background-color: black;
   color: #1c1915;
-  display: block;
   font-family: serif;
   font-size: 1rem;
   line-height: 18.4px;
@@ -16,6 +15,14 @@ body {
   margin-right: 160px;
   margin-top: 8px;
   padding: 10px;
+}
+
+.container-aside {
+  display: inline-flex;  
+}
+
+.container-section {
+  display: flex;  
 }
 
 .hr-top {
@@ -64,8 +71,9 @@ body {
 }
 
 .fly {
-  animation: flying 5s linear infinite alternate;
+  animation: flying 5s linear alternate;
   animation-delay: 3s;
+  animation-iteration-count: 3;
 }
 
 @keyframes skewing {
@@ -86,11 +94,11 @@ body {
 @keyframes scaling {
 
   0% {
-    transform: scale(0.5, 2px);
+    transform: scale(-0.5, 2px);
   }
 
   50% {
-    transform: scale(1.5, 0.5);
+    transform: scale(-1.5, 0.5);
   }
 
   100% {
@@ -101,6 +109,20 @@ body {
 .eternal-scaling {
   animation: scaling 2s linear alternate;
   background-color: #e0e0e0;
+}
+
+@keyframes article-grow {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.article-animation {
+  animation: article-grow 2s;
 }
 
 @media screen and ( max-width : 760px ) {
