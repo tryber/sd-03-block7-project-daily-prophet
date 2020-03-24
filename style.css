@@ -3,6 +3,32 @@ body {
   padding: 0;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu-itens {
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  width: 200px;
+}
+
+.menu-itens:hover {
+  transform: translate(5px, 10px);
+}
+
+.menu-itens a {
+  text-decoration: none;
+  color: white;
+}
+
 .brasoes {
   width: 100px;
 }
