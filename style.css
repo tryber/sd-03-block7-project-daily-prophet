@@ -3,6 +3,21 @@ body {
   padding: 0;
 }
 
+.fly {
+  animation: flying 3s 3s 3 alternate forwards steps(900, end);
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
