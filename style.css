@@ -45,4 +45,6 @@ main {
   animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
+  transition: all;
+  transition-duration: 3s;
 }
