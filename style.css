@@ -32,39 +32,54 @@ img:nth-child( 2) {
   text-transform: uppercase;
 }
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: row;
 }
 
-.exclusive {
-  justify-content: space-evenly;
-}
-
-.exclusive > div:first-child {
+.exclusive-box {
   background-color: black;
   color: rgb(255, 249, 212);
   margin-right: 20px;
-  padding: 20px 10px;
+  padding-top: 20px;
+  text-align: center;
   text-transform: uppercase;
+  width: 20%;
 }
 
-.exclusive > div:last-child {
+.exclusive-text {
   border: 1px solid black;
   color: black;
-  padding: 10px;
-  flex: 1;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 80%;
+}
+
+.exclusive-text > h1 {
+  margin: 0;
+  font-size: 31px;
+  width: 30%;
 }
 
 .exclusive-items {
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.exclusive-item {
   margin: 0;
-  width: 33%;
+  width: 48%;
 }
 
-.exclusive-items:first-child {
-  font-size: 30px;
+.exclusive-item:nth-child(2) {
+  margin: 0 0 0 20px;
 }
 
-.exclusive-items:nth-child(2) {
-  margin: 0px 20px;
+.exclusive-item:last-child {
+  background-color: black;
+  color: white;
+  height: 20px;
+  padding-right: 10px;
+  text-align: end;
+  width: 100%;
 }
