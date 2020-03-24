@@ -18,11 +18,11 @@ body {
 }
 
 .container-aside {
-  display: inline-flex;  
+  display: inline-flex;
 }
 
 .container-section {
-  display: flex;  
+  display: flex;
 }
 
 .hr-top {
@@ -112,6 +112,7 @@ body {
 }
 
 @keyframes article-grow {
+  
   0% {
     transform: scale(0.5);
   }
