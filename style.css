@@ -62,7 +62,12 @@
 
   .book1_gryffindor , .book2_hufflepuff , .book3_slytherin , .book4_ravenclaw {
     padding: 10px;
+    transition: transform 500ms;
     width: 40%;
+  }
+  
+  .book1_gryffindor:hover , .book2_hufflepuff:hover , .book3_slytherin:hover , .book4_ravenclaw:hover {
+    transform: rotate(10deg);
   }
 
   .on-stage-photos {
@@ -155,6 +160,10 @@ main {
     transform: scale(1.5, 1.5);
   }
 }
+
+/*.article-animation {
+  animation-name: article-grow;
+}*/
 
 .books {
   padding: 20px;
