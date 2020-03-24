@@ -73,6 +73,7 @@ header {
   font-size: 20px;
   margin-left: 3%;
   margin-right: 2%;
+  transition: steps(3 start);
   width: 20%;
 }
 
