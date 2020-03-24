@@ -1,84 +1,90 @@
-@media only screen and ( max-width : 760px ) {
-
-  .container-layout {
-    background-color: yellow;
-    height : 100px;
-    width : 100px;
-  }
+body {
+  background-color: rgba(255, 228, 134, 0.28);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 60px auto;
 }
 
-@media only screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color : red;
-    height : 100px;
-    width : 100px;
-  }
+.title-img {
+  animation-duration: 1s;
+  animation-name: skewing;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(10px, 0) scale(0.5);
+  width: 100%;
 }
 
-@media ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid red;
-  }
+header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  position: relative;
 }
 
 .fly {
-  animation: flying 4s steps(200) 3 alternate forwards;
   animation-delay: 3s;
   animation-direction: alternate;
-  animation-duration: 3s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
+  transform: translate(-50px, 0);
 }
 
-.sk {
-  animation: skew 0.3s infinite;
-  animation-direction: alternate;
-  transform: skew(0deg);
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation: article-grow 4s steps(4, end);
+  animation-play-state: paused;
+  transition: all 4s linear;
 }
 
-@keyframes skew {
-
-  0% {
-    transform: skewY(3deg);
+@keyframes article-grow {
+  from {
+    transform: scale(1);
   }
 
-  100% {
-    transform: skewY(-3deg);
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes skewing {
+  from {
+    transform: skew(70deg);
+  }
+
+  to {
+    transform: skew(0deg);
   }
 }
 
 @keyframes flying {
-
-  0% {
-    transform: translate(0, -120%) rotate(45deg);
+  from {
+    animation: steps(4, end);
+    transform: translate(50px, 0);
   }
 
-  20% {
-    transform: translate(40%, -100%) rotate(-45deg);
-  }
-
-  50% {
-    transform: translate(-40%, -80%) rotate(33deg);
-  }
-
-  80% {
-    transform: translate(20%, -40%) rotate(-17deg);
-  }
-
-  100% {
-    transform: translate(0, 0) rotate(0);
+  to {
+    transform: translate(-50px, 0);
+    transition: left;
   }
 }
 
-@keyframes article-grow {
-
-  50% {
-    transform: translate(-40%, -80%) rotate(33deg);
+@media screen and (max-width: 760px) {
+  .container-layout {
+    background-color: yellow;
   }
 }
 
-.article-animation {
-  background-color : red;
+@media screen and (min-width: 1170px) {
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .container-orientation {
+    border: 1px solid red;
+  }
 }
