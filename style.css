@@ -30,11 +30,11 @@ main {
 @keyframes flying {
 
   50% {
-    transform: scale(1.5);
+    transform: scale(1.5) skew(15deg) translate(150px);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1) skew(0deg) translate(initial);
   }
 }
 
