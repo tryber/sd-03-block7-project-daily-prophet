@@ -34,12 +34,15 @@ body {
 }
 
 .grid {
-  background-color: #fff8ee;
-  border-radius: 0.5%;
   column-gap: 1em;
   display: grid;
   grid-row-gap: 0.5em;
   grid-template-columns: repeat(6, 1fr);
+}
+
+.grid {
+  background-color: #fff8ee;
+  border-radius: 0.5%;
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
