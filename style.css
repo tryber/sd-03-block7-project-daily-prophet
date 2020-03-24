@@ -74,6 +74,7 @@ body {
   animation: flying 5s linear alternate;
   animation-delay: 3s;
   animation-iteration-count: 3;
+  animation-fill-mode: forwards;
 }
 
 @keyframes skewing {
