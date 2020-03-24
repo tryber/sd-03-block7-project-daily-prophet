@@ -44,6 +44,36 @@ body {
   width: 100px;
 }
 
+.brasoes:hover {
+  animation: zoom 2s linear;
+}
+
+@keyframes zoom {
+
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(2);
+  }
+}
+
+.taça {
+  animation: distortion 2s linear infinite;
+}
+
+@keyframes distortion {
+
+  from {
+    transform: skew(0);
+  }
+
+  to {
+    transform: skew(40deg);
+  }
+}
+
 .container-layout {
   display: flex;
   flex-wrap: wrap;
