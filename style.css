@@ -1,49 +1,48 @@
 main {
-    background-color: rgb(74, 58, 102);
+  background-color: rgb(74, 58, 102);
 }
 
 .article-animation {
-
+  animation-name: article-grow;
 }
 
 .article-animation-hover
 
 @media only screen and (min-width: 1170px) {
 
-    .container-layout {
-        background-color: red;
-    }
+  .container-layout {
+      background-color: red;
+  }
 }
 
 @media ( max-width : 760px ) {
-    
-    .container-layout {
-        background-color: yellow;
-    }
+  
+  .container-layout {
+      background-color: yellow;
+  }
 }
 
 @media ( orientation : landscape ) {
-    .container-orientation {
-        border: 1px solid red;
-    }
+  .container-orientation {
+      border: 1px solid red;
+  }
 }
 
 @keyframes flying {
 
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 .fly {
-    animation-delay: 3s;
-    animation-direction: alternate;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;   
-    animation-iteration-count: 3;
-    animation-name: flying;
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;   
+  animation-iteration-count: 3;
+  animation-name: flying;
 }
-
