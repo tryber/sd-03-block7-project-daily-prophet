@@ -1,4 +1,4 @@
-/* h1 , h2 , p , span , div , figure , img , ul , li {
+h1 , h2 , p , span , div , figure , img , ul , li {
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -38,11 +38,11 @@ body {
   border-radius: 0.5%;
   column-gap: 1em;
   display: grid;
+  grid-row-gap: 0.5em;
   grid-template-columns: repeat(6, 1fr);
   margin: 0 auto;
   max-width: 64em;
   padding: 1em;
-  row-gap: 0.5em;
 }
 
 .header {
@@ -386,7 +386,7 @@ body {
   background-color: #fbb03b;
   color: #1c1915;
   text-shadow: none;
-} */
+}
 
 .fly {
   animation: flying 3s steps(50, end) 3s 3 alternate forwards;
