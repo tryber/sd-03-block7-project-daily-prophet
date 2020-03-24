@@ -1,5 +1,5 @@
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: Nanum Gothic, sans-serif;
   margin: 17px 18px 17px 25px;
 }
 
@@ -12,9 +12,7 @@ header img {
   width: 20em;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   display: block;
 }
 
@@ -31,11 +29,6 @@ p {
   animation: flying 4s 3s steps(5, jump-none) 3 alternate forwards;
   transition-duration: 4s;
   transition-property: flying;
-  /* animation-direction: alternate;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 3;
-    animation-name: flying; */
   width: 10%;
 }
 
@@ -75,19 +68,22 @@ p {
   }
 }
 
-@media screen and ( max-width :760px ) {
+@media screen and ( max-width: 760px ) {
+  
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and ( min-width :1170px ) {
+@media screen and ( min-width: 1170px ) {
+
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and ( max-width :760px ) and (orientation: landscape) {
+@media screen and ( max-width: 760px ) and ( orientation: landscape ) {
+
   .container-orientation {
     border: 1px solid red;
   }
