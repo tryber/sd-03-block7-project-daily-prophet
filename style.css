@@ -1,0 +1,202 @@
+body {
+  background-color: black;
+  color: #1c1915;
+  font-family: serif;
+  font-size: 1rem;
+  line-height: 18.4px;
+  margin: 0;
+  width: 100%;
+}
+
+.container-diario {
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.container-aside {
+  display: inline-flex;
+}
+
+.container-section {
+  display: flex;
+}
+
+.hr-top {
+  border-bottom: 1px solid black;
+  border-top: 3px solid black;
+  height: 2px;
+  margin-top: 20px;
+}
+
+.hr-bottom {
+  border-bottom: 3px solid black;
+  border-top: 1px solid black;
+  height: 2px;
+  margin: 10px;
+}
+
+.img-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  transition: opacity 300ms ease-in-out 1s;
+}
+
+.cabecalho-titulo2 {
+  display: block;
+  font-family: serif;
+  font-size: 24px;
+  margin: 6px 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cabecalho-titulo {
+  display: none;
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translate(20px, 5px);
+  }
+
+  100% {
+    transform: translate(-20px, -5px);
+  }
+}
+
+.fly {
+  animation: flying 5s linear alternate;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(180deg);
+  }
+}
+
+.eternal-skewing {
+  animation: skewing 5s linear;
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(-0.5, 2px);
+  }
+
+  50% {
+    transform: scale(-1.5, 0.5);
+  }
+
+  100% {
+    transform: scale(1px, 1px);
+  }
+}
+
+.eternal-scaling {
+  animation: scaling 2s linear alternate;
+  background-color: #e0e0e0;
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.article-animation {
+  animation: article-grow;
+  animation-duration: 4s;
+  animation-play-state: paused;
+}
+
+.voa-harry {
+  animation: harry 4s steps(4, end) infinite;
+}
+
+@keyframes harry {
+
+  to {
+    transform: translateX(940px);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .container-diario {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+    padding: 10px;
+  }
+
+  .cabecalho-titulo {
+    display: none;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .container-diario {
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 8px;
+    padding: 15px;
+  }
+
+  .cabecalho-titulo {
+    display: none;
+  }
+}
+
+@media ( max-width : 760px ) and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+  .container-diario {
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
+    padding: 10px;
+  }
+
+  .cabecalho-titulo {
+    display: none;
+  }
+}
