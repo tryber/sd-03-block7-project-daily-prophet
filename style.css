@@ -1,0 +1,132 @@
+body {
+  background-color: white;
+  margin: auto;
+  position: relative;
+  width: 1000px;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.container-layout {
+  display: flex;
+}
+
+.fly {
+  animation: flying 4s steps(200, jump-none) 3s 3 alternate forwards;
+  position: relative;
+  width: 80px;
+}
+
+@keyframes flying {
+
+  0% {
+    left: 0;
+    top: 0;
+    transform: translate(1, 1);
+  }
+
+  100% {
+    left: 660px;
+    top: -520px;
+    transition: steps(1000);
+  }
+}
+
+.article-animation {
+  animation: article-grow 4s 16s linear alternate-reverse paused;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  position: relative;
+  width: 600px;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 300;
+    transform: scale(1);
+  }
+
+  50% {
+    font-weight: 600;
+    transform: scale(1.5);
+  }
+
+  100% {
+    font-weight: 300;
+    transform: scale(1);
+    transition: steps(1000);
+  }
+}
+
+.navegacao {
+  align-items: center;
+  background-color: rgb(172, 172, 172);
+  display: flex;
+  justify-content: space-around;
+}
+
+.escudo:hover {
+  animation: deform 3s linear;
+  width: fit-content;
+}
+
+@keyframes deform {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  50% {
+    transform: skew(90deg);
+  }
+
+  100% {
+    transform: skew(0deg);
+  }
+}
+
+.escala:hover {
+  animation: crescer 4s alternate forwards;
+}
+
+@keyframes crescer {
+
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(2, 2);
+  }
+
+  100% {
+    transform: scale(0.5, 0.5);
+  }
+}
+
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
