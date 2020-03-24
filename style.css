@@ -25,3 +25,10 @@ body {
     background-color: yellow;
   }
 }
+
+@media ( orientation : landscape ) {
+
+  body {
+    margin: 0 50px;
+  }
+}
