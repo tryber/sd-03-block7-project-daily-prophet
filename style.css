@@ -65,8 +65,13 @@
     transition: transform 500ms;
     width: 40%;
   }
+
+  .book1_gryffindor:hover , .book2_hufflepuff:hover {
+    animation-timing-function: steps(5, end);
+    transform: rotate(10deg);
+  }
   
-  .book1_gryffindor:hover , .book2_hufflepuff:hover , .book3_slytherin:hover , .book4_ravenclaw:hover {
+  .book3_slytherin:hover , .book4_ravenclaw:hover {
     transform: rotate(10deg);
   }
 
@@ -161,9 +166,9 @@ main {
   }
 }
 
-/*.article-animation {
+/* .article-animation {
   animation-name: article-grow;
-}*/
+} */
 
 .books {
   padding: 20px;
