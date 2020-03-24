@@ -280,7 +280,11 @@ body {
   font-size: 2rem;
 }
 
-.exclusive:hover , .article-title:hover , .article-news .fjalla:hover , .article-p3-header:hover , .aside-header:hover {
+.exclusive:hover , .article-title:hover , .article-news .fjalla:hover {
+  color: #fbb03b;
+}
+
+.article-p3-header:hover , .aside-header:hover {
   color: #fbb03b;
 }
 
@@ -314,7 +318,7 @@ body {
   color: #fbb03b;
 }
 
-.header-sec1 .fjalla {
+.header-sec1 .spew {
   letter-spacing: 0.5em;
 }
 
