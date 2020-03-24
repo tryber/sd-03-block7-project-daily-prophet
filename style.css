@@ -5,15 +5,17 @@ body {
 }
 
 .fly {
-  animation: flying 5s linear infinite alternate, upNDown 1s linear infinite alternate;
+  animation: flying 5s linear infinite alternate;
   background-image: url('img/flying-harry-potter-png-4.png');
   background-size: 100% 100%;
   height: 10%;
   position: absolute;
   width: 10%;
+
+  /* , upNDown 1s linear infinite alternate */
 }
 
-@keyframes upNDown {
+/* @keyframes upNDown {
 
   from {
     transform-origin: 0 200%;
@@ -22,7 +24,7 @@ body {
   to {
     transform-origin: 0 -200%;
   }
-}
+} */
 
 @keyframes flying {
 
@@ -149,7 +151,7 @@ marquee {
   }
 }
 
-@media all and ( orientation : landspace ) {
+@media screen and ( orientation : landspace ) {
 
   .container-orientation {
     border: 1px solid red;
