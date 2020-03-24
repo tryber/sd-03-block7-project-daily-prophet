@@ -13,6 +13,28 @@ html, body {
   width: 1200px;
 }
 
+hr {
+  border-top: black solid 2px;
+  border-bottom: black double 5px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+
 .top-header {
   text-align: center;
 }
@@ -32,10 +54,7 @@ img:nth-child( 2) {
   text-transform: uppercase;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-}
+/* EXCLUSIVE */
 
 .exclusive-box {
   background-color: black;
@@ -82,4 +101,69 @@ img:nth-child( 2) {
   padding-right: 10px;
   text-align: end;
   width: 100%;
+}
+
+/* ARTICLES */
+
+.articles-main {
+  width: 75%;
+}
+
+.articles-main h1 {
+  text-transform: uppercase;
+}
+
+.articles-main-container {
+
+}
+
+.articles-main-left {
+  width: 25%;
+  margin-right: 20px;
+}
+
+.articles-main-right {
+  width: 70%;
+}
+
+.articles-main-right img {
+  width: 100%;
+}
+
+.articles-main-right h2 span {
+  background-color: black;
+  bottom: 15px;
+  color: rgb(255, 249, 212);
+  font-size: 15px;
+  padding: 1px 3px;
+  position: relative;
+  right: 37px;
+}
+
+.articles-main-right h2 {
+  margin: 0;
+  text-align: center;
+  margin-right: 150px;
+}
+
+.hr-inverted {
+  border-top: black double 5px;
+  border-bottom: black solid 2px;
+}
+
+.articles-main-right blockquote:before {
+  content: '“';
+  font-family: "headline_onehplhs", "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  position: absolute;
+  margin-left: -0.625em;
+}
+
+.articles-main-right p {
+  width: 40%;
+  margin: 10px;
+}
+
+.articles-aside {
+  width: 25%;
 }
