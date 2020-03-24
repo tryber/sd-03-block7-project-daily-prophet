@@ -32,8 +32,6 @@ header {
 }
 
 .article-animation {
-  animation-duration: 4s;
-  animation-name: article-grow;
   animation: article-grow 4s steps(4, end);
   animation-play-state: paused;
   transition: all 4s linear;
