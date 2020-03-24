@@ -1,0 +1,201 @@
+@keyframes flying {
+
+  0% {
+    left: 0;
+  }
+
+  30% {
+    transform: scale(1.5, 1.5);
+  }
+
+  100% {
+    left: 687px;
+    transform: translateY(70px);
+  }
+}
+
+.fly {
+  align-self: flex-start;
+  animation: flying 5s linear 3s 3 alternate forwards;
+  height: 60px;
+  margin-left: 260px;
+  margin-top: 135px;
+  position: absolute;
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+    border: 1px double black;
+    width: 100%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    align-items: center;
+    background-color: red;
+    border: 1px double black;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+
+  .books {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .book1_gryffindor , .book2_hufflepuff , .book3_slytherin , .book4_ravenclaw {
+    padding: 10px;
+    transition: transform 500ms;
+    width: 40%;
+  }
+
+  .book1_gryffindor:hover , .book2_hufflepuff:hover {
+    animation-timing-function: steps(5, end);
+    transform: rotate(10deg);
+  }
+
+  .book3_slytherin:hover , .book4_ravenclaw:hover {
+    transform: rotate(10deg);
+  }
+
+  .on-stage-photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .photo1-london , .photo2-new-york , .photo3-melbourne {
+    padding: 8px;
+    width: 30%;
+  }
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+.hr-header-top {
+  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  padding: 1px;
+}
+
+.hr-header-bottom {
+  border-bottom: 2px solid black;
+  border-top: 1px solid black;
+  padding: 1px;
+}
+
+@keyframes moving {
+
+  50% {
+    transform: skewX(-10deg);
+  }
+
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
+.logo {
+  animation: moving 5s linear infinite;
+  margin-top: -20px;
+}
+
+main {
+  padding: 15px;
+}
+
+@keyframes article-grow {
+
+  0% {
+    font-weight: 400;
+  }
+
+  100% {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+}
+
+.books {
+  padding: 20px;
+}
+
+.book1_gryffindor , .book2_hufflepuff , .book3_slytherin , .book4_ravenclaw {
+  padding: 10px 0;
+}
+
+.moment1 , .moment2 , .moment3 {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.photo-subtitle {
+  margin: 4px 0 0;
+  text-align: center;
+}
+
+nav {
+  padding: 15px;
+}
+
+.on-stage-photos {
+  padding: 20px;
+}
