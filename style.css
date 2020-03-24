@@ -44,7 +44,7 @@ aside {
 }
 
 .article-animation {
-  animation: article-grow 4s steps(1000, end) forwards running;
+  animation: article-grow 4s steps(200, end) forwards running;
   z-index: 10;
 }
 
@@ -78,7 +78,7 @@ aside {
     font-weight: 900;
     padding: 50px;
     transform: scale(1.5);
-    transition: steps(1000);
+    transition: steps(200);
   }
 }
 
