@@ -168,6 +168,9 @@ main {
 
 .article-animation {
   animation-name: article-grow;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
 }
 
 .books {
