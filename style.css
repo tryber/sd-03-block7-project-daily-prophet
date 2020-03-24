@@ -12,7 +12,7 @@ header img {
   width: 20em;
 }
 
-h1 ,h2 ,h3 {
+h1 , h2 , h3 {
   display: block;
 }
 
@@ -69,7 +69,7 @@ p {
 }
 
 @media screen and ( max-width : 760px ) {
-  
+
   .container-layout {
     background-color: yellow;
   }
