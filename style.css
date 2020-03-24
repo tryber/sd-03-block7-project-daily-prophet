@@ -6,7 +6,7 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -25,8 +25,8 @@ body {
 }
 
 .menu-itens a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
 }
 
 .brasoes {
