@@ -1,0 +1,51 @@
+article , body , div , footer , h1 , h3 , ol , main , nav , p , section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+/*.pagina*/ 
+.global {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.itens-logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.25rem;
+}
+
+.logo-principal {
+    margin-top: 40px;
+}
+
+.loguinho {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: rodar;
+    animation-timing-function: linear;
+    margin-left: 0.6rem;
+    margin-right: 2rem;
+    margin-top: 40px;
+    width: 10rem;
+}
+
+.sub-titulo {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+}
