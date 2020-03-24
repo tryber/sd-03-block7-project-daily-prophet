@@ -130,6 +130,16 @@ body {
   animation-play-state: paused;
 }
 
+.contain-chapeu {
+  animation: chapeu 4s steps(4, end) infinite;
+}
+ 
+@keyframes chapeu {
+  to {
+    transform: translateX(940px);
+  }
+}
+
 @media screen and ( max-width : 760px ) {
 
   .container-layout {
