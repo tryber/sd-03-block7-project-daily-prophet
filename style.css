@@ -21,7 +21,18 @@ body {
 }
 
 .menu-itens:hover {
-  transform: translate(5px, 10px);
+  animation: project 0.2s linear;
+}
+
+@keyframes project {
+
+  from {
+    transform: translate(0)
+  }
+
+  to {
+    transform: translate(5px, 10px)
+  }
 }
 
 .menu-itens a {
