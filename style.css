@@ -68,6 +68,7 @@ header {
 }
 
 .materia-one {
+  animation-name: programming;
   float: left;
   font-size: 20px;
   margin-left: 3%;
@@ -76,7 +77,6 @@ header {
 }
 
 .programming {
-  transform: skew(-5deg);
   width: 80%;
 }
 
@@ -148,3 +148,13 @@ header {
     margin-bottom: 0;
   }
 }
+
+@keyframes programming {
+  from {
+    transform: skewY(20deg), scaleY(1.5), translate(5,20);
+  }
+  to
+    {transform: skewY(20deg), scaleY(3.5), translate(7,10);
+  }
+}
+
