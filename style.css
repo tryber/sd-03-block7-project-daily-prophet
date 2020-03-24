@@ -77,7 +77,7 @@ body {
 
 .coruja {
   animation: coruja 1s steps(4) infinite;
-  background-image: url("images/coruja.png");
+  background-image: url('images/coruja.png');
   height: 100px;
   width: 95px;
 }
