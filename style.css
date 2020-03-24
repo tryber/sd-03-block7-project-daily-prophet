@@ -130,11 +130,11 @@ body {
   animation-play-state: paused;
 }
 
-.contain-chapeu {
-  animation: chapeu 4s steps(4, end) infinite;
+.voa-harry {
+  animation: harry 4s steps(4, end) infinite;
 }
 
-@keyframes chapeu {
+@keyframes harry {
 
   to {
     transform: translateX(940px);
