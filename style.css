@@ -76,12 +76,17 @@
   transform: translateY(-5px);
 }
 
-.article-animation:active {
+.article-animation{
   animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-name: article-grow;
   animation-timing-function: steps(10);
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
 }
 
 .article-animation:active p {
