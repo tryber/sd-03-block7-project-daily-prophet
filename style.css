@@ -28,7 +28,7 @@ body {
 
 @media ( orientation : landscape ) {
 
-  body {
-    margin: 0 50px;
+  .container-orientation {
+    border: 1px solid red;
   }
 }
