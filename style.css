@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fly {
+  animation: flying 3s 3s 3 alternate forwards steps(900, end);
+}
+
+@keyframes flying {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@keyframes translating {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.article-animation:active {
+  animation: running;
+  transform: scale(1.5);
+  transition: all 4s ease 0.2s;
+}
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0);
+  }
+
+  30% {
+    transform: skew(15deg, 15deg);
+  }
+
+  60% {
+    transform: skew(-0.06turn, 18deg);
+  }
+
+  90% {
+    transform: skew(0.312rad);
+  }
+
+  100% {
+    transform: skew(0);
+  }
+}
