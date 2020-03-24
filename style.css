@@ -16,7 +16,7 @@ main {
 }
 
 @media ( max-width : 760px ) {
-  
+
   .container-layout {
       background-color: yellow;
   }
@@ -42,7 +42,7 @@ main {
   animation-delay: 3s;
   animation-direction: alternate;
   animation-duration: 3s;
-  animation-fill-mode: forwards;   
+  animation-fill-mode: forwards;
   animation-iteration-count: 3;
   animation-name: flying;
 }
