@@ -201,5 +201,16 @@ marquee {
   to {
     font-weight: 800;
     transform: scale(1.5);
+    padding: 20px;
   }
+}
+
+.transitionStyle {
+  color: black;
+  transition: all 1.5s linear;
+}
+
+.transitionStyle:hover {
+  color: crimson;
+  padding: 20px;
 }
