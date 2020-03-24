@@ -1,0 +1,102 @@
+article {
+  transition: 4s ease-out;
+}
+
+article:hover {
+  font-weight: 700;
+  transform: scale(1.5);
+}
+
+.article-animation {
+  animation: article-grow 4s paused steps(2);
+  display: flex;
+}
+
+.container-layout {
+  animation: scale 2s infinite, skew 0.5s infinite alternate;
+  background-color: red;
+  display: flex;
+}
+
+.fly {
+  animation: flying 1s ease-in-out 3s 3 alternate forwards;
+  display: flex;
+  z-index: 10;
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes expander {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes flying {
+
+  0% {
+    object-position: 0;
+  }
+
+  100% {
+    transform: translateX(1000px);
+  }
+}
+
+@keyframes scale {
+
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes skew {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(15deg);
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+    display: flex;
+  }
+}
