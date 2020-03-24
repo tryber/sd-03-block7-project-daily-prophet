@@ -70,7 +70,7 @@
     animation-timing-function: steps(5, end);
     transform: rotate(10deg);
   }
-  
+
   .book3_slytherin:hover , .book4_ravenclaw:hover {
     transform: rotate(10deg);
   }
