@@ -1,11 +1,8 @@
 window.onload = () => {
   const articles = document.querySelectorAll('article');
   articles.forEach((elem) => {
-    elem.addEventListener('pointerup', () => {
+    elem.addEventListener('click', () => {
       elem.classList.toggle('article-animation');
-    });/*
-    elem.addEventListener('pointerdown', () => {
-      elem.classList.remove('article-animation');
-    });*/
+    });
   });
 };

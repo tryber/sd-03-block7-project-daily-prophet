@@ -5,7 +5,7 @@
 }
 
 header {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -35,12 +35,14 @@ article {
 aside {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   width: 100%;
 }
 
 .fly {
   animation: flying 3s ease 3s 3 alternate forwards;
   width: 30%;
+  z-index: 100;
 }
 
 .article-animation {
