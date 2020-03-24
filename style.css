@@ -61,6 +61,7 @@ body {
 
 .taça {
   animation: distortion 2s linear infinite;
+  transition: linear;
 }
 
 @keyframes distortion {
@@ -77,6 +78,7 @@ body {
 .container-layout {
   display: flex;
   flex-wrap: wrap;
+  transition: linear 2s;
 }
 
 @media ( min-width : 1170px ) {
