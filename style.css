@@ -1,9 +1,3 @@
-article , body , div , footer , h1 , h3 , ol , main , nav , p , section {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -22,6 +16,12 @@ body {
   flex-direction: column;
 }
 
+.colunas {
+    margin-left: 160px;
+    display: flex;
+    flex-direction: row;
+}
+
 .itens-logo {
   display: flex;
   justify-content: center;
@@ -33,15 +33,39 @@ body {
 }
 
 .loguinho {
-  margin-left: 0.6rem;
-  margin-right: 2rem;
+  margin-left: 9.6px;
+  margin-right: 32px;
   margin-top: 40px;
-  width: 10rem;
+  width: 160px;
 }
 
 .sub-titulo {
   display: flex;
   justify-content: center;
-  letter-spacing: 0.35rem;
+  letter-spacing: 5.6px;
   text-transform: uppercase;
+}
+
+.alinha {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 30px;
+}
+
+.props-nav {
+  background-color: seagreen;
+  border-radius: 2px;
+  margin: 0 30px;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
