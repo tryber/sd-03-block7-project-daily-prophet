@@ -1,0 +1,106 @@
+@media ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px red solid;
+  }
+}
+
+@keyframes flying {
+
+  from {
+    margin-left: 3%;
+  }
+
+  to {
+    margin-left: 95%;
+  }
+}
+
+@keyframes skewing {
+
+  0% {
+    transform: skew(0deg);
+  }
+
+  100% {
+    transform: skew(180deg);
+  }
+}
+
+@keyframes article-grow {
+
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes bolde {
+
+  0% {
+    font-weight: 400;
+  }
+
+  100% {
+    font-weight: 700;
+  }
+}
+
+.tituto-top {
+  transform: skew(180deg);
+  transition: transform 10s linear 2s;
+  width: fit-content;
+}
+
+.nave:hover {
+  animation-timing-function: linear;
+  color: black;
+  font-weight: 700;
+  transform: translateY(-5px);
+}
+
+.article-animation {
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: article-grow;
+  animation-play-state: paused;
+  animation-timing-function: steps(10);
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
+.article-animation:active p {
+  animation: bolde 4s steps(10) infinite forwards;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  animation-timing-function: linear;
+  margin-left: 3%;
+  width: 3%;
+}
