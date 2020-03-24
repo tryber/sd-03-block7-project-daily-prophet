@@ -12,7 +12,7 @@ header img {
   width: 20em;
 }
 
-h1, h2, h3 {
+h1 ,h2 ,h3 {
   display: block;
 }
 
@@ -68,21 +68,21 @@ p {
   }
 }
 
-@media screen and ( max-width: 760px ) {
+@media screen and ( max-width : 760px ) {
   
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and ( min-width: 1170px ) {
+@media screen and ( min-width : 1170px ) {
 
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and ( max-width: 760px ) and ( orientation: landscape ) {
+@media screen and ( max-width : 760px ) and ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
