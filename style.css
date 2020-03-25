@@ -153,8 +153,8 @@ img:nth-child( 2 ) {
 .articles-main-right blockquote:before {
   content: '“';
   font-size: 40px;
-  position: absolute;
   margin-left: -0.625em;
+  position: absolute;
 }
 
 .articles-main-right p {
