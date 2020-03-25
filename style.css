@@ -8,6 +8,7 @@ body {
 .global {
   display: flex;
   flex-direction: column;
+  background-color: green;
 }
 
 .cabecalho {
@@ -68,4 +69,18 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media only screen and ( max-width : 760px ) {
+  
+  .global {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .global {
+    background-color: red;
+  }
 }
