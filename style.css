@@ -84,3 +84,10 @@ body {
     background-color: red;
   }
 }
+
+@media only screen and ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
