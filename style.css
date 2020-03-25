@@ -6,6 +6,7 @@ html , body {
 
 .main {
   background-color: rgb(255, 249, 212);
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -185,4 +186,9 @@ img:nth-child( 2 ) {
 
 .articles-aside p {
   margin: 10px 0;
+}
+
+.credits {
+  text-align: center;
+  color: gray;
 }
