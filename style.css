@@ -196,6 +196,7 @@ img:nth-child( 2 ) {
 .container-layout {
   width: 20px;
   height: 20px;
+  background-color: rgb(255, 255, 0);
 }
 
 @media only screen and ( orientation : landscape ) {
