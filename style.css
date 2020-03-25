@@ -189,6 +189,6 @@ img:nth-child( 2 ) {
 }
 
 .credits {
-  text-align: center;
   color: gray;
+  text-align: center;
 }
