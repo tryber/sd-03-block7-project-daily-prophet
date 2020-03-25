@@ -4,7 +4,7 @@ html , body {
   padding: 0;
 }
 
-.main {
+.container-layout {
   background-color: rgb(255, 249, 212);
   border-radius: 15px;
   display: flex;
@@ -193,8 +193,16 @@ img:nth-child( 2 ) {
   text-align: center;
 }
 
-.container-layout {
-  background-color: yellow;
-  height: 20px;
-  width: 20px;
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
 }
