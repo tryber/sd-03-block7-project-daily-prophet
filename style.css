@@ -9,8 +9,8 @@ html, body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 25px;
-  width: 1200px;
+  padding: 20px;
+  width: 1000px;
 }
 
 hr {
@@ -47,7 +47,7 @@ img:nth-child( 2) {
   width: 84%;
 }
 
-.top-header h3 {
+.top-header-subtitle {
   font-size: 18px;
   letter-spacing: 2px;
   margin: 0px 0px 15px 180px;
@@ -60,7 +60,7 @@ img:nth-child( 2) {
   background-color: black;
   color: rgb(255, 249, 212);
   margin-right: 20px;
-  padding-top: 20px;
+  padding-top: 25px;
   text-align: center;
   text-transform: uppercase;
   width: 20%;
@@ -74,27 +74,28 @@ img:nth-child( 2) {
   width: 80%;
 }
 
-.exclusive-text > h1 {
+.exclusive-text-title {
   margin: 0;
-  font-size: 31px;
+  font-size: 25px;
   width: 30%;
+  align-self: center;
 }
 
-.exclusive-items {
+.exclusive-text-items {
   flex-wrap: wrap;
   width: 70%;
 }
 
-.exclusive-item {
+.exclusive-text-item {
   margin: 0;
   width: 48%;
 }
 
-.exclusive-item:nth-child(2) {
+.exclusive-text-item:nth-child(2) {
   margin: 0 0 0 20px;
 }
 
-.exclusive-item:last-child {
+.exclusive-text-item:last-child {
   background-color: black;
   color: white;
   height: 20px;
@@ -112,46 +113,43 @@ img:nth-child( 2) {
 }
 
 .articles-main {
-  width: 75%;
+  width: 80%;
 }
 
 .articles-main-title {
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 63px;
   margin: 0;
-}
-
-.articles-main-container {
-
+  padding-right: 10px;
+  padding: 50px 0;
 }
 
 .articles-main-left {
-  width: 25%;
+  width: 27%;
   margin-right: 20px;
 }
 
 .articles-main-right {
-  width: 70%;
+  width: 67%;
 }
 
 .articles-main-right img {
   width: 100%;
 }
 
-.articles-main-right h2 span {
-  background-color: black;
-  bottom: 15px;
-  color: rgb(255, 249, 212);
-  font-size: 15px;
-  padding: 1px 3px;
-  position: relative;
-  right: 37px;
+.articles-main-right-title {
+  margin: 0;
+  font-size: 22px;
 }
 
-.articles-main-right h2 {
-  margin: 0;
-  text-align: center;
-  margin-right: 150px;
+.articles-main-right-title span {
+  background-color: black;
+  bottom: 18px;
+  color: rgb(255, 249, 212);
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 1px 3px;
+  position: relative;
 }
 
 .hr-inverted {
@@ -168,9 +166,11 @@ img:nth-child( 2) {
 }
 
 .articles-main-right p {
-  width: 46%;
-  margin: 10px;
+  width: 50%;
+  
 }
+
+/* ASIDE */
 
 .articles-aside {
   width: 25%;
@@ -192,4 +192,8 @@ img:nth-child( 2) {
 
 .articles-aside hr {
   border: black solid 0.8px;
+}
+
+.articles-aside p {
+  margin: 10px 0;
 }
