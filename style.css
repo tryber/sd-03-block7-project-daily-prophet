@@ -1,4 +1,4 @@
-html, body {
+html , body {
   background-color: rgb(46, 42, 42);
   margin: 0;
   padding: 0;
@@ -14,8 +14,8 @@ html, body {
 }
 
 hr {
-  border-top: black solid 2px;
   border-bottom: black double 5px;
+  border-top: black solid 2px;
   width: 100%;
 }
 
@@ -33,8 +33,6 @@ hr {
   flex-direction: column;
 }
 
-/* HEADER */
-
 .top-header {
   text-align: center;
 }
@@ -43,18 +41,16 @@ img:first-child {
   width: 15%;
 }
 
-img:nth-child( 2) {
+img:nth-child( 2 ) {
   width: 84%;
 }
 
 .top-header-subtitle {
   font-size: 18px;
   letter-spacing: 2px;
-  margin: 0px 0px 15px 180px;
+  margin: 0 0 15px 180px;
   text-transform: uppercase;
 }
-
-/* EXCLUSIVE */
 
 .exclusive-box {
   background-color: black;
@@ -75,10 +71,10 @@ img:nth-child( 2) {
 }
 
 .exclusive-text-title {
-  margin: 0;
-  font-size: 25px;
-  width: 30%;
   align-self: center;
+  font-size: 25px;
+  margin: 0;
+  width: 30%;
 }
 
 .exclusive-text-items {
@@ -91,7 +87,7 @@ img:nth-child( 2) {
   width: 48%;
 }
 
-.exclusive-text-item:nth-child(2) {
+.exclusive-text-item:nth-child( 2 ) {
   margin: 0 0 0 20px;
 }
 
@@ -104,8 +100,6 @@ img:nth-child( 2) {
   width: 100%;
 }
 
-/* ARTICLES */
-
 .articles {
   border: black solid 1px;
   margin-top: 10px;
@@ -117,16 +111,15 @@ img:nth-child( 2) {
 }
 
 .articles-main-title {
-  text-transform: uppercase;
   font-size: 63px;
   margin: 0;
-  padding-right: 10px;
-  padding: 50px 0;
+  padding: 50px 10px 50px 0;
+  text-transform: uppercase;
 }
 
 .articles-main-left {
-  width: 27%;
   margin-right: 20px;
+  width: 27%;
 }
 
 .articles-main-right {
@@ -138,8 +131,8 @@ img:nth-child( 2) {
 }
 
 .articles-main-right-title {
-  margin: 0;
   font-size: 22px;
+  margin: 0;
 }
 
 .articles-main-right-title span {
@@ -153,13 +146,12 @@ img:nth-child( 2) {
 }
 
 .hr-inverted {
-  border-top: black double 5px;
   border-bottom: black solid 2px;
+  border-top: black double 5px;
 }
 
 .articles-main-right blockquote:before {
   content: '“';
-  font-family: "headline_onehplhs", "HelveticaNeue-Bold", "HelveticaNeue", "Roboto", Arial, Verdana, "Trebuchet MS", sans-serif;
   font-size: 40px;
   position: absolute;
   margin-left: -0.625em;
@@ -167,10 +159,7 @@ img:nth-child( 2) {
 
 .articles-main-right p {
   width: 50%;
-  
 }
-
-/* ASIDE */
 
 .articles-aside {
   width: 25%;
