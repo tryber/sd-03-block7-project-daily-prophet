@@ -6,9 +6,9 @@ body {
 
 /* .pagina */
 .global {
+  background-color: green;
   display: flex;
   flex-direction: column;
-  background-color: green;
 }
 
 .cabecalho {
@@ -72,7 +72,7 @@ body {
 }
 
 @media only screen and ( max-width : 760px ) {
-  
+
   .global {
     background-color: yellow;
   }
