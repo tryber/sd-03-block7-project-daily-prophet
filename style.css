@@ -5,7 +5,7 @@ body {
 }
 
 /* .pagina */
-.global {
+.container-layout {
   background-color: green;
   display: flex;
   flex-direction: column;
@@ -73,14 +73,14 @@ body {
 
 @media only screen and ( max-width : 760px ) {
 
-  .global {
-    background-color: yellow;
+  .container-layout {
+    background-color: rgb(255, 255, 0);
   }
 }
 
 @media only screen and ( min-width : 1170px ) {
 
-  .global {
-    background-color: red;
+  .container-layout {
+    background-color: rgb(255, 0, 0);
   }
 }
