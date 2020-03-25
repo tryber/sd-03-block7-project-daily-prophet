@@ -1,0 +1,364 @@
+.article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
+  animation-play-state: paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+  transform: scale(1.5);
+  transition: all 4s ease-in 0.2s;
+}
+
+@keyframes article-grow {
+
+  from {
+    font-weight: 100;
+  }
+
+  to {
+    font-weight: 800;
+  }
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+body {
+  background-color: rgb(255, 252, 238);
+  color: #1c1915;
+  font-family: Vollkorn, Times New Roman, Times, serif;
+  margin: 5px;
+  padding: 20px;
+}
+
+div , section , nav , aside , footer {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  bottom: 30px;
+  font-size: 3em;
+  height: 180px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.header-line {
+  display: flex;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  right: 10px;
+  width: 80%;
+}
+
+.header-div-top-line {
+  border: 1px solid #333;
+  color: #333;
+  margin: auto;
+  margin-bottom: 0;
+  width: 70%;
+}
+
+.header-line-text {
+  bottom: 5px;
+  font-size: 0.7em;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+}
+
+.daily-prophet {
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+.hand-point-right {
+  animation: pointing-right 2s steps(120) infinite;
+  bottom: 20px;
+  position: relative;
+  width: 10%;
+}
+
+@keyframes pointing-right {
+
+  from {
+    transform: rotateX(360deg);
+  }
+
+  to {
+    transform: translate(0 10px);
+  }
+}
+
+.hand-point-left {
+  animation: pointing-left 2s steps(120) infinite;
+  bottom: 20px;
+  left: 10px;
+  position: relative;
+  width: 10%;
+}
+
+@keyframes pointing-left {
+
+  from {
+    transform: rotateX(-360deg);
+  }
+
+  to {
+    transform: translate(0 10px);
+  }
+}
+
+.prophet-strong {
+  color: rgb(255, 196, 0);
+  font-size: 1.2em;
+}
+
+.div-header-end {
+  border: 1px solid #333;
+  bottom: 45px;
+  color: #333;
+  margin: auto;
+  position: relative;
+  width: 95%;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline-h1 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+main {
+  border: 1px solid #1c1915;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding: 5px;
+  width: 95%;
+}
+
+.headline-shocking-news {
+  animation-direction: alternate;
+  animation-duration: 125ms;
+  animation-iteration-count: infinite;
+  animation-name: shocking;
+  background-color: gray;
+  color: ivory;
+  letter-spacing: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+
+.headline-you-know-who {
+  background-color: #1c1915;
+  color: ivory;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.second-div-first-section {
+  margin-left: 10px;
+  text-align: left;
+}
+
+.second-div-first-section-headline {
+  font-size: 15px;
+  padding: 0;
+}
+
+.first-h1-second-div-first-section {
+  color: ivory;
+  margin: 0;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.section-articles {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.first-article-section-articles {
+  margin-right: 10px;
+  position: relative;
+  text-align: justify;
+  top: 20px;
+}
+
+.first-letter-strong-articles {
+  font-family: Times New Roman, Times, serif;
+  font-size: 6em;
+  line-height: 10px;
+}
+
+.second-article-section-articles {
+  margin-right: 10px;
+  position: relative;
+  text-align: justify;
+  top: 65px;
+  transform: rotate(90deg);
+  width: 400px;
+}
+
+.dement-gif {
+  margin-top: 10px;
+  width: 50px;
+}
+
+.fly {
+  animation-delay: 3s;
+  animation-direction: alternate;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: flying;
+  bottom: 90px;
+  position: relative;
+  right: 10px;
+  transition: linear;
+  width: 230px;
+}
+
+@keyframes flying {
+
+  0% {
+    opacity: 1;
+    right: 10px;
+    transform: scale(1);
+    z-index: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+    right: -450px;
+    transform: scale(0.7) rotateY(180deg) skewY(20deg);
+    z-index: 0;
+  }
+
+  100% {
+    opacity: 1;
+    right: 10px;
+    transform: scale(1);
+    z-index: 1;
+  }
+}
+
+.midpoint-headline-h1 {
+  background-color: #333;
+  color: ivory;
+  font-size: 28px;
+  margin: auto;
+  padding-top: 7px;
+  text-align: center;
+  width: 98%;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  height: 770px;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.div-second-section {
+  display: flex;
+  z-index: 1;
+}
+
+.aside-div-second-section {
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.second-aside-div-second-section {
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.third-section {
+  display: flex;
+}
+
+.div-third-section {
+  height: 50px;
+  margin: 0;
+  order: 1;
+  padding: 0;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+  width: 200px;
+}
+
+.h1-div-third-section {
+  background-color: #1c1915;
+  color: ivory;
+  font-size: 40px;
+  padding-left: 15px;
+  padding-top: 5px;
+  position: relative;
+  right: 35px;
+  width: 410px;
+}
+
+.figure-third-section {
+  position: relative;
+  right: 30px;
+}
+
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@keyframes shocking {
+
+  from {
+    background-color: rgba(128, 128, 128, 0.781);
+    color: ivory;
+  }
+
+  to {
+    background-color: #333;
+    color: rgba(223, 196, 48, 0.815);
+  }
+}
