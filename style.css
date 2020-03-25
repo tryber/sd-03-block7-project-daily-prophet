@@ -193,9 +193,13 @@ img:nth-child( 2 ) {
   text-align: center;
 }
 
-@media only screen and ( orientation : landscape ) {
-  
+@media only screen and ( orientation : landscape ) { 
   body {
     background-color: black;
   }
+}
+
+article {
+  animation-name: grow;
+  animation-duration: 4s;
 }
