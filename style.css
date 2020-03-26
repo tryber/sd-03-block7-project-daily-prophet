@@ -198,7 +198,7 @@ hr {
 }
 
 .credits {
-  color: gray;
+  color: rgb(99, 99, 99);
   text-align: center;
 }
 
@@ -223,6 +223,10 @@ hr {
   .articles-aside-title {
     color: yellow;
   }
+
+  .credits {
+    color: yellow;
+  }
 }
 
 @media only screen and ( min-width : 1170px ) {
@@ -244,6 +248,10 @@ hr {
   }
 
   .articles-aside-title {
+    color: red;
+  }
+
+  .credits {
     color: red;
   }
 }
