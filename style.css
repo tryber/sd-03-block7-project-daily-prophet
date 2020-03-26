@@ -206,3 +206,10 @@ img:nth-child( 2 ) {
     background-color: red;
   }
 }
+
+@media (orientation: landscape) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
