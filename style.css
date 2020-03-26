@@ -190,7 +190,8 @@ hr {
 
 
 .article-animation:active {
-  animation: article-grow 4s;
+  animation-duration: 4s;
+  animation-name: article-grow;
 }
 
 .nimbus {
