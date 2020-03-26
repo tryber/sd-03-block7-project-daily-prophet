@@ -198,6 +198,22 @@ img:nth-child( 2 ) {
   .container-layout {
     background-color: yellow;
   }
+
+  .exclusive-box {
+    color: yellow;
+  }
+
+  .exclusive-text-item:last-child {
+    color: yellow;
+  }
+
+  .articles-main-right-title span {
+    color: yellow;
+  }
+
+  .articles-aside-title {
+    color: yellow;
+  }
 }
 
 @media only screen and ( min-width : 1170px ) {
@@ -205,9 +221,25 @@ img:nth-child( 2 ) {
   .container-layout {
     background-color: red;
   }
+
+  .exclusive-box {
+    color: red;
+  }
+
+  .exclusive-text-item:last-child {
+    color: red;
+  }
+
+  .articles-main-right-title span {
+    color: red;
+  }
+
+  .articles-aside-title {
+    color: red;
+  }
 }
 
-@media (orientation: landscape) {
+@media ( orientation : landscape ) {
 
   .container-orientation {
     border: 1px solid red;
