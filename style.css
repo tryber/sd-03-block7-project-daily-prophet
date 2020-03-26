@@ -203,6 +203,6 @@ img:nth-child( 2 ) {
 @media only screen and ( min-width : 1170px ) {
 
   .container-layout {
-    background-color: yellow;
+    background-color: red;
   }
 }
