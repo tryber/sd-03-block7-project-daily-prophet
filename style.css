@@ -71,23 +71,15 @@ body {
   width: 100%;
 }
 
-@media only screen and ( max-width : 760px ) {
-
-  .container-layout {
-    background-color: yellow;
-  }
+.fly {
+  animation: flying 5s ease-out 3s 3 alternate forwards;
 }
 
-@media only screen and ( min-width : 1170px ) {
-
-  .container-layout {
-    background-color: red;
+@keyframes flying {
+  0% {
+    margin-left: 0px;
   }
-}
-
-@media only screen and ( orientation : landscape ) {
-
-  .container-orientation {
-    border: 1px solid red;
+  100% {
+    margin-left: 1200px;
   }
 }
