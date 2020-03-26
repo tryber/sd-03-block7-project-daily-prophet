@@ -194,7 +194,7 @@ hr {
 }
 
 .fly {
-  animation: flying 3s 3 alternate forwards ease-in-out;
+  animation: flying 3s 3s 3 alternate forwards ease-in-out;
 }
 
 .credits {
