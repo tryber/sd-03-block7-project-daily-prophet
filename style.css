@@ -188,7 +188,6 @@ hr {
   margin: 10px 0;
 }
 
-
 .article-animation:active {
   animation-duration: 4s;
   animation-name: article-grow;
