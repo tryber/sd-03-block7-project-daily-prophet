@@ -199,7 +199,7 @@ hr {
 }
 
 .fly {
-  animation: flying 3s 3s 3 alternate forwards ease-in-out;
+  animation: flying 3s 3s 3 alternate steps(4, ) forwards ease-in-out;
   transition: ease-in-out;
 }
 
@@ -280,7 +280,7 @@ hr {
 @keyframes article-grow {
 
   to {
-    font-weight: bold;
-    transform: scale(2);
+    font-weight: 700;
+    transform: scale(1.5);
   }
 }
