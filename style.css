@@ -76,9 +76,11 @@ body {
 }
 
 @keyframes flying {
+
   0% {
-    margin-left: 0px;
+    margin-left: 0;
   }
+
   100% {
     margin-left: 1200px;
   }
