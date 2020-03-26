@@ -188,6 +188,11 @@ hr {
   margin: 10px 0;
 }
 
+
+.article-animation:active {
+  animation: article-grow 4s;
+}
+
 .nimbus {
   transform: rotate(120deg);
   width: 60px;
@@ -269,5 +274,13 @@ hr {
   to {
     margin-left: 92%;
     transform: rotate(-40deg);
+  }
+}
+
+@keyframes article-grow {
+
+  to {
+    font-weight: bold;
+    transform: scale(2);
   }
 }
