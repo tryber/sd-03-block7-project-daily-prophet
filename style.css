@@ -38,11 +38,11 @@ hr {
   text-align: center;
 }
 
-img:first-child {
+.top-header-logo {
   width: 15%;
 }
 
-img:nth-child( 2 ) {
+.top-header-title {
   width: 84%;
 }
 
@@ -188,6 +188,15 @@ img:nth-child( 2 ) {
   margin: 10px 0;
 }
 
+.nimbus {
+  transform: rotate(120deg);
+  width: 60px;
+}
+
+.fly {
+  animation: flying 3s 3 alternate forwards ease-in-out;
+}
+
 .credits {
   color: gray;
   text-align: center;
@@ -243,5 +252,13 @@ img:nth-child( 2 ) {
 
   .container-orientation {
     border: 1px solid red;
+  }
+}
+
+@keyframes flying {
+
+  to {
+    margin-left: 92%;
+    transform: rotate(-40deg);
   }
 }
