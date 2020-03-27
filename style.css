@@ -42,6 +42,10 @@ hr {
   width: 15%;
 }
 
+.logo-animation {
+  animation: logo-skew 3s;
+}
+
 .top-header-title {
   width: 84%;
 }
@@ -281,5 +285,12 @@ hr {
   to {
     font-weight: 700;
     transform: scale(1.5);
+  }
+}
+
+@keyframes logo-animation {
+
+  to {
+    transform: skew(30deg);
   }
 }
