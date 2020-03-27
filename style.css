@@ -166,8 +166,7 @@ footer ul {
 
 .fly {
   align-items: center;
-  animation: flying 3s linear infinite alternate;
-  animation-delay: 3s;
+  animation: flying 3s 3s 3 alternate forwards steps(900, end);
   max-width: 250px;
 }
 
