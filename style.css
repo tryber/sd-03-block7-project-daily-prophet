@@ -23,6 +23,7 @@ body {
   background-image: url('imgs/pergaminho.png');
   border-radius: 1rem;
   width: 1100px;
+  transition: background-image 2s;
 }
 
 aside img {
@@ -147,6 +148,7 @@ footer {
   display: flex;
   flex-direction: column;
   font-weight: 800;
+  transition: transform 1s;
 }
 
 footer ul {
@@ -164,7 +166,8 @@ footer ul {
 
 .fly {
   align-items: center;
-  animation: flying 15s linear infinite alternate;
+  animation: flying 3s linear infinite alternate;
+  animation-delay: 3s;
   max-width: 250px;
 }
 
