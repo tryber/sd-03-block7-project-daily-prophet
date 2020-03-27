@@ -43,7 +43,7 @@ hr {
 }
 
 .logo-animation {
-  animation: logo-skew 3s;
+  animation: logo-skew 5s;
 }
 
 .top-header-title {
@@ -288,9 +288,13 @@ hr {
   }
 }
 
-@keyframes logo-animation {
+@keyframes logo-skew {
+
+  from {
+    transform: skew(20deg);
+  }
 
   to {
-    transform: skew(30deg);
+    transform: none;
   }
 }
