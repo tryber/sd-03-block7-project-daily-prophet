@@ -43,7 +43,8 @@ hr {
 }
 
 .logo-animation {
-  animation: logo-skew 5s steps(100, end);
+  animation: logo-skew 5s;
+  transition: steps(100, end);
 }
 
 .top-header-title {
