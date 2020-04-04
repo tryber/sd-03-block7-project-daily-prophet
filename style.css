@@ -308,7 +308,7 @@ hr {
 @keyframes subtitle-translate {
 
   to {
-    transform: translate(75px);
     margin: 0 0 15px;
-  }  
+    transform: translate(75px);
+  }
 }
