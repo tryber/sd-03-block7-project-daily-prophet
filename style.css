@@ -1,0 +1,314 @@
+html , body {
+  background-color: rgb(46, 42, 42);
+  margin: 0;
+  padding: 0;
+}
+
+.container-layout {
+  background-color: rgb(255, 249, 212);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 20px;
+  width: 1000px;
+}
+
+hr {
+  border-bottom: black double 5px;
+  border-top: black solid 2px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  text-align: center;
+}
+
+.top-header-logo {
+  width: 15%;
+}
+
+.logo-animation {
+  animation: logo-skew 5s;
+  transition: steps(100, end);
+}
+
+.top-header-title {
+  width: 84%;
+}
+
+.top-header-subtitle {
+  animation: subtitle-translate 2s 0.5s forwards;
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.exclusive-box {
+  background-color: black;
+  color: rgb(255, 249, 212);
+  margin-right: 20px;
+  padding-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20%;
+}
+
+.exclusive-text {
+  border: 1px solid black;
+  color: black;
+  flex-wrap: wrap;
+  padding: 5px;
+  width: 80%;
+}
+
+.exclusive-text-title {
+  align-self: center;
+  font-size: 25px;
+  margin: 0;
+  width: 30%;
+}
+
+.exclusive-text-items {
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.exclusive-text-item {
+  margin: 0;
+  width: 48%;
+}
+
+.exclusive-text-item:nth-child( 2 ) {
+  margin: 0 0 0 20px;
+}
+
+.exclusive-text-item:last-child {
+  background-color: black;
+  color: white;
+  height: 20px;
+  padding-right: 10px;
+  text-align: end;
+  width: 100%;
+}
+
+.articles {
+  border: black solid 1px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.articles-main {
+  width: 80%;
+}
+
+.articles-main-title {
+  font-size: 63px;
+  margin: 0;
+  padding: 50px 10px 50px 0;
+  text-transform: uppercase;
+}
+
+.articles-main-left {
+  margin-right: 20px;
+  width: 27%;
+}
+
+.articles-main-right {
+  width: 67%;
+}
+
+.articles-main-right img {
+  width: 100%;
+}
+
+.articles-main-right-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.articles-main-right-title span {
+  background-color: black;
+  bottom: 18px;
+  color: rgb(255, 249, 212);
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 1px 3px;
+  position: relative;
+}
+
+.hr-inverted {
+  border-bottom: black solid 2px;
+  border-top: black double 5px;
+}
+
+.articles-main-right blockquote:before {
+  content: '“';
+  font-size: 40px;
+  margin-left: -0.625em;
+  position: absolute;
+}
+
+
+.articles-main-right p {
+  width: 50%;
+}
+
+.articles-aside {
+  width: 25%;
+}
+
+.articles-aside-title {
+  background-color: black;
+  color: rgb(255, 249, 212);
+  font-size: 30px;
+  margin: 0;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.articles-aside-subtitle {
+  font-size: 15px;
+  font-style: italic;
+}
+
+.articles-aside hr {
+  border: black solid 0.8px;
+}
+
+.articles-aside p {
+  margin: 10px 0;
+}
+
+.article-animation {
+  animation: article-grow 4s paused;
+}
+
+.article-animation:active {
+  animation-play-state: running;
+}
+
+.nimbus {
+  transform: rotate(120deg);
+  width: 60px;
+}
+
+.fly {
+  animation: flying 3s 3s 3 alternate forwards ease-in-out;
+}
+
+.credits {
+  color: rgb(99, 99, 99);
+  text-align: center;
+}
+
+@media only screen and ( max-width : 760px ) {
+
+  .container-layout {
+    background-color: yellow;
+  }
+
+  .exclusive-box {
+    color: yellow;
+  }
+
+  .exclusive-text-item:last-child {
+    color: yellow;
+  }
+
+  .articles-main-right-title span {
+    color: yellow;
+  }
+
+  .articles-aside-title {
+    color: yellow;
+  }
+
+  .credits {
+    color: yellow;
+  }
+}
+
+@media only screen and ( min-width : 1170px ) {
+
+  .container-layout {
+    background-color: red;
+  }
+
+  .exclusive-box {
+    color: red;
+  }
+
+  .exclusive-text-item:last-child {
+    color: red;
+  }
+
+  .articles-main-right-title span {
+    color: red;
+  }
+
+  .articles-aside-title {
+    color: red;
+  }
+
+  .credits {
+    color: red;
+  }
+}
+
+@media ( orientation : landscape ) {
+
+  .container-orientation {
+    border: 1px solid red;
+  }
+}
+
+@keyframes flying {
+
+  to {
+    margin-left: 92%;
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes article-grow {
+
+  to {
+    font-weight: 700;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes logo-skew {
+
+  from {
+    transform: skew(20deg);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes subtitle-translate {
+
+  to {
+    margin: 0 0 15px;
+    transform: translate(75px);
+  }
+}
