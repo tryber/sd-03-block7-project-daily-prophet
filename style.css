@@ -52,9 +52,10 @@ hr {
 }
 
 .top-header-subtitle {
+  animation: subtitle-translate 2s 0.5s forwards;
   font-size: 18px;
   letter-spacing: 2px;
-  margin: 0 0 15px 180px;
+  position: relative;
   text-transform: uppercase;
 }
 
@@ -302,4 +303,12 @@ hr {
   to {
     transform: none;
   }
+}
+
+@keyframes subtitle-translate {
+
+  to {
+    transform: translate(75px);
+    margin: 0 0 15px;
+  }  
 }
