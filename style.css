@@ -1,25 +1,25 @@
 @media screen and ( max-width : 760px ) {
 
 .container-layout {
-    background-color: yellow;
-    transition-duration: 2s;
-    transition-property: all;
+	background-color: yellow;
+	transition-duration: 2s;
+	transition-property: all;
 }
 }
 
 @media screen and ( min-width : 1170px ) {
 
 .container-layout {
-    background-color: red;
-    transition-duration: 2s;
-    transition-property: all;
+	background-color: red;
+	transition-duration: 2s;
+	transition-property: all;
 }
 }
 
 @media screen and ( orientation : landscape ) {
 
 .container-orientation {
-    border: 1px solid red;
+	border: 1px solid red;
 }
 }
 
@@ -90,23 +90,23 @@ max-width: 200px;
 @keyframes flying {
 
 from {
-    margin-left: 200%;
+	margin-left: 200%;
 }
 
 to {
-    margin-left: -100%;
-    transition: steps(300, end);
+	margin-left: -100%;
+	transition: steps(300, end);
 }
 }
 
 @keyframes transFormation {
 
 from {
-    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+	transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
 }
 
 to {
-    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+	transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
 }
 }
 
