@@ -86,3 +86,42 @@ animation: transFormation 3s steps(50, end) infinite;
 margin-left: 100%;
 max-width: 200px;
 }
+
+@keyframes flying {
+
+from {
+    margin-left: 200%;
+}
+
+to {
+    margin-left: -100%;
+    transition: steps(300, end);
+}
+}
+
+@keyframes transFormation {
+
+from {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+}
+
+to {
+    transform: skew(0deg) scale(0.5, 2) translate(10px, 60px);
+}
+}
+
+@keyframes article-grow {
+
+0% {
+    font-size: 16;
+    font-weight: 400;
+    transform: scale(1, 1);
+}
+
+100% {
+    font-size: 56;
+    font-weight: 700;
+    max-width: 200px;
+    transform: scale(1.5, 1.5);
+}
+}
