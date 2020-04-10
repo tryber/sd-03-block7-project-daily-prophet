@@ -1,9 +1,9 @@
 @media screen and ( max-width : 760px ) {
 
 .container-layout {
-	background-color: yellow;
-	transition-duration: 2s;
-	transition-property: all;
+  background-color: yellow;
+  transition-duration: 2s;
+  transition-property: all;
 }
 }
 
