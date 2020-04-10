@@ -113,15 +113,15 @@ to {
 @keyframes article-grow {
 
 0% {
-    font-size: 16;
-    font-weight: 400;
-    transform: scale(1, 1);
+	font-size: 16;
+	font-weight: 400;
+	transform: scale(1, 1);
 }
 
 100% {
-    font-size: 56;
-    font-weight: 700;
-    max-width: 200px;
-    transform: scale(1.5, 1.5);
+	font-size: 56;
+	font-weight: 700;
+	max-width: 200px;
+	transform: scale(1.5, 1.5);
 }
 }
