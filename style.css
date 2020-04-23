@@ -1,6 +1,11 @@
+body {
+  background-color: rgba(255, 228, 134, 0.28);
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 60px auto;
+}
 
-
-.title-imv {
+.img {
   animation-duration: 1s;
   animation-name: skewing;
   height: auto;
@@ -27,13 +32,14 @@ header {
 }
 
 .article-animation {
+  animation-duration: 4s;
+  animation-name: article-grow;
   animation: article-grow 4s steps(4, end);
   animation-play-state: paused;
   transition: all 4s linear;
 }
 
 @keyframes article-grow {
-
   from {
     transform: scale(1);
   }
@@ -41,11 +47,9 @@ header {
   to {
     transform: scale(1.5);
   }
-
 }
 
 @keyframes skewing {
-
   from {
     transform: skew(70deg);
   }
@@ -53,11 +57,9 @@ header {
   to {
     transform: skew(0deg);
   }
-
 }
 
 @keyframes flying {
-
   from {
     animation: steps(4, end);
     transform: translate(50px, 0);
@@ -67,25 +69,21 @@ header {
     transform: translate(-50px, 0);
     transition: left;
   }
-
 }
 
-@media screen and ( max-width : 760px ) {
-
+@media screen and (max-width: 760px) {
   .container-layout {
     background-color: yellow;
   }
 }
 
-@media screen and ( min-width : 1170px ) {
-
+@media screen and (min-width: 1170px) {
   .container-layout {
     background-color: red;
   }
 }
 
-@media screen and ( orientation : landscape ) {
-
+@media screen and (orientation: landscape) {
   .container-orientation {
     border: 1px solid red;
   }
