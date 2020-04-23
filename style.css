@@ -17,7 +17,7 @@ article , body , div , footer , h1 , h4 , li , nav , p , ul , section , span {
   animation-name: flying;
   margin-left: 50px;
   position: absolute;
-  transform:  translateY(50px) scale(2, 2) skew(320deg);
+  transform: translateY(50px) scale(2, 2) skew(320deg);
   transition: transform 3s;
   width: 200px;
 }
